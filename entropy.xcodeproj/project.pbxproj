@@ -20,7 +20,6 @@
 		DA7380F020432007005C43A3 /* ExtensionUIView+LayoutEquals.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380B320432007005C43A3 /* ExtensionUIView+LayoutEquals.swift */; };
 		DA7380F120432007005C43A3 /* ExtensionUIView+LayoutVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380B420432007005C43A3 /* ExtensionUIView+LayoutVertical.swift */; };
 		DA7380F220432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380B520432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift */; };
-		DA7380F320432007005C43A3 /* ControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380B820432007005C43A3 /* ControllerHome.swift */; };
 		DA7380F420432007005C43A3 /* Presenter+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380BA20432007005C43A3 /* Presenter+View.swift */; };
 		DA7380F520432007005C43A3 /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380BB20432007005C43A3 /* PresenterProtocol.swift */; };
 		DA7380F620432007005C43A3 /* Presenter+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380BC20432007005C43A3 /* Presenter+Protocol.swift */; };
@@ -70,7 +69,6 @@
 		DA7380B320432007005C43A3 /* ExtensionUIView+LayoutEquals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtensionUIView+LayoutEquals.swift"; sourceTree = "<group>"; };
 		DA7380B420432007005C43A3 /* ExtensionUIView+LayoutVertical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtensionUIView+LayoutVertical.swift"; sourceTree = "<group>"; };
 		DA7380B520432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtensionUIView+LayoutHorizontal.swift"; sourceTree = "<group>"; };
-		DA7380B820432007005C43A3 /* ControllerHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerHome.swift; sourceTree = "<group>"; };
 		DA7380BA20432007005C43A3 /* Presenter+View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Presenter+View.swift"; sourceTree = "<group>"; };
 		DA7380BB20432007005C43A3 /* PresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
 		DA7380BC20432007005C43A3 /* Presenter+Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Presenter+Protocol.swift"; sourceTree = "<group>"; };
@@ -188,20 +186,11 @@
 			isa = PBXGroup;
 			children = (
 				DA738118204323D6005C43A3 /* Simulation */,
-				DA7380B720432007005C43A3 /* Home */,
 				DA7380B920432007005C43A3 /* Presenter */,
 				DA7380C020432007005C43A3 /* Controller */,
 				DA7380C420432007005C43A3 /* Application */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		DA7380B720432007005C43A3 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				DA7380B820432007005C43A3 /* ControllerHome.swift */,
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		DA7380B920432007005C43A3 /* Presenter */ = {
@@ -449,7 +438,6 @@
 				DA7380F220432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift in Sources */,
 				DA7380F720432007005C43A3 /* Presenter.swift in Sources */,
 				DA73810C20432007005C43A3 /* View.swift in Sources */,
-				DA7380F320432007005C43A3 /* ControllerHome.swift in Sources */,
 				DA7380FB20432007005C43A3 /* ControllerProtocol.swift in Sources */,
 				DA73810720432007005C43A3 /* PresentationProtocol+Default.swift in Sources */,
 				DA73810120432007005C43A3 /* Architecture.swift in Sources */,
