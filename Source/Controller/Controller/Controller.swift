@@ -17,6 +17,6 @@ internal class Controller<SpecialisedArchitecture>:UIViewController, ControllerP
     }
     
     internal override func loadView() {
-        self.view = GenericArchitecture.GenericView.view
+        self.view = GenericArchitecture.GenericView.factoryView()
     }
 }
