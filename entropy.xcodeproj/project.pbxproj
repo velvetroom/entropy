@@ -185,10 +185,10 @@
 		DA7380B620432007005C43A3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DA738118204323D6005C43A3 /* Simulation */,
-				DA7380B920432007005C43A3 /* Presenter */,
 				DA7380C020432007005C43A3 /* Controller */,
 				DA7380C420432007005C43A3 /* Application */,
+				DA7380B920432007005C43A3 /* Presenter */,
+				DA738118204323D6005C43A3 /* Simulation */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -229,8 +229,8 @@
 		DA7380C820432007005C43A3 /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
-				DA7380C920432007005C43A3 /* ArchitectureMember.swift */,
 				DA7380CA20432007005C43A3 /* Architecture.swift */,
+				DA7380C920432007005C43A3 /* ArchitectureMember.swift */,
 				DA73811420432358005C43A3 /* ArchitectureSimulation.swift */,
 			);
 			path = Architecture;
@@ -239,9 +239,9 @@
 		DA7380CC20432007005C43A3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DA73811B20432432005C43A3 /* Simulation */,
 				DA7380CF20432007005C43A3 /* Model */,
 				DA7380D220432007005C43A3 /* Presentation */,
+				DA73811B20432432005C43A3 /* Simulation */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -269,9 +269,9 @@
 		DA7380D720432007005C43A3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DA73811E204324D4005C43A3 /* Simulation */,
-				DA7380DA20432007005C43A3 /* Presenter */,
 				DA7380DC20432007005C43A3 /* View */,
+				DA7380DA20432007005C43A3 /* Presenter */,
+				DA73811E204324D4005C43A3 /* Simulation */,
 			);
 			path = View;
 			sourceTree = "<group>";
