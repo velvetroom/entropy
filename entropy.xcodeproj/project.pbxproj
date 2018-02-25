@@ -48,6 +48,7 @@
 		DA73810C20432007005C43A3 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380DD20432007005C43A3 /* View.swift */; };
 		DA73810D20432007005C43A3 /* ViewProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380DE20432007005C43A3 /* ViewProtocol+Default.swift */; };
 		DA73810E20432007005C43A3 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380DF20432007005C43A3 /* ViewProtocol.swift */; };
+		DA73811520432358005C43A3 /* ArchitectureSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73811420432358005C43A3 /* ArchitectureSimulation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		DA7380DF20432007005C43A3 /* ViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
 		DA7380E120432007005C43A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA73811020432015005C43A3 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
+		DA73811420432358005C43A3 /* ArchitectureSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureSimulation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,8 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				DA7380AE20432007005C43A3 /* Extension */,
-				DA7380B620432007005C43A3 /* Controller */,
 				DA7380C820432007005C43A3 /* Architecture */,
+				DA7380B620432007005C43A3 /* Controller */,
 				DA7380CC20432007005C43A3 /* Model */,
 				DA7380D720432007005C43A3 /* View */,
 			);
@@ -240,6 +242,7 @@
 				DA7380C920432007005C43A3 /* ArchitectureMember.swift */,
 				DA7380CA20432007005C43A3 /* Architecture.swift */,
 				DA7380CB20432007005C43A3 /* ArchitectureHome.swift */,
+				DA73811420432358005C43A3 /* ArchitectureSimulation.swift */,
 			);
 			path = Architecture;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				DA73810920432007005C43A3 /* PresentationLayout.swift in Sources */,
 				DA7380F820432007005C43A3 /* Presenter+Controller.swift in Sources */,
 				DA7380FD20432007005C43A3 /* Application+Presenter.swift in Sources */,
+				DA73811520432358005C43A3 /* ArchitectureSimulation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
