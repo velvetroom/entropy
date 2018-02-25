@@ -48,6 +48,7 @@
 		DA73810D20432007005C43A3 /* ViewProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380DE20432007005C43A3 /* ViewProtocol+Default.swift */; };
 		DA73810E20432007005C43A3 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380DF20432007005C43A3 /* ViewProtocol.swift */; };
 		DA73811520432358005C43A3 /* ArchitectureSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73811420432358005C43A3 /* ArchitectureSimulation.swift */; };
+		DA73811A204323EA005C43A3 /* ControllerSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA738119204323EA005C43A3 /* ControllerSimulation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		DA7380E120432007005C43A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA73811020432015005C43A3 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		DA73811420432358005C43A3 /* ArchitectureSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureSimulation.swift; sourceTree = "<group>"; };
+		DA738119204323EA005C43A3 /* ControllerSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerSimulation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 		DA7380B620432007005C43A3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DA738118204323D6005C43A3 /* Simulation */,
 				DA7380B720432007005C43A3 /* Home */,
 				DA7380B920432007005C43A3 /* Presenter */,
 				DA7380C020432007005C43A3 /* Controller */,
@@ -326,6 +329,14 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
+		DA738118204323D6005C43A3 /* Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				DA738119204323EA005C43A3 /* ControllerSimulation.swift */,
+			);
+			path = Simulation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -443,6 +454,7 @@
 				DA73810720432007005C43A3 /* PresentationProtocol+Default.swift in Sources */,
 				DA73810120432007005C43A3 /* Architecture.swift in Sources */,
 				DA7380F620432007005C43A3 /* Presenter+Protocol.swift in Sources */,
+				DA73811A204323EA005C43A3 /* ControllerSimulation.swift in Sources */,
 				DA7380EE20432007005C43A3 /* ExtensionUIView+LayoutSize.swift in Sources */,
 				DA7380F120432007005C43A3 /* ExtensionUIView+LayoutVertical.swift in Sources */,
 				DA7380EF20432007005C43A3 /* ExtensionUIColor.swift in Sources */,
