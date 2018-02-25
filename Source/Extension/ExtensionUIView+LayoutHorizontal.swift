@@ -12,7 +12,6 @@ public extension UIView {
             multiplier:1,
             constant:constant)
         constraint.isActive = true
-        
         return constraint
     }
     
@@ -27,7 +26,6 @@ public extension UIView {
             multiplier:1,
             constant:constant)
         constraint.isActive = true
-        
         return constraint
     }
     
@@ -42,7 +40,6 @@ public extension UIView {
             multiplier:1,
             constant:constant)
         constraint.isActive = true
-        
         return constraint
     }
     
@@ -57,7 +54,6 @@ public extension UIView {
             multiplier:1,
             constant:constant)
         constraint.isActive = true
-        
         return constraint
     }
 }

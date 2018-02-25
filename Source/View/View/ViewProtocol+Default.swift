@@ -5,7 +5,6 @@ internal extension ViewProtocol {
         get {
             let type:UIView.Type? = self as? UIView.Type
             let view:UIView? = type?.init()
-            
             return view
         }
     }

@@ -16,7 +16,6 @@ internal final class Application:UIResponder, UIApplicationDelegate {
         let window:UIWindow = UIWindow(frame:UIScreen.main.bounds)
         window.backgroundColor = UIColor.white
         window.makeKeyAndVisible()
-        
         return  window
     }
 }
