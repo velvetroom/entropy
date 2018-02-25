@@ -48,6 +48,7 @@
 		DA73810E20432007005C43A3 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380DF20432007005C43A3 /* ViewProtocol.swift */; };
 		DA73811520432358005C43A3 /* ArchitectureSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73811420432358005C43A3 /* ArchitectureSimulation.swift */; };
 		DA73811A204323EA005C43A3 /* ControllerSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA738119204323EA005C43A3 /* ControllerSimulation.swift */; };
+		DA73811D20432444005C43A3 /* ModelSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73811C20432444005C43A3 /* ModelSimulation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		DA73811020432015005C43A3 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		DA73811420432358005C43A3 /* ArchitectureSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchitectureSimulation.swift; sourceTree = "<group>"; };
 		DA738119204323EA005C43A3 /* ControllerSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerSimulation.swift; sourceTree = "<group>"; };
+		DA73811C20432444005C43A3 /* ModelSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSimulation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +241,7 @@
 		DA7380CC20432007005C43A3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA73811B20432432005C43A3 /* Simulation */,
 				DA7380CD20432007005C43A3 /* Home */,
 				DA7380CF20432007005C43A3 /* Model */,
 				DA7380D220432007005C43A3 /* Presentation */,
@@ -322,6 +325,14 @@
 			isa = PBXGroup;
 			children = (
 				DA738119204323EA005C43A3 /* ControllerSimulation.swift */,
+			);
+			path = Simulation;
+			sourceTree = "<group>";
+		};
+		DA73811B20432432005C43A3 /* Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				DA73811C20432444005C43A3 /* ModelSimulation.swift */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -439,6 +450,7 @@
 				DA7380F720432007005C43A3 /* Presenter.swift in Sources */,
 				DA73810C20432007005C43A3 /* View.swift in Sources */,
 				DA7380FB20432007005C43A3 /* ControllerProtocol.swift in Sources */,
+				DA73811D20432444005C43A3 /* ModelSimulation.swift in Sources */,
 				DA73810720432007005C43A3 /* PresentationProtocol+Default.swift in Sources */,
 				DA73810120432007005C43A3 /* Architecture.swift in Sources */,
 				DA7380F620432007005C43A3 /* Presenter+Protocol.swift in Sources */,
