@@ -15,6 +15,12 @@ internal class Controller<SpecialisedArchitecture>:UIViewController, ControllerP
     
     internal override func viewDidLoad() {
         super.viewDidLoad()
+        self.delegate?.controllerDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated:Bool) {
+        super.viewDidAppear(animated)
+        self.delegate?.controllerDidAppear()
     }
     
     internal override func loadView() {
