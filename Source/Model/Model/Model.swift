@@ -3,6 +3,12 @@ import UIKit
 internal class Model<SpecialisedArchitecture>:ModelProtocol,
     ArchitectureMember where SpecialisedArchitecture:Architecture {
     internal typealias GenericArchitecture = SpecialisedArchitecture
-    internal weak var controller:UIViewController?
-    internal let controllerType:ControllerProtocol.Type = SpecialisedArchitecture.GenericController.self
+    internal var controller:SpecialisedArchitecture.GenericController?
+    
+    internal final func loadController() -> UIViewController? {
+        if self.controller == nil {
+            self.controller = SpecialisedArchitecture.GenericController.init()
+        }
+        return self.controller as? UIViewController
+    }
 }

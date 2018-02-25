@@ -4,7 +4,7 @@ internal class Controller<SpecialisedArchitecture>:UIViewController, ControllerP
     ArchitectureMember where SpecialisedArchitecture:Architecture {
     internal typealias GenericArchitecture = SpecialisedArchitecture
     
-    internal init() {
+    internal required init() {
         super.init(nibName:nil, bundle:nil)
     }
     
