@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA2A4A7F204326E800F4FCAB /* ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A4A7E204326E800F4FCAB /* ControllerDelegate.swift */; };
 		DA7380E220432007005C43A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA73809D20432007005C43A3 /* LaunchScreen.storyboard */; };
 		DA7380E720432007005C43A3 /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A320432007005C43A3 /* LocalizableModel.strings */; };
 		DA7380E820432007005C43A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A520432007005C43A3 /* InfoPlist.strings */; };
@@ -51,6 +52,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA2A4A7E204326E800F4FCAB /* ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerDelegate.swift; sourceTree = "<group>"; };
 		DA73808720431E5E005C43A3 /* entropy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = entropy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA73809D20432007005C43A3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA73809E20432007005C43A3 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -209,9 +211,10 @@
 		DA7380C020432007005C43A3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DA7380C120432007005C43A3 /* ControllerProtocol+Default.swift */,
-				DA7380C220432007005C43A3 /* ControllerProtocol.swift */,
 				DA7380C320432007005C43A3 /* Controller.swift */,
+				DA7380C220432007005C43A3 /* ControllerProtocol.swift */,
+				DA7380C120432007005C43A3 /* ControllerProtocol+Default.swift */,
+				DA2A4A7E204326E800F4FCAB /* ControllerDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				DA7380F820432007005C43A3 /* Presenter+Controller.swift in Sources */,
 				DA7380FD20432007005C43A3 /* Application+Presenter.swift in Sources */,
 				DA73811520432358005C43A3 /* ArchitectureSimulation.swift in Sources */,
+				DA2A4A7F204326E800F4FCAB /* ControllerDelegate.swift in Sources */,
 				DA738120204324E0005C43A3 /* ViewSimulation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
