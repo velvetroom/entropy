@@ -1,7 +1,7 @@
 import UIKit
 
-internal class Model<SpecialisedArchitecture>:ModelProtocol,
-    ArchitectureMember where SpecialisedArchitecture:Architecture {
+internal class Model<SpecialisedArchitecture>:ModelProtocol,  ControllerDelegate, 
+ArchitectureMember where SpecialisedArchitecture:Architecture {
     internal typealias GenericArchitecture = SpecialisedArchitecture
     internal let controller:SpecialisedArchitecture.GenericController
     
@@ -12,6 +12,8 @@ internal class Model<SpecialisedArchitecture>:ModelProtocol,
     }
     
     internal init() {
-        self.controller = SpecialisedArchitecture.GenericController.init()
+        var controller:SpecialisedArchitecture.GenericController = SpecialisedArchitecture.GenericController.init()
+        self.controller = controller
+        controller.delegate = self
     }
 }

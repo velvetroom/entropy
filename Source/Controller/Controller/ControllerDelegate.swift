@@ -1,6 +1,6 @@
 import Foundation
 
-internal protocol ControllerDelegate {
-    func viewDidLoad()
-    func viewDidAppear()
+internal protocol ControllerDelegate:AnyObject {
+    func controllerDidLoad()
+    func controllerDidAppear()
 }
