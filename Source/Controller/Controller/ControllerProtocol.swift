@@ -1,5 +1,4 @@
-import UIKit
+import Foundation
 
 internal protocol ControllerProtocol {
-    static var viewController:UIViewController? { get }
 }
