@@ -1,0 +1,13 @@
+{
+    "SWIFT": {
+        "ABC": [20, 21, 22, 23],
+        "ARITY": [3, 4, 5, 6],
+        "BLOCK_NESTING": [2, 3, 4, 5],
+        "CYCLO": [3, 4, 5, 6],
+        "LOC": [15, 20, 25, 30],
+        "TOTAL_LOC": [500, 1000, 1500, 2000],
+        "TOTAL_COMPLEXITY": [150, 300, 450, 600],
+        "TOO_MANY_FUNCTIONS": [50, 100, 150, 200],
+        "TOO_MANY_IVARS": [8, 9, 10, 11]
+    }
+}
