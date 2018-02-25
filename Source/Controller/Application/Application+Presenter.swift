@@ -8,14 +8,14 @@ internal extension Application {
     }
     
     internal class func factoryInitialPresentation() -> PresentationProtocol {
-        let model:ModelHome = Application.factoryModelHome()
+        let model:ModelSimulation = Application.factoryModelSimulation()
         let presentation:PresentationInitial = PresentationInitial(model:model)
         
         return presentation
     }
     
-    private class func factoryModelHome() -> ModelHome {
-        let model:ModelHome = ModelHome()
+    private class func factoryModelSimulation() -> ModelSimulation {
+        let model:ModelSimulation = ModelSimulation()
         
         return model
     }
