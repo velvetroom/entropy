@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DA7380E220432007005C43A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA73809D20432007005C43A3 /* LaunchScreen.storyboard */; };
-		DA7380E320432007005C43A3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DA73809E20432007005C43A3 /* .gitignore */; };
-		DA7380E420432007005C43A3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA73809F20432007005C43A3 /* README.md */; };
-		DA7380E520432007005C43A3 /* .codebeatsettings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A020432007005C43A3 /* .codebeatsettings */; };
-		DA7380E620432007005C43A3 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A120432007005C43A3 /* LICENSE */; };
 		DA7380E720432007005C43A3 /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A320432007005C43A3 /* LocalizableModel.strings */; };
 		DA7380E820432007005C43A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A520432007005C43A3 /* InfoPlist.strings */; };
 		DA7380E920432007005C43A3 /* LocalizableError.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A720432007005C43A3 /* LocalizableError.strings */; };
@@ -52,7 +48,6 @@
 		DA73810C20432007005C43A3 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380DD20432007005C43A3 /* View.swift */; };
 		DA73810D20432007005C43A3 /* ViewProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380DE20432007005C43A3 /* ViewProtocol+Default.swift */; };
 		DA73810E20432007005C43A3 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380DF20432007005C43A3 /* ViewProtocol.swift */; };
-		DA73811120432015005C43A3 /* Scripts in Resources */ = {isa = PBXBuildFile; fileRef = DA73811020432015005C43A3 /* Scripts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -389,16 +384,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA7380E420432007005C43A3 /* README.md in Resources */,
 				DA7380E820432007005C43A3 /* InfoPlist.strings in Resources */,
 				DA7380EA20432007005C43A3 /* LocalizableView.strings in Resources */,
-				DA73811120432015005C43A3 /* Scripts in Resources */,
-				DA7380E320432007005C43A3 /* .gitignore in Resources */,
 				DA7380E220432007005C43A3 /* LaunchScreen.storyboard in Resources */,
 				DA7380EB20432007005C43A3 /* LocalizableController.strings in Resources */,
 				DA7380E920432007005C43A3 /* LocalizableError.strings in Resources */,
-				DA7380E520432007005C43A3 /* .codebeatsettings in Resources */,
-				DA7380E620432007005C43A3 /* LICENSE in Resources */,
 				DA7380E720432007005C43A3 /* LocalizableModel.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,6 +539,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -600,6 +591,7 @@
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
