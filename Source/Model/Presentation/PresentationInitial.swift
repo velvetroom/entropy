@@ -7,6 +7,6 @@ internal struct PresentationInitial:PresentationProtocol {
     
     internal init(model:ModelProtocol) {
         self.model = model
-        self.factoryUI()
+        self.factoryArchitecture()
     }
 }

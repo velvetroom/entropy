@@ -7,8 +7,8 @@ internal extension PresentationProtocol {
         }
     }
     
-    internal mutating func factoryUI() {
+    internal mutating func factoryArchitecture() {
         let controllerType:ControllerProtocol.Type = self.model.controllerType
-        self.controller = controllerType.viewController
+        self.controller = controllerType.factoryController()
     }
 }
