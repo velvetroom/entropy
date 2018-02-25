@@ -16,4 +16,13 @@ ArchitectureMember where SpecialisedArchitecture:Architecture {
         self.controller = controller
         controller.delegate = self
     }
+    
+    internal func controllerLoadedView() {
+        guard
+            let view:SpecialisedArchitecture.GenericView = self.view as? SpecialisedArchitecture.GenericView
+        else {
+            return
+        }
+        view. 
+    }
 }

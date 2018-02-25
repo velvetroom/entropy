@@ -3,6 +3,7 @@ import UIKit
 internal class View<SpecialisedArchitecture>:UIView, ViewProtocol,
     ArchitectureMember where SpecialisedArchitecture:Architecture {
     internal typealias GenericArchitecture = SpecialisedArchitecture
+    internal weak var model:SpecialisedArchitecture.GenericModel?
     internal var presentationLayout:PresentationLayout
     
     internal override init(frame:CGRect) {
