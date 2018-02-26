@@ -1,13 +1,13 @@
 import Foundation
 
 internal extension Presenter {
-    internal class func factoryPrivateDispatch() -> DispatchQueue {
+    internal class func factoryPrivateQueue() -> DispatchQueue {
         let dispatchQueue:DispatchQueue = DispatchQueue(
-            label:AudioStreamingManager.Constants.Dispatch.chaptersQueueLabel,
-            qos:DispatchQoS.background,
+            label:Presenter.Constants.queueIdentifier,
+            qos:DispatchQoS.userInteractive,
             attributes:DispatchQueue.Attributes(),
             autoreleaseFrequency:DispatchQueue.AutoreleaseFrequency.inherit,
-            target:DispatchQueue.global(qos:DispatchQoS.QoSClass.background))
+            target:DispatchQueue.main)
         
         return dispatchQueue
     }
