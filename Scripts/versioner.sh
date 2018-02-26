@@ -1,6 +1,5 @@
 #!/bin/bash
 
-sleep 1
 build=$(git rev-list HEAD --count)
 version=$(agvtool what-marketing-version -terse1)
 
@@ -21,5 +20,9 @@ fi
 
 new_version="$version_major.$version_minor.$build"
 
-agvtool new-version -all $build
-agvtool new-marketing-version $new_version
+if [[ $new_version != $version ]]; then
+    sleep 1
+
+    agvtool new-version -all $build
+    agvtool new-marketing-version $new_version
+fi
