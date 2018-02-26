@@ -6,6 +6,12 @@ internal class Model<ConcreteControllerProtocol:ControllerProtocol>:ModelProtoco
     
     internal var view:ConcreteControllerProtocol.SpecialisedView? {
         get {
+            guard
+                let controller:UIViewController = self.controller as? UIViewController,
+                controller.view === self.controller.viewSpecialised
+            else {
+                return nil
+            }
             return self.controller.viewSpecialised
         }
     }

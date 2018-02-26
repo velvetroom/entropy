@@ -5,6 +5,9 @@ internal class View:UIView {
     
     internal required init() {
         super.init(frame:CGRect.zero)
+        self.clipsToBounds = true
+        self.backgroundColor = UIColor.red
+        self.translatesAutoresizingMaskIntoConstraints = false
     }
     
     internal required init?(coder:NSCoder) {
