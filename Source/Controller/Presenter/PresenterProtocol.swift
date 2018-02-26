@@ -1,5 +1,5 @@
 import Foundation
 
 internal protocol PresenterProtocol {
-    func present(presentation:PresentationProtocol)
+    func present<ConcreteController>(strategy:PresentationStrategyProtocol, model:Model<ConcreteController>)
 }
