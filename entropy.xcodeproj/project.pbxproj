@@ -44,6 +44,7 @@
 		DAEADEB120443A860047CEBE /* Presenter+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEB020443A860047CEBE /* Presenter+Factory.swift */; };
 		DAEADEB320443B400047CEBE /* Presenter+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEB220443B400047CEBE /* Presenter+Constants.swift */; };
 		DAEADEB5204455330047CEBE /* ModelDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEB4204455330047CEBE /* ModelDatasource.swift */; };
+		DAEADEB9204455680047CEBE /* ViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEB8204455680047CEBE /* ViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +92,7 @@
 		DAEADEB020443A860047CEBE /* Presenter+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Presenter+Factory.swift"; sourceTree = "<group>"; };
 		DAEADEB220443B400047CEBE /* Presenter+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Presenter+Constants.swift"; sourceTree = "<group>"; };
 		DAEADEB4204455330047CEBE /* ModelDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDatasource.swift; sourceTree = "<group>"; };
+		DAEADEB8204455680047CEBE /* ViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				DAEADEA6204424ED0047CEBE /* View.swift */,
+				DAEADEB8204455680047CEBE /* ViewDelegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				DAEADEB320443B400047CEBE /* Presenter+Constants.swift in Sources */,
 				DA7380EC20432007005C43A3 /* ExtensionUIView+LayoutWidth.swift in Sources */,
 				DAEADE992043F2380047CEBE /* ControllerProtocol.swift in Sources */,
+				DAEADEB9204455680047CEBE /* ViewDelegate.swift in Sources */,
 				DAEADEAD20442F150047CEBE /* PresentationStrategyProtocol.swift in Sources */,
 				DA73810B20432007005C43A3 /* ViewPresenter.swift in Sources */,
 				DA7380F020432007005C43A3 /* ExtensionUIView+LayoutEquals.swift in Sources */,
