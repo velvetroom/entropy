@@ -36,6 +36,7 @@
 		DAEADE972043F1EF0047CEBE /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE962043F1EF0047CEBE /* Controller.swift */; };
 		DAEADE992043F2380047CEBE /* ControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE982043F2380047CEBE /* ControllerProtocol.swift */; };
 		DAEADE9B2043F4650047CEBE /* ControllerSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE9A2043F4650047CEBE /* ControllerSimulation.swift */; };
+		DAEADE9D2043F4880047CEBE /* ControllerSimulationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE9C2043F4880047CEBE /* ControllerSimulationProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		DAEADE962043F1EF0047CEBE /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		DAEADE982043F2380047CEBE /* ControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
 		DAEADE9A2043F4650047CEBE /* ControllerSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerSimulation.swift; sourceTree = "<group>"; };
+		DAEADE9C2043F4880047CEBE /* ControllerSimulationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerSimulationProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				DAEADE9A2043F4650047CEBE /* ControllerSimulation.swift */,
+				DAEADE9C2043F4880047CEBE /* ControllerSimulationProtocol.swift */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				DA73810620432007005C43A3 /* PresentationProtocol.swift in Sources */,
 				DA7380FE20432007005C43A3 /* Application.swift in Sources */,
 				DA7380ED20432007005C43A3 /* ExtensionUIView+LayoutHeight.swift in Sources */,
+				DAEADE9D2043F4880047CEBE /* ControllerSimulationProtocol.swift in Sources */,
 				DA7380F420432007005C43A3 /* Presenter+View.swift in Sources */,
 				DA7380F520432007005C43A3 /* PresenterProtocol.swift in Sources */,
 				DA7380FF20432007005C43A3 /* Application+Delegate.swift in Sources */,
