@@ -11,12 +11,13 @@ internal final class Application:UIResponder, UIApplicationDelegate {
     }
     
     internal func startPresentation() {
+        self.startWindow()
+        let model:ModelSimulation<ControllerSimulation> = ModelSimulation<ControllerSimulation>()
+        let presentationStrategy:
+    }
+    
+    private func startWindow() {
         self.window = Application.factoryWindow()
         self.window?.rootViewController = self.presenter as? UIViewController
     }
-    
-    internal func factoryInitialPresentation() {
-        
-    }
-    
 }

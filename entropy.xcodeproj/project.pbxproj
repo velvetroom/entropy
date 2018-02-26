@@ -40,6 +40,7 @@
 		DAEADEA9204426100047CEBE /* ViewSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA8204426100047CEBE /* ViewSimulation.swift */; };
 		DAEADEAB204428510047CEBE /* Application+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEAA204428510047CEBE /* Application+Factory.swift */; };
 		DAEADEAD20442F150047CEBE /* PresentationStrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEAC20442F150047CEBE /* PresentationStrategyProtocol.swift */; };
+		DAEADEAF204432AF0047CEBE /* PresentationStrategyInitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEAE204432AF0047CEBE /* PresentationStrategyInitial.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		DAEADEA8204426100047CEBE /* ViewSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSimulation.swift; sourceTree = "<group>"; };
 		DAEADEAA204428510047CEBE /* Application+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application+Factory.swift"; sourceTree = "<group>"; };
 		DAEADEAC20442F150047CEBE /* PresentationStrategyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationStrategyProtocol.swift; sourceTree = "<group>"; };
+		DAEADEAE204432AF0047CEBE /* PresentationStrategyInitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationStrategyInitial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,7 @@
 			children = (
 				DA7380D620432007005C43A3 /* PresentationLayout.swift */,
 				DAEADEAC20442F150047CEBE /* PresentationStrategyProtocol.swift */,
+				DAEADEAE204432AF0047CEBE /* PresentationStrategyInitial.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				DAEADE952043F1970047CEBE /* Model.swift in Sources */,
 				DAEADE9B2043F4650047CEBE /* ControllerSimulation.swift in Sources */,
 				DAEADEA3204414580047CEBE /* ControllerDelegate.swift in Sources */,
+				DAEADEAF204432AF0047CEBE /* PresentationStrategyInitial.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
