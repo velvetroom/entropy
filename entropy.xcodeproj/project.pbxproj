@@ -29,7 +29,6 @@
 		DA7380FD20432007005C43A3 /* Application+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380C520432007005C43A3 /* Application+Presenter.swift */; };
 		DA7380FE20432007005C43A3 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380C620432007005C43A3 /* Application.swift */; };
 		DA7380FF20432007005C43A3 /* Application+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380C720432007005C43A3 /* Application+Delegate.swift */; };
-		DA73810620432007005C43A3 /* PresentationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380D320432007005C43A3 /* PresentationProtocol.swift */; };
 		DA73810920432007005C43A3 /* PresentationLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380D620432007005C43A3 /* PresentationLayout.swift */; };
 		DA73810B20432007005C43A3 /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380DB20432007005C43A3 /* ViewPresenter.swift */; };
 		DAEADE952043F1970047CEBE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE942043F1970047CEBE /* Model.swift */; };
@@ -44,6 +43,7 @@
 		DAEADEA7204424ED0047CEBE /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA6204424ED0047CEBE /* View.swift */; };
 		DAEADEA9204426100047CEBE /* ViewSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA8204426100047CEBE /* ViewSimulation.swift */; };
 		DAEADEAB204428510047CEBE /* Application+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEAA204428510047CEBE /* Application+Factory.swift */; };
+		DAEADEAD20442F150047CEBE /* PresentationStrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEAC20442F150047CEBE /* PresentationStrategyProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,7 +74,6 @@
 		DA7380C520432007005C43A3 /* Application+Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Application+Presenter.swift"; sourceTree = "<group>"; };
 		DA7380C620432007005C43A3 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		DA7380C720432007005C43A3 /* Application+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Application+Delegate.swift"; sourceTree = "<group>"; };
-		DA7380D320432007005C43A3 /* PresentationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationProtocol.swift; sourceTree = "<group>"; };
 		DA7380D620432007005C43A3 /* PresentationLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationLayout.swift; sourceTree = "<group>"; };
 		DA7380DB20432007005C43A3 /* ViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPresenter.swift; sourceTree = "<group>"; };
 		DA7380E120432007005C43A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +90,7 @@
 		DAEADEA6204424ED0047CEBE /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		DAEADEA8204426100047CEBE /* ViewSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSimulation.swift; sourceTree = "<group>"; };
 		DAEADEAA204428510047CEBE /* Application+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application+Factory.swift"; sourceTree = "<group>"; };
+		DAEADEAC20442F150047CEBE /* PresentationStrategyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationStrategyProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,8 +241,8 @@
 		DA7380D220432007005C43A3 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				DA7380D320432007005C43A3 /* PresentationProtocol.swift */,
 				DA7380D620432007005C43A3 /* PresentationLayout.swift */,
+				DAEADEAC20442F150047CEBE /* PresentationStrategyProtocol.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -399,10 +399,10 @@
 			files = (
 				DA7380EC20432007005C43A3 /* ExtensionUIView+LayoutWidth.swift in Sources */,
 				DAEADE992043F2380047CEBE /* ControllerProtocol.swift in Sources */,
+				DAEADEAD20442F150047CEBE /* PresentationStrategyProtocol.swift in Sources */,
 				DA73810B20432007005C43A3 /* ViewPresenter.swift in Sources */,
 				DA7380F920432007005C43A3 /* Presenter+Strategies.swift in Sources */,
 				DA7380F020432007005C43A3 /* ExtensionUIView+LayoutEquals.swift in Sources */,
-				DA73810620432007005C43A3 /* PresentationProtocol.swift in Sources */,
 				DA7380FE20432007005C43A3 /* Application.swift in Sources */,
 				DA7380ED20432007005C43A3 /* ExtensionUIView+LayoutHeight.swift in Sources */,
 				DAEADE9D2043F4880047CEBE /* ControllerSimulationProtocol.swift in Sources */,
