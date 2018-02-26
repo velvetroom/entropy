@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 internal final class ViewSimulation:View, ViewProtocol {
     internal typealias SpecialisedModel = ModelSimulation<ControllerSimulation>

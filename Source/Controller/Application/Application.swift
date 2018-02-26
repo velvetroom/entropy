@@ -5,7 +5,7 @@ internal final class Application:UIResponder, UIApplicationDelegate {
     internal var window:UIWindow?
     internal let presenter:PresenterProtocol
     
-    override init() {
+    internal override init() {
         self.presenter = Presenter()
         super.init()
     }

@@ -8,7 +8,6 @@ internal extension Presenter {
             attributes:DispatchQueue.Attributes(),
             autoreleaseFrequency:DispatchQueue.AutoreleaseFrequency.inherit,
             target:DispatchQueue.main)
-        
         return dispatchQueue
     }
 }
