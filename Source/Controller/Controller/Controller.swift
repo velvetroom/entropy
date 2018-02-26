@@ -26,6 +26,5 @@ internal class Controller<ConcreteView:View>:UIViewController {
         let view:ConcreteView = ConcreteView()
         self.view = view
         self.viewSpecialised = view
-        self.delegate?.controllerLoadView()
     }
 }

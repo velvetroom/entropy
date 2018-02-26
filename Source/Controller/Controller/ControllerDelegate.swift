@@ -3,5 +3,6 @@ import Foundation
 internal protocol ControllerDelegate:AnyObject {
     func controllerDidLoad()
     func controllerDidAppear()
-    func controllerLoadView()
+    func controllerWillLoadView<SpecialisedDatasource:ModelDatasource, SpecialisedDelegate:ViewDelegate>(
+        datasource:SpecialisedDatasource, delegate:SpecialisedDelegate)
 }
