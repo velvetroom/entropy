@@ -20,6 +20,11 @@ internal final class PresentationStrategyInitial:PresentationStrategyProtocol {
     
     private static func factoryLayout<SpecialisedView:View>(topView:UIView,
                                                             view:SpecialisedView) -> PresentationLayout {
-        
+        var layout:PresentationLayout = PresentationLayout()
+        layout.layoutTop = view.layoutTopToTop(view:topView)
+        layout.layoutBottom = view.layoutBottomToBottom(view:topView)
+        layout.layoutRight = view.layoutRightToRight(view:topView)
+        layout.layoutLeft = view.layoutLeftToLeft(view:topView)
+        return layout
     }
 }
