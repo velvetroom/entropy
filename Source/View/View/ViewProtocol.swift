@@ -2,7 +2,8 @@ import Foundation
 
 internal protocol ViewProtocol {
     associatedtype SpecialisedModel
-    var model:SpecialisedModel? { get }
+    var model:SpecialisedModel? { get set }
     
+    init()
     init(model:SpecialisedModel)
 }
