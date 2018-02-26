@@ -1,8 +1,12 @@
-import Foundation
+import UIKit
 
 internal extension Application {
-    internal class func factoryPresenter() -> Presenter {
-        let presenter:Presenter = Presenter()
-        return presenter
+    internal func startPresentation() {
+        self.window = Application.factoryWindow()
+        self.window?.rootViewController = self.presenter
+    }
+    
+    internal func factoryInitialPresentation() {
+        
     }
 }

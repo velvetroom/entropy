@@ -43,6 +43,7 @@
 		DAEADEA5204422CA0047CEBE /* Model+ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA4204422CA0047CEBE /* Model+ControllerDelegate.swift */; };
 		DAEADEA7204424ED0047CEBE /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA6204424ED0047CEBE /* View.swift */; };
 		DAEADEA9204426100047CEBE /* ViewSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA8204426100047CEBE /* ViewSimulation.swift */; };
+		DAEADEAB204428510047CEBE /* Application+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEAA204428510047CEBE /* Application+Factory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		DAEADEA4204422CA0047CEBE /* Model+ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+ControllerDelegate.swift"; sourceTree = "<group>"; };
 		DAEADEA6204424ED0047CEBE /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		DAEADEA8204426100047CEBE /* ViewSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSimulation.swift; sourceTree = "<group>"; };
+		DAEADEAA204428510047CEBE /* Application+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application+Factory.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,10 +187,10 @@
 		DA7380B920432007005C43A3 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				DA7380BD20432007005C43A3 /* Presenter.swift */,
 				DA7380BA20432007005C43A3 /* Presenter+View.swift */,
 				DA7380BB20432007005C43A3 /* PresenterProtocol.swift */,
 				DA7380BC20432007005C43A3 /* Presenter+Protocol.swift */,
-				DA7380BD20432007005C43A3 /* Presenter.swift */,
 				DA7380BE20432007005C43A3 /* Presenter+Controller.swift */,
 				DA7380BF20432007005C43A3 /* Presenter+Strategies.swift */,
 			);
@@ -208,9 +210,10 @@
 		DA7380C420432007005C43A3 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				DA7380C520432007005C43A3 /* Application+Presenter.swift */,
 				DA7380C620432007005C43A3 /* Application.swift */,
+				DAEADEAA204428510047CEBE /* Application+Factory.swift */,
 				DA7380C720432007005C43A3 /* Application+Delegate.swift */,
+				DA7380C520432007005C43A3 /* Application+Presenter.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				DA7380EF20432007005C43A3 /* ExtensionUIColor.swift in Sources */,
 				DAEADE972043F1EF0047CEBE /* Controller.swift in Sources */,
 				DAEADEA12043F60B0047CEBE /* ModelProtocol.swift in Sources */,
+				DAEADEAB204428510047CEBE /* Application+Factory.swift in Sources */,
 				DA73810920432007005C43A3 /* PresentationLayout.swift in Sources */,
 				DAEADEA7204424ED0047CEBE /* View.swift in Sources */,
 				DAEADE952043F1970047CEBE /* Model.swift in Sources */,
