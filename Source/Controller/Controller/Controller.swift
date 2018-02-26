@@ -1,13 +1,13 @@
 import UIKit
 
-internal class Controller:UIViewController {
+internal class Controller<ConcreteView:View>:UIViewController {
     internal weak var delegate:ControllerDelegate?
     
     internal init() {
         super.init(nibName:nil, bundle:nil)
     }
     
-    required init?(coder:NSCoder){
+    required init?(coder:NSCoder) {
         return nil
     }
     
@@ -19,5 +19,11 @@ internal class Controller:UIViewController {
     internal override func viewDidAppear(_ animated:Bool) {
         super.viewDidAppear(animated)
         self.delegate?.controllerDidAppear()
+    }
+    
+    internal override func loadView() {
+        let view:ConcreteView = ConcreteView()
+        self.view = view
+        self.delegate?.controllerLoadView()
     }
 }

@@ -41,6 +41,7 @@
 		DAEADEA12043F60B0047CEBE /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA02043F60B0047CEBE /* ModelProtocol.swift */; };
 		DAEADEA3204414580047CEBE /* ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA2204414580047CEBE /* ControllerDelegate.swift */; };
 		DAEADEA5204422CA0047CEBE /* Model+ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA4204422CA0047CEBE /* Model+ControllerDelegate.swift */; };
+		DAEADEA7204424ED0047CEBE /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA6204424ED0047CEBE /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		DAEADEA02043F60B0047CEBE /* ModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
 		DAEADEA2204414580047CEBE /* ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerDelegate.swift; sourceTree = "<group>"; };
 		DAEADEA4204422CA0047CEBE /* Model+ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+ControllerDelegate.swift"; sourceTree = "<group>"; };
+		DAEADEA6204424ED0047CEBE /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +263,7 @@
 		DA7380DC20432007005C43A3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DAEADEA6204424ED0047CEBE /* View.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				DAEADE972043F1EF0047CEBE /* Controller.swift in Sources */,
 				DAEADEA12043F60B0047CEBE /* ModelProtocol.swift in Sources */,
 				DA73810920432007005C43A3 /* PresentationLayout.swift in Sources */,
+				DAEADEA7204424ED0047CEBE /* View.swift in Sources */,
 				DAEADE952043F1970047CEBE /* Model.swift in Sources */,
 				DA7380F820432007005C43A3 /* Presenter+Controller.swift in Sources */,
 				DAEADE9B2043F4650047CEBE /* ControllerSimulation.swift in Sources */,
