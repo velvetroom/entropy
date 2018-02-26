@@ -42,6 +42,7 @@
 		DAEADEAD20442F150047CEBE /* PresentationStrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEAC20442F150047CEBE /* PresentationStrategyProtocol.swift */; };
 		DAEADEAF204432AF0047CEBE /* PresentationStrategyInitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEAE204432AF0047CEBE /* PresentationStrategyInitial.swift */; };
 		DAEADEB120443A860047CEBE /* Presenter+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEB020443A860047CEBE /* Presenter+Factory.swift */; };
+		DAEADEB320443B400047CEBE /* Presenter+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEB220443B400047CEBE /* Presenter+Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		DAEADEAC20442F150047CEBE /* PresentationStrategyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationStrategyProtocol.swift; sourceTree = "<group>"; };
 		DAEADEAE204432AF0047CEBE /* PresentationStrategyInitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationStrategyInitial.swift; sourceTree = "<group>"; };
 		DAEADEB020443A860047CEBE /* Presenter+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Presenter+Factory.swift"; sourceTree = "<group>"; };
+		DAEADEB220443B400047CEBE /* Presenter+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Presenter+Constants.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				DA7380BD20432007005C43A3 /* Presenter.swift */,
+				DAEADEB220443B400047CEBE /* Presenter+Constants.swift */,
 				DA7380BC20432007005C43A3 /* Presenter+Protocol.swift */,
 				DAEADEB020443A860047CEBE /* Presenter+Factory.swift */,
 				DA7380BB20432007005C43A3 /* PresenterProtocol.swift */,
@@ -391,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAEADEB320443B400047CEBE /* Presenter+Constants.swift in Sources */,
 				DA7380EC20432007005C43A3 /* ExtensionUIView+LayoutWidth.swift in Sources */,
 				DAEADE992043F2380047CEBE /* ControllerProtocol.swift in Sources */,
 				DAEADEAD20442F150047CEBE /* PresentationStrategyProtocol.swift in Sources */,
