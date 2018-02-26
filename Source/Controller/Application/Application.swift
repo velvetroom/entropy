@@ -5,11 +5,11 @@ internal final class Application:UIResponder, UIApplicationDelegate {
     internal var window:UIWindow?
     
     internal func startPresentation() {
-        let presenter:Presenter = Application.factoryPresenter()
+        let presenter:Presenter = Application.factoryPresenter()/*
         let initialPresentation:PresentationProtocol = Application.factoryInitialPresentation()
         self.window = Application.factoryWindow()
         self.window?.rootViewController = presenter
-        presenter.present(presentation:initialPresentation)
+        presenter.present(presentation:initialPresentation)*/
     }
     
     private class func factoryWindow() -> UIWindow {

@@ -6,7 +6,7 @@ internal extension Presenter {
         self.layoutStrategyInitial(presentation:presentation)
     }
     
-    private func layoutStrategyInitial(presentation:PresentationProtocol) {
+    private func layoutStrategyInitial(presentation:PresentationProtocol) {/*
         guard
             var view:ViewProtocol = presentation.view as? ViewProtocol
         else {
@@ -15,6 +15,6 @@ internal extension Presenter {
         view.presentationLayout.layoutTop = presentation.view?.layoutTopToTop(view:self.view)
         view.presentationLayout.layoutBottom = presentation.view?.layoutBottomToBottom(view:self.view)
         view.presentationLayout.layoutRight = presentation.view?.layoutRightToRight(view:self.view)
-        view.presentationLayout.layoutLeft = presentation.view?.layoutLeftToLeft(view:self.view)
+        view.presentationLayout.layoutLeft = presentation.view?.layoutLeftToLeft(view:self.view)*/
     }
 }

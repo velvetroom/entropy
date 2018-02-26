@@ -1,5 +1,5 @@
-import Foundation
+import UIKit
 
-internal class Controller {
+internal class Controller:UIViewController {
     
 }
