@@ -1,6 +1,6 @@
 import UIKit
 
-internal class Controller<ConcreteView:View>:UIViewController {
+internal class Controller<ConcreteView:View>:UIViewController where ConcreteView:ViewProtocol {
     internal weak var delegate:ControllerDelegate?
     internal weak var viewSpecialised:ConcreteView?
     
@@ -23,7 +23,12 @@ internal class Controller<ConcreteView:View>:UIViewController {
     }
     
     internal override func loadView() {
-        let view:ConcreteView = ConcreteView()
+        guard
+            let model:ConcreteView.SpecialisedModel = self.delegate?.modelForView()
+        else {
+            return
+        }
+        let view:ConcreteView = ConcreteView(model:model)
         self.view = view
         self.viewSpecialised = view
     }
