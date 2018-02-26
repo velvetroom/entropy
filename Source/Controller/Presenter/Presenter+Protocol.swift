@@ -1,6 +1,18 @@
 import UIKit
 
 internal extension Presenter {
+    internal weak var topController:UIViewController? {
+        get {
+            return self
+        }
+    }
+    
+    internal weak var topView:UIView? {
+        get {
+            return self.topController?.view
+        }
+    }
+    
     internal func present<ConcreteController>(strategy:PresentationStrategyProtocol.Type,
                                               model:Model<ConcreteController>) {
         self.privateQueue.async { [weak self] in

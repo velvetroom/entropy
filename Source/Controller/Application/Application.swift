@@ -18,6 +18,6 @@ internal final class Application:UIResponder, UIApplicationDelegate {
     
     private func startWindow() {
         self.window = Application.factoryWindow()
-        self.window?.rootViewController = self.presenter as? UIViewController
+        self.window?.rootViewController = self.presenter.topController
     }
 }
