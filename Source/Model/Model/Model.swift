@@ -1,5 +1,5 @@
 import Foundation
 
-internal class Model<SpecialisedController:ControllerProtocol> {
+internal class Model<ConcreteController:Controller> {
     
 }
