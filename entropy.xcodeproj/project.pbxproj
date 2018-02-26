@@ -39,6 +39,7 @@
 		DAEADE9D2043F4880047CEBE /* ControllerSimulationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE9C2043F4880047CEBE /* ControllerSimulationProtocol.swift */; };
 		DAEADE9F2043F4B60047CEBE /* ModelSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE9E2043F4B60047CEBE /* ModelSimulation.swift */; };
 		DAEADEA12043F60B0047CEBE /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA02043F60B0047CEBE /* ModelProtocol.swift */; };
+		DAEADEA3204414580047CEBE /* ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA2204414580047CEBE /* ControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		DAEADE9C2043F4880047CEBE /* ControllerSimulationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerSimulationProtocol.swift; sourceTree = "<group>"; };
 		DAEADE9E2043F4B60047CEBE /* ModelSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSimulation.swift; sourceTree = "<group>"; };
 		DAEADEA02043F60B0047CEBE /* ModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
+		DAEADEA2204414580047CEBE /* ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 			children = (
 				DAEADE962043F1EF0047CEBE /* Controller.swift */,
 				DAEADE982043F2380047CEBE /* ControllerProtocol.swift */,
+				DAEADEA2204414580047CEBE /* ControllerDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				DAEADE952043F1970047CEBE /* Model.swift in Sources */,
 				DA7380F820432007005C43A3 /* Presenter+Controller.swift in Sources */,
 				DAEADE9B2043F4650047CEBE /* ControllerSimulation.swift in Sources */,
+				DAEADEA3204414580047CEBE /* ControllerDelegate.swift in Sources */,
 				DA7380FD20432007005C43A3 /* Application+Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
