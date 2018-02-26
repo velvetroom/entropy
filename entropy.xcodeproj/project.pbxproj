@@ -189,10 +189,10 @@
 			children = (
 				DA7380BD20432007005C43A3 /* Presenter.swift */,
 				DA7380BA20432007005C43A3 /* Presenter+View.swift */,
-				DA7380BB20432007005C43A3 /* PresenterProtocol.swift */,
 				DA7380BC20432007005C43A3 /* Presenter+Protocol.swift */,
 				DA7380BE20432007005C43A3 /* Presenter+Controller.swift */,
 				DA7380BF20432007005C43A3 /* Presenter+Strategies.swift */,
+				DA7380BB20432007005C43A3 /* PresenterProtocol.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -231,9 +231,9 @@
 		DA7380CF20432007005C43A3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DAEADEA02043F60B0047CEBE /* ModelProtocol.swift */,
 				DAEADE942043F1970047CEBE /* Model.swift */,
 				DAEADEA4204422CA0047CEBE /* Model+ControllerDelegate.swift */,
+				DAEADEA02043F60B0047CEBE /* ModelProtocol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
