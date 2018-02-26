@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 internal extension Presenter {
     internal func present<ConcreteController>(strategy:PresentationStrategyProtocol.Type,
@@ -12,5 +12,14 @@ internal extension Presenter {
                                                    model:Model<ConcreteController>) {
         self.controllerDelegates.append(model)
         strategy.present(presenter:self, model:model)
+    }
+    
+    internal func addController<ConcreteController>(model:Model<ConcreteController>) {
+        guard
+            let controller:UIViewController = model.controller as? UIViewController
+        else {
+            return
+        }
+        self.addChildViewController(controller)
     }
 }
