@@ -6,4 +6,5 @@ internal protocol ViewProtocol {
     
     init()
     init(model:SpecialisedModel)
+    func factoryViews()
 }

@@ -6,7 +6,6 @@ internal class View:UIView {
     internal init() {
         super.init(frame:CGRect.zero)
         self.configureViewDefaults()
-        self.factoryViews()
     }
     
     internal required init?(coder:NSCoder) {
