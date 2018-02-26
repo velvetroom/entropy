@@ -10,4 +10,14 @@ internal class Controller:UIViewController {
     required init?(coder:NSCoder){
         return nil
     }
+    
+    internal override func viewDidLoad() {
+        super.viewDidLoad()
+        self.delegate?.controllerDidLoad()
+    }
+    
+    internal override func viewDidAppear(_ animated:Bool) {
+        super.viewDidAppear(animated)
+        self.delegate?.controllerDidAppear()
+    }
 }
