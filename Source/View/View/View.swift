@@ -1,8 +1,9 @@
 import UIKit
 
 internal class View:UIView {
+    internal weak var datasource:ModelDatasource?
+    internal weak var delegate:ViewDelegate?
     internal var presentationLayout:PresentationLayout?
-    internal let model:Model
     
     internal required init() {
         super.init(frame:CGRect.zero)

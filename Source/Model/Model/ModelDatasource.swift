@@ -1,4 +1,4 @@
 import Foundation
 
-internal protocol ModelDatasource {
+internal protocol ModelDatasource:AnyObject {
 }
