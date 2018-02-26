@@ -7,9 +7,4 @@ internal extension Application {
         window.makeKeyAndVisible()
         return  window
     }
-    
-    internal class func factoryInitialModel() -> ModelSimulation<ControllerSimulation> {
-        let model:ModelSimulation<ControllerSimulation> = ModelSimulation<ControllerSimulation>()        
-        return model
-    }
 }
