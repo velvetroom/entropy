@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA2A4A7F204326E800F4FCAB /* ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A4A7E204326E800F4FCAB /* ControllerDelegate.swift */; };
 		DA2A4A85204347DE00F4FCAB /* PresentationProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A4A84204347DE00F4FCAB /* PresentationProtocol+Default.swift */; };
-		DA2A4A8720434A6500F4FCAB /* ModelProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A4A8620434A6500F4FCAB /* ModelProtocol+Default.swift */; };
-		DA2A4A8920434D3B00F4FCAB /* Model+ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A4A8820434D3B00F4FCAB /* Model+ControllerDelegate.swift */; };
 		DA7380E220432007005C43A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA73809D20432007005C43A3 /* LaunchScreen.storyboard */; };
 		DA7380E720432007005C43A3 /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A320432007005C43A3 /* LocalizableModel.strings */; };
 		DA7380E820432007005C43A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A520432007005C43A3 /* InfoPlist.strings */; };
@@ -30,30 +27,17 @@
 		DA7380F720432007005C43A3 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380BD20432007005C43A3 /* Presenter.swift */; };
 		DA7380F820432007005C43A3 /* Presenter+Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380BE20432007005C43A3 /* Presenter+Controller.swift */; };
 		DA7380F920432007005C43A3 /* Presenter+Strategies.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380BF20432007005C43A3 /* Presenter+Strategies.swift */; };
-		DA7380FB20432007005C43A3 /* ControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380C220432007005C43A3 /* ControllerProtocol.swift */; };
-		DA7380FC20432007005C43A3 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380C320432007005C43A3 /* Controller.swift */; };
 		DA7380FD20432007005C43A3 /* Application+Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380C520432007005C43A3 /* Application+Presenter.swift */; };
 		DA7380FE20432007005C43A3 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380C620432007005C43A3 /* Application.swift */; };
 		DA7380FF20432007005C43A3 /* Application+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380C720432007005C43A3 /* Application+Delegate.swift */; };
-		DA73810420432007005C43A3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380D020432007005C43A3 /* Model.swift */; };
-		DA73810520432007005C43A3 /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380D120432007005C43A3 /* ModelProtocol.swift */; };
 		DA73810620432007005C43A3 /* PresentationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380D320432007005C43A3 /* PresentationProtocol.swift */; };
 		DA73810820432007005C43A3 /* PresentationInitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380D520432007005C43A3 /* PresentationInitial.swift */; };
 		DA73810920432007005C43A3 /* PresentationLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380D620432007005C43A3 /* PresentationLayout.swift */; };
 		DA73810B20432007005C43A3 /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380DB20432007005C43A3 /* ViewPresenter.swift */; };
-		DA73810C20432007005C43A3 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380DD20432007005C43A3 /* View.swift */; };
-		DA73810D20432007005C43A3 /* ViewProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380DE20432007005C43A3 /* ViewProtocol+Default.swift */; };
-		DA73810E20432007005C43A3 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380DF20432007005C43A3 /* ViewProtocol.swift */; };
-		DA73811A204323EA005C43A3 /* ControllerSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA738119204323EA005C43A3 /* ControllerSimulation.swift */; };
-		DA73811D20432444005C43A3 /* ModelSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73811C20432444005C43A3 /* ModelSimulation.swift */; };
-		DA738120204324E0005C43A3 /* ViewSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA73811F204324E0005C43A3 /* ViewSimulation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DA2A4A7E204326E800F4FCAB /* ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerDelegate.swift; sourceTree = "<group>"; };
 		DA2A4A84204347DE00F4FCAB /* PresentationProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PresentationProtocol+Default.swift"; sourceTree = "<group>"; };
-		DA2A4A8620434A6500F4FCAB /* ModelProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ModelProtocol+Default.swift"; sourceTree = "<group>"; };
-		DA2A4A8820434D3B00F4FCAB /* Model+ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+ControllerDelegate.swift"; sourceTree = "<group>"; };
 		DA73808720431E5E005C43A3 /* entropy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = entropy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA73809D20432007005C43A3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA73809E20432007005C43A3 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -78,25 +62,15 @@
 		DA7380BD20432007005C43A3 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		DA7380BE20432007005C43A3 /* Presenter+Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Presenter+Controller.swift"; sourceTree = "<group>"; };
 		DA7380BF20432007005C43A3 /* Presenter+Strategies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Presenter+Strategies.swift"; sourceTree = "<group>"; };
-		DA7380C220432007005C43A3 /* ControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
-		DA7380C320432007005C43A3 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		DA7380C520432007005C43A3 /* Application+Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Application+Presenter.swift"; sourceTree = "<group>"; };
 		DA7380C620432007005C43A3 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		DA7380C720432007005C43A3 /* Application+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Application+Delegate.swift"; sourceTree = "<group>"; };
-		DA7380D020432007005C43A3 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		DA7380D120432007005C43A3 /* ModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
 		DA7380D320432007005C43A3 /* PresentationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationProtocol.swift; sourceTree = "<group>"; };
 		DA7380D520432007005C43A3 /* PresentationInitial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationInitial.swift; sourceTree = "<group>"; };
 		DA7380D620432007005C43A3 /* PresentationLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationLayout.swift; sourceTree = "<group>"; };
 		DA7380DB20432007005C43A3 /* ViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPresenter.swift; sourceTree = "<group>"; };
-		DA7380DD20432007005C43A3 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		DA7380DE20432007005C43A3 /* ViewProtocol+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewProtocol+Default.swift"; sourceTree = "<group>"; };
-		DA7380DF20432007005C43A3 /* ViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
 		DA7380E120432007005C43A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA73811020432015005C43A3 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
-		DA738119204323EA005C43A3 /* ControllerSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerSimulation.swift; sourceTree = "<group>"; };
-		DA73811C20432444005C43A3 /* ModelSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSimulation.swift; sourceTree = "<group>"; };
-		DA73811F204324E0005C43A3 /* ViewSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSimulation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,9 +180,6 @@
 		DA7380C020432007005C43A3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DA7380C320432007005C43A3 /* Controller.swift */,
-				DA7380C220432007005C43A3 /* ControllerProtocol.swift */,
-				DA2A4A7E204326E800F4FCAB /* ControllerDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -236,10 +207,6 @@
 		DA7380CF20432007005C43A3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DA7380D120432007005C43A3 /* ModelProtocol.swift */,
-				DA2A4A8620434A6500F4FCAB /* ModelProtocol+Default.swift */,
-				DA7380D020432007005C43A3 /* Model.swift */,
-				DA2A4A8820434D3B00F4FCAB /* Model+ControllerDelegate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -276,9 +243,6 @@
 		DA7380DC20432007005C43A3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DA7380DF20432007005C43A3 /* ViewProtocol.swift */,
-				DA7380DE20432007005C43A3 /* ViewProtocol+Default.swift */,
-				DA7380DD20432007005C43A3 /* View.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -294,7 +258,6 @@
 		DA738118204323D6005C43A3 /* Simulation */ = {
 			isa = PBXGroup;
 			children = (
-				DA738119204323EA005C43A3 /* ControllerSimulation.swift */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -302,7 +265,6 @@
 		DA73811B20432432005C43A3 /* Simulation */ = {
 			isa = PBXGroup;
 			children = (
-				DA73811C20432444005C43A3 /* ModelSimulation.swift */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -310,7 +272,6 @@
 		DA73811E204324D4005C43A3 /* Simulation */ = {
 			isa = PBXGroup;
 			children = (
-				DA73811F204324E0005C43A3 /* ViewSimulation.swift */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -414,32 +375,19 @@
 				DA2A4A85204347DE00F4FCAB /* PresentationProtocol+Default.swift in Sources */,
 				DA7380FE20432007005C43A3 /* Application.swift in Sources */,
 				DA7380ED20432007005C43A3 /* ExtensionUIView+LayoutHeight.swift in Sources */,
-				DA73810520432007005C43A3 /* ModelProtocol.swift in Sources */,
 				DA7380F420432007005C43A3 /* Presenter+View.swift in Sources */,
-				DA73810E20432007005C43A3 /* ViewProtocol.swift in Sources */,
 				DA73810820432007005C43A3 /* PresentationInitial.swift in Sources */,
 				DA7380F520432007005C43A3 /* PresenterProtocol.swift in Sources */,
-				DA2A4A8920434D3B00F4FCAB /* Model+ControllerDelegate.swift in Sources */,
 				DA7380FF20432007005C43A3 /* Application+Delegate.swift in Sources */,
-				DA73810420432007005C43A3 /* Model.swift in Sources */,
-				DA7380FC20432007005C43A3 /* Controller.swift in Sources */,
 				DA7380F220432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift in Sources */,
 				DA7380F720432007005C43A3 /* Presenter.swift in Sources */,
-				DA73810C20432007005C43A3 /* View.swift in Sources */,
-				DA7380FB20432007005C43A3 /* ControllerProtocol.swift in Sources */,
-				DA73811D20432444005C43A3 /* ModelSimulation.swift in Sources */,
 				DA7380F620432007005C43A3 /* Presenter+Protocol.swift in Sources */,
-				DA73811A204323EA005C43A3 /* ControllerSimulation.swift in Sources */,
-				DA2A4A8720434A6500F4FCAB /* ModelProtocol+Default.swift in Sources */,
 				DA7380EE20432007005C43A3 /* ExtensionUIView+LayoutSize.swift in Sources */,
 				DA7380F120432007005C43A3 /* ExtensionUIView+LayoutVertical.swift in Sources */,
 				DA7380EF20432007005C43A3 /* ExtensionUIColor.swift in Sources */,
-				DA73810D20432007005C43A3 /* ViewProtocol+Default.swift in Sources */,
 				DA73810920432007005C43A3 /* PresentationLayout.swift in Sources */,
 				DA7380F820432007005C43A3 /* Presenter+Controller.swift in Sources */,
 				DA7380FD20432007005C43A3 /* Application+Presenter.swift in Sources */,
-				DA2A4A7F204326E800F4FCAB /* ControllerDelegate.swift in Sources */,
-				DA738120204324E0005C43A3 /* ViewSimulation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
