@@ -22,4 +22,13 @@ internal extension Presenter {
         }
         self.addChildViewController(controller)
     }
+    
+    internal func addView<ConcreteController>(model:Model<ConcreteController>) {
+        guard
+            let view:UIView = model.view
+        else {
+            return
+        }
+        self.view.addSubview(view)
+    }
 }
