@@ -1,10 +1,10 @@
 import UIKit
 
-internal class Model<ConcreteController:ControllerProtocol>:ModelProtocol {
-    typealias SpecialisedControllerProtocol = ConcreteController
-    let controller:Model<ConcreteController>.SpecialisedControllerProtocol
+internal class Model<ConcreteControllerProtocol:ControllerProtocol>:ModelProtocol {
+    typealias SpecialisedControllerProtocol = ConcreteControllerProtocol
+    let controller:SpecialisedControllerProtocol
     
     init() {
-        self.controller = ConcreteController()
+        self.controller = SpecialisedControllerProtocol()
     }
 }
