@@ -2,6 +2,7 @@ import UIKit
 
 internal class Controller<ConcreteView:View>:UIViewController {
     internal weak var delegate:ControllerDelegate?
+    internal weak var viewSpecialised:ConcreteView?
     
     internal init() {
         super.init(nibName:nil, bundle:nil)
@@ -24,6 +25,7 @@ internal class Controller<ConcreteView:View>:UIViewController {
     internal override func loadView() {
         let view:ConcreteView = ConcreteView()
         self.view = view
+        self.viewSpecialised = view
         self.delegate?.controllerLoadView()
     }
 }
