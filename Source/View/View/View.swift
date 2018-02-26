@@ -5,13 +5,18 @@ internal class View:UIView {
     
     internal init() {
         super.init(frame:CGRect.zero)
-        self.clipsToBounds = true
-        self.backgroundColor = UIColor.sharedBackgroundColour
-        self.translatesAutoresizingMaskIntoConstraints = false
+        self.configureViewDefaults()
+        self.factoryViews()
     }
     
     internal required init?(coder:NSCoder) {
         return nil
+    }
+    
+    private func configureViewDefaults() {
+        self.clipsToBounds = true
+        self.backgroundColor = UIColor.sharedBackgroundColour
+        self.translatesAutoresizingMaskIntoConstraints = false
     }
     
     internal func factoryViews() { }
