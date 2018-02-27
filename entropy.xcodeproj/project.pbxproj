@@ -28,6 +28,7 @@
 		DA73810920432007005C43A3 /* PresentationLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380D620432007005C43A3 /* PresentationLayout.swift */; };
 		DA73810B20432007005C43A3 /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380DB20432007005C43A3 /* ViewPresenter.swift */; };
 		DA7C6A68204540BA00DAA5D4 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C6A67204540BA00DAA5D4 /* ViewModelProtocol.swift */; };
+		DA7C6A6A2045410000DAA5D4 /* ViewModelSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C6A692045410000DAA5D4 /* ViewModelSimulation.swift */; };
 		DAEADE952043F1970047CEBE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE942043F1970047CEBE /* Model.swift */; };
 		DAEADE972043F1EF0047CEBE /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE962043F1EF0047CEBE /* Controller.swift */; };
 		DAEADE992043F2380047CEBE /* ControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE982043F2380047CEBE /* ControllerProtocol.swift */; };
@@ -77,6 +78,7 @@
 		DA7380E120432007005C43A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA73811020432015005C43A3 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		DA7C6A67204540BA00DAA5D4 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		DA7C6A692045410000DAA5D4 /* ViewModelSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelSimulation.swift; sourceTree = "<group>"; };
 		DAEADE942043F1970047CEBE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DAEADE962043F1EF0047CEBE /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		DAEADE982043F2380047CEBE /* ControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				DAEADEA8204426100047CEBE /* ViewSimulation.swift */,
+				DA7C6A692045410000DAA5D4 /* ViewModelSimulation.swift */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				DAEADE9B2043F4650047CEBE /* ControllerSimulation.swift in Sources */,
 				DAEADEA3204414580047CEBE /* ControllerDelegate.swift in Sources */,
 				DAEADEAF204432AF0047CEBE /* PresentationStrategyInitial.swift in Sources */,
+				DA7C6A6A2045410000DAA5D4 /* ViewModelSimulation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
