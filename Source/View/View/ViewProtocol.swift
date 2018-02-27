@@ -1,10 +1,10 @@
 import Foundation
 
 internal protocol ViewProtocol {
-    associatedtype SpecialisedModel
-    var model:SpecialisedModel? { get set }
+    associatedtype SpecialisedViewModel
+    var viewModel:SpecialisedViewModel? { get set }
     
     init()
-    init(model:SpecialisedModel)
+    init(viewModel:SpecialisedViewModel)
     func factoryViews()
 }
