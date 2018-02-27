@@ -5,7 +5,7 @@ internal extension Model {
     
     internal func controllerDidAppear() { }
     
-    internal func modelForView<ConcreteModel>() -> ConcreteModel? {
-        return self as? ConcreteModel
+    internal func factoryViewModel<ConcreteViewModel>() -> ConcreteViewModel? {
+        return self as? ConcreteViewModel
     }
 }
