@@ -1,9 +1,9 @@
 import Foundation
 
 internal extension ViewProtocol {
-    internal init(viewModel:ConcreteViewModelProtocol) {
+    internal init(model:ConcreteModel) {
         self.init()
-        self.viewModel = viewModel
+        self.model = model
         self.factoryViews()
     }
 }

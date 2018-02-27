@@ -24,11 +24,11 @@ internal class Controller<ConcreteView:View>:UIViewController where ConcreteView
     
     internal override func loadView() {
         guard
-            let viewModel:ConcreteView.ConcreteViewModelProtocol = self.delegate?.factoryViewModel()
+            let model:ConcreteView.ConcreteModel = self.delegate?.factoryViewModel()
         else {
             return
         }
-        let view:ConcreteView = ConcreteView(viewModel:viewModel)
+        let view:ConcreteView = ConcreteView(model:model)
         self.view = view
         self.viewSpecialised = view
     }
