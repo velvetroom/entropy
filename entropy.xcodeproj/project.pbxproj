@@ -27,8 +27,8 @@
 		DA7380FF20432007005C43A3 /* Application+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380C720432007005C43A3 /* Application+Delegate.swift */; };
 		DA73810920432007005C43A3 /* PresentationLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380D620432007005C43A3 /* PresentationLayout.swift */; };
 		DA73810B20432007005C43A3 /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380DB20432007005C43A3 /* ViewPresenter.swift */; };
-		DA7C6A68204540BA00DAA5D4 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C6A67204540BA00DAA5D4 /* ViewModelProtocol.swift */; };
-		DA7C6A6A2045410000DAA5D4 /* ViewModelSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C6A692045410000DAA5D4 /* ViewModelSimulation.swift */; };
+		DA7C6A702045419600DAA5D4 /* ViewModelSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C6A6D2045419600DAA5D4 /* ViewModelSimulation.swift */; };
+		DA7C6A712045419600DAA5D4 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7C6A6F2045419600DAA5D4 /* ViewModelProtocol.swift */; };
 		DAEADE952043F1970047CEBE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE942043F1970047CEBE /* Model.swift */; };
 		DAEADE972043F1EF0047CEBE /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE962043F1EF0047CEBE /* Controller.swift */; };
 		DAEADE992043F2380047CEBE /* ControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE982043F2380047CEBE /* ControllerProtocol.swift */; };
@@ -77,8 +77,8 @@
 		DA7380DB20432007005C43A3 /* ViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPresenter.swift; sourceTree = "<group>"; };
 		DA7380E120432007005C43A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA73811020432015005C43A3 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
-		DA7C6A67204540BA00DAA5D4 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
-		DA7C6A692045410000DAA5D4 /* ViewModelSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelSimulation.swift; sourceTree = "<group>"; };
+		DA7C6A6D2045419600DAA5D4 /* ViewModelSimulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelSimulation.swift; sourceTree = "<group>"; };
+		DA7C6A6F2045419600DAA5D4 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		DAEADE942043F1970047CEBE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DAEADE962043F1EF0047CEBE /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		DAEADE982043F2380047CEBE /* ControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
@@ -161,6 +161,7 @@
 				DA7380B620432007005C43A3 /* Controller */,
 				DA7380CC20432007005C43A3 /* Model */,
 				DA7380D720432007005C43A3 /* View */,
+				DA7C6A6B2045414700DAA5D4 /* ViewModel */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -276,7 +277,6 @@
 				DAEADEA6204424ED0047CEBE /* View.swift */,
 				DAEADEBE20445A4A0047CEBE /* ViewProtocol.swift */,
 				DAEADEC2204464210047CEBE /* ViewProtocol+Default.swift */,
-				DA7C6A67204540BA00DAA5D4 /* ViewModelProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -310,9 +310,33 @@
 			isa = PBXGroup;
 			children = (
 				DAEADEA8204426100047CEBE /* ViewSimulation.swift */,
-				DA7C6A692045410000DAA5D4 /* ViewModelSimulation.swift */,
 			);
 			path = Simulation;
+			sourceTree = "<group>";
+		};
+		DA7C6A6B2045414700DAA5D4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C6A6E2045419600DAA5D4 /* ViewModel */,
+				DA7C6A6C2045419600DAA5D4 /* Simulation */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DA7C6A6C2045419600DAA5D4 /* Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C6A6D2045419600DAA5D4 /* ViewModelSimulation.swift */,
+			);
+			path = Simulation;
+			sourceTree = "<group>";
+		};
+		DA7C6A6E2045419600DAA5D4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA7C6A6F2045419600DAA5D4 /* ViewModelProtocol.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,6 +447,7 @@
 				DA7380FF20432007005C43A3 /* Application+Delegate.swift in Sources */,
 				DA7380F220432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift in Sources */,
 				DA7380F720432007005C43A3 /* Presenter.swift in Sources */,
+				DA7C6A702045419600DAA5D4 /* ViewModelSimulation.swift in Sources */,
 				DA7380F620432007005C43A3 /* Presenter+Protocol.swift in Sources */,
 				DAEADEC3204464210047CEBE /* ViewProtocol+Default.swift in Sources */,
 				DAEADEA5204422CA0047CEBE /* Model+ControllerDelegate.swift in Sources */,
@@ -435,11 +460,10 @@
 				DA73810920432007005C43A3 /* PresentationLayout.swift in Sources */,
 				DAEADEA7204424ED0047CEBE /* View.swift in Sources */,
 				DAEADE952043F1970047CEBE /* Model.swift in Sources */,
-				DA7C6A68204540BA00DAA5D4 /* ViewModelProtocol.swift in Sources */,
 				DAEADE9B2043F4650047CEBE /* ControllerSimulation.swift in Sources */,
 				DAEADEA3204414580047CEBE /* ControllerDelegate.swift in Sources */,
+				DA7C6A712045419600DAA5D4 /* ViewModelProtocol.swift in Sources */,
 				DAEADEAF204432AF0047CEBE /* PresentationStrategyInitial.swift in Sources */,
-				DA7C6A6A2045410000DAA5D4 /* ViewModelSimulation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
