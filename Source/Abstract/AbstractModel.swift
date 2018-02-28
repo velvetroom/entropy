@@ -1,5 +1,5 @@
 import Foundation
 
-internal class AbstractModel {
+internal class AbstractModel:ControllerDelegate {
     
 }
