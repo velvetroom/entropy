@@ -7,7 +7,7 @@ internal class AbstractController<
     internal weak var delegate:ControllerDelegate?
     internal let viewController:SpecialisedViewController
     
-    internal required init(viewController:SpecialisedViewController) {
-        self.viewController = viewController
+    internal required init(viewModel:ConcreteViewModel) {
+        self.viewController = SpecialisedViewController(viewModel:viewModel)
     }
 }

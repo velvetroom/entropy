@@ -7,8 +7,8 @@ AbstractModelProtocol, ControllerDelegate, ViewModelDelegate {
     internal let viewModel:AbstractViewModel
     
     internal init() {
-        self.controller = SpecialisedSignature.Controller(
         self.viewModel = SpecialisedSignature.ViewModel()
+        self.controller = SpecialisedSignature.Controller(viewModel:self.viewModel)
         self.assignReferences()
     }
     

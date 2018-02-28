@@ -6,5 +6,5 @@ internal protocol AbstractControllerProtocol {
     weak var delegate:ControllerDelegate? { get }
     var viewController:SpecialisedViewController { get }
     
-    init(viewController:SpecialisedViewController)
+    init(viewModel:SpecialisedViewModel)
 }
