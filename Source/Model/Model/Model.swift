@@ -1,8 +1,15 @@
 import UIKit
 
-internal class Model<ConcreteControllerProtocol:ControllerProtocol>:ModelProtocol {
+internal class Model<
+    ConcreteControllerProtocol:ControllerProtocol,
+    ConcreteControllerDelegate:ControllerDelegate,
+    ConcreteViewModelProtocol:ViewModelProtocol>:ModelProtocol {
     internal typealias SpecialisedControllerProtocol = ConcreteControllerProtocol
+    internal typealias SpecialisedControllerDelegate = ConcreteControllerDelegate
+    internal typealias SpecialisedViewModelProtocol = ConcreteViewModelProtocol
     internal let controller:SpecialisedControllerProtocol
+    internal let controllerDelegate:SpecialisedControllerDelegate
+    internal let viewModel:SpecialisedViewModelProtocol
     
     internal var view:ConcreteControllerProtocol.SpecialisedView? {
         get {

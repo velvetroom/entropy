@@ -39,7 +39,6 @@
 		DAEADE9F2043F4B60047CEBE /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE9E2043F4B60047CEBE /* Simulation.swift */; };
 		DAEADEA12043F60B0047CEBE /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA02043F60B0047CEBE /* ModelProtocol.swift */; };
 		DAEADEA3204414580047CEBE /* ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA2204414580047CEBE /* ControllerDelegate.swift */; };
-		DAEADEA5204422CA0047CEBE /* Model+ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA4204422CA0047CEBE /* Model+ControllerDelegate.swift */; };
 		DAEADEA7204424ED0047CEBE /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA6204424ED0047CEBE /* View.swift */; };
 		DAEADEA9204426100047CEBE /* ViewSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA8204426100047CEBE /* ViewSimulation.swift */; };
 		DAEADEAB204428510047CEBE /* Application+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEAA204428510047CEBE /* Application+Factory.swift */; };
@@ -91,7 +90,6 @@
 		DAEADE9E2043F4B60047CEBE /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
 		DAEADEA02043F60B0047CEBE /* ModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
 		DAEADEA2204414580047CEBE /* ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerDelegate.swift; sourceTree = "<group>"; };
-		DAEADEA4204422CA0047CEBE /* Model+ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+ControllerDelegate.swift"; sourceTree = "<group>"; };
 		DAEADEA6204424ED0047CEBE /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		DAEADEA8204426100047CEBE /* ViewSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSimulation.swift; sourceTree = "<group>"; };
 		DAEADEAA204428510047CEBE /* Application+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application+Factory.swift"; sourceTree = "<group>"; };
@@ -241,7 +239,6 @@
 			isa = PBXGroup;
 			children = (
 				DAEADE942043F1970047CEBE /* Model.swift */,
-				DAEADEA4204422CA0047CEBE /* Model+ControllerDelegate.swift */,
 				DAEADEA02043F60B0047CEBE /* ModelProtocol.swift */,
 			);
 			path = Model;
@@ -431,7 +428,6 @@
 				DA7380F720432007005C43A3 /* Presenter.swift in Sources */,
 				DA7380F620432007005C43A3 /* Presenter+Protocol.swift in Sources */,
 				DAEADEC3204464210047CEBE /* ViewProtocol+Default.swift in Sources */,
-				DAEADEA5204422CA0047CEBE /* Model+ControllerDelegate.swift in Sources */,
 				DA7380EE20432007005C43A3 /* ExtensionUIView+LayoutSize.swift in Sources */,
 				DA3CC1B5204689F4008C5C73 /* SimulationControllerDelegate.swift in Sources */,
 				DA7380F120432007005C43A3 /* ExtensionUIView+LayoutVertical.swift in Sources */,
