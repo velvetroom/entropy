@@ -11,6 +11,7 @@
 		DA3CC1B120468648008C5C73 /* SimulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CC1B020468648008C5C73 /* SimulationViewModel.swift */; };
 		DA3CC1B3204688F4008C5C73 /* ControllerDelegate+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CC1B2204688F4008C5C73 /* ControllerDelegate+Default.swift */; };
 		DA3CC1B5204689F4008C5C73 /* SimulationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CC1B4204689F4008C5C73 /* SimulationControllerDelegate.swift */; };
+		DA48BB282046CE1000271252 /* TestSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48BB272046CE1000271252 /* TestSimulation.swift */; };
 		DA7380E220432007005C43A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA73809D20432007005C43A3 /* LaunchScreen.storyboard */; };
 		DA7380E720432007005C43A3 /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A320432007005C43A3 /* LocalizableModel.strings */; };
 		DA7380E820432007005C43A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A520432007005C43A3 /* InfoPlist.strings */; };
@@ -50,11 +51,24 @@
 		DAEADEC3204464210047CEBE /* ViewProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEC2204464210047CEBE /* ViewProtocol+Default.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DA48BB1F2046CD2B00271252 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA73807F20431E5E005C43A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA73808620431E5E005C43A3;
+			remoteInfo = entropy;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		DA3CC1AE20468613008C5C73 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		DA3CC1B020468648008C5C73 /* SimulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModel.swift; sourceTree = "<group>"; };
 		DA3CC1B2204688F4008C5C73 /* ControllerDelegate+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerDelegate+Default.swift"; sourceTree = "<group>"; };
 		DA3CC1B4204689F4008C5C73 /* SimulationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationControllerDelegate.swift; sourceTree = "<group>"; };
+		DA48BB1A2046CD2B00271252 /* tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA48BB272046CE1000271252 /* TestSimulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSimulation.swift; sourceTree = "<group>"; };
+		DA48BB292046CE1F00271252 /* InfoTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoTests.plist; sourceTree = "<group>"; };
 		DA73808720431E5E005C43A3 /* entropy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = entropy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA73809D20432007005C43A3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA73809E20432007005C43A3 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -102,6 +116,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DA48BB172046CD2B00271252 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA73808420431E5E005C43A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -112,6 +133,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA48BB242046CE1000271252 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DA48BB252046CE1000271252 /* Model */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		DA48BB252046CE1000271252 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA48BB262046CE1000271252 /* Simulation */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA48BB262046CE1000271252 /* Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				DA48BB272046CE1000271252 /* TestSimulation.swift */,
+			);
+			path = Simulation;
+			sourceTree = "<group>";
+		};
 		DA73807E20431E5E005C43A3 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +164,7 @@
 				DA7380E020432007005C43A3 /* Configuration */,
 				DA7380A220432007005C43A3 /* Resources */,
 				DA7380AD20432007005C43A3 /* Source */,
+				DA48BB242046CE1000271252 /* Tests */,
 				DA7380A120432007005C43A3 /* LICENSE */,
 				DA73809F20432007005C43A3 /* README.md */,
 				DA7380A020432007005C43A3 /* .codebeatsettings */,
@@ -132,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				DA73808720431E5E005C43A3 /* entropy.app */,
+				DA48BB1A2046CD2B00271252 /* tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -286,6 +333,7 @@
 		DA7380E020432007005C43A3 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				DA48BB292046CE1F00271252 /* InfoTests.plist */,
 				DA7380E120432007005C43A3 /* Info.plist */,
 			);
 			path = Configuration;
@@ -321,6 +369,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DA48BB192046CD2B00271252 /* tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA48BB232046CD2B00271252 /* Build configuration list for PBXNativeTarget "tests" */;
+			buildPhases = (
+				DA48BB162046CD2B00271252 /* Sources */,
+				DA48BB172046CD2B00271252 /* Frameworks */,
+				DA48BB182046CD2B00271252 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA48BB202046CD2B00271252 /* PBXTargetDependency */,
+			);
+			name = tests;
+			productName = tests;
+			productReference = DA48BB1A2046CD2B00271252 /* tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DA73808620431E5E005C43A3 /* entropy */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA73809920431E5E005C43A3 /* Build configuration list for PBXNativeTarget "entropy" */;
@@ -349,6 +415,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = iturbide;
 				TargetAttributes = {
+					DA48BB192046CD2B00271252 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DA73808620431E5E005C43A3;
+					};
 					DA73808620431E5E005C43A3 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -368,11 +439,19 @@
 			projectRoot = "";
 			targets = (
 				DA73808620431E5E005C43A3 /* entropy */,
+				DA48BB192046CD2B00271252 /* tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DA48BB182046CD2B00271252 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA73808520431E5E005C43A3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -405,6 +484,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DA48BB162046CD2B00271252 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA48BB282046CE1000271252 /* TestSimulation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA73808320431E5E005C43A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -448,6 +535,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA48BB202046CD2B00271252 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA73808620431E5E005C43A3 /* entropy */;
+			targetProxy = DA48BB1F2046CD2B00271252 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DA7380A320432007005C43A3 /* LocalizableModel.strings */ = {
@@ -493,6 +588,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DA48BB212046CD2B00271252 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AMWG3RLHN;
+				INFOPLIST_FILE = tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iturbide.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/entropy.app/entropy";
+			};
+			name = Debug;
+		};
+		DA48BB222046CD2B00271252 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AMWG3RLHN;
+				INFOPLIST_FILE = tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iturbide.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/entropy.app/entropy";
+			};
+			name = Release;
+		};
 		DA73809720431E5E005C43A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -635,6 +766,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DA48BB232046CD2B00271252 /* Build configuration list for PBXNativeTarget "tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA48BB212046CD2B00271252 /* Debug */,
+				DA48BB222046CD2B00271252 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DA73808220431E5E005C43A3 /* Build configuration list for PBXProject "entropy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
