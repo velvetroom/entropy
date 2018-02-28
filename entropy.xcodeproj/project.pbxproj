@@ -37,6 +37,7 @@
 		DA7380F220432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380B520432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift */; };
 		DA785A462047074900E3DFD1 /* ViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A452047074900E3DFD1 /* ViewModelDelegate.swift */; };
 		DA785A482047080F00E3DFD1 /* AbstractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A472047080F00E3DFD1 /* AbstractViewController.swift */; };
+		DA785A4A2047083E00E3DFD1 /* AbstractView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A492047083E00E3DFD1 /* AbstractView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		DA73811020432015005C43A3 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		DA785A452047074900E3DFD1 /* ViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDelegate.swift; sourceTree = "<group>"; };
 		DA785A472047080F00E3DFD1 /* AbstractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewController.swift; sourceTree = "<group>"; };
+		DA785A492047083E00E3DFD1 /* AbstractView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				DA06784A2046F8F1001519B0 /* AbstractViewModelProtocol.swift */,
 				DA06784C2046F910001519B0 /* AbstractViewModel.swift */,
 				DA785A472047080F00E3DFD1 /* AbstractViewController.swift */,
+				DA785A492047083E00E3DFD1 /* AbstractView.swift */,
 			);
 			path = Abstract;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				DA06783C2046F6BD001519B0 /* AbstractModel.swift in Sources */,
 				DA7380F120432007005C43A3 /* ExtensionUIView+LayoutVertical.swift in Sources */,
 				DA06784F2046F932001519B0 /* SimulationViewModel.swift in Sources */,
+				DA785A4A2047083E00E3DFD1 /* AbstractView.swift in Sources */,
 				DA0678492046F8AB001519B0 /* AbstractModelProtocol.swift in Sources */,
 				DA7380EF20432007005C43A3 /* ExtensionUIColor.swift in Sources */,
 				DA0678402046F735001519B0 /* AbstractController.swift in Sources */,
