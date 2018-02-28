@@ -9,5 +9,11 @@ internal class AbstractModel<SpecialisedSignature:AbstractSignature>:
     internal init() {
         self.controller = SpecialisedSignature.Controller()
         self.viewModel = SpecialisedSignature.ViewModel()
+        self.assignReferences()
+    }
+    
+    private func assignReferences() {
+        self.controller.delegate = self
+        self.viewModel.delegate = self
     }
 }
