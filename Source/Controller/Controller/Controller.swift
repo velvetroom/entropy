@@ -1,8 +1,13 @@
 import UIKit
 
 internal class Controller<
+    ConcreteControllerProtocol:ControllerProtocol,
     ConcreteControllerDelegate:ControllerDelegate,
-    ConcreteView:View>:UIViewController where ConcreteView:ViewProtocol {
+    ConcreteView:ViewProtocol>:UIViewController, ConcreteControllerProtocol {
+    internal typealias SpecialisedProtocol = ConcreteControllerProtocol
+    internal typealias SpecialisedControllerDelegate = ConcreteControllerDelegate
+    internal typealias SpecialisedViewModel = ConcreteControllerDelegate.soeSpecialisedViewModel
+    internal typealias SpecialisedView = ConcreteView
     internal weak var delegate:ConcreteControllerDelegate?
     internal weak var viewSpecialised:ConcreteView?
     
@@ -30,8 +35,8 @@ internal class Controller<
         else {
             return
         }
-        let view = ConcreteView(viewModel: <#T##ViewModelProtocol#>)
-        self.view = view
-        self.viewSpecialised = view
+//        let view = ConcreteView(viewModel: <#T##ViewModelProtocol#>)
+//        self.view = view
+//        self.viewSpecialised = view
     }
 }

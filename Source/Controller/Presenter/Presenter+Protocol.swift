@@ -13,20 +13,20 @@ internal extension Presenter {
         }
     }
     
-    internal func present<ConcreteController>(
-        strategy:PresentationStrategyProtocol.Type, model:Model<ConcreteController>) {
+    internal func present<ConcreteModel:ModelProtocol>(
+        strategy:PresentationStrategyProtocol.Type, model:ConcreteModel) {
         self.privateQueue.async { [weak self] in
             self?.presentQueued(strategy:strategy, model:model)
         }
     }
     
-    private func presentQueued<ConcreteController>(
-        strategy:PresentationStrategyProtocol.Type, model:Model<ConcreteController>) {
+    private func presentQueued<ConcreteModel:ModelProtocol>(
+        strategy:PresentationStrategyProtocol.Type, model:ConcreteModel) {
         self.models.append(model)
         strategy.present(presenter:self, model:model)
     }
     
-    internal func addController<ConcreteController>(model:Model<ConcreteController>) {
+    internal func addController<ConcreteModel:ModelProtocol>(model:ConcreteModel) {
         guard
             let controller:UIViewController = model.controller as? UIViewController
         else {
@@ -35,7 +35,7 @@ internal extension Presenter {
         self.addChildViewController(controller)
     }
     
-    internal func addView<ConcreteController>(model:Model<ConcreteController>) {
+    internal func addView<ConcreteModel:ModelProtocol>(model:ConcreteModel) {
         guard
             let view:UIView = model.view
         else {
