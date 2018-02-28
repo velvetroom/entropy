@@ -1,5 +1,5 @@
 import Foundation
 
-internal class AbstractModel:ControllerDelegate {
+internal class AbstractModel:AbstractModelProtocol, ControllerDelegate {
     
 }
