@@ -1,10 +1,10 @@
 import Foundation
 
 internal class AbstractModel<SpecialisedSignature:AbstractSignature>:
-    AbstractModelProtocol, ControllerDelegate, ViewModelDelegate {
+AbstractModelProtocol, ControllerDelegate, ViewModelDelegate {
     internal typealias Signature = SpecialisedSignature
     internal let controller:SpecialisedSignature.Controller
-    internal let viewModel:SpecialisedSignature.ViewModel
+    internal let viewModel:AbstractViewModel
     
     internal init() {
         self.controller = SpecialisedSignature.Controller()
