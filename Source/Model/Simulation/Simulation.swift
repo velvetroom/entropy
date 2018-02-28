@@ -1,5 +1,5 @@
 import Foundation
 
-internal final class Simulation:Model<ControllerSimulation, SimulationControllerDelegate, SimulationViewModel> {
+internal final class Simulation:Model<ControllerSimulation> {
     
 }

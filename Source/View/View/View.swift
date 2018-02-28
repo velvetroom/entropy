@@ -1,9 +1,11 @@
 import UIKit
 
-internal class View:UIView {
+internal class View<ConcreteViewModel:ViewModelProtocol>:UIView, ViewProtocol {
+    internal typealias SpecialisedViewModel = ConcreteViewModel
+    internal weak var viewModel:ConcreteViewModel?
     internal var presentationLayout:PresentationLayout?
     
-    internal init() {
+    internal required init() {
         super.init(frame:CGRect.zero)
         self.configureViewDefaults()
     }

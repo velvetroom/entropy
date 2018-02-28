@@ -1,11 +1,9 @@
 import Foundation
 
-internal protocol ModelProtocol {
+internal protocol ModelProtocol:AnyObject {
     associatedtype SpecialisedControllerProtocol:ControllerProtocol
-    associatedtype SpecialisedControllerDelegate:ControllerDelegate
-    associatedtype SpecialisedViewModelProtocol:ViewModelProtocol
     
     var controller:SpecialisedControllerProtocol { get }
-    var controllerDelegate:SpecialisedControllerDelegate { get }
-    var viewModel:SpecialisedViewModelProtocol { get }
+    var controllerDelegate:SpecialisedControllerProtocol.SpecialisedControllerDelegate { get }
+    var viewModel:SpecialisedControllerProtocol.SpecialisedView.SpecialisedViewModel { get }
 }

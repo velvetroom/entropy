@@ -1,10 +1,10 @@
 import Foundation
 
-internal protocol ViewProtocol {
-    associatedtype ConcreteViewModel:ViewModelProtocol
-    weak var viewModel:ConcreteViewModel? { get set }
+internal protocol ViewProtocol:AnyObject {
+    associatedtype SpecialisedViewModel:ViewModelProtocol
+    weak var viewModel:SpecialisedViewModel? { get set }
     
     init()
-    init(viewModel:ConcreteViewModel)
+    init(viewModel:SpecialisedViewModel)
     func factoryViews()
 }

@@ -1,17 +1,15 @@
 import UIKit
 
 internal final class PresentationStrategyInitial:PresentationStrategyProtocol {
-    internal static func present<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>(
-        presenter:PresenterProtocol,
-        model:Model<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>) {
+    internal static func present<
+        ConcreteController>(presenter:PresenterProtocol, model:Model<ConcreteController>) {
         presenter.addController(model:model)
         presenter.addView(model:model)
         layoutView(presenter:presenter, model:model)
     }
     
-    private static func layoutView<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>(
-        presenter:PresenterProtocol,
-        model:Model<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>) {
+    private static func layoutView<ConcreteController>(
+        presenter:PresenterProtocol, model:Model<ConcreteController>) {
         guard
             let topView:UIView = presenter.topView,
             let view:ConcreteController.SpecialisedView = model.view
@@ -21,8 +19,8 @@ internal final class PresentationStrategyInitial:PresentationStrategyProtocol {
         view.presentationLayout = factoryLayout(topView:topView, view:view)
     }
     
-    private static func factoryLayout<SpecialisedView:View>(topView:UIView,
-                                                            view:SpecialisedView) -> PresentationLayout {
+    private static func factoryLayout<SpecialisedView:View>(
+        topView:UIView, view:SpecialisedView) -> PresentationLayout {
         var layout:PresentationLayout = PresentationLayout()
         layout.layoutTop = view.layoutTopToTop(view:topView)
         layout.layoutBottom = view.layoutBottomToBottom(view:topView)

@@ -1,15 +1,10 @@
 import UIKit
 
-internal class Model<
-    ConcreteControllerProtocol:ControllerProtocol,
-    ConcreteControllerDelegate:ControllerDelegate,
-    ConcreteViewModelProtocol:ViewModelProtocol>:ModelProtocol {
+internal class Model<ConcreteControllerProtocol:ControllerProtocol>:ModelProtocol {
     internal typealias SpecialisedControllerProtocol = ConcreteControllerProtocol
-    internal typealias SpecialisedControllerDelegate = ConcreteControllerDelegate
-    internal typealias SpecialisedViewModelProtocol = ConcreteViewModelProtocol
     internal let controller:SpecialisedControllerProtocol
-    internal let controllerDelegate:SpecialisedControllerDelegate
-    internal let viewModel:SpecialisedViewModelProtocol
+    internal let viewModel:ConcreteControllerProtocol.SpecialisedView.SpecialisedViewModel
+    internal let controllerDelegate:ConcreteControllerProtocol.SpecialisedControllerDelegate
     
     internal var view:ConcreteControllerProtocol.SpecialisedView? {
         get {
@@ -25,8 +20,8 @@ internal class Model<
     
     internal init() {
         self.controller = SpecialisedControllerProtocol()
-        self.controllerDelegate = SpecialisedControllerDelegate()
-        self.viewModel = SpecialisedViewModelProtocol()
+        self.viewModel = ConcreteControllerProtocol.SpecialisedView.SpecialisedViewModel()
+        self.controllerDelegate = ConcreteControllerProtocol.SpecialisedControllerDelegate()
         self.assignReferences()
     }
     

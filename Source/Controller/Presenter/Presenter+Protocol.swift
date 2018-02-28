@@ -13,23 +13,20 @@ internal extension Presenter {
         }
     }
     
-    internal func present<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>(
-        strategy:PresentationStrategyProtocol.Type,
-        model:Model<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>) {
+    internal func present<ConcreteController>(
+        strategy:PresentationStrategyProtocol.Type, model:Model<ConcreteController>) {
         self.privateQueue.async { [weak self] in
             self?.presentQueued(strategy:strategy, model:model)
         }
     }
     
-    private func presentQueued<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>(
-        strategy:PresentationStrategyProtocol.Type,
-        model:Model<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>) {
+    private func presentQueued<ConcreteController>(
+        strategy:PresentationStrategyProtocol.Type, model:Model<ConcreteController>) {
         self.models.append(model)
         strategy.present(presenter:self, model:model)
     }
     
-    internal func addController<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>(
-        model:Model<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>) {
+    internal func addController<ConcreteController>(model:Model<ConcreteController>) {
         guard
             let controller:UIViewController = model.controller as? UIViewController
         else {
@@ -38,8 +35,7 @@ internal extension Presenter {
         self.addChildViewController(controller)
     }
     
-    internal func addView<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>(
-        model:Model<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>) {
+    internal func addView<ConcreteController>(model:Model<ConcreteController>) {
         guard
             let view:UIView = model.view
         else {
