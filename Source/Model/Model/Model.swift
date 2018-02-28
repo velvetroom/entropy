@@ -32,5 +32,6 @@ internal class Model<
     
     private func assignReferences() {
         self.controller.delegate = self.controllerDelegate
+        self.controllerDelegate.viewModel = self.viewModel
     }
 }
