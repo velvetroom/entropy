@@ -18,6 +18,7 @@
 		DA0678492046F8AB001519B0 /* AbstractModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678482046F8AB001519B0 /* AbstractModelProtocol.swift */; };
 		DA06784B2046F8F1001519B0 /* AbstractViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06784A2046F8F1001519B0 /* AbstractViewModelProtocol.swift */; };
 		DA06784D2046F910001519B0 /* AbstractViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06784C2046F910001519B0 /* AbstractViewModel.swift */; };
+		DA06784F2046F932001519B0 /* SimulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06784E2046F932001519B0 /* SimulationViewModel.swift */; };
 		DA48BB282046CE1000271252 /* TestSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48BB272046CE1000271252 /* TestSimulation.swift */; };
 		DA7380E220432007005C43A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA73809D20432007005C43A3 /* LaunchScreen.storyboard */; };
 		DA7380E720432007005C43A3 /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A320432007005C43A3 /* LocalizableModel.strings */; };
@@ -56,6 +57,7 @@
 		DA0678482046F8AB001519B0 /* AbstractModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractModelProtocol.swift; sourceTree = "<group>"; };
 		DA06784A2046F8F1001519B0 /* AbstractViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewModelProtocol.swift; sourceTree = "<group>"; };
 		DA06784C2046F910001519B0 /* AbstractViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewModel.swift; sourceTree = "<group>"; };
+		DA06784E2046F932001519B0 /* SimulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModel.swift; sourceTree = "<group>"; };
 		DA48BB1A2046CD2B00271252 /* tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA48BB272046CE1000271252 /* TestSimulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSimulation.swift; sourceTree = "<group>"; };
 		DA48BB292046CE1F00271252 /* InfoTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoTests.plist; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				DA0678392046F62A001519B0 /* SimulationSignature.swift */,
 				DA06783D2046F6DA001519B0 /* Simulation.swift */,
 				DA0678412046F751001519B0 /* SimulationController.swift */,
+				DA06784E2046F932001519B0 /* SimulationViewModel.swift */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				DA7380EE20432007005C43A3 /* ExtensionUIView+LayoutSize.swift in Sources */,
 				DA06783C2046F6BD001519B0 /* AbstractModel.swift in Sources */,
 				DA7380F120432007005C43A3 /* ExtensionUIView+LayoutVertical.swift in Sources */,
+				DA06784F2046F932001519B0 /* SimulationViewModel.swift in Sources */,
 				DA0678492046F8AB001519B0 /* AbstractModelProtocol.swift in Sources */,
 				DA7380EF20432007005C43A3 /* ExtensionUIColor.swift in Sources */,
 				DA0678402046F735001519B0 /* AbstractController.swift in Sources */,
