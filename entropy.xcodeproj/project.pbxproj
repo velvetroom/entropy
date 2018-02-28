@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA3CC1AF20468613008C5C73 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CC1AE20468613008C5C73 /* ViewModelProtocol.swift */; };
 		DA7380E220432007005C43A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA73809D20432007005C43A3 /* LaunchScreen.storyboard */; };
 		DA7380E720432007005C43A3 /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A320432007005C43A3 /* LocalizableModel.strings */; };
 		DA7380E820432007005C43A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A520432007005C43A3 /* InfoPlist.strings */; };
@@ -48,6 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA3CC1AE20468613008C5C73 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		DA73808720431E5E005C43A3 /* entropy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = entropy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA73809D20432007005C43A3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA73809E20432007005C43A3 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				DAEADEA6204424ED0047CEBE /* View.swift */,
 				DAEADEBE20445A4A0047CEBE /* ViewProtocol.swift */,
 				DAEADEC2204464210047CEBE /* ViewProtocol+Default.swift */,
+				DA3CC1AE20468613008C5C73 /* ViewModelProtocol.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				DA73810920432007005C43A3 /* PresentationLayout.swift in Sources */,
 				DAEADEA7204424ED0047CEBE /* View.swift in Sources */,
 				DAEADE952043F1970047CEBE /* Model.swift in Sources */,
+				DA3CC1AF20468613008C5C73 /* ViewModelProtocol.swift in Sources */,
 				DAEADE9B2043F4650047CEBE /* ControllerSimulation.swift in Sources */,
 				DAEADEA3204414580047CEBE /* ControllerDelegate.swift in Sources */,
 				DAEADEAF204432AF0047CEBE /* PresentationStrategyInitial.swift in Sources */,
