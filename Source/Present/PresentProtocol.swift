@@ -1,5 +1,7 @@
-import UIKit
+import Foundation
 
 internal protocol PresentProtocol {
-    static func present<ConcreteSignature:AbstractSignature>(signature:ConcreteSignature)
+    static func present<ConcreteSignature:AbstractSignature>(
+        model:AbstractModel<ConcreteSignature>,
+        viewController:ApplicationViewController)
 }
