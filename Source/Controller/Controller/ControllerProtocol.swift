@@ -1,6 +1,6 @@
 import Foundation
 
-internal protocol ControllerProtocol {
+internal protocol ControllerProtocol:AnyObject {
     associatedtype SpecialisedProtocol
     associatedtype SpecialisedView:View
     weak var delegate:ControllerDelegate? { get set }

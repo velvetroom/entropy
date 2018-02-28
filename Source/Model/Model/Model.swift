@@ -24,7 +24,7 @@ internal class Model<
     }
     
     internal init() {
-        var controller:SpecialisedControllerProtocol = SpecialisedControllerProtocol()
+        let controller:SpecialisedControllerProtocol = SpecialisedControllerProtocol()
         self.controller = controller
         controller.delegate = self
     }
