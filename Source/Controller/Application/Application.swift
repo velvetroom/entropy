@@ -12,7 +12,7 @@ internal final class Application:UIResponder, UIApplicationDelegate {
     
     internal func startPresentation() {
         self.startWindow()
-        let model:Simulation<ControllerSimulation> = Simulation<ControllerSimulation>()
+        let model:Simulation<ControllerSimulation, SimulationControllerDelegate, SimulationViewModel> = Simulation<ControllerSimulation, SimulationControllerDelegate, SimulationViewModel>()
         self.presenter.present(strategy:PresentationStrategyInitial.self, model:model)
     }
     

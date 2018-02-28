@@ -13,20 +13,23 @@ internal extension Presenter {
         }
     }
     
-    internal func present<ConcreteController>(strategy:PresentationStrategyProtocol.Type,
-                                              model:Model<ConcreteController>) {
+    internal func present<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>(
+        strategy:PresentationStrategyProtocol.Type,
+        model:Model<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>) {
         self.privateQueue.async { [weak self] in
             self?.presentQueued(strategy:strategy, model:model)
         }
     }
     
-    private func presentQueued<ConcreteController>(strategy:PresentationStrategyProtocol.Type,
-                                                   model:Model<ConcreteController>) {
-        self.controllerDelegates.append(model)
+    private func presentQueued<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>(
+        strategy:PresentationStrategyProtocol.Type,
+        model:Model<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>) {
+        self.models.append(model)
         strategy.present(presenter:self, model:model)
     }
     
-    internal func addController<ConcreteController>(model:Model<ConcreteController>) {
+    internal func addController<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>(
+        model:Model<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>) {
         guard
             let controller:UIViewController = model.controller as? UIViewController
         else {
@@ -35,7 +38,8 @@ internal extension Presenter {
         self.addChildViewController(controller)
     }
     
-    internal func addView<ConcreteController>(model:Model<ConcreteController>) {
+    internal func addView<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>(
+        model:Model<ConcreteController, ConcreteControllerDelegate, ConcreteViewModel>) {
         guard
             let view:UIView = model.view
         else {

@@ -1,12 +1,12 @@
 import UIKit
 
 internal final class Presenter:UIViewController, PresenterProtocol {
-    internal var controllerDelegates:[ControllerDelegate]
+    internal var models:[AnyObject]
     internal var orientation:UIInterfaceOrientationMask
     internal let privateQueue:DispatchQueue
     
     internal init() {
-        self.controllerDelegates = []
+        self.models = []
         self.orientation = UIInterfaceOrientationMask.portrait
         self.privateQueue = Presenter.factoryPrivateQueue()
         super.init(nibName:nil, bundle:nil)

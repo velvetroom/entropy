@@ -6,6 +6,6 @@ internal protocol ModelProtocol {
     associatedtype SpecialisedViewModelProtocol:ViewModelProtocol
     
     var controller:SpecialisedControllerProtocol { get }
-    var controllerDelegate:ControllerDelegate { get }
-    var viewModel:ViewModelProtocol { get }
+    var controllerDelegate:SpecialisedControllerDelegate { get }
+    var viewModel:SpecialisedViewModelProtocol { get }
 }

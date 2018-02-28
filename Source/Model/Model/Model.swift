@@ -24,8 +24,13 @@ internal class Model<
     }
     
     internal init() {
-        let controller:SpecialisedControllerProtocol = SpecialisedControllerProtocol()
-        self.controller = controller
-        controller.delegate = self
+        self.controller = SpecialisedControllerProtocol()
+        self.controllerDelegate = SpecialisedControllerDelegate()
+        self.viewModel = SpecialisedViewModelProtocol()
+        self.assignReferences()
+    }
+    
+    private func assignReferences() {
+        self.controller.delegate = self.controllerDelegate
     }
 }

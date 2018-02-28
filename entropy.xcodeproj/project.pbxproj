@@ -170,10 +170,10 @@
 		DA7380AE20432007005C43A3 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DA7380B220432007005C43A3 /* ExtensionUIColor.swift */,
 				DA7380AF20432007005C43A3 /* ExtensionUIView+LayoutWidth.swift */,
 				DA7380B020432007005C43A3 /* ExtensionUIView+LayoutHeight.swift */,
 				DA7380B120432007005C43A3 /* ExtensionUIView+LayoutSize.swift */,
-				DA7380B220432007005C43A3 /* ExtensionUIColor.swift */,
 				DA7380B320432007005C43A3 /* ExtensionUIView+LayoutEquals.swift */,
 				DA7380B420432007005C43A3 /* ExtensionUIView+LayoutVertical.swift */,
 				DA7380B520432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift */,
