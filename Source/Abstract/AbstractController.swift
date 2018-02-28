@@ -1,5 +1,5 @@
 import Foundation
 
-internal protocol AbstractController {
-    weak var delegate:ControllerDelegate? { get }
+internal class AbstractController:AbstractControllerProtocol {
+    weak var delegate:ControllerDelegate?
 }
