@@ -1,7 +1,7 @@
 import UIKit
 
 internal protocol ApplicationPresenterProtocol {
-    weak var window:UIWindow? { get set }
+    weak var viewController:ApplicationViewController? { get }
     
-    func present<ConcreteSignature:AbstractSignature>(signature:ConcreteSignature)
+    func present<ConcreteSignature>(model:AbstractModel<ConcreteSignature>, presentStrategy:PresentProtocol.Type)
 }

@@ -1,13 +1,10 @@
-import Foundation
+import UIKit
 
-internal final class ApplicationPresenter {
-    private let initial:SimulationSignature
-    
-    internal init() {
-        self.initial = SimulationSignature()
-    }
-    
-    internal func startPresentation() {
+internal final class ApplicationPresenter:ApplicationPresenterProtocol {
+    internal weak var viewController:ApplicationViewController?
+
+    internal func present<ConcreteSignature>(
+        model:AbstractModel<ConcreteSignature>, presentStrategy:PresentProtocol.Type) {
         
     }
 }
