@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DA3CC1AF20468613008C5C73 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CC1AE20468613008C5C73 /* ViewModelProtocol.swift */; };
 		DA3CC1B120468648008C5C73 /* SimulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CC1B020468648008C5C73 /* SimulationViewModel.swift */; };
+		DA3CC1B3204688F4008C5C73 /* ControllerDelegate+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CC1B2204688F4008C5C73 /* ControllerDelegate+Default.swift */; };
 		DA7380E220432007005C43A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA73809D20432007005C43A3 /* LaunchScreen.storyboard */; };
 		DA7380E720432007005C43A3 /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A320432007005C43A3 /* LocalizableModel.strings */; };
 		DA7380E820432007005C43A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A520432007005C43A3 /* InfoPlist.strings */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		DA3CC1AE20468613008C5C73 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		DA3CC1B020468648008C5C73 /* SimulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModel.swift; sourceTree = "<group>"; };
+		DA3CC1B2204688F4008C5C73 /* ControllerDelegate+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerDelegate+Default.swift"; sourceTree = "<group>"; };
 		DA73808720431E5E005C43A3 /* entropy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = entropy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA73809D20432007005C43A3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA73809E20432007005C43A3 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				DAEADE962043F1EF0047CEBE /* Controller.swift */,
 				DAEADE982043F2380047CEBE /* ControllerProtocol.swift */,
 				DAEADEA2204414580047CEBE /* ControllerDelegate.swift */,
+				DA3CC1B2204688F4008C5C73 /* ControllerDelegate+Default.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				DA7380EE20432007005C43A3 /* ExtensionUIView+LayoutSize.swift in Sources */,
 				DA7380F120432007005C43A3 /* ExtensionUIView+LayoutVertical.swift in Sources */,
 				DA7380EF20432007005C43A3 /* ExtensionUIColor.swift in Sources */,
+				DA3CC1B3204688F4008C5C73 /* ControllerDelegate+Default.swift in Sources */,
 				DAEADE972043F1EF0047CEBE /* Controller.swift in Sources */,
 				DAEADEA12043F60B0047CEBE /* ModelProtocol.swift in Sources */,
 				DAEADEAB204428510047CEBE /* Application+Factory.swift in Sources */,
