@@ -3,21 +3,24 @@ import UIKit
 @UIApplicationMain
 internal final class Application:UIResponder, UIApplicationDelegate {
     internal var window:UIWindow?
-    internal let presenter:PresenterProtocol
+    private let presenter:ApplicationPresenter
     
     internal override init() {
-        self.presenter = Presenter()
+        self.presenter = ApplicationPresenter()
         super.init()
     }
     
-    internal func startPresentation() {
+    internal func application(
+        _:UIApplication, didFinishLaunchingWithOptions:[UIApplicationLaunchOptionsKey:Any]?) -> Bool {
         self.startWindow()
-        let model:Simulation = Simulation()
-        self.presenter.present(strategy:PresentationStrategyInitial.self, model:model)
+        self.presenter.startPresentation()
+        return true
     }
     
     private func startWindow() {
-        self.window = Application.factoryWindow()
-        self.window?.rootViewController = self.presenter.topController
+        let window:UIWindow = UIWindow(frame:UIScreen.main.bounds)
+        window.backgroundColor = UIColor.sharedBackgroundColour
+        window.makeKeyAndVisible()
+        self.window = window
     }
 }
