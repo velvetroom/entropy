@@ -1,5 +1,5 @@
 import Foundation
 
-internal class AbstractModel:AbstractModelProtocol, ControllerDelegate {
-    
+internal class AbstractModel<SpecialisedSignature:AbstractSignature>:AbstractModelProtocol, ControllerDelegate {
+    typealias Signature = SpecialisedSignature
 }
