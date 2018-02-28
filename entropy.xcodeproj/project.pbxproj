@@ -35,6 +35,7 @@
 		DA7380F020432007005C43A3 /* ExtensionUIView+LayoutEquals.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380B320432007005C43A3 /* ExtensionUIView+LayoutEquals.swift */; };
 		DA7380F120432007005C43A3 /* ExtensionUIView+LayoutVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380B420432007005C43A3 /* ExtensionUIView+LayoutVertical.swift */; };
 		DA7380F220432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380B520432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift */; };
+		DA785A462047074900E3DFD1 /* ViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A452047074900E3DFD1 /* ViewModelDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		DA7380B520432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtensionUIView+LayoutHorizontal.swift"; sourceTree = "<group>"; };
 		DA7380E120432007005C43A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA73811020432015005C43A3 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
+		DA785A452047074900E3DFD1 /* ViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				DA0678442046F7CB001519B0 /* ControllerDelegate.swift */,
+				DA785A452047074900E3DFD1 /* ViewModelDelegate.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA0678542046F9FD001519B0 /* ApplicationPresenter.swift in Sources */,
+				DA785A462047074900E3DFD1 /* ViewModelDelegate.swift in Sources */,
 				DA0678522046F9D0001519B0 /* Application.swift in Sources */,
 				DA0678452046F7CB001519B0 /* ControllerDelegate.swift in Sources */,
 				DA06784B2046F8F1001519B0 /* AbstractViewModelProtocol.swift in Sources */,
