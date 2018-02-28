@@ -1,5 +1,5 @@
 import Foundation
 
-internal protocol ViewModelProtocol {
+internal protocol ViewModelProtocol:AnyObject {
     init()
 }
