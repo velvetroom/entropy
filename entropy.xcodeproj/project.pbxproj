@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA0678372046F525001519B0 /* AbstractSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678362046F525001519B0 /* AbstractSignature.swift */; };
+		DA06783A2046F62A001519B0 /* SimulationSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678392046F62A001519B0 /* SimulationSignature.swift */; };
 		DA3CC1AF20468613008C5C73 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CC1AE20468613008C5C73 /* ViewModelProtocol.swift */; };
 		DA3CC1B120468648008C5C73 /* SimulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CC1B020468648008C5C73 /* SimulationViewModel.swift */; };
 		DA3CC1B3204688F4008C5C73 /* ControllerDelegate+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CC1B2204688F4008C5C73 /* ControllerDelegate+Default.swift */; };
@@ -64,6 +65,7 @@
 
 /* Begin PBXFileReference section */
 		DA0678362046F525001519B0 /* AbstractSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractSignature.swift; sourceTree = "<group>"; };
+		DA0678392046F62A001519B0 /* SimulationSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationSignature.swift; sourceTree = "<group>"; };
 		DA3CC1AE20468613008C5C73 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		DA3CC1B020468648008C5C73 /* SimulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModel.swift; sourceTree = "<group>"; };
 		DA3CC1B2204688F4008C5C73 /* ControllerDelegate+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerDelegate+Default.swift"; sourceTree = "<group>"; };
@@ -143,6 +145,14 @@
 			path = Abstract;
 			sourceTree = "<group>";
 		};
+		DA0678382046F61C001519B0 /* Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				DA0678392046F62A001519B0 /* SimulationSignature.swift */,
+			);
+			path = Simulation;
+			sourceTree = "<group>";
+		};
 		DA48BB242046CE1000271252 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				DA0678352046F51A001519B0 /* Abstract */,
+				DA0678382046F61C001519B0 /* Simulation */,
 				DA7380AE20432007005C43A3 /* Extension */,
 				DA7380B620432007005C43A3 /* Controller */,
 				DA7380CC20432007005C43A3 /* Model */,
@@ -516,6 +527,7 @@
 				DA7380FE20432007005C43A3 /* Application.swift in Sources */,
 				DAEADEB120443A860047CEBE /* Presenter+Factory.swift in Sources */,
 				DAEADEBF20445A4A0047CEBE /* ViewProtocol.swift in Sources */,
+				DA06783A2046F62A001519B0 /* SimulationSignature.swift in Sources */,
 				DA7380ED20432007005C43A3 /* ExtensionUIView+LayoutHeight.swift in Sources */,
 				DAEADE9D2043F4880047CEBE /* ControllerSimulationProtocol.swift in Sources */,
 				DAEADE9F2043F4B60047CEBE /* Simulation.swift in Sources */,
