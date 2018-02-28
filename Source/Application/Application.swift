@@ -18,8 +18,8 @@ internal final class Application:UIResponder, UIApplicationDelegate {
         return true
     }
     
-    private func startPresentation<ConcreteSignature>(
-        model:AbstractModel<ConcreteSignature>, viewController:ApplicationViewController) {
+    private func startPresentation<SpecialisedSignature>(
+        model:AbstractModel<SpecialisedSignature>, viewController:ApplicationViewController) {
         self.startWindow(viewController:viewController)
         self.presenter.viewController = viewController
         self.presenter.present(model:model, presentStrategy:PresentCentred.self)

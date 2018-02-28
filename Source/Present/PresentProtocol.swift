@@ -1,7 +1,7 @@
 import Foundation
 
 internal protocol PresentProtocol {
-    static func present<ConcreteSignature:AbstractSignature>(
-        model:AbstractModel<ConcreteSignature>,
+    static func present<SpecialisedSignature>(
+        model:AbstractModel<SpecialisedSignature>,
         viewController:ApplicationViewController)
 }
