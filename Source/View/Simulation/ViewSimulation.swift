@@ -1,8 +1,8 @@
 import Foundation
 
 internal final class ViewSimulation:View, ViewProtocol {
-    internal typealias ConcreteModel = ModelSimulation<ControllerSimulation>
-    internal weak var model:ModelSimulation<ControllerSimulation>?
+    internal typealias ConcreteModel = Simulation<ControllerSimulation>
+    internal weak var model:Simulation<ControllerSimulation>?
     
     internal override func factoryViews() {
         super.factoryViews()

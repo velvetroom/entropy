@@ -34,7 +34,7 @@
 		DAEADE992043F2380047CEBE /* ControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE982043F2380047CEBE /* ControllerProtocol.swift */; };
 		DAEADE9B2043F4650047CEBE /* ControllerSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE9A2043F4650047CEBE /* ControllerSimulation.swift */; };
 		DAEADE9D2043F4880047CEBE /* ControllerSimulationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE9C2043F4880047CEBE /* ControllerSimulationProtocol.swift */; };
-		DAEADE9F2043F4B60047CEBE /* ModelSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE9E2043F4B60047CEBE /* ModelSimulation.swift */; };
+		DAEADE9F2043F4B60047CEBE /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE9E2043F4B60047CEBE /* Simulation.swift */; };
 		DAEADEA12043F60B0047CEBE /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA02043F60B0047CEBE /* ModelProtocol.swift */; };
 		DAEADEA3204414580047CEBE /* ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA2204414580047CEBE /* ControllerDelegate.swift */; };
 		DAEADEA5204422CA0047CEBE /* Model+ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA4204422CA0047CEBE /* Model+ControllerDelegate.swift */; };
@@ -84,7 +84,7 @@
 		DAEADE982043F2380047CEBE /* ControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
 		DAEADE9A2043F4650047CEBE /* ControllerSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerSimulation.swift; sourceTree = "<group>"; };
 		DAEADE9C2043F4880047CEBE /* ControllerSimulationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerSimulationProtocol.swift; sourceTree = "<group>"; };
-		DAEADE9E2043F4B60047CEBE /* ModelSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSimulation.swift; sourceTree = "<group>"; };
+		DAEADE9E2043F4B60047CEBE /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
 		DAEADEA02043F60B0047CEBE /* ModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
 		DAEADEA2204414580047CEBE /* ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerDelegate.swift; sourceTree = "<group>"; };
 		DAEADEA4204422CA0047CEBE /* Model+ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+ControllerDelegate.swift"; sourceTree = "<group>"; };
@@ -301,7 +301,7 @@
 		DA73811B20432432005C43A3 /* Simulation */ = {
 			isa = PBXGroup;
 			children = (
-				DAEADE9E2043F4B60047CEBE /* ModelSimulation.swift */,
+				DAEADE9E2043F4B60047CEBE /* Simulation.swift */,
 				DA3CC1B020468648008C5C73 /* SimulationViewModel.swift */,
 			);
 			path = Simulation;
@@ -417,7 +417,7 @@
 				DAEADEBF20445A4A0047CEBE /* ViewProtocol.swift in Sources */,
 				DA7380ED20432007005C43A3 /* ExtensionUIView+LayoutHeight.swift in Sources */,
 				DAEADE9D2043F4880047CEBE /* ControllerSimulationProtocol.swift in Sources */,
-				DAEADE9F2043F4B60047CEBE /* ModelSimulation.swift in Sources */,
+				DAEADE9F2043F4B60047CEBE /* Simulation.swift in Sources */,
 				DAEADEA9204426100047CEBE /* ViewSimulation.swift in Sources */,
 				DA7380F520432007005C43A3 /* PresenterProtocol.swift in Sources */,
 				DA7380FF20432007005C43A3 /* Application+Delegate.swift in Sources */,
