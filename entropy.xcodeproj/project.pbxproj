@@ -9,10 +9,8 @@
 /* Begin PBXBuildFile section */
 		DA0678372046F525001519B0 /* AbstractSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678362046F525001519B0 /* AbstractSignature.swift */; };
 		DA06783A2046F62A001519B0 /* SimulationSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678392046F62A001519B0 /* SimulationSignature.swift */; };
-		DA3CC1AF20468613008C5C73 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CC1AE20468613008C5C73 /* ViewModelProtocol.swift */; };
-		DA3CC1B120468648008C5C73 /* SimulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CC1B020468648008C5C73 /* SimulationViewModel.swift */; };
-		DA3CC1B3204688F4008C5C73 /* ControllerDelegate+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CC1B2204688F4008C5C73 /* ControllerDelegate+Default.swift */; };
-		DA3CC1B5204689F4008C5C73 /* SimulationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CC1B4204689F4008C5C73 /* SimulationControllerDelegate.swift */; };
+		DA06783C2046F6BD001519B0 /* AbstractModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06783B2046F6BD001519B0 /* AbstractModel.swift */; };
+		DA06783E2046F6DA001519B0 /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06783D2046F6DA001519B0 /* Simulation.swift */; };
 		DA48BB282046CE1000271252 /* TestSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48BB272046CE1000271252 /* TestSimulation.swift */; };
 		DA7380E220432007005C43A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA73809D20432007005C43A3 /* LaunchScreen.storyboard */; };
 		DA7380E720432007005C43A3 /* LocalizableModel.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A320432007005C43A3 /* LocalizableModel.strings */; };
@@ -27,30 +25,6 @@
 		DA7380F020432007005C43A3 /* ExtensionUIView+LayoutEquals.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380B320432007005C43A3 /* ExtensionUIView+LayoutEquals.swift */; };
 		DA7380F120432007005C43A3 /* ExtensionUIView+LayoutVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380B420432007005C43A3 /* ExtensionUIView+LayoutVertical.swift */; };
 		DA7380F220432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380B520432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift */; };
-		DA7380F520432007005C43A3 /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380BB20432007005C43A3 /* PresenterProtocol.swift */; };
-		DA7380F620432007005C43A3 /* Presenter+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380BC20432007005C43A3 /* Presenter+Protocol.swift */; };
-		DA7380F720432007005C43A3 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380BD20432007005C43A3 /* Presenter.swift */; };
-		DA7380FE20432007005C43A3 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380C620432007005C43A3 /* Application.swift */; };
-		DA7380FF20432007005C43A3 /* Application+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380C720432007005C43A3 /* Application+Delegate.swift */; };
-		DA73810920432007005C43A3 /* PresentationLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380D620432007005C43A3 /* PresentationLayout.swift */; };
-		DA73810B20432007005C43A3 /* ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380DB20432007005C43A3 /* ViewPresenter.swift */; };
-		DAEADE952043F1970047CEBE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE942043F1970047CEBE /* Model.swift */; };
-		DAEADE972043F1EF0047CEBE /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE962043F1EF0047CEBE /* Controller.swift */; };
-		DAEADE992043F2380047CEBE /* ControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE982043F2380047CEBE /* ControllerProtocol.swift */; };
-		DAEADE9B2043F4650047CEBE /* ControllerSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE9A2043F4650047CEBE /* ControllerSimulation.swift */; };
-		DAEADE9D2043F4880047CEBE /* ControllerSimulationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE9C2043F4880047CEBE /* ControllerSimulationProtocol.swift */; };
-		DAEADE9F2043F4B60047CEBE /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADE9E2043F4B60047CEBE /* Simulation.swift */; };
-		DAEADEA12043F60B0047CEBE /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA02043F60B0047CEBE /* ModelProtocol.swift */; };
-		DAEADEA3204414580047CEBE /* ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA2204414580047CEBE /* ControllerDelegate.swift */; };
-		DAEADEA7204424ED0047CEBE /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA6204424ED0047CEBE /* View.swift */; };
-		DAEADEA9204426100047CEBE /* ViewSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEA8204426100047CEBE /* ViewSimulation.swift */; };
-		DAEADEAB204428510047CEBE /* Application+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEAA204428510047CEBE /* Application+Factory.swift */; };
-		DAEADEAD20442F150047CEBE /* PresentationStrategyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEAC20442F150047CEBE /* PresentationStrategyProtocol.swift */; };
-		DAEADEAF204432AF0047CEBE /* PresentationStrategyInitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEAE204432AF0047CEBE /* PresentationStrategyInitial.swift */; };
-		DAEADEB120443A860047CEBE /* Presenter+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEB020443A860047CEBE /* Presenter+Factory.swift */; };
-		DAEADEB320443B400047CEBE /* Presenter+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEB220443B400047CEBE /* Presenter+Constants.swift */; };
-		DAEADEBF20445A4A0047CEBE /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEBE20445A4A0047CEBE /* ViewProtocol.swift */; };
-		DAEADEC3204464210047CEBE /* ViewProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEADEC2204464210047CEBE /* ViewProtocol+Default.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,10 +40,8 @@
 /* Begin PBXFileReference section */
 		DA0678362046F525001519B0 /* AbstractSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractSignature.swift; sourceTree = "<group>"; };
 		DA0678392046F62A001519B0 /* SimulationSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationSignature.swift; sourceTree = "<group>"; };
-		DA3CC1AE20468613008C5C73 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
-		DA3CC1B020468648008C5C73 /* SimulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModel.swift; sourceTree = "<group>"; };
-		DA3CC1B2204688F4008C5C73 /* ControllerDelegate+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerDelegate+Default.swift"; sourceTree = "<group>"; };
-		DA3CC1B4204689F4008C5C73 /* SimulationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationControllerDelegate.swift; sourceTree = "<group>"; };
+		DA06783B2046F6BD001519B0 /* AbstractModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractModel.swift; sourceTree = "<group>"; };
+		DA06783D2046F6DA001519B0 /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
 		DA48BB1A2046CD2B00271252 /* tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA48BB272046CE1000271252 /* TestSimulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSimulation.swift; sourceTree = "<group>"; };
 		DA48BB292046CE1F00271252 /* InfoTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoTests.plist; sourceTree = "<group>"; };
@@ -91,32 +63,8 @@
 		DA7380B320432007005C43A3 /* ExtensionUIView+LayoutEquals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtensionUIView+LayoutEquals.swift"; sourceTree = "<group>"; };
 		DA7380B420432007005C43A3 /* ExtensionUIView+LayoutVertical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtensionUIView+LayoutVertical.swift"; sourceTree = "<group>"; };
 		DA7380B520432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtensionUIView+LayoutHorizontal.swift"; sourceTree = "<group>"; };
-		DA7380BB20432007005C43A3 /* PresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
-		DA7380BC20432007005C43A3 /* Presenter+Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Presenter+Protocol.swift"; sourceTree = "<group>"; };
-		DA7380BD20432007005C43A3 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
-		DA7380C620432007005C43A3 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
-		DA7380C720432007005C43A3 /* Application+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Application+Delegate.swift"; sourceTree = "<group>"; };
-		DA7380D620432007005C43A3 /* PresentationLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationLayout.swift; sourceTree = "<group>"; };
-		DA7380DB20432007005C43A3 /* ViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPresenter.swift; sourceTree = "<group>"; };
 		DA7380E120432007005C43A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA73811020432015005C43A3 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
-		DAEADE942043F1970047CEBE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		DAEADE962043F1EF0047CEBE /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
-		DAEADE982043F2380047CEBE /* ControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
-		DAEADE9A2043F4650047CEBE /* ControllerSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerSimulation.swift; sourceTree = "<group>"; };
-		DAEADE9C2043F4880047CEBE /* ControllerSimulationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerSimulationProtocol.swift; sourceTree = "<group>"; };
-		DAEADE9E2043F4B60047CEBE /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
-		DAEADEA02043F60B0047CEBE /* ModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
-		DAEADEA2204414580047CEBE /* ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerDelegate.swift; sourceTree = "<group>"; };
-		DAEADEA6204424ED0047CEBE /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		DAEADEA8204426100047CEBE /* ViewSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSimulation.swift; sourceTree = "<group>"; };
-		DAEADEAA204428510047CEBE /* Application+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application+Factory.swift"; sourceTree = "<group>"; };
-		DAEADEAC20442F150047CEBE /* PresentationStrategyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationStrategyProtocol.swift; sourceTree = "<group>"; };
-		DAEADEAE204432AF0047CEBE /* PresentationStrategyInitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationStrategyInitial.swift; sourceTree = "<group>"; };
-		DAEADEB020443A860047CEBE /* Presenter+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Presenter+Factory.swift"; sourceTree = "<group>"; };
-		DAEADEB220443B400047CEBE /* Presenter+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Presenter+Constants.swift"; sourceTree = "<group>"; };
-		DAEADEBE20445A4A0047CEBE /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
-		DAEADEC2204464210047CEBE /* ViewProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewProtocol+Default.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				DA0678362046F525001519B0 /* AbstractSignature.swift */,
+				DA06783B2046F6BD001519B0 /* AbstractModel.swift */,
 			);
 			path = Abstract;
 			sourceTree = "<group>";
@@ -149,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				DA0678392046F62A001519B0 /* SimulationSignature.swift */,
+				DA06783D2046F6DA001519B0 /* Simulation.swift */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -229,9 +179,6 @@
 				DA0678352046F51A001519B0 /* Abstract */,
 				DA0678382046F61C001519B0 /* Simulation */,
 				DA7380AE20432007005C43A3 /* Extension */,
-				DA7380B620432007005C43A3 /* Controller */,
-				DA7380CC20432007005C43A3 /* Model */,
-				DA7380D720432007005C43A3 /* View */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -250,108 +197,6 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		DA7380B620432007005C43A3 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DA7380C020432007005C43A3 /* Controller */,
-				DA7380C420432007005C43A3 /* Application */,
-				DA7380B920432007005C43A3 /* Presenter */,
-				DA738118204323D6005C43A3 /* Simulation */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		DA7380B920432007005C43A3 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				DA7380BD20432007005C43A3 /* Presenter.swift */,
-				DAEADEB220443B400047CEBE /* Presenter+Constants.swift */,
-				DA7380BC20432007005C43A3 /* Presenter+Protocol.swift */,
-				DAEADEB020443A860047CEBE /* Presenter+Factory.swift */,
-				DA7380BB20432007005C43A3 /* PresenterProtocol.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		DA7380C020432007005C43A3 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DAEADE962043F1EF0047CEBE /* Controller.swift */,
-				DAEADE982043F2380047CEBE /* ControllerProtocol.swift */,
-				DAEADEA2204414580047CEBE /* ControllerDelegate.swift */,
-				DA3CC1B2204688F4008C5C73 /* ControllerDelegate+Default.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		DA7380C420432007005C43A3 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				DA7380C620432007005C43A3 /* Application.swift */,
-				DAEADEAA204428510047CEBE /* Application+Factory.swift */,
-				DA7380C720432007005C43A3 /* Application+Delegate.swift */,
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
-		DA7380CC20432007005C43A3 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				DA7380CF20432007005C43A3 /* Model */,
-				DA7380D220432007005C43A3 /* Presentation */,
-				DA73811B20432432005C43A3 /* Simulation */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DA7380CF20432007005C43A3 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				DAEADE942043F1970047CEBE /* Model.swift */,
-				DAEADEA02043F60B0047CEBE /* ModelProtocol.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DA7380D220432007005C43A3 /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				DA7380D620432007005C43A3 /* PresentationLayout.swift */,
-				DAEADEAC20442F150047CEBE /* PresentationStrategyProtocol.swift */,
-				DAEADEAE204432AF0047CEBE /* PresentationStrategyInitial.swift */,
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		DA7380D720432007005C43A3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DA7380DC20432007005C43A3 /* View */,
-				DA7380DA20432007005C43A3 /* Presenter */,
-				DA73811E204324D4005C43A3 /* Simulation */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		DA7380DA20432007005C43A3 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				DA7380DB20432007005C43A3 /* ViewPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		DA7380DC20432007005C43A3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DAEADEA6204424ED0047CEBE /* View.swift */,
-				DAEADEBE20445A4A0047CEBE /* ViewProtocol.swift */,
-				DAEADEC2204464210047CEBE /* ViewProtocol+Default.swift */,
-				DA3CC1AE20468613008C5C73 /* ViewModelProtocol.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		DA7380E020432007005C43A3 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,33 +204,6 @@
 				DA7380E120432007005C43A3 /* Info.plist */,
 			);
 			path = Configuration;
-			sourceTree = "<group>";
-		};
-		DA738118204323D6005C43A3 /* Simulation */ = {
-			isa = PBXGroup;
-			children = (
-				DAEADE9A2043F4650047CEBE /* ControllerSimulation.swift */,
-				DAEADE9C2043F4880047CEBE /* ControllerSimulationProtocol.swift */,
-			);
-			path = Simulation;
-			sourceTree = "<group>";
-		};
-		DA73811B20432432005C43A3 /* Simulation */ = {
-			isa = PBXGroup;
-			children = (
-				DAEADE9E2043F4B60047CEBE /* Simulation.swift */,
-				DA3CC1B020468648008C5C73 /* SimulationViewModel.swift */,
-				DA3CC1B4204689F4008C5C73 /* SimulationControllerDelegate.swift */,
-			);
-			path = Simulation;
-			sourceTree = "<group>";
-		};
-		DA73811E204324D4005C43A3 /* Simulation */ = {
-			isa = PBXGroup;
-			children = (
-				DAEADEA8204426100047CEBE /* ViewSimulation.swift */,
-			);
-			path = Simulation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -518,43 +336,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAEADEB320443B400047CEBE /* Presenter+Constants.swift in Sources */,
 				DA7380EC20432007005C43A3 /* ExtensionUIView+LayoutWidth.swift in Sources */,
-				DAEADE992043F2380047CEBE /* ControllerProtocol.swift in Sources */,
-				DAEADEAD20442F150047CEBE /* PresentationStrategyProtocol.swift in Sources */,
-				DA73810B20432007005C43A3 /* ViewPresenter.swift in Sources */,
 				DA7380F020432007005C43A3 /* ExtensionUIView+LayoutEquals.swift in Sources */,
-				DA7380FE20432007005C43A3 /* Application.swift in Sources */,
-				DAEADEB120443A860047CEBE /* Presenter+Factory.swift in Sources */,
-				DAEADEBF20445A4A0047CEBE /* ViewProtocol.swift in Sources */,
+				DA06783E2046F6DA001519B0 /* Simulation.swift in Sources */,
 				DA06783A2046F62A001519B0 /* SimulationSignature.swift in Sources */,
 				DA7380ED20432007005C43A3 /* ExtensionUIView+LayoutHeight.swift in Sources */,
-				DAEADE9D2043F4880047CEBE /* ControllerSimulationProtocol.swift in Sources */,
-				DAEADE9F2043F4B60047CEBE /* Simulation.swift in Sources */,
 				DA0678372046F525001519B0 /* AbstractSignature.swift in Sources */,
-				DAEADEA9204426100047CEBE /* ViewSimulation.swift in Sources */,
-				DA7380F520432007005C43A3 /* PresenterProtocol.swift in Sources */,
-				DA7380FF20432007005C43A3 /* Application+Delegate.swift in Sources */,
 				DA7380F220432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift in Sources */,
-				DA7380F720432007005C43A3 /* Presenter.swift in Sources */,
-				DA7380F620432007005C43A3 /* Presenter+Protocol.swift in Sources */,
-				DAEADEC3204464210047CEBE /* ViewProtocol+Default.swift in Sources */,
 				DA7380EE20432007005C43A3 /* ExtensionUIView+LayoutSize.swift in Sources */,
-				DA3CC1B5204689F4008C5C73 /* SimulationControllerDelegate.swift in Sources */,
+				DA06783C2046F6BD001519B0 /* AbstractModel.swift in Sources */,
 				DA7380F120432007005C43A3 /* ExtensionUIView+LayoutVertical.swift in Sources */,
 				DA7380EF20432007005C43A3 /* ExtensionUIColor.swift in Sources */,
-				DA3CC1B3204688F4008C5C73 /* ControllerDelegate+Default.swift in Sources */,
-				DAEADE972043F1EF0047CEBE /* Controller.swift in Sources */,
-				DAEADEA12043F60B0047CEBE /* ModelProtocol.swift in Sources */,
-				DAEADEAB204428510047CEBE /* Application+Factory.swift in Sources */,
-				DA73810920432007005C43A3 /* PresentationLayout.swift in Sources */,
-				DAEADEA7204424ED0047CEBE /* View.swift in Sources */,
-				DAEADE952043F1970047CEBE /* Model.swift in Sources */,
-				DA3CC1AF20468613008C5C73 /* ViewModelProtocol.swift in Sources */,
-				DAEADE9B2043F4650047CEBE /* ControllerSimulation.swift in Sources */,
-				DAEADEA3204414580047CEBE /* ControllerDelegate.swift in Sources */,
-				DAEADEAF204432AF0047CEBE /* PresentationStrategyInitial.swift in Sources */,
-				DA3CC1B120468648008C5C73 /* SimulationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
