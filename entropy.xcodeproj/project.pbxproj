@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA0678372046F525001519B0 /* AbstractSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678362046F525001519B0 /* AbstractSignature.swift */; };
 		DA3CC1AF20468613008C5C73 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CC1AE20468613008C5C73 /* ViewModelProtocol.swift */; };
 		DA3CC1B120468648008C5C73 /* SimulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CC1B020468648008C5C73 /* SimulationViewModel.swift */; };
 		DA3CC1B3204688F4008C5C73 /* ControllerDelegate+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3CC1B2204688F4008C5C73 /* ControllerDelegate+Default.swift */; };
@@ -62,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA0678362046F525001519B0 /* AbstractSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractSignature.swift; sourceTree = "<group>"; };
 		DA3CC1AE20468613008C5C73 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		DA3CC1B020468648008C5C73 /* SimulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModel.swift; sourceTree = "<group>"; };
 		DA3CC1B2204688F4008C5C73 /* ControllerDelegate+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerDelegate+Default.swift"; sourceTree = "<group>"; };
@@ -133,6 +135,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA0678352046F51A001519B0 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				DA0678362046F525001519B0 /* AbstractSignature.swift */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
 		DA48BB242046CE1000271252 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +216,7 @@
 		DA7380AD20432007005C43A3 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				DA0678352046F51A001519B0 /* Abstract */,
 				DA7380AE20432007005C43A3 /* Extension */,
 				DA7380B620432007005C43A3 /* Controller */,
 				DA7380CC20432007005C43A3 /* Model */,
@@ -508,6 +519,7 @@
 				DA7380ED20432007005C43A3 /* ExtensionUIView+LayoutHeight.swift in Sources */,
 				DAEADE9D2043F4880047CEBE /* ControllerSimulationProtocol.swift in Sources */,
 				DAEADE9F2043F4B60047CEBE /* Simulation.swift in Sources */,
+				DA0678372046F525001519B0 /* AbstractSignature.swift in Sources */,
 				DAEADEA9204426100047CEBE /* ViewSimulation.swift in Sources */,
 				DA7380F520432007005C43A3 /* PresenterProtocol.swift in Sources */,
 				DA7380FF20432007005C43A3 /* Application+Delegate.swift in Sources */,
