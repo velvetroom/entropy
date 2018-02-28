@@ -3,5 +3,7 @@ import Foundation
 internal extension ControllerDelegate {
     func controllerDidLoad() { }
     func controllerDidAppear() { }
-    func factoryViewModel<ConcreteViewModel>() -> ConcreteViewModel? { }
+    func factoryViewModel<ConcreteViewModel>() -> ConcreteViewModel? {
+        return nil
+    }
 }

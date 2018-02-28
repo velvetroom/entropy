@@ -220,7 +220,6 @@
 			children = (
 				DA7380C620432007005C43A3 /* Application.swift */,
 				DAEADEAA204428510047CEBE /* Application+Factory.swift */,
-				DAEADEA02043F60B0047CEBE /* ModelProtocol.swift */,
 				DA7380C720432007005C43A3 /* Application+Delegate.swift */,
 			);
 			path = Application;
@@ -240,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				DAEADE942043F1970047CEBE /* Model.swift */,
+				DAEADEA02043F60B0047CEBE /* ModelProtocol.swift */,
 				DAEADEA4204422CA0047CEBE /* Model+ControllerDelegate.swift */,
 			);
 			path = Model;
