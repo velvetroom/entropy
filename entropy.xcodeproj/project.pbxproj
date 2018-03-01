@@ -10,8 +10,7 @@
 		DA06783E2046F6DA001519B0 /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06783D2046F6DA001519B0 /* Simulation.swift */; };
 		DA0678422046F751001519B0 /* SimulationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678412046F751001519B0 /* SimulationController.swift */; };
 		DA0678452046F7CB001519B0 /* ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678442046F7CB001519B0 /* ControllerDelegate.swift */; };
-		DA0678492046F8AB001519B0 /* AbstractModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678482046F8AB001519B0 /* AbstractModelProtocol.swift */; };
-		DA06784B2046F8F1001519B0 /* AbstractViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06784A2046F8F1001519B0 /* AbstractViewModelProtocol.swift */; };
+		DA06784B2046F8F1001519B0 /* AbstractViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06784A2046F8F1001519B0 /* AbstractViewModel.swift */; };
 		DA06784F2046F932001519B0 /* SimulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06784E2046F932001519B0 /* SimulationViewModel.swift */; };
 		DA0678522046F9D0001519B0 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678512046F9D0001519B0 /* Application.swift */; };
 		DA0678542046F9FD001519B0 /* ApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678532046F9FD001519B0 /* ApplicationPresenter.swift */; };
@@ -32,14 +31,13 @@
 		DA7380F120432007005C43A3 /* ExtensionUIView+LayoutVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380B420432007005C43A3 /* ExtensionUIView+LayoutVertical.swift */; };
 		DA7380F220432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380B520432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift */; };
 		DA785A462047074900E3DFD1 /* ViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A452047074900E3DFD1 /* ViewModelDelegate.swift */; };
-		DA785A482047080F00E3DFD1 /* AbstractController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A472047080F00E3DFD1 /* AbstractController.swift */; };
+		DA785A482047080F00E3DFD1 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A472047080F00E3DFD1 /* Controller.swift */; };
 		DA785A4A2047083E00E3DFD1 /* AbstractView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A492047083E00E3DFD1 /* AbstractView.swift */; };
 		DA785A4C20470C3900E3DFD1 /* ApplicationPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A4B20470C3900E3DFD1 /* ApplicationPresenterProtocol.swift */; };
 		DA785A4F20470CF600E3DFD1 /* PresentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A4E20470CF600E3DFD1 /* PresentProtocol.swift */; };
 		DA785A5120470DEF00E3DFD1 /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A5020470DEF00E3DFD1 /* ApplicationViewController.swift */; };
 		DA785A5320470E1100E3DFD1 /* ApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A5220470E1100E3DFD1 /* ApplicationView.swift */; };
-		DAD9BC342047E55300675963 /* AbstractControllerPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC332047E55300675963 /* AbstractControllerPrototype.swift */; };
-		DADB84282047DC2400EB45C9 /* AbstractModelProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB84272047DC2400EB45C9 /* AbstractModelProtocol+Default.swift */; };
+		DAD9BC342047E55300675963 /* AbstractController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC332047E55300675963 /* AbstractController.swift */; };
 		DADB842A2047DEFB00EB45C9 /* AbstractModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB84292047DEFB00EB45C9 /* AbstractModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,8 +55,7 @@
 		DA06783D2046F6DA001519B0 /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
 		DA0678412046F751001519B0 /* SimulationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationController.swift; sourceTree = "<group>"; };
 		DA0678442046F7CB001519B0 /* ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerDelegate.swift; sourceTree = "<group>"; };
-		DA0678482046F8AB001519B0 /* AbstractModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractModelProtocol.swift; sourceTree = "<group>"; };
-		DA06784A2046F8F1001519B0 /* AbstractViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewModelProtocol.swift; sourceTree = "<group>"; };
+		DA06784A2046F8F1001519B0 /* AbstractViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewModel.swift; sourceTree = "<group>"; };
 		DA06784E2046F932001519B0 /* SimulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModel.swift; sourceTree = "<group>"; };
 		DA0678512046F9D0001519B0 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		DA0678532046F9FD001519B0 /* ApplicationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationPresenter.swift; sourceTree = "<group>"; };
@@ -88,14 +85,13 @@
 		DA7380E120432007005C43A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA73811020432015005C43A3 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		DA785A452047074900E3DFD1 /* ViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDelegate.swift; sourceTree = "<group>"; };
-		DA785A472047080F00E3DFD1 /* AbstractController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractController.swift; sourceTree = "<group>"; };
+		DA785A472047080F00E3DFD1 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		DA785A492047083E00E3DFD1 /* AbstractView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractView.swift; sourceTree = "<group>"; };
 		DA785A4B20470C3900E3DFD1 /* ApplicationPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationPresenterProtocol.swift; sourceTree = "<group>"; };
 		DA785A4E20470CF600E3DFD1 /* PresentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentProtocol.swift; sourceTree = "<group>"; };
 		DA785A5020470DEF00E3DFD1 /* ApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
 		DA785A5220470E1100E3DFD1 /* ApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationView.swift; sourceTree = "<group>"; };
-		DAD9BC332047E55300675963 /* AbstractControllerPrototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractControllerPrototype.swift; sourceTree = "<group>"; };
-		DADB84272047DC2400EB45C9 /* AbstractModelProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AbstractModelProtocol+Default.swift"; sourceTree = "<group>"; };
+		DAD9BC332047E55300675963 /* AbstractController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractController.swift; sourceTree = "<group>"; };
 		DADB84292047DEFB00EB45C9 /* AbstractModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,11 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				DADB84292047DEFB00EB45C9 /* AbstractModel.swift */,
-				DA0678482046F8AB001519B0 /* AbstractModelProtocol.swift */,
-				DADB84272047DC2400EB45C9 /* AbstractModelProtocol+Default.swift */,
-				DA06784A2046F8F1001519B0 /* AbstractViewModelProtocol.swift */,
-				DAD9BC332047E55300675963 /* AbstractControllerPrototype.swift */,
-				DA785A472047080F00E3DFD1 /* AbstractController.swift */,
+				DA06784A2046F8F1001519B0 /* AbstractViewModel.swift */,
+				DAD9BC332047E55300675963 /* AbstractController.swift */,
 				DA785A492047083E00E3DFD1 /* AbstractView.swift */,
 			);
 			path = Abstract;
@@ -144,6 +137,7 @@
 		DA0678432046F7BD001519B0 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				DA785A472047080F00E3DFD1 /* Controller.swift */,
 				DA0678442046F7CB001519B0 /* ControllerDelegate.swift */,
 				DA785A452047074900E3DFD1 /* ViewModelDelegate.swift */,
 			);
@@ -414,14 +408,13 @@
 				DA785A462047074900E3DFD1 /* ViewModelDelegate.swift in Sources */,
 				DA0678522046F9D0001519B0 /* Application.swift in Sources */,
 				DA0678452046F7CB001519B0 /* ControllerDelegate.swift in Sources */,
-				DA06784B2046F8F1001519B0 /* AbstractViewModelProtocol.swift in Sources */,
-				DADB84282047DC2400EB45C9 /* AbstractModelProtocol+Default.swift in Sources */,
+				DA06784B2046F8F1001519B0 /* AbstractViewModel.swift in Sources */,
 				DA0678422046F751001519B0 /* SimulationController.swift in Sources */,
 				DA7380EC20432007005C43A3 /* ExtensionUIView+LayoutWidth.swift in Sources */,
 				DA7380F020432007005C43A3 /* ExtensionUIView+LayoutEquals.swift in Sources */,
 				DA06783E2046F6DA001519B0 /* Simulation.swift in Sources */,
 				DA785A5320470E1100E3DFD1 /* ApplicationView.swift in Sources */,
-				DA785A482047080F00E3DFD1 /* AbstractController.swift in Sources */,
+				DA785A482047080F00E3DFD1 /* Controller.swift in Sources */,
 				DADB842A2047DEFB00EB45C9 /* AbstractModel.swift in Sources */,
 				DA7380ED20432007005C43A3 /* ExtensionUIView+LayoutHeight.swift in Sources */,
 				DA785A4C20470C3900E3DFD1 /* ApplicationPresenterProtocol.swift in Sources */,
@@ -431,8 +424,7 @@
 				DA7380F120432007005C43A3 /* ExtensionUIView+LayoutVertical.swift in Sources */,
 				DA06784F2046F932001519B0 /* SimulationViewModel.swift in Sources */,
 				DA785A4A2047083E00E3DFD1 /* AbstractView.swift in Sources */,
-				DA0678492046F8AB001519B0 /* AbstractModelProtocol.swift in Sources */,
-				DAD9BC342047E55300675963 /* AbstractControllerPrototype.swift in Sources */,
+				DAD9BC342047E55300675963 /* AbstractController.swift in Sources */,
 				DA328234204712CC00795C7B /* PresentProtocol+Default.swift in Sources */,
 				DA7380EF20432007005C43A3 /* ExtensionUIColor.swift in Sources */,
 			);

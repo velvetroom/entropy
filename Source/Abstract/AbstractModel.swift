@@ -1,6 +1,6 @@
 import Foundation
 
 internal protocol AbstractModel:ViewModelDelegate {
-    var viewModel:AbstractViewModelProtocol { get }
-    var controller:AbstractControllerPrototype { get }
+    var viewModel:AbstractViewModel { get }
+    var controller:AbstractController { get }
 }
