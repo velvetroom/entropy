@@ -1,6 +1,6 @@
 import UIKit
 
-internal final class ApplicationViewController:UIViewController {
+internal final class ApplicationController:UIViewController {
     override func loadView() {
         let view:ApplicationView = ApplicationView()
         self.view = view

@@ -15,22 +15,22 @@ internal final class Application:UIResponder, UIApplicationDelegate {
     internal func application(
         _:UIApplication, didFinishLaunchingWithOptions:[UIApplicationLaunchOptionsKey:Any]?) -> Bool {
         let model:AbstractModel = self.initialModelType.init()
-        let viewController:ApplicationViewController = ApplicationViewController()
-        self.startPresentation(model:model, viewController:viewController)
+        let controller:ApplicationController = ApplicationController()
+        self.startPresentation(model:model, controller:controller)
         return true
     }
     
-    private func startPresentation(model:AbstractModel, viewController:ApplicationViewController) {
-        self.startWindow(viewController:viewController)
-        self.presenter.viewController = viewController
+    private func startPresentation(model:AbstractModel, controller:ApplicationController) {
+        self.startWindow(controller:controller)
+        self.presenter.controller = controller
         self.presenter.present(model:model, presentStrategy:PresentCentred.self)
     }
     
-    private func startWindow(viewController:ApplicationViewController) {
+    private func startWindow(controller:ApplicationController) {
         let window:UIWindow = UIWindow(frame:UIScreen.main.bounds)
         window.backgroundColor = UIColor.sharedBackgroundColour
         window.makeKeyAndVisible()
-        window.rootViewController = viewController
+        window.rootViewController = controller
         self.window = window
     }
 }
