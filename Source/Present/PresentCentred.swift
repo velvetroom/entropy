@@ -1,7 +1,7 @@
 import Foundation
 
-internal struct PresentCentred:PresentProtocol {
-    internal static func present(model:AbstractModel, viewController:ApplicationViewController) {
+internal final class PresentCentred:PresentProtocol {
+    internal class func present(model:AbstractModel, viewController:ApplicationViewController) {
 
     }
 }

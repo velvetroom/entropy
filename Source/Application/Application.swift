@@ -4,22 +4,20 @@ import UIKit
 internal final class Application:UIResponder, UIApplicationDelegate {
     internal var window:UIWindow?
     private let presenter:ApplicationPresenter
+    private let initialModelType:AbstractModel.Type
     
     internal override init() {
         self.presenter = ApplicationPresenter()
+        self.initialModelType = Simulation.self
         super.init()
     }
     
     internal func application(
         _:UIApplication, didFinishLaunchingWithOptions:[UIApplicationLaunchOptionsKey:Any]?) -> Bool {
-        let model:AbstractModel = self.initialModel()
+        let model:AbstractModel = self.initialModelType.init()
         let viewController:ApplicationViewController = ApplicationViewController()
         self.startPresentation(model:model, viewController:viewController)
         return true
-    }
-    
-    private func initialModel() -> AbstractModel {
-        return Simulation()
     }
     
     private func startPresentation(model:AbstractModel, viewController:ApplicationViewController) {
