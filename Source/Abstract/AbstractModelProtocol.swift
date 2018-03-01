@@ -1,6 +1,8 @@
 import Foundation
 
-internal protocol AbstractModelProtocol {
-    associatedtype Signature:AbstractSignature
-    var controller:Signature.Controller { get }
+internal protocol AbstractModelProtocol:ViewModelDelegate {
+    associatedtype ViewModel:AbstractViewModel
+    var viewModel:ViewModel { get }
+    
+    init()
 }
