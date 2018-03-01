@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA06783A2046F62A001519B0 /* SimulationSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678392046F62A001519B0 /* SimulationSignature.swift */; };
 		DA06783C2046F6BD001519B0 /* AbstractModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06783B2046F6BD001519B0 /* AbstractModel.swift */; };
 		DA06783E2046F6DA001519B0 /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06783D2046F6DA001519B0 /* Simulation.swift */; };
 		DA0678402046F735001519B0 /* AbstractController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06783F2046F735001519B0 /* AbstractController.swift */; };
@@ -57,7 +56,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DA0678392046F62A001519B0 /* SimulationSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationSignature.swift; sourceTree = "<group>"; };
 		DA06783B2046F6BD001519B0 /* AbstractModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractModel.swift; sourceTree = "<group>"; };
 		DA06783D2046F6DA001519B0 /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
 		DA06783F2046F735001519B0 /* AbstractController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractController.swift; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 		DA0678382046F61C001519B0 /* Simulation */ = {
 			isa = PBXGroup;
 			children = (
-				DA0678392046F62A001519B0 /* SimulationSignature.swift */,
 				DA06783D2046F6DA001519B0 /* Simulation.swift */,
 				DA0678412046F751001519B0 /* SimulationController.swift */,
 				DA06784E2046F932001519B0 /* SimulationViewModel.swift */,
@@ -428,7 +425,6 @@
 				DA7380EC20432007005C43A3 /* ExtensionUIView+LayoutWidth.swift in Sources */,
 				DA7380F020432007005C43A3 /* ExtensionUIView+LayoutEquals.swift in Sources */,
 				DA06783E2046F6DA001519B0 /* Simulation.swift in Sources */,
-				DA06783A2046F62A001519B0 /* SimulationSignature.swift in Sources */,
 				DA785A5320470E1100E3DFD1 /* ApplicationView.swift in Sources */,
 				DA785A482047080F00E3DFD1 /* AbstractViewController.swift in Sources */,
 				DA7380ED20432007005C43A3 /* ExtensionUIView+LayoutHeight.swift in Sources */,
