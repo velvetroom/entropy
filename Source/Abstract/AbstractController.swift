@@ -1,6 +1,6 @@
 import UIKit
 
-internal class AbstractViewController<SpecialisedViewModel:AbstractViewModel>:UIViewController {
+internal class AbstractController<SpecialisedViewModel:AbstractViewModel>:UIViewController {
     internal weak var viewModel:SpecialisedViewModel?
     
     internal required init(viewModel:SpecialisedViewModel) {

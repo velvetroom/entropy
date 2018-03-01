@@ -33,7 +33,7 @@
 		DA7380F120432007005C43A3 /* ExtensionUIView+LayoutVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380B420432007005C43A3 /* ExtensionUIView+LayoutVertical.swift */; };
 		DA7380F220432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380B520432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift */; };
 		DA785A462047074900E3DFD1 /* ViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A452047074900E3DFD1 /* ViewModelDelegate.swift */; };
-		DA785A482047080F00E3DFD1 /* AbstractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A472047080F00E3DFD1 /* AbstractViewController.swift */; };
+		DA785A482047080F00E3DFD1 /* AbstractController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A472047080F00E3DFD1 /* AbstractController.swift */; };
 		DA785A4A2047083E00E3DFD1 /* AbstractView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A492047083E00E3DFD1 /* AbstractView.swift */; };
 		DA785A4C20470C3900E3DFD1 /* ApplicationPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A4B20470C3900E3DFD1 /* ApplicationPresenterProtocol.swift */; };
 		DA785A4F20470CF600E3DFD1 /* PresentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A4E20470CF600E3DFD1 /* PresentProtocol.swift */; };
@@ -90,7 +90,7 @@
 		DA7380E120432007005C43A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA73811020432015005C43A3 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		DA785A452047074900E3DFD1 /* ViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDelegate.swift; sourceTree = "<group>"; };
-		DA785A472047080F00E3DFD1 /* AbstractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewController.swift; sourceTree = "<group>"; };
+		DA785A472047080F00E3DFD1 /* AbstractController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractController.swift; sourceTree = "<group>"; };
 		DA785A492047083E00E3DFD1 /* AbstractView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractView.swift; sourceTree = "<group>"; };
 		DA785A4B20470C3900E3DFD1 /* ApplicationPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationPresenterProtocol.swift; sourceTree = "<group>"; };
 		DA785A4E20470CF600E3DFD1 /* PresentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentProtocol.swift; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 				DADB84272047DC2400EB45C9 /* AbstractModelProtocol+Default.swift */,
 				DA06784A2046F8F1001519B0 /* AbstractViewModelProtocol.swift */,
 				DA06784C2046F910001519B0 /* AbstractViewModel.swift */,
-				DA785A472047080F00E3DFD1 /* AbstractViewController.swift */,
+				DA785A472047080F00E3DFD1 /* AbstractController.swift */,
 				DA785A492047083E00E3DFD1 /* AbstractView.swift */,
 			);
 			path = Abstract;
@@ -424,7 +424,7 @@
 				DA7380F020432007005C43A3 /* ExtensionUIView+LayoutEquals.swift in Sources */,
 				DA06783E2046F6DA001519B0 /* Simulation.swift in Sources */,
 				DA785A5320470E1100E3DFD1 /* ApplicationView.swift in Sources */,
-				DA785A482047080F00E3DFD1 /* AbstractViewController.swift in Sources */,
+				DA785A482047080F00E3DFD1 /* AbstractController.swift in Sources */,
 				DADB842A2047DEFB00EB45C9 /* AbstractModel.swift in Sources */,
 				DA7380ED20432007005C43A3 /* ExtensionUIView+LayoutHeight.swift in Sources */,
 				DA785A4C20470C3900E3DFD1 /* ApplicationPresenterProtocol.swift in Sources */,

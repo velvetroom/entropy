@@ -1,5 +1,5 @@
 import Foundation
 
-internal final class SimulationViewController:AbstractViewController<SimulationViewModel> {
+internal final class SimulationViewController:AbstractController<SimulationViewModel> {
     
 }
