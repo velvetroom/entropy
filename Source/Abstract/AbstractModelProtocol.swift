@@ -1,8 +1,6 @@
 import Foundation
 
 internal protocol AbstractModelProtocol:AbstractModel {
-    associatedtype Controller:AbstractController<ViewModel>
-    associatedtype ViewModel
-    
-    init()
+    associatedtype ViewModel:AbstractViewModelProtocol
+    associatedtype Controller:AbstractControllerPrototype
 }

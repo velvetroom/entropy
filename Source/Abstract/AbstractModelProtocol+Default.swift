@@ -1,8 +1,11 @@
 import Foundation
 
 internal extension AbstractModelProtocol {
-    internal init() {
-        self.viewModel = Self.ViewModel()
-        self.controller = Self.Controller(viewModel:self.viewModel)
+    internal static func factoryViewModel() -> AbstractViewModelProtocol {
+        return Self.ViewModel()
+    }
+    
+    internal static func factoryController(viewModel:AbstractViewModelProtocol) -> AbstractControllerPrototype {
+        return Self.Controller(viewModel:viewModel)
     }
 }

@@ -1,7 +1,13 @@
 import UIKit
 
 internal final class Simulation:AbstractModelProtocol {
+    typealias Controller = SimulationController
+    
     internal typealias ViewModel = SimulationViewModel
-    var viewModel:AbstractViewModelProtocol
-    var controller:UIViewController
+    internal var viewModel:AbstractViewModelProtocol
+    internal var controller:AbstractControllerPrototype
+    
+    internal init() {
+        
+    }
 }

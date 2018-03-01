@@ -1,11 +1,11 @@
-import UIKit
+import Foundation
 
-internal class AbstractController<SpecialisedViewModel:AbstractViewModelProtocol>:UIViewController {
+internal class AbstractController<SpecialisedViewModel:AbstractViewModelProtocol>:AbstractControllerPrototype {
     internal weak var viewModel:SpecialisedViewModel?
     
-    internal required init(viewModel:SpecialisedViewModel) {
-        self.viewModel = viewModel
-        super.init(nibName:nil, bundle:nil)
+    internal required init(viewModel:AbstractViewModelProtocol) {
+        self.viewModel = viewModel as? SpecialisedViewModel
+        super.init(viewModel:viewModel)
     }
     
     internal required init?(coder:NSCoder) {
