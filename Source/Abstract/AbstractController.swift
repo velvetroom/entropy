@@ -1,7 +1,7 @@
 import UIKit
 
 internal class AbstractController:UIViewController {
-    internal required init(viewModel:AbstractViewModel) {
+    internal init() {
         super.init(nibName:nil, bundle:nil)
     }
     
