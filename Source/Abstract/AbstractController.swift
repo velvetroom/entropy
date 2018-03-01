@@ -8,4 +8,13 @@ internal class AbstractController:UIViewController {
     internal required init?(coder:NSCoder) {
         return nil
     }
+    
+    internal final func savePresentLayout(layout:PresentLayout) {
+        guard
+            let view:AbstractView = self.view as? AbstractView
+        else {
+            return
+        }
+        view.layout = layout
+    }
 }

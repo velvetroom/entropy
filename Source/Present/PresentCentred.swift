@@ -2,16 +2,17 @@ import Foundation
 
 internal final class PresentCentred:PresentProtocol {
     internal class func present(model:AbstractModel, controller:ApplicationController) {
-        self.addController(model:model, controller:controller)
-        self.addView(model:model, controller:controller)
+        addController(model:model, controller:controller)
+        addView(model:model, controller:controller)
+        layout(model:model, controller:controller)
     }
     
-//    private static func factoryLayout(model:AbstractModel, controller:ApplicationController) -> PresentationLayout {
-//        var layout:PresentationLayout = PresentationLayout()
-//        layout.layoutTop = view.layoutTopToTop(view:topView)
-//        layout.layoutBottom = view.layoutBottomToBottom(view:topView)
-//        layout.layoutRight = view.layoutRightToRight(view:topView)
-//        layout.layoutLeft = view.layoutLeftToLeft(view:topView)
-//        return layout
-//    }
+    private class func layout(model:AbstractModel, controller:ApplicationController) {
+        var layout:PresentLayout = PresentLayout()
+        layout.layoutTop = model.controller.view.layoutTopToTop(view:controller.view)
+        layout.layoutBottom = model.controller.view.layoutBottomToBottom(view:controller.view)
+        layout.layoutRight = model.controller.view.layoutRightToRight(view:controller.view)
+        layout.layoutLeft = model.controller.view.layoutLeftToLeft(view:controller.view)
+        model.controller.savePresentLayout(layout:layout)
+    }
 }
