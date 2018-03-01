@@ -1,6 +1,6 @@
 import Foundation
 
-internal protocol AbstractModelProtocol:ViewModelDelegate {
+internal protocol AbstractModelProtocol {
     associatedtype ViewModel:AbstractViewModel
     var viewModel:ViewModel { get set }
     
