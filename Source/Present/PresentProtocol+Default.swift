@@ -2,6 +2,6 @@ import Foundation
 
 internal extension PresentProtocol {
     internal static func addViewController(model:AbstractModel, viewController:ApplicationViewController) {
-        viewController.addChildViewController(model.viewController)
+        viewController.addChildViewController(model.controller)
     }
 }

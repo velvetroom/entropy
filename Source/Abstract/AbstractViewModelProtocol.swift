@@ -1,6 +1,6 @@
 import Foundation
 
-internal protocol AbstractViewModelProtocol {
+internal protocol AbstractViewModelProtocol:AnyObject {
     weak var delegate:ViewModelDelegate? { get }
     
     init()

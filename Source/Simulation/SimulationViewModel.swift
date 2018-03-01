@@ -1,5 +1,5 @@
 import Foundation
 
-internal final class SimulationViewModel:AbstractViewModel {
-    
+internal final class SimulationViewModel:AbstractViewModelProtocol {
+    var delegate:ViewModelDelegate?
 }
