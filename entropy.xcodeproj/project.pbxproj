@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA0678372046F525001519B0 /* AbstractSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678362046F525001519B0 /* AbstractSignature.swift */; };
 		DA06783A2046F62A001519B0 /* SimulationSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678392046F62A001519B0 /* SimulationSignature.swift */; };
 		DA06783C2046F6BD001519B0 /* AbstractModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06783B2046F6BD001519B0 /* AbstractModel.swift */; };
 		DA06783E2046F6DA001519B0 /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06783D2046F6DA001519B0 /* Simulation.swift */; };
@@ -58,7 +57,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DA0678362046F525001519B0 /* AbstractSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractSignature.swift; sourceTree = "<group>"; };
 		DA0678392046F62A001519B0 /* SimulationSignature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationSignature.swift; sourceTree = "<group>"; };
 		DA06783B2046F6BD001519B0 /* AbstractModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractModel.swift; sourceTree = "<group>"; };
 		DA06783D2046F6DA001519B0 /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 		DA0678352046F51A001519B0 /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
-				DA0678362046F525001519B0 /* AbstractSignature.swift */,
 				DA0678482046F8AB001519B0 /* AbstractModelProtocol.swift */,
 				DA06783B2046F6BD001519B0 /* AbstractModel.swift */,
 				DA0678462046F855001519B0 /* AbstractControllerProtocol.swift */,
@@ -436,7 +433,6 @@
 				DA785A482047080F00E3DFD1 /* AbstractViewController.swift in Sources */,
 				DA7380ED20432007005C43A3 /* ExtensionUIView+LayoutHeight.swift in Sources */,
 				DA785A4C20470C3900E3DFD1 /* ApplicationPresenterProtocol.swift in Sources */,
-				DA0678372046F525001519B0 /* AbstractSignature.swift in Sources */,
 				DA7380F220432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift in Sources */,
 				DA06784D2046F910001519B0 /* AbstractViewModel.swift in Sources */,
 				DA0678472046F855001519B0 /* AbstractControllerProtocol.swift in Sources */,
