@@ -12,14 +12,17 @@ internal final class Application:UIResponder, UIApplicationDelegate {
     
     internal func application(
         _:UIApplication, didFinishLaunchingWithOptions:[UIApplicationLaunchOptionsKey:Any]?) -> Bool {
-        let model:Simulation = Simulation()
+        let model:AbstractModelProtocol = self.initialModel()
         let viewController:ApplicationViewController = ApplicationViewController()
         self.startPresentation(model:model, viewController:viewController)
         return true
     }
     
-    private func startPresentation<SpecialisedSignature>(
-        model:AbstractModel<SpecialisedSignature>, viewController:ApplicationViewController) {
+    private func initialModel() -> AbstractModelProtocol {
+        return Simulation()
+    }
+    
+    private func startPresentation(model:AbstractModelProtocol, viewController:ApplicationViewController) {
         self.startWindow(viewController:viewController)
         self.presenter.viewController = viewController
         self.presenter.present(model:model, presentStrategy:PresentCentred.self)

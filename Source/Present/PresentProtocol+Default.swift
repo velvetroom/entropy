@@ -1,9 +1,7 @@
 import Foundation
 
 internal extension PresentProtocol {
-    internal static func addViewController<SpecialisedSignature>(
-        model:AbstractModel<SpecialisedSignature>,
-        viewController:ApplicationViewController) {
+    internal static func addViewController(model:AbstractModelProtocol, viewController:ApplicationViewController) {
         viewController.addChildViewController(model.controller)
     }
 }
