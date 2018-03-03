@@ -1,6 +1,6 @@
 import UIKit
 
-internal final class Simulation:AbstractModel {
+internal final class Simulation:AbstractModel, ControllerDelegate {
     internal let viewModel:AbstractViewModel
     internal let controller:AbstractController
     
@@ -10,5 +10,6 @@ internal final class Simulation:AbstractModel {
         controller.viewModel = viewModel
         self.viewModel = viewModel
         self.controller = controller
+        controller.delegate = self
     }
 }
