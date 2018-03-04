@@ -1,6 +1,8 @@
 import UIKit
 
 internal class AbstractController:UIViewController {
+    internal weak var delegate:ControllerDelegate?
+    
     internal init() {
         super.init(nibName:nil, bundle:nil)
     }
