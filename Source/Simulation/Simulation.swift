@@ -11,5 +11,6 @@ internal final class Simulation:AbstractModel, ControllerDelegate {
         self.viewModel = viewModel
         self.controller = controller
         controller.delegate = self
+        viewModel.delegate = self
     }
 }
