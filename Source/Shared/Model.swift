@@ -5,7 +5,7 @@ internal class Model:AbstractModel {
     internal let controller:AbstractController
     
     required init() {
-        fatalError("Abstract class")
+        fatalError()
     }
     
     internal init<SpecialisedViewModel>(viewModel:SpecialisedViewModel,

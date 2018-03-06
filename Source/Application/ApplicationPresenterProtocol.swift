@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 internal protocol ApplicationPresenterProtocol {
     weak var controller:ApplicationController? { get }
