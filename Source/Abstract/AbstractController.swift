@@ -19,4 +19,19 @@ internal class AbstractController:UIViewController {
         }
         view.layout = layout
     }
+    
+    internal override func viewDidLoad() {
+        super.viewDidLoad()
+        self.delegate?.controllerDidLoad()
+    }
+    
+    internal override func viewWillAppear(_ animated:Bool) {
+        super.viewWillAppear(animated)
+        self.delegate?.controllerWillAppear()
+    }
+    
+    internal override func viewDidAppear(_ animated:Bool) {
+        super.viewDidAppear(animated)
+        self.delegate?.controllerDidAppear()
+    }
 }
