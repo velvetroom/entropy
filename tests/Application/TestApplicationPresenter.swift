@@ -2,9 +2,10 @@ import XCTest
 @testable import entropy
 
 internal final class TestApplicationPresenter:XCTestCase {
-    private weak var model:Model?
-    private weak var controller:AbstractController?
+    private weak var presentedModel:Model?
+    private weak var presentedController:AbstractController?
     private var presenter:ApplicationPresenter?
+    private var controller:ApplicationController?
     private struct Constants {
         fileprivate static let expectationWait:TimeInterval = 2
         fileprivate static let modelWait:TimeInterval = 1
@@ -12,7 +13,9 @@ internal final class TestApplicationPresenter:XCTestCase {
     
     internal override func setUp() {
         super.setUp()
+        self.controller = ApplicationController()
         self.presenter = ApplicationPresenter()
+        self.presenter?.controller = self.controller
     }
     
     internal func testModelIsRetained() {
@@ -23,8 +26,8 @@ internal final class TestApplicationPresenter:XCTestCase {
     
     private func presentNewModel() {
         let model:Model = Simulation()
-        self.model = model
-        self.controller = model.controller
+        self.presentedModel = model
+        self.presentedController = model.controller
         self.presenter?.present(model:model, presentStrategy:PresentCentred.self)
     }
     
@@ -38,7 +41,7 @@ internal final class TestApplicationPresenter:XCTestCase {
     
     private func validateModelIsRetained() {
         waitForExpectations(timeout:Constants.expectationWait) { [weak self] (error:Error?) in
-            XCTAssertNotNil(self?.model, "Error: model got released")
+            XCTAssertNotNil(self?.presentedModel, "Error: model got released")
         }
     }
     
@@ -50,8 +53,8 @@ internal final class TestApplicationPresenter:XCTestCase {
     
     private func validateControllerIsOnTop() {
         waitForExpectations(timeout:Constants.expectationWait) { [weak self] (error:Error?) in
-            XCTAssertNotNil(self?.controller, "Error: controller is nil")
-            XCTAssertEqual(self?.presenter?.controller?.childViewControllers.last, self?.controller,
+            XCTAssertNotNil(self?.presentedController, "Error: controller is nil")
+            XCTAssertEqual(self?.presenter?.controller?.childViewControllers.last, self?.presentedController,
                            "Error: presented controller is not on top")
         }
     }
