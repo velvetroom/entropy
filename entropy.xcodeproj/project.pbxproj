@@ -16,7 +16,6 @@
 		DA0678542046F9FD001519B0 /* ApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678532046F9FD001519B0 /* ApplicationPresenter.swift */; };
 		DA32823220470FE300795C7B /* PresentCentred.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32823120470FE300795C7B /* PresentCentred.swift */; };
 		DA328234204712CC00795C7B /* PresentProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA328233204712CC00795C7B /* PresentProtocol+Default.swift */; };
-		DA48BB282046CE1000271252 /* TestSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA48BB272046CE1000271252 /* TestSimulation.swift */; };
 		DA64776B204E959B00235718 /* ControllerDelegate+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA64776A204E959B00235718 /* ControllerDelegate+Default.swift */; };
 		DA64776F204EA54500235718 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA64776E204EA54500235718 /* Model.swift */; };
 		DA647772204FE55300235718 /* TestApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA647771204FE55300235718 /* TestApplicationPresenter.swift */; };
@@ -67,7 +66,6 @@
 		DA32823120470FE300795C7B /* PresentCentred.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentCentred.swift; sourceTree = "<group>"; };
 		DA328233204712CC00795C7B /* PresentProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PresentProtocol+Default.swift"; sourceTree = "<group>"; };
 		DA48BB1A2046CD2B00271252 /* tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA48BB272046CE1000271252 /* TestSimulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSimulation.swift; sourceTree = "<group>"; };
 		DA48BB292046CE1F00271252 /* InfoTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoTests.plist; sourceTree = "<group>"; };
 		DA64776A204E959B00235718 /* ControllerDelegate+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerDelegate+Default.swift"; sourceTree = "<group>"; };
 		DA64776E204EA54500235718 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -173,25 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				DA647770204FE53E00235718 /* Application */,
-				DA48BB252046CE1000271252 /* Model */,
 			);
 			path = Tests;
-			sourceTree = "<group>";
-		};
-		DA48BB252046CE1000271252 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				DA48BB262046CE1000271252 /* Simulation */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DA48BB262046CE1000271252 /* Simulation */ = {
-			isa = PBXGroup;
-			children = (
-				DA48BB272046CE1000271252 /* TestSimulation.swift */,
-			);
-			path = Simulation;
 			sourceTree = "<group>";
 		};
 		DA647770204FE53E00235718 /* Application */ = {
@@ -417,7 +398,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA48BB282046CE1000271252 /* TestSimulation.swift in Sources */,
 				DA647772204FE55300235718 /* TestApplicationPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
