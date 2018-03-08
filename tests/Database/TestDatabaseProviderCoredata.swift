@@ -1,7 +1,7 @@
 import XCTest
 @testable import entropy
 
-internal class TestDatabaseProviderCoredata:XCTestCase {
+internal final class TestDatabaseProviderCoredata:XCTestCase {
     private var provider:DatabaseProviderCoredata?
     private var profileLoaded:Profile?
     private struct Constants {

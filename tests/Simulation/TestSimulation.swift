@@ -1,7 +1,7 @@
 import XCTest
 @testable import entropy
 
-internal class TestSimulation:XCTestCase {
+internal final class TestSimulation:XCTestCase {
     private var simulation:Simulation?
     private struct Constants {
         fileprivate static let expectationWait:TimeInterval = 1
