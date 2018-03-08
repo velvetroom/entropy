@@ -8,6 +8,8 @@ internal final class Database {
     }
     
     internal func loadProfile(completion:@escaping((Profile) -> ())) {
-        
+        self.provider.loadProfile(found:completion, notFound: { [weak self] in
+            self?.provider.createProfile(completion:completion)
+        })
     }
 }
