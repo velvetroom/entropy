@@ -24,85 +24,45 @@ internal final class DatabaseProviderCoredata:DatabaseProviderProtocol {
         completion(entity)
     }
     
-    internal func load<Entity:NSManagedObject>(request:NSFetchRequest, completion:@escaping(([Entity]) -> ())) {
-        guard
-            
-            let objectType:NSManagedObject.Type = T.self as? NSManagedObject.Type
-            
-            else
-        {
+    internal func load<Entity:NSManagedObject>(request:NSFetchRequest<Entity>, completion:@escaping(([Entity]) -> ())) {
+        self.context.perform { [weak self] in
+            self?.performLoad(request:request, completion:completion)
+        }
+    }
+    
+    private func performLoad<Entity:NSManagedObject>(request:NSFetchRequest<Entity>, completion:(([Entity]) -> ())) {
+        let data:[NSManagedObject]
+        do {
+            data = try self.context.fetch(request)
+        } catch {
             return
         }
-        
-        let fetchRequest:NSFetchRequest<NSManagedObject> = DatabaseProviderCoreData.factoryFetchRequest(
-            entityName:objectType.entityName,
-            limit:limit,
-            predicate:predicate,
-            sorters:sorters)
-        
-        self.managedObjectContext?.perform
-            {
-                let data:[NSManagedObject]?
-                
-                do
-                {
-                    data = try self.managedObjectContext?.fetch(fetchRequest)
-                }
-                catch
-                {
-                    return
-                }
-                
-                guard
-                    
-                    let results:[T] = data as? [T]
-                    
-                    else
-                {
-                    return
-                }
-                
-                completion(results)
+        if let results:[Entity] = data as? [Entity] {
+            completion(results)
         }
     }
     
-    func deleteObject(
-        object:NSManagedObject,
-        completion:(() -> ())?)
-    {
-        self.managedObjectContext?.perform
-            {
-                self.managedObjectContext?.delete(object)
-                completion?()
+    internal func delete(entity:NSManagedObject, completion:@escaping(() -> ())) {
+        self.context.perform { [weak self] in
+            self?.context.delete(entity)
+            completion()
         }
     }
     
-    
-    internal func save(completion:(() -> ())) {
+    internal func save(completion:@escaping(() -> ())) {
         guard
-            let hasChanges:Bool = self.managedObjectContext?.hasChanges,
-            hasChanges == true
+            self.context.hasChanges == true
         else {
             completion()
             return
         }
-        
-        self.managedObjectContext?.perform
-            {
-                do
-                {
-                    try self.managedObjectContext?.save()
-                }
-                catch let error
-                {
-                    assertionFailure(error.localizedDescription)
-                    
-                    return
-                }
-                
-                completion?()
+        self.context.perform { [weak self] in
+            do {
+                try self?.context.save()
+            } catch let error {
+                assertionFailure(error.localizedDescription)
+            }
+            completion()
         }
     }
-    
-    
 }

@@ -8,7 +8,7 @@ internal extension FileManager {
             guard
                 let last:URL = url.last
             else {
-                return URL()
+                fatalError()
             }
             return last
         }
