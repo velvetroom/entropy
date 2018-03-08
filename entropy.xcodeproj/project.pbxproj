@@ -46,6 +46,7 @@
 		DAA15D17204FF87C001804B1 /* ApplicationPresenter+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15D16204FF87C001804B1 /* ApplicationPresenter+Factory.swift */; };
 		DAA15D19204FF941001804B1 /* ApplicationPresenter+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15D18204FF941001804B1 /* ApplicationPresenter+Constants.swift */; };
 		DAAFD2B82051447400F1526F /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFD2B72051447400F1526F /* Database.swift */; };
+		DAAFD2BA205144DC00F1526F /* DatabaseProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFD2B9205144DC00F1526F /* DatabaseProviderProtocol.swift */; };
 		DAD9BC342047E55300675963 /* AbstractController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC332047E55300675963 /* AbstractController.swift */; };
 		DAD9BC362047EF7700675963 /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC352047EF7700675963 /* SimulationView.swift */; };
 		DAD9BC382047F06300675963 /* PresentLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC372047F06300675963 /* PresentLayout.swift */; };
@@ -111,6 +112,7 @@
 		DAA15D16204FF87C001804B1 /* ApplicationPresenter+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationPresenter+Factory.swift"; sourceTree = "<group>"; };
 		DAA15D18204FF941001804B1 /* ApplicationPresenter+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationPresenter+Constants.swift"; sourceTree = "<group>"; };
 		DAAFD2B72051447400F1526F /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		DAAFD2B9205144DC00F1526F /* DatabaseProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProviderProtocol.swift; sourceTree = "<group>"; };
 		DAD9BC332047E55300675963 /* AbstractController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractController.swift; sourceTree = "<group>"; };
 		DAD9BC352047EF7700675963 /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
 		DAD9BC372047F06300675963 /* PresentLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentLayout.swift; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				DAAFD2B72051447400F1526F /* Database.swift */,
+				DAAFD2B9205144DC00F1526F /* DatabaseProviderProtocol.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -493,6 +496,7 @@
 				DA7380ED20432007005C43A3 /* ExtensionUIView+LayoutHeight.swift in Sources */,
 				DA5B8CCD20513CD0008B986F /* Profile.swift in Sources */,
 				DAA15D19204FF941001804B1 /* ApplicationPresenter+Constants.swift in Sources */,
+				DAAFD2BA205144DC00F1526F /* DatabaseProviderProtocol.swift in Sources */,
 				DAD9BC362047EF7700675963 /* SimulationView.swift in Sources */,
 				DA64776B204E959B00235718 /* ControllerDelegate+Default.swift in Sources */,
 				DAA15D17204FF87C001804B1 /* ApplicationPresenter+Factory.swift in Sources */,
