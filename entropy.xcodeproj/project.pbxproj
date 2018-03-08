@@ -45,6 +45,7 @@
 		DA785A5320470E1100E3DFD1 /* ApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A5220470E1100E3DFD1 /* ApplicationView.swift */; };
 		DAA15D17204FF87C001804B1 /* ApplicationPresenter+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15D16204FF87C001804B1 /* ApplicationPresenter+Factory.swift */; };
 		DAA15D19204FF941001804B1 /* ApplicationPresenter+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15D18204FF941001804B1 /* ApplicationPresenter+Constants.swift */; };
+		DAAFD2B82051447400F1526F /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFD2B72051447400F1526F /* Database.swift */; };
 		DAD9BC342047E55300675963 /* AbstractController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC332047E55300675963 /* AbstractController.swift */; };
 		DAD9BC362047EF7700675963 /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC352047EF7700675963 /* SimulationView.swift */; };
 		DAD9BC382047F06300675963 /* PresentLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC372047F06300675963 /* PresentLayout.swift */; };
@@ -109,6 +110,7 @@
 		DA785A5220470E1100E3DFD1 /* ApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationView.swift; sourceTree = "<group>"; };
 		DAA15D16204FF87C001804B1 /* ApplicationPresenter+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationPresenter+Factory.swift"; sourceTree = "<group>"; };
 		DAA15D18204FF941001804B1 /* ApplicationPresenter+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationPresenter+Constants.swift"; sourceTree = "<group>"; };
+		DAAFD2B72051447400F1526F /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		DAD9BC332047E55300675963 /* AbstractController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractController.swift; sourceTree = "<group>"; };
 		DAD9BC352047EF7700675963 /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
 		DAD9BC372047F06300675963 /* PresentLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentLayout.swift; sourceTree = "<group>"; };
@@ -287,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				DA0678352046F51A001519B0 /* Abstract */,
+				DAAFD2B62051446700F1526F /* Database */,
 				DA5B8CD120513F18008B986F /* Coredata */,
 				DA0678432046F7BD001519B0 /* Shared */,
 				DA0678502046F9C6001519B0 /* Application */,
@@ -332,6 +335,14 @@
 				DAD9BC372047F06300675963 /* PresentLayout.swift */,
 			);
 			path = Present;
+			sourceTree = "<group>";
+		};
+		DAAFD2B62051446700F1526F /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				DAAFD2B72051447400F1526F /* Database.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -498,6 +509,7 @@
 				DA5B8CC820513545008B986F /* Entropy.xcdatamodeld in Sources */,
 				DA328234204712CC00795C7B /* PresentProtocol+Default.swift in Sources */,
 				DA5B8CD020513E16008B986F /* Project.swift in Sources */,
+				DAAFD2B82051447400F1526F /* Database.swift in Sources */,
 				DA7380EF20432007005C43A3 /* ExtensionUIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
