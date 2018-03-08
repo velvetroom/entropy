@@ -2,6 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D102" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="CoredataProfile" representedClassName="CoredataProfile" syncable="YES" codeGenerationType="class">
         <relationship name="access" maxCount="1" deletionRule="Cascade" destinationEntity="CoredataProfileAccess" inverseName="profile" inverseEntity="CoredataProfileAccess" syncable="YES"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CoredataProject" inverseName="profile" inverseEntity="CoredataProject" syncable="YES"/>
     </entity>
     <entity name="CoredataProfileAccess" representedClassName="CoredataProfileAccess" isAbstract="YES" syncable="YES" codeGenerationType="class">
         <relationship name="profile" maxCount="1" deletionRule="Nullify" destinationEntity="CoredataProfile" inverseName="access" inverseEntity="CoredataProfile" syncable="YES"/>
@@ -12,12 +13,13 @@
         <attribute name="created" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="start" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="profile" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CoredataProfile" inverseName="project" inverseEntity="CoredataProfile" syncable="YES"/>
     </entity>
     <elements>
-        <element name="CoredataProject" positionX="-63" positionY="-18" width="128" height="90"/>
-        <element name="CoredataProfile" positionX="-54" positionY="-9" width="128" height="60"/>
+        <element name="CoredataProfile" positionX="-54" positionY="-9" width="128" height="75"/>
         <element name="CoredataProfileAccess" positionX="-36" positionY="9" width="128" height="60"/>
         <element name="CoredataProfileAccessFree" positionX="-18" positionY="27" width="128" height="45"/>
         <element name="CoredataProfileAccessPremium" positionX="0" positionY="45" width="128" height="45"/>
+        <element name="CoredataProject" positionX="-63" positionY="-18" width="128" height="105"/>
     </elements>
 </model>

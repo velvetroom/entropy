@@ -6,4 +6,8 @@ internal final class Database {
     internal init(provider:DatabaseProviderProtocol = DatabaseProviderCoredata()) {
         self.provider = provider
     }
+    
+    internal func loadProfile(completion:@escaping((Profile) -> ())) {
+        
+    }
 }

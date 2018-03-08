@@ -12,4 +12,8 @@ internal final class Simulation:Model {
     internal func loadProject(completion:@escaping(() -> ())) {
         
     }
+    
+    internal func updateViewModel() {
+        
+    }
 }
