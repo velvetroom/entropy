@@ -17,6 +17,7 @@
 		DA32823220470FE300795C7B /* PresentCentred.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32823120470FE300795C7B /* PresentCentred.swift */; };
 		DA328234204712CC00795C7B /* PresentProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA328233204712CC00795C7B /* PresentProtocol+Default.swift */; };
 		DA5B8CC820513545008B986F /* Entropy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CC620513545008B986F /* Entropy.xcdatamodeld */; };
+		DA5B8CCA20513C16008B986F /* Simulation+ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CC920513C16008B986F /* Simulation+ControllerDelegate.swift */; };
 		DA64776B204E959B00235718 /* ControllerDelegate+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA64776A204E959B00235718 /* ControllerDelegate+Default.swift */; };
 		DA64776F204EA54500235718 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA64776E204EA54500235718 /* Model.swift */; };
 		DA647772204FE55300235718 /* TestApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA647771204FE55300235718 /* TestApplicationPresenter.swift */; };
@@ -71,6 +72,7 @@
 		DA48BB1A2046CD2B00271252 /* tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA48BB292046CE1F00271252 /* InfoTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoTests.plist; sourceTree = "<group>"; };
 		DA5B8CC720513545008B986F /* Entropy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Entropy.xcdatamodel; sourceTree = "<group>"; };
+		DA5B8CC920513C16008B986F /* Simulation+ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simulation+ControllerDelegate.swift"; sourceTree = "<group>"; };
 		DA64776A204E959B00235718 /* ControllerDelegate+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerDelegate+Default.swift"; sourceTree = "<group>"; };
 		DA64776E204EA54500235718 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DA647771204FE55300235718 /* TestApplicationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApplicationPresenter.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				DA06783D2046F6DA001519B0 /* Simulation.swift */,
+				DA5B8CC920513C16008B986F /* Simulation+ControllerDelegate.swift */,
 				DA0678412046F751001519B0 /* SimulationController.swift */,
 				DAD9BC352047EF7700675963 /* SimulationView.swift */,
 				DA06784E2046F932001519B0 /* SimulationViewModel.swift */,
@@ -423,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA5B8CCA20513C16008B986F /* Simulation+ControllerDelegate.swift in Sources */,
 				DA0678542046F9FD001519B0 /* ApplicationPresenter.swift in Sources */,
 				DA32823220470FE300795C7B /* PresentCentred.swift in Sources */,
 				DA785A4F20470CF600E3DFD1 /* PresentProtocol.swift in Sources */,

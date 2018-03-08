@@ -6,4 +6,6 @@ internal final class Simulation:Model {
         let controller:SimulationController = SimulationController()
         super.init(viewModel:viewModel, controller:controller)
     }
+    
+    
 }
