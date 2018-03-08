@@ -19,6 +19,7 @@
 		DA5B8CC820513545008B986F /* Entropy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CC620513545008B986F /* Entropy.xcdatamodeld */; };
 		DA5B8CCA20513C16008B986F /* Simulation+ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CC920513C16008B986F /* Simulation+ControllerDelegate.swift */; };
 		DA5B8CCD20513CD0008B986F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CCC20513CD0008B986F /* Profile.swift */; };
+		DA5B8CD020513E16008B986F /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CCF20513E16008B986F /* Project.swift */; };
 		DA64776B204E959B00235718 /* ControllerDelegate+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA64776A204E959B00235718 /* ControllerDelegate+Default.swift */; };
 		DA64776F204EA54500235718 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA64776E204EA54500235718 /* Model.swift */; };
 		DA647772204FE55300235718 /* TestApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA647771204FE55300235718 /* TestApplicationPresenter.swift */; };
@@ -75,6 +76,7 @@
 		DA5B8CC720513545008B986F /* Entropy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Entropy.xcdatamodel; sourceTree = "<group>"; };
 		DA5B8CC920513C16008B986F /* Simulation+ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simulation+ControllerDelegate.swift"; sourceTree = "<group>"; };
 		DA5B8CCC20513CD0008B986F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		DA5B8CCF20513E16008B986F /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		DA64776A204E959B00235718 /* ControllerDelegate+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerDelegate+Default.swift"; sourceTree = "<group>"; };
 		DA64776E204EA54500235718 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DA647771204FE55300235718 /* TestApplicationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApplicationPresenter.swift; sourceTree = "<group>"; };
@@ -204,6 +206,14 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		DA5B8CCE20513E07008B986F /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				DA5B8CCF20513E16008B986F /* Project.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
 		DA647770204FE53E00235718 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +277,7 @@
 				DA0678502046F9C6001519B0 /* Application */,
 				DA785A4D20470CE400E3DFD1 /* Present */,
 				DA0678382046F61C001519B0 /* Simulation */,
+				DA5B8CCE20513E07008B986F /* Project */,
 				DA5B8CCB20513CC6008B986F /* Profile */,
 				DA7380AE20432007005C43A3 /* Extension */,
 			);
@@ -470,6 +481,7 @@
 				DAD9BC342047E55300675963 /* AbstractController.swift in Sources */,
 				DA5B8CC820513545008B986F /* Entropy.xcdatamodeld in Sources */,
 				DA328234204712CC00795C7B /* PresentProtocol+Default.swift in Sources */,
+				DA5B8CD020513E16008B986F /* Project.swift in Sources */,
 				DA7380EF20432007005C43A3 /* ExtensionUIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
