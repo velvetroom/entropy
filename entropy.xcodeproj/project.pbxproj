@@ -16,6 +16,7 @@
 		DA0678542046F9FD001519B0 /* ApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678532046F9FD001519B0 /* ApplicationPresenter.swift */; };
 		DA32823220470FE300795C7B /* PresentCentred.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32823120470FE300795C7B /* PresentCentred.swift */; };
 		DA328234204712CC00795C7B /* PresentProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA328233204712CC00795C7B /* PresentProtocol+Default.swift */; };
+		DA5B8CC820513545008B986F /* Entropy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CC620513545008B986F /* Entropy.xcdatamodeld */; };
 		DA64776B204E959B00235718 /* ControllerDelegate+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA64776A204E959B00235718 /* ControllerDelegate+Default.swift */; };
 		DA64776F204EA54500235718 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA64776E204EA54500235718 /* Model.swift */; };
 		DA647772204FE55300235718 /* TestApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA647771204FE55300235718 /* TestApplicationPresenter.swift */; };
@@ -69,6 +70,7 @@
 		DA328233204712CC00795C7B /* PresentProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PresentProtocol+Default.swift"; sourceTree = "<group>"; };
 		DA48BB1A2046CD2B00271252 /* tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA48BB292046CE1F00271252 /* InfoTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoTests.plist; sourceTree = "<group>"; };
+		DA5B8CC720513545008B986F /* Entropy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Entropy.xcdatamodel; sourceTree = "<group>"; };
 		DA64776A204E959B00235718 /* ControllerDelegate+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerDelegate+Default.swift"; sourceTree = "<group>"; };
 		DA64776E204EA54500235718 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DA647771204FE55300235718 /* TestApplicationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApplicationPresenter.swift; sourceTree = "<group>"; };
@@ -181,6 +183,14 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		DA5B8CC52051352A008B986F /* Codedata */ = {
+			isa = PBXGroup;
+			children = (
+				DA5B8CC620513545008B986F /* Entropy.xcdatamodeld */,
+			);
+			path = Codedata;
+			sourceTree = "<group>";
+		};
 		DA647770204FE53E00235718 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				DA73809C20432007005C43A3 /* Assets */,
+				DA5B8CC52051352A008B986F /* Codedata */,
 				DA7380E020432007005C43A3 /* Configuration */,
 				DA7380A220432007005C43A3 /* Resources */,
 				DA7380AD20432007005C43A3 /* Source */,
@@ -441,6 +452,7 @@
 				DA06784F2046F932001519B0 /* SimulationViewModel.swift in Sources */,
 				DA785A4A2047083E00E3DFD1 /* AbstractView.swift in Sources */,
 				DAD9BC342047E55300675963 /* AbstractController.swift in Sources */,
+				DA5B8CC820513545008B986F /* Entropy.xcdatamodeld in Sources */,
 				DA328234204712CC00795C7B /* PresentProtocol+Default.swift in Sources */,
 				DA7380EF20432007005C43A3 /* ExtensionUIColor.swift in Sources */,
 			);
@@ -706,6 +718,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DA5B8CC620513545008B986F /* Entropy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA5B8CC720513545008B986F /* Entropy.xcdatamodel */,
+			);
+			currentVersion = DA5B8CC720513545008B986F /* Entropy.xcdatamodel */;
+			path = Entropy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DA73807F20431E5E005C43A3 /* Project object */;
 }
