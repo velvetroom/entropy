@@ -23,6 +23,7 @@
 		DA5B8CD320513F33008B986F /* CoredataProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CD220513F33008B986F /* CoredataProject.swift */; };
 		DA5B8CD620514032008B986F /* LocalizableCoredata.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA5B8CD420514032008B986F /* LocalizableCoredata.strings */; };
 		DA5B8CD82051407F008B986F /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CD72051407F008B986F /* ExtensionString.swift */; };
+		DA5B8CDB205141E5008B986F /* TestSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CDA205141E5008B986F /* TestSimulation.swift */; };
 		DA64776B204E959B00235718 /* ControllerDelegate+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA64776A204E959B00235718 /* ControllerDelegate+Default.swift */; };
 		DA64776F204EA54500235718 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA64776E204EA54500235718 /* Model.swift */; };
 		DA647772204FE55300235718 /* TestApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA647771204FE55300235718 /* TestApplicationPresenter.swift */; };
@@ -79,6 +80,7 @@
 		DA5B8CD220513F33008B986F /* CoredataProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataProject.swift; sourceTree = "<group>"; };
 		DA5B8CD520514032008B986F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableCoredata.strings; sourceTree = "<group>"; };
 		DA5B8CD72051407F008B986F /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
+		DA5B8CDA205141E5008B986F /* TestSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulation.swift; sourceTree = "<group>"; };
 		DA64776A204E959B00235718 /* ControllerDelegate+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerDelegate+Default.swift"; sourceTree = "<group>"; };
 		DA64776E204EA54500235718 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DA647771204FE55300235718 /* TestApplicationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApplicationPresenter.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				DA647770204FE53E00235718 /* Application */,
+				DA5B8CD9205141C9008B986F /* Simulation */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -218,6 +221,14 @@
 				DA5B8CD220513F33008B986F /* CoredataProject.swift */,
 			);
 			path = Coredata;
+			sourceTree = "<group>";
+		};
+		DA5B8CD9205141C9008B986F /* Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				DA5B8CDA205141E5008B986F /* TestSimulation.swift */,
+			);
+			path = Simulation;
 			sourceTree = "<group>";
 		};
 		DA647770204FE53E00235718 /* Application */ = {
@@ -442,6 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA5B8CDB205141E5008B986F /* TestSimulation.swift in Sources */,
 				DA647772204FE55300235718 /* TestApplicationPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
