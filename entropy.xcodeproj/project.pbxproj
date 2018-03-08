@@ -18,6 +18,7 @@
 		DA328234204712CC00795C7B /* PresentProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA328233204712CC00795C7B /* PresentProtocol+Default.swift */; };
 		DA5B8CC820513545008B986F /* Entropy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CC620513545008B986F /* Entropy.xcdatamodeld */; };
 		DA5B8CCA20513C16008B986F /* Simulation+ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CC920513C16008B986F /* Simulation+ControllerDelegate.swift */; };
+		DA5B8CCD20513CD0008B986F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CCC20513CD0008B986F /* Profile.swift */; };
 		DA64776B204E959B00235718 /* ControllerDelegate+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA64776A204E959B00235718 /* ControllerDelegate+Default.swift */; };
 		DA64776F204EA54500235718 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA64776E204EA54500235718 /* Model.swift */; };
 		DA647772204FE55300235718 /* TestApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA647771204FE55300235718 /* TestApplicationPresenter.swift */; };
@@ -73,6 +74,7 @@
 		DA48BB292046CE1F00271252 /* InfoTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoTests.plist; sourceTree = "<group>"; };
 		DA5B8CC720513545008B986F /* Entropy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Entropy.xcdatamodel; sourceTree = "<group>"; };
 		DA5B8CC920513C16008B986F /* Simulation+ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simulation+ControllerDelegate.swift"; sourceTree = "<group>"; };
+		DA5B8CCC20513CD0008B986F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		DA64776A204E959B00235718 /* ControllerDelegate+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerDelegate+Default.swift"; sourceTree = "<group>"; };
 		DA64776E204EA54500235718 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DA647771204FE55300235718 /* TestApplicationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApplicationPresenter.swift; sourceTree = "<group>"; };
@@ -194,6 +196,14 @@
 			path = Codedata;
 			sourceTree = "<group>";
 		};
+		DA5B8CCB20513CC6008B986F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DA5B8CCC20513CD0008B986F /* Profile.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		DA647770204FE53E00235718 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +267,7 @@
 				DA0678502046F9C6001519B0 /* Application */,
 				DA785A4D20470CE400E3DFD1 /* Present */,
 				DA0678382046F61C001519B0 /* Simulation */,
+				DA5B8CCB20513CC6008B986F /* Profile */,
 				DA7380AE20432007005C43A3 /* Extension */,
 			);
 			path = Source;
@@ -443,6 +454,7 @@
 				DADB842A2047DEFB00EB45C9 /* AbstractModel.swift in Sources */,
 				DA64776F204EA54500235718 /* Model.swift in Sources */,
 				DA7380ED20432007005C43A3 /* ExtensionUIView+LayoutHeight.swift in Sources */,
+				DA5B8CCD20513CD0008B986F /* Profile.swift in Sources */,
 				DAA15D19204FF941001804B1 /* ApplicationPresenter+Constants.swift in Sources */,
 				DAD9BC362047EF7700675963 /* SimulationView.swift in Sources */,
 				DA64776B204E959B00235718 /* ControllerDelegate+Default.swift in Sources */,

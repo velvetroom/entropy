@@ -7,5 +7,7 @@ internal final class Simulation:Model {
         super.init(viewModel:viewModel, controller:controller)
     }
     
-    
+    internal func loadProfile() {
+        
+    }
 }
