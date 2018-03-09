@@ -15,4 +15,8 @@ class Model:AbstractModel {
         controller.delegate = self
         viewModel.delegate = self
     }
+    
+    func controllerDidLoad() { }
+    func controllerWillAppear() { }
+    func controllerDidAppear() { }
 }

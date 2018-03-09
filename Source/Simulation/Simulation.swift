@@ -1,7 +1,7 @@
 import Foundation
 
 class Simulation:Model {
-    var project:Project?
+    private(set) var project:Project?
     
     required init() {
         let viewModel:SimulationViewModel = SimulationViewModel()
@@ -9,11 +9,23 @@ class Simulation:Model {
         super.init(viewModel:viewModel, controller:controller)
     }
     
-    func loadProject(completion:@escaping(() -> ())) {
-        
+    override func controllerDidAppear() {
+        DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async { [weak self] in
+            self?.loadProject { [weak self] in
+                self?.updateViewModel()
+            }
+        }
     }
     
-    func updateViewModel() {
-        
+    func loadProject(completion:@escaping(() -> ())) {
+        let database:Database = Database()
+        database.loadProfile { [weak self] (profile:Profile) in
+            self?.project = profile.project
+            completion()
+        }
+    }
+    
+    private func updateViewModel() {
+
     }
 }

@@ -25,17 +25,17 @@ extension DatabaseProviderCoredata {
     }
     
     func createProfile(completion:@escaping((Profile) -> ())) {
-        self.create { [weak self] (coredataProfile:CoredataProfile) in
-            self?.configureNewProfile(coredataProfile:coredataProfile, completion:completion)
+        self.create { (coredataProfile:CoredataProfile) in
+            self.configureNewProfile(coredataProfile:coredataProfile, completion:completion)
         }
     }
     
     private func configureNewProfile(coredataProfile:CoredataProfile, completion:@escaping((Profile) -> ())) {
-        self.createFreeAccess { [weak self] (access:CoredataProfileAccessFree) in
+        self.createFreeAccess { (access:CoredataProfileAccessFree) in
             coredataProfile.access = access
-            self?.createProject { [weak self] (project:CoredataProject) in
+            self.createProject { (project:CoredataProject) in
                 coredataProfile.project = project
-                self?.newProfileReady(coredataProfile:coredataProfile, completion:completion)
+                self.newProfileReady(coredataProfile:coredataProfile, completion:completion)
             }
         }
     }

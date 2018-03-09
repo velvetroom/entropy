@@ -28,13 +28,11 @@
 		DA4B5AB0205274CB00A99126 /* ProfileAccessPremium.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5AAF205274CB00A99126 /* ProfileAccessPremium.swift */; };
 		DA4B5ABA20527AEE00A99126 /* CoredataProfileAccessFree.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5AB920527AEE00A99126 /* CoredataProfileAccessFree.swift */; };
 		DA4B5ABC20527BA100A99126 /* CoredataProfileAccessPremium.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5ABB20527BA100A99126 /* CoredataProfileAccessPremium.swift */; };
-		DA5B8CCA20513C16008B986F /* Simulation+ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CC920513C16008B986F /* Simulation+ControllerDelegate.swift */; };
 		DA5B8CCD20513CD0008B986F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CCC20513CD0008B986F /* Profile.swift */; };
 		DA5B8CD020513E16008B986F /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CCF20513E16008B986F /* Project.swift */; };
 		DA5B8CD320513F33008B986F /* CoredataProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CD220513F33008B986F /* CoredataProject.swift */; };
 		DA5B8CD620514032008B986F /* LocalizableCoredata.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA5B8CD420514032008B986F /* LocalizableCoredata.strings */; };
 		DA5B8CD82051407F008B986F /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CD72051407F008B986F /* ExtensionString.swift */; };
-		DA64776B204E959B00235718 /* ControllerDelegate+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA64776A204E959B00235718 /* ControllerDelegate+Default.swift */; };
 		DA64776F204EA54500235718 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA64776E204EA54500235718 /* Model.swift */; };
 		DA7380E220432007005C43A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA73809D20432007005C43A3 /* LaunchScreen.storyboard */; };
 		DA7380E820432007005C43A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A520432007005C43A3 /* InfoPlist.strings */; };
@@ -103,13 +101,11 @@
 		DA4B5AAF205274CB00A99126 /* ProfileAccessPremium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAccessPremium.swift; sourceTree = "<group>"; };
 		DA4B5AB920527AEE00A99126 /* CoredataProfileAccessFree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataProfileAccessFree.swift; sourceTree = "<group>"; };
 		DA4B5ABB20527BA100A99126 /* CoredataProfileAccessPremium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataProfileAccessPremium.swift; sourceTree = "<group>"; };
-		DA5B8CC920513C16008B986F /* Simulation+ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simulation+ControllerDelegate.swift"; sourceTree = "<group>"; };
 		DA5B8CCC20513CD0008B986F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		DA5B8CCF20513E16008B986F /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		DA5B8CD220513F33008B986F /* CoredataProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataProject.swift; sourceTree = "<group>"; };
 		DA5B8CD520514032008B986F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableCoredata.strings; sourceTree = "<group>"; };
 		DA5B8CD72051407F008B986F /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
-		DA64776A204E959B00235718 /* ControllerDelegate+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerDelegate+Default.swift"; sourceTree = "<group>"; };
 		DA64776E204EA54500235718 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DA73808720431E5E005C43A3 /* entropy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = entropy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA73809D20432007005C43A3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -184,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				DA06783D2046F6DA001519B0 /* Simulation.swift */,
-				DA5B8CC920513C16008B986F /* Simulation+ControllerDelegate.swift */,
 				DA0678412046F751001519B0 /* SimulationController.swift */,
 				DAD9BC352047EF7700675963 /* SimulationView.swift */,
 				DA06784E2046F932001519B0 /* SimulationViewModel.swift */,
@@ -198,7 +193,6 @@
 				DA64776E204EA54500235718 /* Model.swift */,
 				DA785A472047080F00E3DFD1 /* Controller.swift */,
 				DA0678442046F7CB001519B0 /* ControllerDelegate.swift */,
-				DA64776A204E959B00235718 /* ControllerDelegate+Default.swift */,
 				DA785A452047074900E3DFD1 /* ViewModelDelegate.swift */,
 			);
 			path = Shared;
@@ -534,7 +528,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA5B8CCA20513C16008B986F /* Simulation+ControllerDelegate.swift in Sources */,
 				DA0678542046F9FD001519B0 /* ApplicationPresenter.swift in Sources */,
 				DA32823220470FE300795C7B /* PresentCentred.swift in Sources */,
 				DA785A4F20470CF600E3DFD1 /* PresentProtocol.swift in Sources */,
@@ -565,7 +558,6 @@
 				DAA15D19204FF941001804B1 /* ApplicationPresenter+Constants.swift in Sources */,
 				DAAFD2BA205144DC00F1526F /* DatabaseProviderProtocol.swift in Sources */,
 				DAD9BC362047EF7700675963 /* SimulationView.swift in Sources */,
-				DA64776B204E959B00235718 /* ControllerDelegate+Default.swift in Sources */,
 				DAA15D17204FF87C001804B1 /* ApplicationPresenter+Factory.swift in Sources */,
 				DAD9BC382047F06300675963 /* PresentLayout.swift in Sources */,
 				DA785A4C20470C3900E3DFD1 /* ApplicationPresenterProtocol.swift in Sources */,
