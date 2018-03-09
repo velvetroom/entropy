@@ -34,4 +34,6 @@ class AbstractController:UIViewController {
         super.viewDidAppear(animated)
         self.delegate?.controllerDidAppear()
     }
+    
+    func reloadViewModel() { }
 }

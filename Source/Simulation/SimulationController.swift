@@ -5,4 +5,8 @@ class SimulationController:Controller<SimulationViewModel> {
         let view:SimulationView = SimulationView()
         self.view = view
     }
+    
+    override func reloadViewModel() {
+        
+    }
 }

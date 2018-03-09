@@ -12,7 +12,7 @@ class Simulation:Model {
     override func controllerDidAppear() {
         DispatchQueue.global(qos:DispatchQoS.QoSClass.background).async { [weak self] in
             self?.loadProject { [weak self] in
-                self?.updateViewModel()
+                self?.updateInterface()
             }
         }
     }
@@ -22,6 +22,13 @@ class Simulation:Model {
         database.loadProfile { [weak self] (profile:Profile) in
             self?.project = profile.project
             completion()
+        }
+    }
+    
+    private func updateInterface() {
+        self.updateViewModel()
+        DispatchQueue.main.async { [weak self] in
+            self?.controller.reloadViewModel()
         }
     }
     
