@@ -16,6 +16,10 @@
 		DA0678542046F9FD001519B0 /* ApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678532046F9FD001519B0 /* ApplicationPresenter.swift */; };
 		DA32823220470FE300795C7B /* PresentCentred.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32823120470FE300795C7B /* PresentCentred.swift */; };
 		DA328234204712CC00795C7B /* PresentProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA328233204712CC00795C7B /* PresentProtocol+Default.swift */; };
+		DA4B5AA320526D6C00A99126 /* TestDatabaseProviderCoredata.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5A9D20526D6C00A99126 /* TestDatabaseProviderCoredata.swift */; };
+		DA4B5AA420526D6C00A99126 /* TestDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5A9E20526D6C00A99126 /* TestDatabase.swift */; };
+		DA4B5AA520526D6C00A99126 /* TestSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5AA020526D6C00A99126 /* TestSimulation.swift */; };
+		DA4B5AA620526D6C00A99126 /* TestApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5AA220526D6C00A99126 /* TestApplicationPresenter.swift */; };
 		DA5B8CCA20513C16008B986F /* Simulation+ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CC920513C16008B986F /* Simulation+ControllerDelegate.swift */; };
 		DA5B8CCD20513CD0008B986F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CCC20513CD0008B986F /* Profile.swift */; };
 		DA5B8CD020513E16008B986F /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CCF20513E16008B986F /* Project.swift */; };
@@ -79,6 +83,10 @@
 		DA328233204712CC00795C7B /* PresentProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PresentProtocol+Default.swift"; sourceTree = "<group>"; };
 		DA48BB1A2046CD2B00271252 /* tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA48BB292046CE1F00271252 /* InfoTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoTests.plist; sourceTree = "<group>"; };
+		DA4B5A9D20526D6C00A99126 /* TestDatabaseProviderCoredata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDatabaseProviderCoredata.swift; sourceTree = "<group>"; };
+		DA4B5A9E20526D6C00A99126 /* TestDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDatabase.swift; sourceTree = "<group>"; };
+		DA4B5AA020526D6C00A99126 /* TestSimulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSimulation.swift; sourceTree = "<group>"; };
+		DA4B5AA220526D6C00A99126 /* TestApplicationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestApplicationPresenter.swift; sourceTree = "<group>"; };
 		DA5B8CC920513C16008B986F /* Simulation+ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simulation+ControllerDelegate.swift"; sourceTree = "<group>"; };
 		DA5B8CCC20513CD0008B986F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		DA5B8CCF20513E16008B986F /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
@@ -194,6 +202,41 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		DA4B5A9B20526D6C00A99126 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DA4B5A9C20526D6C00A99126 /* Database */,
+				DA4B5A9F20526D6C00A99126 /* Simulation */,
+				DA4B5AA120526D6C00A99126 /* Application */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		DA4B5A9C20526D6C00A99126 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				DA4B5A9D20526D6C00A99126 /* TestDatabaseProviderCoredata.swift */,
+				DA4B5A9E20526D6C00A99126 /* TestDatabase.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		DA4B5A9F20526D6C00A99126 /* Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				DA4B5AA020526D6C00A99126 /* TestSimulation.swift */,
+			);
+			path = Simulation;
+			sourceTree = "<group>";
+		};
+		DA4B5AA120526D6C00A99126 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DA4B5AA220526D6C00A99126 /* TestApplicationPresenter.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		DA5B8CCB20513CC6008B986F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +269,7 @@
 				DA7380E020432007005C43A3 /* Configuration */,
 				DA7380A220432007005C43A3 /* Resources */,
 				DA7380AD20432007005C43A3 /* Source */,
+				DA4B5A9B20526D6C00A99126 /* Tests */,
 				DA7380A120432007005C43A3 /* LICENSE */,
 				DA73809F20432007005C43A3 /* README.md */,
 				DA7380A020432007005C43A3 /* .codebeatsettings */,
@@ -455,6 +499,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4B5AA420526D6C00A99126 /* TestDatabase.swift in Sources */,
+				DA4B5AA620526D6C00A99126 /* TestApplicationPresenter.swift in Sources */,
+				DA4B5AA520526D6C00A99126 /* TestSimulation.swift in Sources */,
+				DA4B5AA320526D6C00A99126 /* TestDatabaseProviderCoredata.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
