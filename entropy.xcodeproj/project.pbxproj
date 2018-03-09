@@ -26,6 +26,7 @@
 		DA4B5AAE205274A100A99126 /* ProfileAccessFree.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5AAD205274A100A99126 /* ProfileAccessFree.swift */; };
 		DA4B5AB0205274CB00A99126 /* ProfileAccessPremium.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5AAF205274CB00A99126 /* ProfileAccessPremium.swift */; };
 		DA4B5AB2205275A600A99126 /* CoredataProfileAccess+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5AB1205275A600A99126 /* CoredataProfileAccess+Factory.swift */; };
+		DA4B5AB42052769500A99126 /* CoredataProfileAccessFree+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5AB32052769500A99126 /* CoredataProfileAccessFree+Factory.swift */; };
 		DA5B8CCA20513C16008B986F /* Simulation+ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CC920513C16008B986F /* Simulation+ControllerDelegate.swift */; };
 		DA5B8CCD20513CD0008B986F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CCC20513CD0008B986F /* Profile.swift */; };
 		DA5B8CD020513E16008B986F /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CCF20513E16008B986F /* Project.swift */; };
@@ -99,6 +100,7 @@
 		DA4B5AAD205274A100A99126 /* ProfileAccessFree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAccessFree.swift; sourceTree = "<group>"; };
 		DA4B5AAF205274CB00A99126 /* ProfileAccessPremium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAccessPremium.swift; sourceTree = "<group>"; };
 		DA4B5AB1205275A600A99126 /* CoredataProfileAccess+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoredataProfileAccess+Factory.swift"; sourceTree = "<group>"; };
+		DA4B5AB32052769500A99126 /* CoredataProfileAccessFree+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoredataProfileAccessFree+Factory.swift"; sourceTree = "<group>"; };
 		DA5B8CC920513C16008B986F /* Simulation+ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simulation+ControllerDelegate.swift"; sourceTree = "<group>"; };
 		DA5B8CCC20513CD0008B986F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		DA5B8CCF20513E16008B986F /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 				DA4B5AA720526F0B00A99126 /* CoredataProfile.swift */,
 				DA4B5AA92052736D00A99126 /* CoredataProfile+Factory.swift */,
 				DA4B5AB1205275A600A99126 /* CoredataProfileAccess+Factory.swift */,
+				DA4B5AB32052769500A99126 /* CoredataProfileAccessFree+Factory.swift */,
 			);
 			path = Coredata;
 			sourceTree = "<group>";
@@ -561,6 +564,7 @@
 				DA64776B204E959B00235718 /* ControllerDelegate+Default.swift in Sources */,
 				DAA15D17204FF87C001804B1 /* ApplicationPresenter+Factory.swift in Sources */,
 				DAD9BC382047F06300675963 /* PresentLayout.swift in Sources */,
+				DA4B5AB42052769500A99126 /* CoredataProfileAccessFree+Factory.swift in Sources */,
 				DA785A4C20470C3900E3DFD1 /* ApplicationPresenterProtocol.swift in Sources */,
 				DA4B5AB0205274CB00A99126 /* ProfileAccessPremium.swift in Sources */,
 				DA7380F220432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift in Sources */,
