@@ -1,8 +1,8 @@
 import Foundation
 
-internal extension String {
+extension String {
     private struct Constants {
-        fileprivate static let tableCoredata:String = "LocalizableCoredata"
+        static let tableCoredata:String = "LocalizableCoredata"
     }
     
     static func localizedCoredata(key:String) -> String {

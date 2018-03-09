@@ -1,8 +1,8 @@
 import UIKit
 
-public extension UIView {
+extension UIView {
     @discardableResult
-    public func layoutTopToTop(view:UIView, constant:CGFloat = 0) -> NSLayoutConstraint {
+    func layoutTopToTop(view:UIView, constant:CGFloat = 0) -> NSLayoutConstraint {
         let constraint:NSLayoutConstraint = NSLayoutConstraint(
             item:self,
             attribute:NSLayoutAttribute.top,
@@ -16,7 +16,7 @@ public extension UIView {
     }
     
     @discardableResult
-    public func layoutTopToBottom(view:UIView, constant:CGFloat = 0) -> NSLayoutConstraint {
+    func layoutTopToBottom(view:UIView, constant:CGFloat = 0) -> NSLayoutConstraint {
         let constraint:NSLayoutConstraint = NSLayoutConstraint(
             item:self,
             attribute:NSLayoutAttribute.top,
@@ -30,7 +30,7 @@ public extension UIView {
     }
     
     @discardableResult
-    public func layoutBottomToBottom(view:UIView, constant:CGFloat = 0) -> NSLayoutConstraint {
+    func layoutBottomToBottom(view:UIView, constant:CGFloat = 0) -> NSLayoutConstraint {
         let constraint:NSLayoutConstraint = NSLayoutConstraint(
             item:self,
             attribute:NSLayoutAttribute.bottom,
@@ -44,7 +44,7 @@ public extension UIView {
     }
     
     @discardableResult
-    public func layoutBottomToTop(view:UIView, constant:CGFloat = 0) -> NSLayoutConstraint {
+    func layoutBottomToTop(view:UIView, constant:CGFloat = 0) -> NSLayoutConstraint {
         let constraint:NSLayoutConstraint = NSLayoutConstraint(
             item:self,
             attribute:NSLayoutAttribute.bottom,

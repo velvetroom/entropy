@@ -1,8 +1,8 @@
 import UIKit
 
-public extension UIView {
+extension UIView {
     @discardableResult
-    public func layoutLeftToLeft(view:UIView, constant:CGFloat = 0) -> NSLayoutConstraint {
+    func layoutLeftToLeft(view:UIView, constant:CGFloat = 0) -> NSLayoutConstraint {
         let constraint:NSLayoutConstraint = NSLayoutConstraint(
             item:self,
             attribute:NSLayoutAttribute.left,
@@ -16,7 +16,7 @@ public extension UIView {
     }
     
     @discardableResult
-    public func layoutLeftToRight(view:UIView, constant:CGFloat = 0) -> NSLayoutConstraint {
+    func layoutLeftToRight(view:UIView, constant:CGFloat = 0) -> NSLayoutConstraint {
         let constraint:NSLayoutConstraint = NSLayoutConstraint(
             item:self,
             attribute:NSLayoutAttribute.left,
@@ -30,7 +30,7 @@ public extension UIView {
     }
     
     @discardableResult
-    public func layoutRightToRight(view:UIView, constant:CGFloat = 0) -> NSLayoutConstraint {
+    func layoutRightToRight(view:UIView, constant:CGFloat = 0) -> NSLayoutConstraint {
         let constraint:NSLayoutConstraint = NSLayoutConstraint(
             item:self,
             attribute:NSLayoutAttribute.right,
@@ -44,7 +44,7 @@ public extension UIView {
     }
     
     @discardableResult
-    public func layoutRightToLeft(view:UIView, constant:CGFloat = 0) -> NSLayoutConstraint {
+    func layoutRightToLeft(view:UIView, constant:CGFloat = 0) -> NSLayoutConstraint {
         let constraint:NSLayoutConstraint = NSLayoutConstraint(
             item:self,
             attribute:NSLayoutAttribute.right,
