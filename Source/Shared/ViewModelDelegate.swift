@@ -1,4 +1,4 @@
 import Foundation
 
-internal protocol ViewModelDelegate:AnyObject {
+protocol ViewModelDelegate:AnyObject {
 }

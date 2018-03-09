@@ -1,19 +1,18 @@
 import UIKit
 
 @UIApplicationMain
-internal final class Application:UIResponder, UIApplicationDelegate {
-    internal var window:UIWindow?
+class Application:UIResponder, UIApplicationDelegate {
+    var window:UIWindow?
     private let presenter:ApplicationPresenter
     private let initialModelType:Model.Type
     
-    internal override init() {
+    override init() {
         self.presenter = ApplicationPresenter()
         self.initialModelType = Simulation.self
         super.init()
     }
     
-    internal func application(
-        _:UIApplication, didFinishLaunchingWithOptions:[UIApplicationLaunchOptionsKey:Any]?) -> Bool {
+    func application(_:UIApplication, didFinishLaunchingWithOptions:[UIApplicationLaunchOptionsKey:Any]?) -> Bool {
         let model:Model = self.initialModelType.init()
         let controller:ApplicationController = ApplicationController()
         self.startPresentation(model:model, controller:controller)

@@ -1,7 +1,7 @@
 import Foundation
 
-internal extension ApplicationPresenter {
-    internal class func factoryPrivateQueue() -> DispatchQueue {
+extension ApplicationPresenter {
+    class func factoryPrivateQueue() -> DispatchQueue {
         let queue:DispatchQueue = DispatchQueue(
             label:Constants.queueIdentifier,
             qos:DispatchQoS.userInteractive,

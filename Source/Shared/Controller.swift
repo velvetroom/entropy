@@ -1,5 +1,5 @@
 import Foundation
 
-internal class Controller<SpecialisedViewModel:AbstractViewModel>:AbstractController {
-    internal weak var viewModel:SpecialisedViewModel?
+class Controller<SpecialisedViewModel:AbstractViewModel>:AbstractController {
+    weak var viewModel:SpecialisedViewModel?
 }

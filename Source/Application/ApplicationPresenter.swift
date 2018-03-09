@@ -1,16 +1,16 @@
 import Foundation
 
-internal final class ApplicationPresenter:ApplicationPresenterProtocol {
-    internal weak var controller:ApplicationController?
-    internal var models:[Model]
-    internal let queue:DispatchQueue
+class ApplicationPresenter:ApplicationPresenterProtocol {
+    weak var controller:ApplicationController?
+    var models:[Model]
+    let queue:DispatchQueue
 
-    internal init() {
+    init() {
         self.models = []
         self.queue = ApplicationPresenter.factoryPrivateQueue()
     }
     
-    internal func present(model:Model, presentStrategy:PresentProtocol.Type) {
+    func present(model:Model, presentStrategy:PresentProtocol.Type) {
         self.queue.async { [weak self] in
             self?.retainModel(model:model)
             self?.presentWith(strategy:presentStrategy, model:model)
