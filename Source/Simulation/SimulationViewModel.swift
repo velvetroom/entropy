@@ -1,5 +1,9 @@
 import Foundation
 
-internal final class SimulationViewModel:AbstractViewModel {
-    internal weak var delegate:ViewModelDelegate?
+class SimulationViewModel:AbstractViewModel {
+    weak var delegate:ViewModelDelegate?
+    
+    required init() {
+        
+    }
 }

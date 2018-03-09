@@ -1,8 +1,8 @@
 import UIKit
 
-internal struct PresentLayout {
-    internal weak var layoutTop:NSLayoutConstraint?
-    internal weak var layoutBottom:NSLayoutConstraint?
-    internal weak var layoutLeft:NSLayoutConstraint?
-    internal weak var layoutRight:NSLayoutConstraint?
+struct PresentLayout {
+    weak var layoutTop:NSLayoutConstraint?
+    weak var layoutBottom:NSLayoutConstraint?
+    weak var layoutLeft:NSLayoutConstraint?
+    weak var layoutRight:NSLayoutConstraint?
 }

@@ -1,5 +1,5 @@
 import Foundation
 
-internal final class Profile {
+class Profile {
     
 }

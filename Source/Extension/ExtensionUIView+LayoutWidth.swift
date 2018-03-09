@@ -1,8 +1,8 @@
 import UIKit
 
-public extension UIView {
+extension UIView {
     @discardableResult
-    public func layoutWidth(constant:CGFloat = 0) -> NSLayoutConstraint {
+    func layoutWidth(constant:CGFloat = 0) -> NSLayoutConstraint {
         let constraint:NSLayoutConstraint = NSLayoutConstraint(
             item:self,
             attribute:NSLayoutAttribute.width,
@@ -16,7 +16,7 @@ public extension UIView {
     }
     
     @discardableResult
-    public func layoutWidthGreaterOrEqual(constant:CGFloat = 0) -> NSLayoutConstraint {
+    func layoutWidthGreaterOrEqual(constant:CGFloat = 0) -> NSLayoutConstraint {
         let constraint:NSLayoutConstraint = NSLayoutConstraint(
             item:self,
             attribute:NSLayoutAttribute.width,
@@ -30,7 +30,7 @@ public extension UIView {
     }
     
     @discardableResult
-    public func layoutWidth(view:UIView) -> NSLayoutConstraint {
+    func layoutWidth(view:UIView) -> NSLayoutConstraint {
         let constraint:NSLayoutConstraint = NSLayoutConstraint(
             item:self,
             attribute:NSLayoutAttribute.width,

@@ -1,5 +1,5 @@
 import Foundation
 
-internal protocol PresentProtocol {
+protocol PresentProtocol {
     static func present(model:Model, controller:ApplicationController)
 }

@@ -1,5 +1,5 @@
 import Foundation
 
-internal final class Project {
+class Project {
     
 }

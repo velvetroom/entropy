@@ -1,7 +1,7 @@
 import Foundation
 
-internal final class Simulation:Model {
-    internal var project:Project?
+class Simulation:Model {
+    var project:Project?
     
     required init() {
         let viewModel:SimulationViewModel = SimulationViewModel()
@@ -9,11 +9,11 @@ internal final class Simulation:Model {
         super.init(viewModel:viewModel, controller:controller)
     }
     
-    internal func loadProject(completion:@escaping(() -> ())) {
+    func loadProject(completion:@escaping(() -> ())) {
         
     }
     
-    internal func updateViewModel() {
+    func updateViewModel() {
         
     }
 }
