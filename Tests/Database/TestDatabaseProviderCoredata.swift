@@ -56,11 +56,21 @@ class TestDatabaseProviderCoredata:XCTestCase {
     }
     
     func testLoadProfileNone() {
-        
+        self.waitToDeleteAllProfiles()
+        waitForExpectations(timeout:Constants.expectationWait) { [weak self] (error:Error?) in
+            XCTAssertNil(self?.profileLoaded, "Error: profile should not be found")
+        }
     }
     
     private func waitToDeleteAllProfiles() {
-        let request:NSFetchRequest
-        self.provider?.load(request: <#T##NSFetchRequest<Entity>#>, completion: <#T##(([Entity]) -> ())##(([Entity]) -> ())##([Entity]) -> ()#>)
+        let expect:XCTestExpectation = expectation(description:"Wait for profile to load after delete all")
+        self.provider?.deleteAll(entityType:CoredataProfile.self) { [weak self] in
+            self?.provider?.loadProfile(found: { [weak self] (profile:Profile) in
+                self?.profileLoaded = profile
+                expect.fulfill()
+            }, notFound: {
+                expect.fulfill()
+            })
+        }
     }
 }
