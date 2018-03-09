@@ -5,19 +5,20 @@ extension DatabaseProviderCoredata {
     class func factoryContext(bundle:Bundle) -> NSManagedObjectContext {
         let context:NSManagedObjectContext = NSManagedObjectContext(
             concurrencyType:NSManagedObjectContextConcurrencyType.privateQueueConcurrencyType)
+        let store:NSPersistentStoreCoordinator? = factoryStoreIn(bundle:bundle)
         context.mergePolicy = NSMergePolicy(merge:NSMergePolicyType.mergeByPropertyStoreTrumpMergePolicyType)
-        assignStoreTo(context:context, in:bundle)
+        context.persistentStoreCoordinator = store
         return context
     }
     
-    private class func assignStoreTo(context:NSManagedObjectContext, in bundle:Bundle) {
+    private class func factoryStoreIn(bundle:Bundle) -> NSPersistentStoreCoordinator? {
         guard
             let model:NSManagedObjectModel = factoryModel(),
-            let store:NSPersistentStoreCoordinator = factoryStore(bundle:bundle, model:model)
+            let store:NSPersistentStoreCoordinator = factoryStoreIn(bundle:bundle, with:model)
         else {
-            return
+            return nil
         }
-        context.persistentStoreCoordinator = store
+        return store
     }
     
     private class func factoryModel() -> NSManagedObjectModel? {
@@ -30,7 +31,7 @@ extension DatabaseProviderCoredata {
         return managedObjectModel
     }
     
-    private class func factoryStore(bundle:Bundle, model:NSManagedObjectModel) -> NSPersistentStoreCoordinator? {
+    private class func factoryStoreIn(bundle:Bundle, with model:NSManagedObjectModel) -> NSPersistentStoreCoordinator? {
         let url:URL = factoryStoreURL(bundle:bundle)
         let store:NSPersistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel:model)
         do {

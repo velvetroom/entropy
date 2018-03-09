@@ -5,7 +5,7 @@
         <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CoredataProject" inverseName="profile" inverseEntity="CoredataProject" syncable="YES"/>
     </entity>
     <entity name="CoredataProfileAccess" representedClassName="CoredataProfileAccess" isAbstract="YES" syncable="YES" codeGenerationType="class">
-        <attribute name="accessType" transient="YES" attributeType="Transformable" customClassName="AnyObject" syncable="YES"/>
+        <attribute name="accessType" optional="YES" transient="YES" attributeType="Transformable" customClassName="AnyObject" syncable="YES"/>
         <relationship name="profile" maxCount="1" deletionRule="Nullify" destinationEntity="CoredataProfile" inverseName="access" inverseEntity="CoredataProfile" syncable="YES"/>
     </entity>
     <entity name="CoredataProfileAccessFree" representedClassName="CoredataProfileAccessFree" parentEntity="CoredataProfileAccess" syncable="YES" codeGenerationType="class"/>
