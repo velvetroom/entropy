@@ -3,7 +3,7 @@ import UIKit
 class AbstractView:UIView {
     var layout:PresentLayout
     
-    init() {
+    required init() {
         self.layout = PresentLayout()
         super.init(frame:CGRect.zero)
         self.clipsToBounds = true

@@ -1,12 +1,7 @@
 import Foundation
 
-class SimulationController:Controller<SimulationViewModel> {
-    override func loadView() {
-        let view:SimulationView = SimulationView()
-        self.view = view
-    }
-    
+class SimulationController:Controller<SimulationViewModel, SimulationView> {
     override func reloadViewModel() {
-        
+        self.specialisedView?.viewGraph.
     }
 }
