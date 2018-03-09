@@ -14,16 +14,17 @@ extension DatabaseProviderCoredata {
     func loadProfile(found:@escaping((Profile) -> ()), notFound:@escaping(() -> ())) {
         self.load(request:self.profileRequest) { (coredataProfiles:[CoredataProfile]) in
             guard
-                let coredataProfile:CoredataProfile = coredataProfiles.first
+                let coredataProfile:CoredataProfile = coredataProfiles.first,
+                let profile:Profile = coredataProfile.factoryProfile()
             else {
                 notFound()
                 return
             }
+            found(profile)
         }
     }
     
     func createProfile(completion:@escaping((Profile) -> ())) {
         
     }
-    
 }
