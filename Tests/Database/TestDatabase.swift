@@ -5,7 +5,7 @@ class TestDatabase:XCTestCase {
     private var database:Database?
     private var loadedProfile:Profile?
     private struct Constants {
-        static let expectationWait:TimeInterval = 1
+        static let expectationWait:TimeInterval = 0.5
     }
     
     override func setUp() {

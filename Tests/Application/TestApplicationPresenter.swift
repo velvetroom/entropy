@@ -7,8 +7,8 @@ class TestApplicationPresenter:XCTestCase {
     private var presenter:ApplicationPresenter?
     private var controller:ApplicationController?
     private struct Constants {
-        static let expectationWait:TimeInterval = 1
-        static let modelWait:TimeInterval = 0.5
+        static let expectationWait:TimeInterval = 0.5
+        static let modelWait:TimeInterval = 0.25
     }
     
     override func setUp() {
