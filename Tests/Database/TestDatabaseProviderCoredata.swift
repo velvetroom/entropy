@@ -35,4 +35,23 @@ class TestDatabaseProviderCoredata:XCTestCase {
             expect.fulfill()
         }
     }
+    
+    func testLoadProfile() {
+        self.waitToLoadProfile()
+        waitForExpectations(timeout:Constants.expectationWait) { [weak self] (error:Error?) in
+            XCTAssertNotNil(self?.profileLoaded, "Error: profile not loaded")
+        }
+    }
+    
+    private func waitToLoadProfile() {
+        let expect:XCTestExpectation = expectation(description:"Wait for profile to load")
+        self.provider?.createProfile { [weak self] (createdProfile:Profile) in
+            self?.provider?.loadProfile(found: { [weak self] (profile:Profile) in
+                self?.profileLoaded = profile
+                expect.fulfill()
+            }, notFound: {
+                expect.fulfill()
+            })
+        }
+    }
 }
