@@ -42,6 +42,19 @@ class DatabaseProviderCoredata:DatabaseProviderProtocol {
         }
     }
     
+    func deleteAll<Entity:NSManagedObject>(entityType:Entity.Type, completion:@escaping(() -> ())) {
+        let request:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName:entityType.name)
+        let batchDelete:NSBatchDeleteRequest = NSBatchDeleteRequest(fetchRequest:request)
+        self.context.perform {
+            do {
+                try self.context.execute(batchDelete)
+            } catch {
+                return
+            }
+            completion()
+        }
+    }
+    
     func save(completion:@escaping(() -> ())) {
         guard
             self.context.hasChanges == true

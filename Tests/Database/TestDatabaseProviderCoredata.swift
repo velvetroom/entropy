@@ -54,4 +54,13 @@ class TestDatabaseProviderCoredata:XCTestCase {
             })
         }
     }
+    
+    func testLoadProfileNone() {
+        
+    }
+    
+    private func waitToDeleteAllProfiles() {
+        let request:NSFetchRequest
+        self.provider?.load(request: <#T##NSFetchRequest<Entity>#>, completion: <#T##(([Entity]) -> ())##(([Entity]) -> ())##([Entity]) -> ()#>)
+    }
 }
