@@ -22,10 +22,8 @@
 		DA5B8CD320513F33008B986F /* CoredataProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CD220513F33008B986F /* CoredataProject.swift */; };
 		DA5B8CD620514032008B986F /* LocalizableCoredata.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA5B8CD420514032008B986F /* LocalizableCoredata.strings */; };
 		DA5B8CD82051407F008B986F /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CD72051407F008B986F /* ExtensionString.swift */; };
-		DA5B8CDB205141E5008B986F /* TestSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CDA205141E5008B986F /* TestSimulation.swift */; };
 		DA64776B204E959B00235718 /* ControllerDelegate+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA64776A204E959B00235718 /* ControllerDelegate+Default.swift */; };
 		DA64776F204EA54500235718 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA64776E204EA54500235718 /* Model.swift */; };
-		DA647772204FE55300235718 /* TestApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA647771204FE55300235718 /* TestApplicationPresenter.swift */; };
 		DA7380E220432007005C43A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA73809D20432007005C43A3 /* LaunchScreen.storyboard */; };
 		DA7380E820432007005C43A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A520432007005C43A3 /* InfoPlist.strings */; };
 		DA7380EC20432007005C43A3 /* ExtensionUIView+LayoutWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380AF20432007005C43A3 /* ExtensionUIView+LayoutWidth.swift */; };
@@ -52,9 +50,7 @@
 		DAAFD2C42051487800F1526F /* DatabaseProviderCoredata+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFD2C32051487800F1526F /* DatabaseProviderCoredata+Factory.swift */; };
 		DAAFD2C6205148EF00F1526F /* DatabaseProviderCoredata+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFD2C5205148EF00F1526F /* DatabaseProviderCoredata+Constants.swift */; };
 		DAAFD2C820514CBE00F1526F /* ExtensionFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFD2C720514CBE00F1526F /* ExtensionFileManager.swift */; };
-		DAAFD2CB2051588A00F1526F /* TestDatabaseProviderCoredata.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFD2CA2051588A00F1526F /* TestDatabaseProviderCoredata.swift */; };
 		DAAFD2CD20515D7600F1526F /* DatabaseProviderCoredata+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFD2CC20515D7600F1526F /* DatabaseProviderCoredata+Provider.swift */; };
-		DAAFD2CF2051626E00F1526F /* TestDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFD2CE2051626E00F1526F /* TestDatabase.swift */; };
 		DAD9BC342047E55300675963 /* AbstractController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC332047E55300675963 /* AbstractController.swift */; };
 		DAD9BC362047EF7700675963 /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC352047EF7700675963 /* SimulationView.swift */; };
 		DAD9BC382047F06300675963 /* PresentLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC372047F06300675963 /* PresentLayout.swift */; };
@@ -89,10 +85,8 @@
 		DA5B8CD220513F33008B986F /* CoredataProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataProject.swift; sourceTree = "<group>"; };
 		DA5B8CD520514032008B986F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableCoredata.strings; sourceTree = "<group>"; };
 		DA5B8CD72051407F008B986F /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
-		DA5B8CDA205141E5008B986F /* TestSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulation.swift; sourceTree = "<group>"; };
 		DA64776A204E959B00235718 /* ControllerDelegate+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControllerDelegate+Default.swift"; sourceTree = "<group>"; };
 		DA64776E204EA54500235718 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		DA647771204FE55300235718 /* TestApplicationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApplicationPresenter.swift; sourceTree = "<group>"; };
 		DA73808720431E5E005C43A3 /* entropy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = entropy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA73809D20432007005C43A3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA73809E20432007005C43A3 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -126,9 +120,7 @@
 		DAAFD2C32051487800F1526F /* DatabaseProviderCoredata+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseProviderCoredata+Factory.swift"; sourceTree = "<group>"; };
 		DAAFD2C5205148EF00F1526F /* DatabaseProviderCoredata+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseProviderCoredata+Constants.swift"; sourceTree = "<group>"; };
 		DAAFD2C720514CBE00F1526F /* ExtensionFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionFileManager.swift; sourceTree = "<group>"; };
-		DAAFD2CA2051588A00F1526F /* TestDatabaseProviderCoredata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDatabaseProviderCoredata.swift; sourceTree = "<group>"; };
 		DAAFD2CC20515D7600F1526F /* DatabaseProviderCoredata+Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseProviderCoredata+Provider.swift"; sourceTree = "<group>"; };
-		DAAFD2CE2051626E00F1526F /* TestDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDatabase.swift; sourceTree = "<group>"; };
 		DAD9BC332047E55300675963 /* AbstractController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractController.swift; sourceTree = "<group>"; };
 		DAD9BC352047EF7700675963 /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
 		DAD9BC372047F06300675963 /* PresentLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentLayout.swift; sourceTree = "<group>"; };
@@ -202,16 +194,6 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		DA48BB242046CE1000271252 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				DA647770204FE53E00235718 /* Application */,
-				DAAFD2C92051586A00F1526F /* Database */,
-				DA5B8CD9205141C9008B986F /* Simulation */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
 		DA5B8CCB20513CC6008B986F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,22 +218,6 @@
 			path = Coredata;
 			sourceTree = "<group>";
 		};
-		DA5B8CD9205141C9008B986F /* Simulation */ = {
-			isa = PBXGroup;
-			children = (
-				DA5B8CDA205141E5008B986F /* TestSimulation.swift */,
-			);
-			path = Simulation;
-			sourceTree = "<group>";
-		};
-		DA647770204FE53E00235718 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				DA647771204FE55300235718 /* TestApplicationPresenter.swift */,
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
 		DA73807E20431E5E005C43A3 = {
 			isa = PBXGroup;
 			children = (
@@ -260,7 +226,6 @@
 				DA7380E020432007005C43A3 /* Configuration */,
 				DA7380A220432007005C43A3 /* Resources */,
 				DA7380AD20432007005C43A3 /* Source */,
-				DA48BB242046CE1000271252 /* Tests */,
 				DA7380A120432007005C43A3 /* LICENSE */,
 				DA73809F20432007005C43A3 /* README.md */,
 				DA7380A020432007005C43A3 /* .codebeatsettings */,
@@ -369,15 +334,6 @@
 				DAAFD2BE2051465000F1526F /* Entropy.xcdatamodeld */,
 			);
 			path = Coredata;
-			sourceTree = "<group>";
-		};
-		DAAFD2C92051586A00F1526F /* Database */ = {
-			isa = PBXGroup;
-			children = (
-				DAAFD2CE2051626E00F1526F /* TestDatabase.swift */,
-				DAAFD2CA2051588A00F1526F /* TestDatabaseProviderCoredata.swift */,
-			);
-			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -499,10 +455,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA5B8CDB205141E5008B986F /* TestSimulation.swift in Sources */,
-				DA647772204FE55300235718 /* TestApplicationPresenter.swift in Sources */,
-				DAAFD2CF2051626E00F1526F /* TestDatabase.swift in Sources */,
-				DAAFD2CB2051588A00F1526F /* TestDatabaseProviderCoredata.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
