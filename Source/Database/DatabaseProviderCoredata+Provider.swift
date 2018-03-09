@@ -48,7 +48,7 @@ extension DatabaseProviderCoredata {
         self.create(completion:completion)
     }
     
-    private func newProfileReady(coredataProfile:CoredataProfile, completion:((Profile) -> ())) {
+    private func newProfileReady(coredataProfile:CoredataProfile, completion:@escaping((Profile) -> ())) {
         self.save {
             guard
                 let profile:Profile = coredataProfile.factoryProfile()
