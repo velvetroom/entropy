@@ -8,7 +8,7 @@ class Model:AbstractModel {
         fatalError()
     }
     
-    init<SpecialisedViewModel>(viewModel:SpecialisedViewModel, controller:Controller<SpecialisedViewModel>) {
+    init<SpecialisedViewModel, SpecialisedView>(viewModel:SpecialisedViewModel, controller:Controller<SpecialisedViewModel, SpecialisedView>) {
         self.viewModel = viewModel
         self.controller = controller
         controller.viewModel = viewModel

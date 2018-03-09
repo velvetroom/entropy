@@ -1,6 +1,6 @@
 import Foundation
 
-class Entropy {
+struct Entropy {
     let entropyIndex:Float
     let newFeature:Float
     let updateFeature:Float
