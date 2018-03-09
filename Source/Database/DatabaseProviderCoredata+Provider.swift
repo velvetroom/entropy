@@ -33,7 +33,8 @@ extension DatabaseProviderCoredata {
     private func configureNewProfile(coredataProfile:CoredataProfile, completion:@escaping((Profile) -> ())) {
         self.createFreeAccess { [weak self] (access:CoredataProfileAccessFree) in
             coredataProfile.access = access
-            self?.save {
+            self?.createProject { [weak self] (project:CoredataProject) in
+                coredataProfile.project = project
                 self?.newProfileReady(coredataProfile:coredataProfile, completion:completion)
             }
         }
@@ -43,12 +44,18 @@ extension DatabaseProviderCoredata {
         self.create(completion:completion)
     }
     
+    private func createProject(completion:@escaping((CoredataProject) -> ())) {
+        self.create(completion:completion)
+    }
+    
     private func newProfileReady(coredataProfile:CoredataProfile, completion:((Profile) -> ())) {
-        guard
-            let profile:Profile = coredataProfile.factoryProfile()
-        else {
-            return
+        self.save {
+            guard
+                let profile:Profile = coredataProfile.factoryProfile()
+            else {
+                return
+            }
+            completion(profile)
         }
-        completion(profile)
     }
 }
