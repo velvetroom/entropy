@@ -1,4 +1,5 @@
 import XCTest
+import CoreData
 @testable import entropy
 
 class TestDatabaseProviderCoredata:XCTestCase {
@@ -12,6 +13,12 @@ class TestDatabaseProviderCoredata:XCTestCase {
         super.setUp()
         let bundle:Bundle = Bundle(for:TestDatabaseProviderCoredata.self)
         self.provider = DatabaseProviderCoredata(bundle:bundle)
+    }
+    
+    func testFactoryContext() {
+        let bundle:Bundle = Bundle(for:TestDatabaseProviderCoredata.self)
+        let context:NSManagedObjectContext = DatabaseProviderCoredata.factoryContext(bundle:bundle)
+        XCTAssertNotNil(context.persistentStoreCoordinator, "Failed to factory store coordinator")
     }
     
     func testCreateProfile() {
