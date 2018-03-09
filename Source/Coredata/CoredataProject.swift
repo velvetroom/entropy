@@ -1,6 +1,6 @@
 import Foundation
 
-public extension CoredataProject {
+extension CoredataProject {
     public override func awakeFromInsert() {
         self.created = Date()
         self.start = self.created

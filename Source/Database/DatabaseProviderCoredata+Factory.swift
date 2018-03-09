@@ -1,8 +1,8 @@
 import Foundation
 import CoreData
 
-internal extension DatabaseProviderCoredata {
-    internal class func factoryContext(bundle:Bundle) -> NSManagedObjectContext {
+extension DatabaseProviderCoredata {
+    class func factoryContext(bundle:Bundle) -> NSManagedObjectContext {
         let context:NSManagedObjectContext = NSManagedObjectContext(
             concurrencyType:NSManagedObjectContextConcurrencyType.privateQueueConcurrencyType)
         context.mergePolicy = NSMergePolicy(merge:NSMergePolicyType.mergeByPropertyStoreTrumpMergePolicyType)

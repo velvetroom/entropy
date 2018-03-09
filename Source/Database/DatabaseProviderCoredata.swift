@@ -1,14 +1,14 @@
 import Foundation
 import CoreData
 
-internal final class DatabaseProviderCoredata:DatabaseProviderProtocol {
+class DatabaseProviderCoredata:DatabaseProviderProtocol {
     private let context:NSManagedObjectContext
     
-    internal init(bundle:Bundle = Bundle.main) {
+    init(bundle:Bundle = Bundle.main) {
         self.context = DatabaseProviderCoredata.factoryContext(bundle:bundle)
     }
     
-    internal func create<Entity:NSManagedObject>(completion:@escaping((Entity) -> ())) {
+    func create<Entity:NSManagedObject>(completion:@escaping((Entity) -> ())) {
         self.context.perform { [weak self] in
             self?.performCreate(completion:completion)
         }
@@ -24,7 +24,7 @@ internal final class DatabaseProviderCoredata:DatabaseProviderProtocol {
         completion(entity)
     }
     
-    internal func load<Entity:NSManagedObject>(request:NSFetchRequest<Entity>, completion:@escaping(([Entity]) -> ())) {
+    func load<Entity:NSManagedObject>(request:NSFetchRequest<Entity>, completion:@escaping(([Entity]) -> ())) {
         self.context.perform { [weak self] in
             self?.performLoad(request:request, completion:completion)
         }
@@ -42,14 +42,14 @@ internal final class DatabaseProviderCoredata:DatabaseProviderProtocol {
         }
     }
     
-    internal func delete(entity:NSManagedObject, completion:@escaping(() -> ())) {
+    func delete(entity:NSManagedObject, completion:@escaping(() -> ())) {
         self.context.perform { [weak self] in
             self?.context.delete(entity)
             completion()
         }
     }
     
-    internal func save(completion:@escaping(() -> ())) {
+    func save(completion:@escaping(() -> ())) {
         guard
             self.context.hasChanges == true
         else {

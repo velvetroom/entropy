@@ -1,9 +1,9 @@
 import UIKit
 
-internal class AbstractView:UIView {
-    internal var layout:PresentLayout
+class AbstractView:UIView {
+    var layout:PresentLayout
     
-    internal init() {
+    init() {
         self.layout = PresentLayout()
         super.init(frame:CGRect.zero)
         self.clipsToBounds = true
@@ -15,5 +15,5 @@ internal class AbstractView:UIView {
         return nil
     }
     
-    internal func factoryViews() { }
+    func factoryViews() { }
 }

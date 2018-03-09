@@ -1,11 +1,11 @@
 import Foundation
 
-internal extension DatabaseProviderCoredata {
-    internal func loadProfile(found:@escaping((Profile) -> ()), notFound:@escaping(() -> ())) {
+extension DatabaseProviderCoredata {
+    func loadProfile(found:@escaping((Profile) -> ()), notFound:@escaping(() -> ())) {
         
     }
     
-    internal func createProfile(completion: @escaping ((Profile) -> ())) {
+    func createProfile(completion: @escaping ((Profile) -> ())) {
         
     }
 }
