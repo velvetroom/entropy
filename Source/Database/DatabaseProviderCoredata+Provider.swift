@@ -25,6 +25,30 @@ extension DatabaseProviderCoredata {
     }
     
     func createProfile(completion:@escaping((Profile) -> ())) {
-        
+        self.create { [weak self] (coredataProfile:CoredataProfile) in
+            self?.configureNewProfile(coredataProfile:coredataProfile, completion:completion)
+        }
+    }
+    
+    private func configureNewProfile(coredataProfile:CoredataProfile, completion:@escaping((Profile) -> ())) {
+        self.createFreeAccess { [weak self] (access:CoredataProfileAccessFree) in
+            coredataProfile.access = access
+            self?.save {
+                self?.newProfileReady(coredataProfile:coredataProfile, completion:completion)
+            }
+        }
+    }
+    
+    private func createFreeAccess(completion:@escaping((CoredataProfileAccessFree) -> ())) {
+        self.create(completion:completion)
+    }
+    
+    private func newProfileReady(coredataProfile:CoredataProfile, completion:((Profile) -> ())) {
+        guard
+            let profile:Profile = coredataProfile.factoryProfile()
+        else {
+            return
+        }
+        completion(profile)
     }
 }
