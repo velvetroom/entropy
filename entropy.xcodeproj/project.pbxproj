@@ -25,6 +25,7 @@
 		DA4B5AAC2052747B00A99126 /* ProfileAccessProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5AAB2052747B00A99126 /* ProfileAccessProtocol.swift */; };
 		DA4B5AAE205274A100A99126 /* ProfileAccessFree.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5AAD205274A100A99126 /* ProfileAccessFree.swift */; };
 		DA4B5AB0205274CB00A99126 /* ProfileAccessPremium.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5AAF205274CB00A99126 /* ProfileAccessPremium.swift */; };
+		DA4B5AB2205275A600A99126 /* CoredataProfileAccess+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5AB1205275A600A99126 /* CoredataProfileAccess+Factory.swift */; };
 		DA5B8CCA20513C16008B986F /* Simulation+ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CC920513C16008B986F /* Simulation+ControllerDelegate.swift */; };
 		DA5B8CCD20513CD0008B986F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CCC20513CD0008B986F /* Profile.swift */; };
 		DA5B8CD020513E16008B986F /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CCF20513E16008B986F /* Project.swift */; };
@@ -97,6 +98,7 @@
 		DA4B5AAB2052747B00A99126 /* ProfileAccessProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAccessProtocol.swift; sourceTree = "<group>"; };
 		DA4B5AAD205274A100A99126 /* ProfileAccessFree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAccessFree.swift; sourceTree = "<group>"; };
 		DA4B5AAF205274CB00A99126 /* ProfileAccessPremium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAccessPremium.swift; sourceTree = "<group>"; };
+		DA4B5AB1205275A600A99126 /* CoredataProfileAccess+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoredataProfileAccess+Factory.swift"; sourceTree = "<group>"; };
 		DA5B8CC920513C16008B986F /* Simulation+ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simulation+ControllerDelegate.swift"; sourceTree = "<group>"; };
 		DA5B8CCC20513CD0008B986F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		DA5B8CCF20513E16008B986F /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				DA5B8CD220513F33008B986F /* CoredataProject.swift */,
 				DA4B5AA720526F0B00A99126 /* CoredataProfile.swift */,
 				DA4B5AA92052736D00A99126 /* CoredataProfile+Factory.swift */,
+				DA4B5AB1205275A600A99126 /* CoredataProfileAccess+Factory.swift */,
 			);
 			path = Coredata;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				DA785A482047080F00E3DFD1 /* Controller.swift in Sources */,
 				DA5B8CD82051407F008B986F /* ExtensionString.swift in Sources */,
 				DADB842A2047DEFB00EB45C9 /* AbstractModel.swift in Sources */,
+				DA4B5AB2205275A600A99126 /* CoredataProfileAccess+Factory.swift in Sources */,
 				DA4B5AAE205274A100A99126 /* ProfileAccessFree.swift in Sources */,
 				DA64776F204EA54500235718 /* Model.swift in Sources */,
 				DA7380ED20432007005C43A3 /* ExtensionUIView+LayoutHeight.swift in Sources */,
