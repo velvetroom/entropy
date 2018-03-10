@@ -1,8 +1,9 @@
 import Foundation
 
-struct Entropy {
-    let entropyIndex:Float
-    let newFeature:Float
-    let updateFeature:Float
-    let fixBug:Float
+class Entropy {
+    let index:Float
+    
+    init(index:Float) {
+        self.index = index
+    }
 }
