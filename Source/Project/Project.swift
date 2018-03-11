@@ -4,10 +4,11 @@ class Project {
     var name:String
     var start:Date
     var created:Date
-    private(set) var entropy:Entropy
     let identifier:String
+    let entropy:Entropy
     
-    init(identifier:String) {
+    init(identifier:String, entropy:Float) {
+        self.entropy = Entropy(index:entropy)
         self.identifier = identifier
         self.name = String()
         self.created = Date()

@@ -10,7 +10,7 @@ extension CoredataProject {
         else {
             return nil
         }
-        let project:Project = Project(identifier:identifier)
+        let project:Project = Project(identifier:identifier, entropy:self.entropy)
         project.name = name
         project.created = created
         project.start = start
