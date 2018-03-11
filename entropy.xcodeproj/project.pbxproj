@@ -16,6 +16,7 @@
 		DA0678542046F9FD001519B0 /* ApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678532046F9FD001519B0 /* ApplicationPresenter.swift */; };
 		DA2195EF2055B5890020BBAB /* SimulationViewModelMenuProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2195EE2055B5890020BBAB /* SimulationViewModelMenuProject.swift */; };
 		DA2195F22055B5C50020BBAB /* LocalizableSimulation.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA2195F02055B5C50020BBAB /* LocalizableSimulation.strings */; };
+		DA2195F42055B66B0020BBAB /* SimulationViewModelMenuContributors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2195F32055B66B0020BBAB /* SimulationViewModelMenuContributors.swift */; };
 		DA2ADDE620528BD70036812C /* CoredataProject+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADDE520528BD70036812C /* CoredataProject+Factory.swift */; };
 		DA2ADDE82052A29E0036812C /* SimulationView+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADDE72052A29E0036812C /* SimulationView+Constants.swift */; };
 		DA2ADDEA2052A2E80036812C /* SimulationViewGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADDE92052A2E80036812C /* SimulationViewGraph.swift */; };
@@ -106,6 +107,7 @@
 		DA0678532046F9FD001519B0 /* ApplicationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationPresenter.swift; sourceTree = "<group>"; };
 		DA2195EE2055B5890020BBAB /* SimulationViewModelMenuProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelMenuProject.swift; sourceTree = "<group>"; };
 		DA2195F12055B5C50020BBAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableSimulation.strings; sourceTree = "<group>"; };
+		DA2195F32055B66B0020BBAB /* SimulationViewModelMenuContributors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelMenuContributors.swift; sourceTree = "<group>"; };
 		DA2ADDE520528BD70036812C /* CoredataProject+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoredataProject+Factory.swift"; sourceTree = "<group>"; };
 		DA2ADDE72052A29E0036812C /* SimulationView+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimulationView+Constants.swift"; sourceTree = "<group>"; };
 		DA2ADDE92052A2E80036812C /* SimulationViewGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewGraph.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				DA3DFE1220553D0C00DB38FA /* SimulationViewModelGraphMeasure.swift */,
 				DA3DFE242055B49500DB38FA /* SimulationViewModelMenuProtocol.swift */,
 				DA2195EE2055B5890020BBAB /* SimulationViewModelMenuProject.swift */,
+				DA2195F32055B66B0020BBAB /* SimulationViewModelMenuContributors.swift */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -628,6 +631,7 @@
 				DA7380ED20432007005C43A3 /* ExtensionUIView+LayoutHeight.swift in Sources */,
 				DA5B8CCD20513CD0008B986F /* Profile.swift in Sources */,
 				DA3DFE1320553D0C00DB38FA /* SimulationViewModelGraphMeasure.swift in Sources */,
+				DA2195F42055B66B0020BBAB /* SimulationViewModelMenuContributors.swift in Sources */,
 				DAA15D19204FF941001804B1 /* ApplicationPresenter+Constants.swift in Sources */,
 				DAAFD2BA205144DC00F1526F /* DatabaseProviderProtocol.swift in Sources */,
 				DA3DFE232055B42400DB38FA /* SimulationViewMenuCell.swift in Sources */,
