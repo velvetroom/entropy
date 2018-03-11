@@ -7,34 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA06783E2046F6DA001519B0 /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06783D2046F6DA001519B0 /* Simulation.swift */; };
-		DA0678422046F751001519B0 /* SimulationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678412046F751001519B0 /* SimulationController.swift */; };
 		DA0678452046F7CB001519B0 /* ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678442046F7CB001519B0 /* ControllerDelegate.swift */; };
 		DA06784B2046F8F1001519B0 /* AbstractViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06784A2046F8F1001519B0 /* AbstractViewModel.swift */; };
-		DA06784F2046F932001519B0 /* SimulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06784E2046F932001519B0 /* SimulationViewModel.swift */; };
 		DA0678522046F9D0001519B0 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678512046F9D0001519B0 /* Application.swift */; };
 		DA0678542046F9FD001519B0 /* ApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678532046F9FD001519B0 /* ApplicationPresenter.swift */; };
-		DA2195EF2055B5890020BBAB /* SimulationViewModelMenuProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2195EE2055B5890020BBAB /* SimulationViewModelMenuProject.swift */; };
 		DA2195F22055B5C50020BBAB /* LocalizableSimulation.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA2195F02055B5C50020BBAB /* LocalizableSimulation.strings */; };
-		DA2195F42055B66B0020BBAB /* SimulationViewModelMenuContributors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2195F32055B66B0020BBAB /* SimulationViewModelMenuContributors.swift */; };
-		DA2195F62055B6BB0020BBAB /* SimulationViewModel+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2195F52055B6BB0020BBAB /* SimulationViewModel+Factory.swift */; };
+		DA2196112055BC2E0020BBAB /* Simulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2195F82055BC2E0020BBAB /* Simulation.swift */; };
+		DA2196122055BC2E0020BBAB /* SimulationViewGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2195FA2055BC2E0020BBAB /* SimulationViewGraph.swift */; };
+		DA2196132055BC2E0020BBAB /* SimulationView+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2195FB2055BC2E0020BBAB /* SimulationView+Constants.swift */; };
+		DA2196142055BC2E0020BBAB /* SimulationViewMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2195FC2055BC2E0020BBAB /* SimulationViewMenuCell.swift */; };
+		DA2196152055BC2E0020BBAB /* SimulationViewMenu+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2195FD2055BC2E0020BBAB /* SimulationViewMenu+Constants.swift */; };
+		DA2196162055BC2E0020BBAB /* SimulationViewScrollMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2195FE2055BC2E0020BBAB /* SimulationViewScrollMenu.swift */; };
+		DA2196172055BC2E0020BBAB /* SimulationViewMenu+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2195FF2055BC2E0020BBAB /* SimulationViewMenu+Factory.swift */; };
+		DA2196182055BC2E0020BBAB /* SimulationViewMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2196002055BC2E0020BBAB /* SimulationViewMenu.swift */; };
+		DA2196192055BC2E0020BBAB /* SimulationViewScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2196012055BC2E0020BBAB /* SimulationViewScroll.swift */; };
+		DA21961A2055BC2E0020BBAB /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2196022055BC2E0020BBAB /* SimulationView.swift */; };
+		DA21961B2055BC2E0020BBAB /* SimulationViewScroll+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2196032055BC2E0020BBAB /* SimulationViewScroll+Constants.swift */; };
+		DA21961C2055BC2E0020BBAB /* SimulationViewScroll+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2196042055BC2E0020BBAB /* SimulationViewScroll+Factory.swift */; };
+		DA21961D2055BC2E0020BBAB /* SimulationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2196062055BC2E0020BBAB /* SimulationController.swift */; };
+		DA21961E2055BC2E0020BBAB /* SimulationViewModelGraph+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2196082055BC2E0020BBAB /* SimulationViewModelGraph+Constants.swift */; };
+		DA21961F2055BC2E0020BBAB /* SimulationViewModel+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2196092055BC2E0020BBAB /* SimulationViewModel+Factory.swift */; };
+		DA2196202055BC2E0020BBAB /* SimulationViewModelGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21960A2055BC2E0020BBAB /* SimulationViewModelGraph.swift */; };
+		DA2196212055BC2E0020BBAB /* SimulationViewModelMenuProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21960B2055BC2E0020BBAB /* SimulationViewModelMenuProtocol.swift */; };
+		DA2196222055BC2E0020BBAB /* SimulationViewModelMenuProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21960C2055BC2E0020BBAB /* SimulationViewModelMenuProject.swift */; };
+		DA2196232055BC2E0020BBAB /* SimulationViewModelMenuContributors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21960D2055BC2E0020BBAB /* SimulationViewModelMenuContributors.swift */; };
+		DA2196242055BC2E0020BBAB /* SimulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21960E2055BC2E0020BBAB /* SimulationViewModel.swift */; };
+		DA2196252055BC2E0020BBAB /* SimulationViewModelGraph+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21960F2055BC2E0020BBAB /* SimulationViewModelGraph+Factory.swift */; };
+		DA2196262055BC2E0020BBAB /* SimulationViewModelGraphMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2196102055BC2E0020BBAB /* SimulationViewModelGraphMeasure.swift */; };
 		DA2ADDE620528BD70036812C /* CoredataProject+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADDE520528BD70036812C /* CoredataProject+Factory.swift */; };
-		DA2ADDE82052A29E0036812C /* SimulationView+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADDE72052A29E0036812C /* SimulationView+Constants.swift */; };
-		DA2ADDEA2052A2E80036812C /* SimulationViewGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADDE92052A2E80036812C /* SimulationViewGraph.swift */; };
 		DA2ADDED2052A60F0036812C /* Entropy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADDEC2052A60F0036812C /* Entropy.swift */; };
 		DA32823220470FE300795C7B /* PresentCentred.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32823120470FE300795C7B /* PresentCentred.swift */; };
 		DA328234204712CC00795C7B /* PresentProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA328233204712CC00795C7B /* PresentProtocol+Default.swift */; };
-		DA3DFE112055362700DB38FA /* SimulationViewModelGraph+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3DFE102055362700DB38FA /* SimulationViewModelGraph+Constants.swift */; };
-		DA3DFE1320553D0C00DB38FA /* SimulationViewModelGraphMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3DFE1220553D0C00DB38FA /* SimulationViewModelGraphMeasure.swift */; };
-		DA3DFE1520559ABC00DB38FA /* SimulationViewMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3DFE1420559ABC00DB38FA /* SimulationViewMenu.swift */; };
-		DA3DFE1720559ED400DB38FA /* SimulationViewScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3DFE1620559ED400DB38FA /* SimulationViewScroll.swift */; };
-		DA3DFE192055A0E500DB38FA /* SimulationViewScroll+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3DFE182055A0E500DB38FA /* SimulationViewScroll+Factory.swift */; };
-		DA3DFE1B2055A1F100DB38FA /* SimulationViewScroll+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3DFE1A2055A1F100DB38FA /* SimulationViewScroll+Constants.swift */; };
-		DA3DFE1D2055A3C400DB38FA /* SimulationViewScrollMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3DFE1C2055A3C400DB38FA /* SimulationViewScrollMenu.swift */; };
-		DA3DFE1F2055B1F200DB38FA /* SimulationViewMenu+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3DFE1E2055B1F200DB38FA /* SimulationViewMenu+Factory.swift */; };
-		DA3DFE212055B21B00DB38FA /* SimulationViewMenu+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3DFE202055B21B00DB38FA /* SimulationViewMenu+Constants.swift */; };
-		DA3DFE232055B42400DB38FA /* SimulationViewMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3DFE222055B42400DB38FA /* SimulationViewMenuCell.swift */; };
-		DA3DFE252055B49500DB38FA /* SimulationViewModelMenuProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3DFE242055B49500DB38FA /* SimulationViewModelMenuProtocol.swift */; };
 		DA4B5AA320526D6C00A99126 /* TestDatabaseProviderCoredata.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5A9D20526D6C00A99126 /* TestDatabaseProviderCoredata.swift */; };
 		DA4B5AA420526D6C00A99126 /* TestDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5A9E20526D6C00A99126 /* TestDatabase.swift */; };
 		DA4B5AA520526D6C00A99126 /* TestSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5AA020526D6C00A99126 /* TestSimulation.swift */; };
@@ -79,11 +82,8 @@
 		DAAFD2C6205148EF00F1526F /* DatabaseProviderCoredata+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFD2C5205148EF00F1526F /* DatabaseProviderCoredata+Constants.swift */; };
 		DAAFD2C820514CBE00F1526F /* ExtensionFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFD2C720514CBE00F1526F /* ExtensionFileManager.swift */; };
 		DAAFD2CD20515D7600F1526F /* DatabaseProviderCoredata+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFD2CC20515D7600F1526F /* DatabaseProviderCoredata+Provider.swift */; };
-		DAD797BE20552C3900E7EE0D /* SimulationViewModelGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD797BD20552C3900E7EE0D /* SimulationViewModelGraph.swift */; };
-		DAD797C020552D0200E7EE0D /* SimulationViewModelGraph+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD797BF20552D0200E7EE0D /* SimulationViewModelGraph+Factory.swift */; };
 		DAD797C220552EB000E7EE0D /* CoredataProject+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD797C120552EB000E7EE0D /* CoredataProject+Constants.swift */; };
 		DAD9BC342047E55300675963 /* AbstractController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC332047E55300675963 /* AbstractController.swift */; };
-		DAD9BC362047EF7700675963 /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC352047EF7700675963 /* SimulationView.swift */; };
 		DAD9BC382047F06300675963 /* PresentLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC372047F06300675963 /* PresentLayout.swift */; };
 		DADB842A2047DEFB00EB45C9 /* AbstractModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB84292047DEFB00EB45C9 /* AbstractModel.swift */; };
 /* End PBXBuildFile section */
@@ -99,34 +99,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DA06783D2046F6DA001519B0 /* Simulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
-		DA0678412046F751001519B0 /* SimulationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationController.swift; sourceTree = "<group>"; };
 		DA0678442046F7CB001519B0 /* ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerDelegate.swift; sourceTree = "<group>"; };
 		DA06784A2046F8F1001519B0 /* AbstractViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewModel.swift; sourceTree = "<group>"; };
-		DA06784E2046F932001519B0 /* SimulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModel.swift; sourceTree = "<group>"; };
 		DA0678512046F9D0001519B0 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		DA0678532046F9FD001519B0 /* ApplicationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationPresenter.swift; sourceTree = "<group>"; };
-		DA2195EE2055B5890020BBAB /* SimulationViewModelMenuProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelMenuProject.swift; sourceTree = "<group>"; };
 		DA2195F12055B5C50020BBAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableSimulation.strings; sourceTree = "<group>"; };
-		DA2195F32055B66B0020BBAB /* SimulationViewModelMenuContributors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelMenuContributors.swift; sourceTree = "<group>"; };
-		DA2195F52055B6BB0020BBAB /* SimulationViewModel+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimulationViewModel+Factory.swift"; sourceTree = "<group>"; };
+		DA2195F82055BC2E0020BBAB /* Simulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simulation.swift; sourceTree = "<group>"; };
+		DA2195FA2055BC2E0020BBAB /* SimulationViewGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationViewGraph.swift; sourceTree = "<group>"; };
+		DA2195FB2055BC2E0020BBAB /* SimulationView+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SimulationView+Constants.swift"; sourceTree = "<group>"; };
+		DA2195FC2055BC2E0020BBAB /* SimulationViewMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationViewMenuCell.swift; sourceTree = "<group>"; };
+		DA2195FD2055BC2E0020BBAB /* SimulationViewMenu+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SimulationViewMenu+Constants.swift"; sourceTree = "<group>"; };
+		DA2195FE2055BC2E0020BBAB /* SimulationViewScrollMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationViewScrollMenu.swift; sourceTree = "<group>"; };
+		DA2195FF2055BC2E0020BBAB /* SimulationViewMenu+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SimulationViewMenu+Factory.swift"; sourceTree = "<group>"; };
+		DA2196002055BC2E0020BBAB /* SimulationViewMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationViewMenu.swift; sourceTree = "<group>"; };
+		DA2196012055BC2E0020BBAB /* SimulationViewScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationViewScroll.swift; sourceTree = "<group>"; };
+		DA2196022055BC2E0020BBAB /* SimulationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
+		DA2196032055BC2E0020BBAB /* SimulationViewScroll+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SimulationViewScroll+Constants.swift"; sourceTree = "<group>"; };
+		DA2196042055BC2E0020BBAB /* SimulationViewScroll+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SimulationViewScroll+Factory.swift"; sourceTree = "<group>"; };
+		DA2196062055BC2E0020BBAB /* SimulationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationController.swift; sourceTree = "<group>"; };
+		DA2196082055BC2E0020BBAB /* SimulationViewModelGraph+Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SimulationViewModelGraph+Constants.swift"; sourceTree = "<group>"; };
+		DA2196092055BC2E0020BBAB /* SimulationViewModel+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SimulationViewModel+Factory.swift"; sourceTree = "<group>"; };
+		DA21960A2055BC2E0020BBAB /* SimulationViewModelGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationViewModelGraph.swift; sourceTree = "<group>"; };
+		DA21960B2055BC2E0020BBAB /* SimulationViewModelMenuProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationViewModelMenuProtocol.swift; sourceTree = "<group>"; };
+		DA21960C2055BC2E0020BBAB /* SimulationViewModelMenuProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationViewModelMenuProject.swift; sourceTree = "<group>"; };
+		DA21960D2055BC2E0020BBAB /* SimulationViewModelMenuContributors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationViewModelMenuContributors.swift; sourceTree = "<group>"; };
+		DA21960E2055BC2E0020BBAB /* SimulationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationViewModel.swift; sourceTree = "<group>"; };
+		DA21960F2055BC2E0020BBAB /* SimulationViewModelGraph+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SimulationViewModelGraph+Factory.swift"; sourceTree = "<group>"; };
+		DA2196102055BC2E0020BBAB /* SimulationViewModelGraphMeasure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationViewModelGraphMeasure.swift; sourceTree = "<group>"; };
 		DA2ADDE520528BD70036812C /* CoredataProject+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoredataProject+Factory.swift"; sourceTree = "<group>"; };
-		DA2ADDE72052A29E0036812C /* SimulationView+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimulationView+Constants.swift"; sourceTree = "<group>"; };
-		DA2ADDE92052A2E80036812C /* SimulationViewGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewGraph.swift; sourceTree = "<group>"; };
 		DA2ADDEC2052A60F0036812C /* Entropy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entropy.swift; sourceTree = "<group>"; };
 		DA32823120470FE300795C7B /* PresentCentred.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentCentred.swift; sourceTree = "<group>"; };
 		DA328233204712CC00795C7B /* PresentProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PresentProtocol+Default.swift"; sourceTree = "<group>"; };
-		DA3DFE102055362700DB38FA /* SimulationViewModelGraph+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimulationViewModelGraph+Constants.swift"; sourceTree = "<group>"; };
-		DA3DFE1220553D0C00DB38FA /* SimulationViewModelGraphMeasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelGraphMeasure.swift; sourceTree = "<group>"; };
-		DA3DFE1420559ABC00DB38FA /* SimulationViewMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewMenu.swift; sourceTree = "<group>"; };
-		DA3DFE1620559ED400DB38FA /* SimulationViewScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewScroll.swift; sourceTree = "<group>"; };
-		DA3DFE182055A0E500DB38FA /* SimulationViewScroll+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimulationViewScroll+Factory.swift"; sourceTree = "<group>"; };
-		DA3DFE1A2055A1F100DB38FA /* SimulationViewScroll+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimulationViewScroll+Constants.swift"; sourceTree = "<group>"; };
-		DA3DFE1C2055A3C400DB38FA /* SimulationViewScrollMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewScrollMenu.swift; sourceTree = "<group>"; };
-		DA3DFE1E2055B1F200DB38FA /* SimulationViewMenu+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimulationViewMenu+Factory.swift"; sourceTree = "<group>"; };
-		DA3DFE202055B21B00DB38FA /* SimulationViewMenu+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimulationViewMenu+Constants.swift"; sourceTree = "<group>"; };
-		DA3DFE222055B42400DB38FA /* SimulationViewMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewMenuCell.swift; sourceTree = "<group>"; };
-		DA3DFE242055B49500DB38FA /* SimulationViewModelMenuProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelMenuProtocol.swift; sourceTree = "<group>"; };
 		DA48BB1A2046CD2B00271252 /* tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA48BB292046CE1F00271252 /* InfoTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoTests.plist; sourceTree = "<group>"; };
 		DA4B5A9D20526D6C00A99126 /* TestDatabaseProviderCoredata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDatabaseProviderCoredata.swift; sourceTree = "<group>"; };
@@ -180,11 +183,8 @@
 		DAAFD2C5205148EF00F1526F /* DatabaseProviderCoredata+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseProviderCoredata+Constants.swift"; sourceTree = "<group>"; };
 		DAAFD2C720514CBE00F1526F /* ExtensionFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionFileManager.swift; sourceTree = "<group>"; };
 		DAAFD2CC20515D7600F1526F /* DatabaseProviderCoredata+Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseProviderCoredata+Provider.swift"; sourceTree = "<group>"; };
-		DAD797BD20552C3900E7EE0D /* SimulationViewModelGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelGraph.swift; sourceTree = "<group>"; };
-		DAD797BF20552D0200E7EE0D /* SimulationViewModelGraph+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimulationViewModelGraph+Factory.swift"; sourceTree = "<group>"; };
 		DAD797C120552EB000E7EE0D /* CoredataProject+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoredataProject+Constants.swift"; sourceTree = "<group>"; };
 		DAD9BC332047E55300675963 /* AbstractController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractController.swift; sourceTree = "<group>"; };
-		DAD9BC352047EF7700675963 /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
 		DAD9BC372047F06300675963 /* PresentLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentLayout.swift; sourceTree = "<group>"; };
 		DADB84292047DEFB00EB45C9 /* AbstractModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,28 +221,10 @@
 		DA0678382046F61C001519B0 /* Simulation */ = {
 			isa = PBXGroup;
 			children = (
-				DA06783D2046F6DA001519B0 /* Simulation.swift */,
-				DA0678412046F751001519B0 /* SimulationController.swift */,
-				DAD9BC352047EF7700675963 /* SimulationView.swift */,
-				DA2ADDE72052A29E0036812C /* SimulationView+Constants.swift */,
-				DA2ADDE92052A2E80036812C /* SimulationViewGraph.swift */,
-				DA3DFE1620559ED400DB38FA /* SimulationViewScroll.swift */,
-				DA3DFE182055A0E500DB38FA /* SimulationViewScroll+Factory.swift */,
-				DA3DFE1A2055A1F100DB38FA /* SimulationViewScroll+Constants.swift */,
-				DA3DFE1C2055A3C400DB38FA /* SimulationViewScrollMenu.swift */,
-				DA3DFE1420559ABC00DB38FA /* SimulationViewMenu.swift */,
-				DA3DFE1E2055B1F200DB38FA /* SimulationViewMenu+Factory.swift */,
-				DA3DFE202055B21B00DB38FA /* SimulationViewMenu+Constants.swift */,
-				DA3DFE222055B42400DB38FA /* SimulationViewMenuCell.swift */,
-				DA06784E2046F932001519B0 /* SimulationViewModel.swift */,
-				DA2195F52055B6BB0020BBAB /* SimulationViewModel+Factory.swift */,
-				DAD797BD20552C3900E7EE0D /* SimulationViewModelGraph.swift */,
-				DA3DFE102055362700DB38FA /* SimulationViewModelGraph+Constants.swift */,
-				DAD797BF20552D0200E7EE0D /* SimulationViewModelGraph+Factory.swift */,
-				DA3DFE1220553D0C00DB38FA /* SimulationViewModelGraphMeasure.swift */,
-				DA3DFE242055B49500DB38FA /* SimulationViewModelMenuProtocol.swift */,
-				DA2195EE2055B5890020BBAB /* SimulationViewModelMenuProject.swift */,
-				DA2195F32055B66B0020BBAB /* SimulationViewModelMenuContributors.swift */,
+				DA2196052055BC2E0020BBAB /* Controller */,
+				DA2195F72055BC2E0020BBAB /* Model */,
+				DA2195F92055BC2E0020BBAB /* View */,
+				DA2196072055BC2E0020BBAB /* ViewModel */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -270,6 +252,56 @@
 				DA785A5220470E1100E3DFD1 /* ApplicationView.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		DA2195F72055BC2E0020BBAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA2195F82055BC2E0020BBAB /* Simulation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA2195F92055BC2E0020BBAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA2195FA2055BC2E0020BBAB /* SimulationViewGraph.swift */,
+				DA2195FB2055BC2E0020BBAB /* SimulationView+Constants.swift */,
+				DA2195FC2055BC2E0020BBAB /* SimulationViewMenuCell.swift */,
+				DA2195FD2055BC2E0020BBAB /* SimulationViewMenu+Constants.swift */,
+				DA2195FE2055BC2E0020BBAB /* SimulationViewScrollMenu.swift */,
+				DA2195FF2055BC2E0020BBAB /* SimulationViewMenu+Factory.swift */,
+				DA2196002055BC2E0020BBAB /* SimulationViewMenu.swift */,
+				DA2196012055BC2E0020BBAB /* SimulationViewScroll.swift */,
+				DA2196022055BC2E0020BBAB /* SimulationView.swift */,
+				DA2196032055BC2E0020BBAB /* SimulationViewScroll+Constants.swift */,
+				DA2196042055BC2E0020BBAB /* SimulationViewScroll+Factory.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA2196052055BC2E0020BBAB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA2196062055BC2E0020BBAB /* SimulationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DA2196072055BC2E0020BBAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA2196082055BC2E0020BBAB /* SimulationViewModelGraph+Constants.swift */,
+				DA2196092055BC2E0020BBAB /* SimulationViewModel+Factory.swift */,
+				DA21960A2055BC2E0020BBAB /* SimulationViewModelGraph.swift */,
+				DA21960B2055BC2E0020BBAB /* SimulationViewModelMenuProtocol.swift */,
+				DA21960C2055BC2E0020BBAB /* SimulationViewModelMenuProject.swift */,
+				DA21960D2055BC2E0020BBAB /* SimulationViewModelMenuContributors.swift */,
+				DA21960E2055BC2E0020BBAB /* SimulationViewModel.swift */,
+				DA21960F2055BC2E0020BBAB /* SimulationViewModelGraph+Factory.swift */,
+				DA2196102055BC2E0020BBAB /* SimulationViewModelGraphMeasure.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		DA2ADDEB2052A6070036812C /* Entropy */ = {
@@ -600,76 +632,76 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2196262055BC2E0020BBAB /* SimulationViewModelGraphMeasure.swift in Sources */,
+				DA2196162055BC2E0020BBAB /* SimulationViewScrollMenu.swift in Sources */,
 				DA0678542046F9FD001519B0 /* ApplicationPresenter.swift in Sources */,
-				DA2ADDE82052A29E0036812C /* SimulationView+Constants.swift in Sources */,
+				DA2196132055BC2E0020BBAB /* SimulationView+Constants.swift in Sources */,
 				DA32823220470FE300795C7B /* PresentCentred.swift in Sources */,
+				DA2196242055BC2E0020BBAB /* SimulationViewModel.swift in Sources */,
 				DA785A4F20470CF600E3DFD1 /* PresentProtocol.swift in Sources */,
-				DA3DFE1B2055A1F100DB38FA /* SimulationViewScroll+Constants.swift in Sources */,
 				DAAFD2BC2051453500F1526F /* DatabaseProviderCoredata.swift in Sources */,
-				DA2195EF2055B5890020BBAB /* SimulationViewModelMenuProject.swift in Sources */,
 				DAAFD2C820514CBE00F1526F /* ExtensionFileManager.swift in Sources */,
 				DA785A462047074900E3DFD1 /* ViewModelDelegate.swift in Sources */,
 				DA0678522046F9D0001519B0 /* Application.swift in Sources */,
 				DA0678452046F7CB001519B0 /* ControllerDelegate.swift in Sources */,
-				DA3DFE192055A0E500DB38FA /* SimulationViewScroll+Factory.swift in Sources */,
 				DA06784B2046F8F1001519B0 /* AbstractViewModel.swift in Sources */,
-				DA0678422046F751001519B0 /* SimulationController.swift in Sources */,
 				DAAFD2C2205147AE00F1526F /* ExtensionNSManagedObject.swift in Sources */,
+				DA2196192055BC2E0020BBAB /* SimulationViewScroll.swift in Sources */,
+				DA21961E2055BC2E0020BBAB /* SimulationViewModelGraph+Constants.swift in Sources */,
 				DA7380EC20432007005C43A3 /* ExtensionUIView+LayoutWidth.swift in Sources */,
 				DA4B5ABA20527AEE00A99126 /* CoredataProfileAccessFree.swift in Sources */,
+				DA2196252055BC2E0020BBAB /* SimulationViewModelGraph+Factory.swift in Sources */,
+				DA2196212055BC2E0020BBAB /* SimulationViewModelMenuProtocol.swift in Sources */,
+				DA21961F2055BC2E0020BBAB /* SimulationViewModel+Factory.swift in Sources */,
+				DA2196112055BC2E0020BBAB /* Simulation.swift in Sources */,
 				DA7380F020432007005C43A3 /* ExtensionUIView+LayoutEquals.swift in Sources */,
 				DA4B5AA820526F0B00A99126 /* CoredataProfile.swift in Sources */,
-				DA06783E2046F6DA001519B0 /* Simulation.swift in Sources */,
 				DAAFD2C02051465000F1526F /* Entropy.xcdatamodeld in Sources */,
 				DA4B5AAC2052747B00A99126 /* ProfileAccessProtocol.swift in Sources */,
+				DA21961D2055BC2E0020BBAB /* SimulationController.swift in Sources */,
 				DA785A5320470E1100E3DFD1 /* ApplicationView.swift in Sources */,
+				DA2196182055BC2E0020BBAB /* SimulationViewMenu.swift in Sources */,
 				DA785A482047080F00E3DFD1 /* Controller.swift in Sources */,
 				DA5B8CD82051407F008B986F /* ExtensionString.swift in Sources */,
-				DA3DFE212055B21B00DB38FA /* SimulationViewMenu+Constants.swift in Sources */,
 				DA4B5ABC20527BA100A99126 /* CoredataProfileAccessPremium.swift in Sources */,
 				DADB842A2047DEFB00EB45C9 /* AbstractModel.swift in Sources */,
 				DA4B5AAE205274A100A99126 /* ProfileAccessFree.swift in Sources */,
-				DAD797BE20552C3900E7EE0D /* SimulationViewModelGraph.swift in Sources */,
+				DA2196142055BC2E0020BBAB /* SimulationViewMenuCell.swift in Sources */,
 				DA64776F204EA54500235718 /* Model.swift in Sources */,
 				DA7380ED20432007005C43A3 /* ExtensionUIView+LayoutHeight.swift in Sources */,
 				DA5B8CCD20513CD0008B986F /* Profile.swift in Sources */,
-				DA3DFE1320553D0C00DB38FA /* SimulationViewModelGraphMeasure.swift in Sources */,
-				DA2195F42055B66B0020BBAB /* SimulationViewModelMenuContributors.swift in Sources */,
 				DAA15D19204FF941001804B1 /* ApplicationPresenter+Constants.swift in Sources */,
+				DA21961A2055BC2E0020BBAB /* SimulationView.swift in Sources */,
 				DAAFD2BA205144DC00F1526F /* DatabaseProviderProtocol.swift in Sources */,
-				DA3DFE232055B42400DB38FA /* SimulationViewMenuCell.swift in Sources */,
-				DA3DFE1520559ABC00DB38FA /* SimulationViewMenu.swift in Sources */,
-				DAD797C020552D0200E7EE0D /* SimulationViewModelGraph+Factory.swift in Sources */,
-				DA2195F62055B6BB0020BBAB /* SimulationViewModel+Factory.swift in Sources */,
-				DAD9BC362047EF7700675963 /* SimulationView.swift in Sources */,
 				DAA15D17204FF87C001804B1 /* ApplicationPresenter+Factory.swift in Sources */,
 				DAD9BC382047F06300675963 /* PresentLayout.swift in Sources */,
 				DAD797C220552EB000E7EE0D /* CoredataProject+Constants.swift in Sources */,
-				DA3DFE1F2055B1F200DB38FA /* SimulationViewMenu+Factory.swift in Sources */,
+				DA21961C2055BC2E0020BBAB /* SimulationViewScroll+Factory.swift in Sources */,
 				DA785A4C20470C3900E3DFD1 /* ApplicationPresenterProtocol.swift in Sources */,
 				DA4B5AB0205274CB00A99126 /* ProfileAccessPremium.swift in Sources */,
 				DA7380F220432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift in Sources */,
-				DA3DFE252055B49500DB38FA /* SimulationViewModelMenuProtocol.swift in Sources */,
+				DA2196152055BC2E0020BBAB /* SimulationViewMenu+Constants.swift in Sources */,
+				DA2196172055BC2E0020BBAB /* SimulationViewMenu+Factory.swift in Sources */,
 				DA4B5AAA2052736D00A99126 /* CoredataProfile+Factory.swift in Sources */,
 				DA7380EE20432007005C43A3 /* ExtensionUIView+LayoutSize.swift in Sources */,
 				DA785A5120470DEF00E3DFD1 /* ApplicationController.swift in Sources */,
 				DA7380F120432007005C43A3 /* ExtensionUIView+LayoutVertical.swift in Sources */,
+				DA21961B2055BC2E0020BBAB /* SimulationViewScroll+Constants.swift in Sources */,
+				DA2196232055BC2E0020BBAB /* SimulationViewModelMenuContributors.swift in Sources */,
 				DAAFD2C6205148EF00F1526F /* DatabaseProviderCoredata+Constants.swift in Sources */,
-				DA06784F2046F932001519B0 /* SimulationViewModel.swift in Sources */,
 				DA785A4A2047083E00E3DFD1 /* AbstractView.swift in Sources */,
-				DA3DFE1720559ED400DB38FA /* SimulationViewScroll.swift in Sources */,
 				DA2ADDED2052A60F0036812C /* Entropy.swift in Sources */,
 				DAAFD2CD20515D7600F1526F /* DatabaseProviderCoredata+Provider.swift in Sources */,
-				DA3DFE112055362700DB38FA /* SimulationViewModelGraph+Constants.swift in Sources */,
 				DA2ADDE620528BD70036812C /* CoredataProject+Factory.swift in Sources */,
 				DAAFD2C42051487800F1526F /* DatabaseProviderCoredata+Factory.swift in Sources */,
 				DA5B8CD320513F33008B986F /* CoredataProject.swift in Sources */,
 				DAD9BC342047E55300675963 /* AbstractController.swift in Sources */,
-				DA2ADDEA2052A2E80036812C /* SimulationViewGraph.swift in Sources */,
 				DA328234204712CC00795C7B /* PresentProtocol+Default.swift in Sources */,
+				DA2196202055BC2E0020BBAB /* SimulationViewModelGraph.swift in Sources */,
+				DA2196222055BC2E0020BBAB /* SimulationViewModelMenuProject.swift in Sources */,
 				DA5B8CD020513E16008B986F /* Project.swift in Sources */,
-				DA3DFE1D2055A3C400DB38FA /* SimulationViewScrollMenu.swift in Sources */,
 				DAAFD2B82051447400F1526F /* Database.swift in Sources */,
+				DA2196122055BC2E0020BBAB /* SimulationViewGraph.swift in Sources */,
 				DA7380EF20432007005C43A3 /* ExtensionUIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
