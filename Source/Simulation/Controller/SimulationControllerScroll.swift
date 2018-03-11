@@ -2,6 +2,8 @@ import UIKit
 
 class SimulationControllerScroll:NSObject, UICollectionViewDelegate, UICollectionViewDataSource,
     UICollectionViewDelegateFlowLayout {
+    weak var controller:SimulationController?
+    
     func collectionView(_ collectionView:UICollectionView, layout:UICollectionViewLayout,
                         sizeForItemAt index:IndexPath) -> CGSize {
         if index.item == 0 {
