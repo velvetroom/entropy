@@ -34,6 +34,7 @@
 		DA2196242055BC2E0020BBAB /* SimulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21960E2055BC2E0020BBAB /* SimulationViewModel.swift */; };
 		DA2196252055BC2E0020BBAB /* SimulationViewModelGraph+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21960F2055BC2E0020BBAB /* SimulationViewModelGraph+Factory.swift */; };
 		DA2196262055BC2E0020BBAB /* SimulationViewModelGraphMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2196102055BC2E0020BBAB /* SimulationViewModelGraphMeasure.swift */; };
+		DA2196282055BC990020BBAB /* SimulationControllerScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2196272055BC990020BBAB /* SimulationControllerScroll.swift */; };
 		DA2ADDE620528BD70036812C /* CoredataProject+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADDE520528BD70036812C /* CoredataProject+Factory.swift */; };
 		DA2ADDED2052A60F0036812C /* Entropy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADDEC2052A60F0036812C /* Entropy.swift */; };
 		DA32823220470FE300795C7B /* PresentCentred.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32823120470FE300795C7B /* PresentCentred.swift */; };
@@ -126,6 +127,7 @@
 		DA21960E2055BC2E0020BBAB /* SimulationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationViewModel.swift; sourceTree = "<group>"; };
 		DA21960F2055BC2E0020BBAB /* SimulationViewModelGraph+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SimulationViewModelGraph+Factory.swift"; sourceTree = "<group>"; };
 		DA2196102055BC2E0020BBAB /* SimulationViewModelGraphMeasure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationViewModelGraphMeasure.swift; sourceTree = "<group>"; };
+		DA2196272055BC990020BBAB /* SimulationControllerScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationControllerScroll.swift; sourceTree = "<group>"; };
 		DA2ADDE520528BD70036812C /* CoredataProject+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoredataProject+Factory.swift"; sourceTree = "<group>"; };
 		DA2ADDEC2052A60F0036812C /* Entropy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entropy.swift; sourceTree = "<group>"; };
 		DA32823120470FE300795C7B /* PresentCentred.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentCentred.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				DA2196062055BC2E0020BBAB /* SimulationController.swift */,
+				DA2196272055BC990020BBAB /* SimulationControllerScroll.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -694,6 +697,7 @@
 				DAAFD2CD20515D7600F1526F /* DatabaseProviderCoredata+Provider.swift in Sources */,
 				DA2ADDE620528BD70036812C /* CoredataProject+Factory.swift in Sources */,
 				DAAFD2C42051487800F1526F /* DatabaseProviderCoredata+Factory.swift in Sources */,
+				DA2196282055BC990020BBAB /* SimulationControllerScroll.swift in Sources */,
 				DA5B8CD320513F33008B986F /* CoredataProject.swift in Sources */,
 				DAD9BC342047E55300675963 /* AbstractController.swift in Sources */,
 				DA328234204712CC00795C7B /* PresentProtocol+Default.swift in Sources */,
