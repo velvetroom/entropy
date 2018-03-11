@@ -33,6 +33,12 @@ class Simulation:Model {
     }
     
     private func updateViewModel() {
-
+        guard
+            let project:Project = self.project,
+            let viewModel:SimulationViewModel = self.viewModel as? SimulationViewModel
+        else {
+            return
+        }
+        viewModel.updateGraph(entropy:project.entropy)
     }
 }

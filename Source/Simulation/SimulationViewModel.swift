@@ -7,4 +7,8 @@ class SimulationViewModel:AbstractViewModel {
     required init() {
         self.graph = SimulationViewModelGraph()
     }
+    
+    func updateGraph(entropy:Entropy) {
+        self.graph = SimulationViewModelGraph.factoryWithEntropy(entropy:entropy)
+    }
 }
