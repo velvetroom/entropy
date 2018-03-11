@@ -66,6 +66,7 @@
 		DAAFD2CD20515D7600F1526F /* DatabaseProviderCoredata+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFD2CC20515D7600F1526F /* DatabaseProviderCoredata+Provider.swift */; };
 		DAD797BE20552C3900E7EE0D /* SimulationViewModelGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD797BD20552C3900E7EE0D /* SimulationViewModelGraph.swift */; };
 		DAD797C020552D0200E7EE0D /* SimulationViewModelGraph+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD797BF20552D0200E7EE0D /* SimulationViewModelGraph+Factory.swift */; };
+		DAD797C220552EB000E7EE0D /* CoredataProject+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD797C120552EB000E7EE0D /* CoredataProject+Constants.swift */; };
 		DAD9BC342047E55300675963 /* AbstractController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC332047E55300675963 /* AbstractController.swift */; };
 		DAD9BC362047EF7700675963 /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC352047EF7700675963 /* SimulationView.swift */; };
 		DAD9BC382047F06300675963 /* PresentLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC372047F06300675963 /* PresentLayout.swift */; };
@@ -151,6 +152,7 @@
 		DAAFD2CC20515D7600F1526F /* DatabaseProviderCoredata+Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseProviderCoredata+Provider.swift"; sourceTree = "<group>"; };
 		DAD797BD20552C3900E7EE0D /* SimulationViewModelGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelGraph.swift; sourceTree = "<group>"; };
 		DAD797BF20552D0200E7EE0D /* SimulationViewModelGraph+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimulationViewModelGraph+Factory.swift"; sourceTree = "<group>"; };
+		DAD797C120552EB000E7EE0D /* CoredataProject+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoredataProject+Constants.swift"; sourceTree = "<group>"; };
 		DAD9BC332047E55300675963 /* AbstractController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractController.swift; sourceTree = "<group>"; };
 		DAD9BC352047EF7700675963 /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
 		DAD9BC372047F06300675963 /* PresentLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentLayout.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 			children = (
 				DA5B8CD220513F33008B986F /* CoredataProject.swift */,
 				DA2ADDE520528BD70036812C /* CoredataProject+Factory.swift */,
+				DAD797C120552EB000E7EE0D /* CoredataProject+Constants.swift */,
 				DA4B5AA720526F0B00A99126 /* CoredataProfile.swift */,
 				DA4B5AA92052736D00A99126 /* CoredataProfile+Factory.swift */,
 				DA4B5AB920527AEE00A99126 /* CoredataProfileAccessFree.swift */,
@@ -586,6 +589,7 @@
 				DAD9BC362047EF7700675963 /* SimulationView.swift in Sources */,
 				DAA15D17204FF87C001804B1 /* ApplicationPresenter+Factory.swift in Sources */,
 				DAD9BC382047F06300675963 /* PresentLayout.swift in Sources */,
+				DAD797C220552EB000E7EE0D /* CoredataProject+Constants.swift in Sources */,
 				DA785A4C20470C3900E3DFD1 /* ApplicationPresenterProtocol.swift in Sources */,
 				DA4B5AB0205274CB00A99126 /* ProfileAccessPremium.swift in Sources */,
 				DA7380F220432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift in Sources */,
