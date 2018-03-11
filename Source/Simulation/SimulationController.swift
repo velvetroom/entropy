@@ -2,7 +2,11 @@ import Foundation
 
 class SimulationController:Controller<SimulationViewModel, SimulationView> {
     override func reloadViewModel() {
-        self.specialisedView?.viewGraph?.viewModel = self.viewModel?.graph
-        self.specialisedView?.viewGraph?.setNeedsDisplay()
+        guard
+            let viewModel:SimulationViewModel = self.viewModel
+        else {
+            return
+        }
+        self.specialisedView?.viewGraph?.updateViewModel(viewModel:viewModel.graph)
     }
 }
