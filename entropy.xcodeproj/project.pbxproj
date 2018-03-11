@@ -64,6 +64,7 @@
 		DAAFD2C6205148EF00F1526F /* DatabaseProviderCoredata+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFD2C5205148EF00F1526F /* DatabaseProviderCoredata+Constants.swift */; };
 		DAAFD2C820514CBE00F1526F /* ExtensionFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFD2C720514CBE00F1526F /* ExtensionFileManager.swift */; };
 		DAAFD2CD20515D7600F1526F /* DatabaseProviderCoredata+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFD2CC20515D7600F1526F /* DatabaseProviderCoredata+Provider.swift */; };
+		DAD797BE20552C3900E7EE0D /* SimulationViewModelGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD797BD20552C3900E7EE0D /* SimulationViewModelGraph.swift */; };
 		DAD9BC342047E55300675963 /* AbstractController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC332047E55300675963 /* AbstractController.swift */; };
 		DAD9BC362047EF7700675963 /* SimulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC352047EF7700675963 /* SimulationView.swift */; };
 		DAD9BC382047F06300675963 /* PresentLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC372047F06300675963 /* PresentLayout.swift */; };
@@ -147,6 +148,7 @@
 		DAAFD2C5205148EF00F1526F /* DatabaseProviderCoredata+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseProviderCoredata+Constants.swift"; sourceTree = "<group>"; };
 		DAAFD2C720514CBE00F1526F /* ExtensionFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionFileManager.swift; sourceTree = "<group>"; };
 		DAAFD2CC20515D7600F1526F /* DatabaseProviderCoredata+Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseProviderCoredata+Provider.swift"; sourceTree = "<group>"; };
+		DAD797BD20552C3900E7EE0D /* SimulationViewModelGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelGraph.swift; sourceTree = "<group>"; };
 		DAD9BC332047E55300675963 /* AbstractController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractController.swift; sourceTree = "<group>"; };
 		DAD9BC352047EF7700675963 /* SimulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationView.swift; sourceTree = "<group>"; };
 		DAD9BC372047F06300675963 /* PresentLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentLayout.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				DA2ADDE72052A29E0036812C /* SimulationView+Constants.swift */,
 				DA2ADDE92052A2E80036812C /* SimulationViewGraph.swift */,
 				DA06784E2046F932001519B0 /* SimulationViewModel.swift */,
+				DAD797BD20552C3900E7EE0D /* SimulationViewModelGraph.swift */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -570,6 +573,7 @@
 				DA4B5ABC20527BA100A99126 /* CoredataProfileAccessPremium.swift in Sources */,
 				DADB842A2047DEFB00EB45C9 /* AbstractModel.swift in Sources */,
 				DA4B5AAE205274A100A99126 /* ProfileAccessFree.swift in Sources */,
+				DAD797BE20552C3900E7EE0D /* SimulationViewModelGraph.swift in Sources */,
 				DA64776F204EA54500235718 /* Model.swift in Sources */,
 				DA7380ED20432007005C43A3 /* ExtensionUIView+LayoutHeight.swift in Sources */,
 				DA5B8CCD20513CD0008B986F /* Profile.swift in Sources */,
