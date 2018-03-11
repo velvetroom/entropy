@@ -14,6 +14,8 @@
 		DA06784F2046F932001519B0 /* SimulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06784E2046F932001519B0 /* SimulationViewModel.swift */; };
 		DA0678522046F9D0001519B0 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678512046F9D0001519B0 /* Application.swift */; };
 		DA0678542046F9FD001519B0 /* ApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678532046F9FD001519B0 /* ApplicationPresenter.swift */; };
+		DA2195EF2055B5890020BBAB /* SimulationViewModelMenuProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2195EE2055B5890020BBAB /* SimulationViewModelMenuProject.swift */; };
+		DA2195F22055B5C50020BBAB /* LocalizableSimulation.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA2195F02055B5C50020BBAB /* LocalizableSimulation.strings */; };
 		DA2ADDE620528BD70036812C /* CoredataProject+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADDE520528BD70036812C /* CoredataProject+Factory.swift */; };
 		DA2ADDE82052A29E0036812C /* SimulationView+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADDE72052A29E0036812C /* SimulationView+Constants.swift */; };
 		DA2ADDEA2052A2E80036812C /* SimulationViewGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADDE92052A2E80036812C /* SimulationViewGraph.swift */; };
@@ -102,6 +104,8 @@
 		DA06784E2046F932001519B0 /* SimulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModel.swift; sourceTree = "<group>"; };
 		DA0678512046F9D0001519B0 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		DA0678532046F9FD001519B0 /* ApplicationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationPresenter.swift; sourceTree = "<group>"; };
+		DA2195EE2055B5890020BBAB /* SimulationViewModelMenuProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelMenuProject.swift; sourceTree = "<group>"; };
+		DA2195F12055B5C50020BBAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableSimulation.strings; sourceTree = "<group>"; };
 		DA2ADDE520528BD70036812C /* CoredataProject+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoredataProject+Factory.swift"; sourceTree = "<group>"; };
 		DA2ADDE72052A29E0036812C /* SimulationView+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimulationView+Constants.swift"; sourceTree = "<group>"; };
 		DA2ADDE92052A2E80036812C /* SimulationViewGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewGraph.swift; sourceTree = "<group>"; };
@@ -232,6 +236,7 @@
 				DAD797BF20552D0200E7EE0D /* SimulationViewModelGraph+Factory.swift */,
 				DA3DFE1220553D0C00DB38FA /* SimulationViewModelGraphMeasure.swift */,
 				DA3DFE242055B49500DB38FA /* SimulationViewModelMenuProtocol.swift */,
+				DA2195EE2055B5890020BBAB /* SimulationViewModelMenuProject.swift */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -375,8 +380,9 @@
 		DA7380A220432007005C43A3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DA5B8CD420514032008B986F /* LocalizableCoredata.strings */,
 				DA7380A520432007005C43A3 /* InfoPlist.strings */,
+				DA5B8CD420514032008B986F /* LocalizableCoredata.strings */,
+				DA2195F02055B5C50020BBAB /* LocalizableSimulation.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -547,6 +553,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2195F22055B5C50020BBAB /* LocalizableSimulation.strings in Resources */,
 				DA7380E820432007005C43A3 /* InfoPlist.strings in Resources */,
 				DA5B8CD620514032008B986F /* LocalizableCoredata.strings in Resources */,
 				DA7380E220432007005C43A3 /* LaunchScreen.storyboard in Resources */,
@@ -593,6 +600,7 @@
 				DA785A4F20470CF600E3DFD1 /* PresentProtocol.swift in Sources */,
 				DA3DFE1B2055A1F100DB38FA /* SimulationViewScroll+Constants.swift in Sources */,
 				DAAFD2BC2051453500F1526F /* DatabaseProviderCoredata.swift in Sources */,
+				DA2195EF2055B5890020BBAB /* SimulationViewModelMenuProject.swift in Sources */,
 				DAAFD2C820514CBE00F1526F /* ExtensionFileManager.swift in Sources */,
 				DA785A462047074900E3DFD1 /* ViewModelDelegate.swift in Sources */,
 				DA0678522046F9D0001519B0 /* Application.swift in Sources */,
@@ -669,6 +677,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		DA2195F02055B5C50020BBAB /* LocalizableSimulation.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA2195F12055B5C50020BBAB /* en */,
+			);
+			name = LocalizableSimulation.strings;
+			sourceTree = "<group>";
+		};
 		DA5B8CD420514032008B986F /* LocalizableCoredata.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

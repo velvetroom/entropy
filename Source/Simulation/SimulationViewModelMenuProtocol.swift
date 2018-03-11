@@ -1,5 +1,5 @@
 import Foundation
 
-class SimulationViewModelMenuProtocol {
+protocol SimulationViewModelMenuProtocol {
     var title:String { get }
 }
