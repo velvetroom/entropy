@@ -19,17 +19,23 @@ UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFl
         return nil
     }
     
-    func collectionView(_:UICollectionView, numberOfItemsInSection section:Int) -> Int {
+    func collectionView(_:UICollectionView, layout:UICollectionViewLayout, sizeForItemAt index:IndexPath) -> CGSize {
+        if index.item == 0 {
+            return CGSize(width:self.bounds.width, height:SimulationView.Constants.menuHeight)
+        }
+        let usedHeight:CGFloat = SimulationView.Constants.menuHeight + SimulationView.Constants.graphHeight
+        let remainHeight:CGFloat = self.bounds.height - usedHeight
+        return CGSize(width:self.bounds.width, height:remainHeight)
+    }
+    
+    func collectionView(_:UICollectionView, numberOfItemsInSection:Int) -> Int {
         return 2
     }
     
-    func collectionView(_:UICollectionView, cellForItemAt indexPath:IndexPath) -> UICollectionViewCell {
-        let cell:UICollectionViewCell
-        if indexPath.item == 0 {
-            cell = self.dequeueReusableCell(withReuseIdentifier:Constants.cellMenu, for:indexPath)
-        } else {
-            cell = self.dequeueReusableCell(withReuseIdentifier:Constants.cellContent, for:indexPath)
+    func collectionView(_:UICollectionView, cellForItemAt index:IndexPath) -> UICollectionViewCell {
+        if index.item == 0 {
+            return self.dequeueReusableCell(withReuseIdentifier:Constants.cellMenu, for:index)
         }
-        return cell
+        return self.dequeueReusableCell(withReuseIdentifier:Constants.cellContent, for:index)
     }
 }
