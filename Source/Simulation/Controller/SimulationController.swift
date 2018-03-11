@@ -10,12 +10,28 @@ class SimulationController:Controller<SimulationViewModel, SimulationView> {
         super.init()
     }
     
+    required init?(coder:NSCoder) {
+        return nil
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.specialisedView?.viewGraph?.delegate = self.graph
+        self.specialisedView?.viewScroll?.delegate = self.scroll
+        self.specialisedView?.viewScroll?.dataSource = self.scroll
+    }
+    
     override func reloadViewModel() {
         guard
             let viewModel:SimulationViewModel = self.viewModel
         else {
             return
         }
-        self.specialisedView?.viewGraph?.updateViewModel(viewModel:viewModel.graph)
+        self.updateGraph(viewModel:viewModel)
+    }
+    
+    private func updateGraph(viewModel:SimulationViewModel) {
+        self.graph.viewModel = viewModel.graph
+        self.specialisedView?.viewGraph?.setNeedsDisplay()
     }
 }
