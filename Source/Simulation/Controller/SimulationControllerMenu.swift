@@ -1,5 +1,10 @@
 import Foundation
 
 class SimulationControllerMenu:NSObject {
-    weak var controller:SimulationController?
+    var viewModel:[SimulationViewModelMenuProtocol]
+    
+    override init() {
+        self.viewModel = []
+        super.init()
+    }
 }

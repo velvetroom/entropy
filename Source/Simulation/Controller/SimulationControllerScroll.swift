@@ -2,7 +2,23 @@ import UIKit
 
 class SimulationControllerScroll:NSObject, UICollectionViewDelegate, UICollectionViewDataSource,
     UICollectionViewDelegateFlowLayout {
-    weak var controller:SimulationController?
+    weak var viewModel:SimulationViewModel? {
+        didSet {
+            guard
+                let viewModel:SimulationViewModel = self.viewModel
+            else {
+                return
+            }
+            self.menu.viewModel = viewModel.menu
+        }
+    }
+    
+    private let menu:SimulationControllerMenu
+    
+    override init() {
+        self.menu = SimulationControllerMenu()
+        super.init()
+    }
     
     func collectionView(_ collectionView:UICollectionView, layout:UICollectionViewLayout,
                         sizeForItemAt index:IndexPath) -> CGSize {

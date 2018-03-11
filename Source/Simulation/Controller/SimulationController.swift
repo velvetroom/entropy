@@ -3,16 +3,11 @@ import Foundation
 class SimulationController:Controller<SimulationViewModel, SimulationView> {
     private let graph:SimulationControllerGraph
     private let scroll:SimulationControllerScroll
-    private let menu:SimulationControllerMenu
     
     override init() {
         self.graph = SimulationControllerGraph()
         self.scroll = SimulationControllerScroll()
-        self.menu = SimulationControllerMenu()
         super.init()
-        self.graph.controller = self
-        self.scroll.controller = self
-        self.menu.controller = self
     }
     
     required init?(coder:NSCoder) {
@@ -27,6 +22,13 @@ class SimulationController:Controller<SimulationViewModel, SimulationView> {
     }
     
     override func reloadViewModel() {
+        guard
+            let viewModel:SimulationViewModel = self.viewModel
+        else {
+            return
+        }
+        self.graph.viewModel = viewModel.graph
+        self.scroll.viewModel = viewModel
         self.specialisedView?.viewGraph?.setNeedsDisplay()
     }
 }

@@ -1,12 +1,11 @@
 import UIKit
 
 class SimulationControllerGraph:ViewDelegate {
-    weak var controller:SimulationController?
+    var viewModel:SimulationViewModelGraph
     private weak var context:CGContext?
-    private var centre:CGPoint
     
     init() {
-        self.centre = CGPoint.zero
+        self.viewModel = SimulationViewModelGraph()
     }
     
     func draw(rect:CGRect, context:CGContext) {
@@ -20,34 +19,21 @@ class SimulationControllerGraph:ViewDelegate {
     private func updateCentre(rect:CGRect) {
         let midWidth:CGFloat = rect.width / 2.0
         let midHeight:CGFloat = rect.height / 2.0
-        self.centre = CGPoint(x:midWidth, y:midHeight)
+        self.viewModel.centre = CGPoint(x:midWidth, y:midHeight)
     }
     
     private func configureLine() {
-        guard
-            let lineWidth:CGFloat = self.controller?.viewModel?.graph.lineWidth
-        else {
-            return
-        }
-        self.context?.setLineWidth(lineWidth)
+        self.context?.setLineWidth(self.viewModel.lineWidth)
     }
     
     private func drawProductivity() {
-        guard
-            let measure:SimulationViewModelGraphMeasure = self.controller?.viewModel?.graph.productivity
-        else {
-            return
-        }
-        self.drawMeasure(strokeColour:UIColor.sharedProductivityColour, fillColour:UIColor.white, measure:measure)
+        self.drawMeasure(strokeColour:UIColor.sharedProductivityColour, fillColour:UIColor.white,
+                         measure:self.viewModel.productivity)
     }
     
     private func drawChaos() {
-        guard
-            let measure:SimulationViewModelGraphMeasure = self.controller?.viewModel?.graph.chaos
-        else {
-            return
-        }
-        self.drawMeasure(strokeColour:UIColor.sharedChaosColour, fillColour:UIColor.sharedGrayColour, measure:measure)
+        self.drawMeasure(strokeColour:UIColor.sharedChaosColour, fillColour:UIColor.sharedGrayColour,
+                         measure:self.viewModel.chaos)
     }
     
     private func drawMeasure(strokeColour:UIColor, fillColour:UIColor, measure:SimulationViewModelGraphMeasure) {
@@ -60,18 +46,13 @@ class SimulationControllerGraph:ViewDelegate {
     }
     
     private func drawMeasurePath(measure:SimulationViewModelGraphMeasure) {
-        self.context?.move(to:self.centre)
+        self.context?.move(to:self.viewModel.centre)
         self.drawMeasureArch(measure:measure)
         self.context?.closePath()
     }
     
     private func drawMeasureArch(measure:SimulationViewModelGraphMeasure) {
-        guard
-            let radius:CGFloat = self.controller?.viewModel?.graph.radius
-        else {
-            return
-        }
-        self.context?.addArc(center:self.centre, radius:radius, startAngle:measure.startAngle,
-                             endAngle:measure.endAngle, clockwise:false)
+        self.context?.addArc(center:self.viewModel.centre, radius:self.viewModel.radius,
+                             startAngle:measure.startAngle, endAngle:measure.endAngle, clockwise:false)
     }
 }
