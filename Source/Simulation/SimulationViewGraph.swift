@@ -46,12 +46,12 @@ class SimulationViewGraph:UIView {
     
     private func drawMeasure(colour:UIColor, measure:SimulationViewModelGraphMeasure) {
         self.context?.move(to:self.centre)
-        self.context?.setFillColor(colour.cgColor)
+        self.context?.setStrokeColor(colour.cgColor)
         self.context?.addArc(center:self.centre, radius:self.viewModel.radius,
                              startAngle:measure.startAngle,
                              endAngle:measure.endAngle,
                              clockwise:false)
         self.context?.closePath()
-        self.context?.drawPath(using:CGPathDrawingMode.fill)
+        self.context?.drawPath(using:CGPathDrawingMode.stroke)
     }
 }
