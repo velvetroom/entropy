@@ -1,8 +1,10 @@
 import Foundation
 
 extension SimulationViewModelGraph {
-    static func factoryFullProductivity() -> SimulationViewModelGraph {
-        let graph:SimulationViewModelGraph = SimulationViewModelGraph(chaos:0, productivity:1)
+    static func factoryWithEntropy(entropy:Entropy) -> SimulationViewModelGraph {
+        var graph:SimulationViewModelGraph = SimulationViewModelGraph()
+        graph.chaos = entropy.chaos
+        graph.productivity = entropy.productivity
         return graph
     }
 }

@@ -1,6 +1,11 @@
 import Foundation
 
 struct SimulationViewModelGraph {
-    let chaos:Float
-    let productivity:Float
+    var chaos:Float
+    var productivity:Float
+    
+    init() {
+        self.chaos = 0
+        self.productivity = 0
+    }
 }

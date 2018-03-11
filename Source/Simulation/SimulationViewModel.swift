@@ -5,6 +5,6 @@ class SimulationViewModel:AbstractViewModel {
     private(set) var graph:SimulationViewModelGraph
     
     required init() {
-        self.graph = SimulationViewModelGraph.factoryFullProductivity()
+        self.graph = SimulationViewModelGraph()
     }
 }
