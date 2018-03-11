@@ -37,20 +37,21 @@ class SimulationViewGraph:UIView {
     }
     
     private func drawProductivity() {
-        self.context?.setFillColor(UIColor.sharedProductivityColour.cgColor)
-        self.context?.addArc(center:self.centre, radius:self.viewModel.radius,
-                       startAngle:self.viewModel.productivity.startAngle,
-                       endAngle:self.viewModel.productivity.endAngle,
-                       clockwise:true)
-        self.context?.drawPath(using:CGPathDrawingMode.fill)
+        self.drawMeasure(colour:UIColor.sharedProductivityColour, measure:self.viewModel.productivity)
     }
     
     private func drawChaos() {
-        self.context?.setFillColor(UIColor.sharedChaosColour.cgColor)
+        self.drawMeasure(colour:UIColor.sharedChaosColour, measure:self.viewModel.chaos)
+    }
+    
+    private func drawMeasure(colour:UIColor, measure:SimulationViewModelGraphMeasure) {
+        self.context?.move(to:self.centre)
+        self.context?.setFillColor(colour.cgColor)
         self.context?.addArc(center:self.centre, radius:self.viewModel.radius,
-                             startAngle:self.viewModel.chaos.startAngle,
-                             endAngle:self.viewModel.chaos.endAngle,
-                             clockwise:true)
+                             startAngle:measure.startAngle,
+                             endAngle:measure.endAngle,
+                             clockwise:false)
+        self.context?.closePath()
         self.context?.drawPath(using:CGPathDrawingMode.fill)
     }
 }

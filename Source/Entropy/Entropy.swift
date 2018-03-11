@@ -5,14 +5,16 @@ class Entropy {
     
     var chaos:Float {
         get {
-            return self.index
+//            return self.index
+            return 0.65
         }
     }
     
     var productivity:Float {
         get {
             let inverseChaos:Float = 1 - self.chaos
-            return inverseChaos
+//            return inverseChaos
+            return 0.35
         }
     }
     
