@@ -37,21 +37,35 @@ class SimulationViewGraph:UIView {
     }
     
     private func drawProductivity() {
-        self.drawMeasure(colour:UIColor.sharedProductivityColour, measure:self.viewModel.productivity)
+        self.drawMeasure(strokeColour:UIColor.sharedProductivityColour, fillColour:UIColor.white,
+                         measure:self.viewModel.productivity)
     }
     
     private func drawChaos() {
-        self.drawMeasure(colour:UIColor.sharedChaosColour, measure:self.viewModel.chaos)
+        self.drawMeasure(strokeColour:UIColor.sharedChaosColour, fillColour:UIColor.sharedGrayColour,
+                         measure:self.viewModel.chaos)
     }
     
-    private func drawMeasure(colour:UIColor, measure:SimulationViewModelGraphMeasure) {
+    private func drawMeasure(strokeColour:UIColor, fillColour:UIColor, measure:SimulationViewModelGraphMeasure) {
+        self.context?.setLineWidth(self.viewModel.lineWidth)
+        self.context?.setFillColor(fillColour.cgColor)
+        self.drawMeasurePath(measure:measure)
+        self.context?.drawPath(using:CGPathDrawingMode.fill)
+        self.context?.setStrokeColor(strokeColour.cgColor)
+        self.drawMeasureArch(measure:measure)
+        self.context?.drawPath(using:CGPathDrawingMode.stroke)
+    }
+    
+    private func drawMeasurePath(measure:SimulationViewModelGraphMeasure) {
         self.context?.move(to:self.centre)
-        self.context?.setStrokeColor(colour.cgColor)
+        self.drawMeasureArch(measure:measure)
+        self.context?.closePath()
+    }
+    
+    private func drawMeasureArch(measure:SimulationViewModelGraphMeasure) {
         self.context?.addArc(center:self.centre, radius:self.viewModel.radius,
                              startAngle:measure.startAngle,
                              endAngle:measure.endAngle,
                              clockwise:false)
-        self.context?.closePath()
-        self.context?.drawPath(using:CGPathDrawingMode.stroke)
     }
 }
