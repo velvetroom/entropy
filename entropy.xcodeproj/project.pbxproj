@@ -20,6 +20,7 @@
 		DA2ADDED2052A60F0036812C /* Entropy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADDEC2052A60F0036812C /* Entropy.swift */; };
 		DA32823220470FE300795C7B /* PresentCentred.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32823120470FE300795C7B /* PresentCentred.swift */; };
 		DA328234204712CC00795C7B /* PresentProtocol+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA328233204712CC00795C7B /* PresentProtocol+Default.swift */; };
+		DA3DFE112055362700DB38FA /* SimulationViewModelGraph+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3DFE102055362700DB38FA /* SimulationViewModelGraph+Constants.swift */; };
 		DA4B5AA320526D6C00A99126 /* TestDatabaseProviderCoredata.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5A9D20526D6C00A99126 /* TestDatabaseProviderCoredata.swift */; };
 		DA4B5AA420526D6C00A99126 /* TestDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5A9E20526D6C00A99126 /* TestDatabase.swift */; };
 		DA4B5AA520526D6C00A99126 /* TestSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5AA020526D6C00A99126 /* TestSimulation.swift */; };
@@ -97,6 +98,7 @@
 		DA2ADDEC2052A60F0036812C /* Entropy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entropy.swift; sourceTree = "<group>"; };
 		DA32823120470FE300795C7B /* PresentCentred.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentCentred.swift; sourceTree = "<group>"; };
 		DA328233204712CC00795C7B /* PresentProtocol+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PresentProtocol+Default.swift"; sourceTree = "<group>"; };
+		DA3DFE102055362700DB38FA /* SimulationViewModelGraph+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimulationViewModelGraph+Constants.swift"; sourceTree = "<group>"; };
 		DA48BB1A2046CD2B00271252 /* tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA48BB292046CE1F00271252 /* InfoTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoTests.plist; sourceTree = "<group>"; };
 		DA4B5A9D20526D6C00A99126 /* TestDatabaseProviderCoredata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDatabaseProviderCoredata.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				DA2ADDE92052A2E80036812C /* SimulationViewGraph.swift */,
 				DA06784E2046F932001519B0 /* SimulationViewModel.swift */,
 				DAD797BD20552C3900E7EE0D /* SimulationViewModelGraph.swift */,
+				DA3DFE102055362700DB38FA /* SimulationViewModelGraph+Constants.swift */,
 				DAD797BF20552D0200E7EE0D /* SimulationViewModelGraph+Factory.swift */,
 			);
 			path = Simulation;
@@ -602,6 +605,7 @@
 				DA785A4A2047083E00E3DFD1 /* AbstractView.swift in Sources */,
 				DA2ADDED2052A60F0036812C /* Entropy.swift in Sources */,
 				DAAFD2CD20515D7600F1526F /* DatabaseProviderCoredata+Provider.swift in Sources */,
+				DA3DFE112055362700DB38FA /* SimulationViewModelGraph+Constants.swift in Sources */,
 				DA2ADDE620528BD70036812C /* CoredataProject+Factory.swift in Sources */,
 				DAAFD2C42051487800F1526F /* DatabaseProviderCoredata+Factory.swift in Sources */,
 				DA5B8CD320513F33008B986F /* CoredataProject.swift in Sources */,
