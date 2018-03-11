@@ -35,6 +35,8 @@
 		DA2196252055BC2E0020BBAB /* SimulationViewModelGraph+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21960F2055BC2E0020BBAB /* SimulationViewModelGraph+Factory.swift */; };
 		DA2196262055BC2E0020BBAB /* SimulationViewModelGraphMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2196102055BC2E0020BBAB /* SimulationViewModelGraphMeasure.swift */; };
 		DA2196282055BC990020BBAB /* SimulationControllerScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2196272055BC990020BBAB /* SimulationControllerScroll.swift */; };
+		DA21962A2055BD6C0020BBAB /* SimulationControllerGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2196292055BD6C0020BBAB /* SimulationControllerGraph.swift */; };
+		DA21962C2055BE5F0020BBAB /* ViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA21962B2055BE5F0020BBAB /* ViewDelegate.swift */; };
 		DA2ADDE620528BD70036812C /* CoredataProject+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADDE520528BD70036812C /* CoredataProject+Factory.swift */; };
 		DA2ADDED2052A60F0036812C /* Entropy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2ADDEC2052A60F0036812C /* Entropy.swift */; };
 		DA32823220470FE300795C7B /* PresentCentred.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA32823120470FE300795C7B /* PresentCentred.swift */; };
@@ -128,6 +130,8 @@
 		DA21960F2055BC2E0020BBAB /* SimulationViewModelGraph+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SimulationViewModelGraph+Factory.swift"; sourceTree = "<group>"; };
 		DA2196102055BC2E0020BBAB /* SimulationViewModelGraphMeasure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationViewModelGraphMeasure.swift; sourceTree = "<group>"; };
 		DA2196272055BC990020BBAB /* SimulationControllerScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationControllerScroll.swift; sourceTree = "<group>"; };
+		DA2196292055BD6C0020BBAB /* SimulationControllerGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationControllerGraph.swift; sourceTree = "<group>"; };
+		DA21962B2055BE5F0020BBAB /* ViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDelegate.swift; sourceTree = "<group>"; };
 		DA2ADDE520528BD70036812C /* CoredataProject+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoredataProject+Factory.swift"; sourceTree = "<group>"; };
 		DA2ADDEC2052A60F0036812C /* Entropy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entropy.swift; sourceTree = "<group>"; };
 		DA32823120470FE300795C7B /* PresentCentred.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentCentred.swift; sourceTree = "<group>"; };
@@ -238,6 +242,7 @@
 				DA785A472047080F00E3DFD1 /* Controller.swift */,
 				DA0678442046F7CB001519B0 /* ControllerDelegate.swift */,
 				DA785A452047074900E3DFD1 /* ViewModelDelegate.swift */,
+				DA21962B2055BE5F0020BBAB /* ViewDelegate.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				DA2196062055BC2E0020BBAB /* SimulationController.swift */,
+				DA2196292055BD6C0020BBAB /* SimulationControllerGraph.swift */,
 				DA2196272055BC990020BBAB /* SimulationControllerScroll.swift */,
 			);
 			path = Controller;
@@ -666,6 +672,7 @@
 				DA2196182055BC2E0020BBAB /* SimulationViewMenu.swift in Sources */,
 				DA785A482047080F00E3DFD1 /* Controller.swift in Sources */,
 				DA5B8CD82051407F008B986F /* ExtensionString.swift in Sources */,
+				DA21962A2055BD6C0020BBAB /* SimulationControllerGraph.swift in Sources */,
 				DA4B5ABC20527BA100A99126 /* CoredataProfileAccessPremium.swift in Sources */,
 				DADB842A2047DEFB00EB45C9 /* AbstractModel.swift in Sources */,
 				DA4B5AAE205274A100A99126 /* ProfileAccessFree.swift in Sources */,
@@ -693,6 +700,7 @@
 				DA2196232055BC2E0020BBAB /* SimulationViewModelMenuContributors.swift in Sources */,
 				DAAFD2C6205148EF00F1526F /* DatabaseProviderCoredata+Constants.swift in Sources */,
 				DA785A4A2047083E00E3DFD1 /* AbstractView.swift in Sources */,
+				DA21962C2055BE5F0020BBAB /* ViewDelegate.swift in Sources */,
 				DA2ADDED2052A60F0036812C /* Entropy.swift in Sources */,
 				DAAFD2CD20515D7600F1526F /* DatabaseProviderCoredata+Provider.swift in Sources */,
 				DA2ADDE620528BD70036812C /* CoredataProject+Factory.swift in Sources */,

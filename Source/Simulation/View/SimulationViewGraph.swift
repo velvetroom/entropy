@@ -1,6 +1,7 @@
 import UIKit
 
 class SimulationViewGraph:UIView {
+    weak var delegate:ViewDelegate?
     private weak var context:CGContext?
     private var viewModel:SimulationViewModelGraph
     private var centre:CGPoint
