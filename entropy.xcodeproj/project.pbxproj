@@ -52,6 +52,7 @@
 		DA4B5AB0205274CB00A99126 /* ProfileAccessPremium.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5AAF205274CB00A99126 /* ProfileAccessPremium.swift */; };
 		DA4B5ABA20527AEE00A99126 /* CoredataProfileAccessFree.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5AB920527AEE00A99126 /* CoredataProfileAccessFree.swift */; };
 		DA4B5ABC20527BA100A99126 /* CoredataProfileAccessPremium.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5ABB20527BA100A99126 /* CoredataProfileAccessPremium.swift */; };
+		DA4DDFF52055C3050047BB9D /* SimulationControllerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4DDFF42055C3050047BB9D /* SimulationControllerMenu.swift */; };
 		DA5B8CCD20513CD0008B986F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CCC20513CD0008B986F /* Profile.swift */; };
 		DA5B8CD020513E16008B986F /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CCF20513E16008B986F /* Project.swift */; };
 		DA5B8CD320513F33008B986F /* CoredataProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CD220513F33008B986F /* CoredataProject.swift */; };
@@ -149,6 +150,7 @@
 		DA4B5AAF205274CB00A99126 /* ProfileAccessPremium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAccessPremium.swift; sourceTree = "<group>"; };
 		DA4B5AB920527AEE00A99126 /* CoredataProfileAccessFree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataProfileAccessFree.swift; sourceTree = "<group>"; };
 		DA4B5ABB20527BA100A99126 /* CoredataProfileAccessPremium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataProfileAccessPremium.swift; sourceTree = "<group>"; };
+		DA4DDFF42055C3050047BB9D /* SimulationControllerMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationControllerMenu.swift; sourceTree = "<group>"; };
 		DA5B8CCC20513CD0008B986F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		DA5B8CCF20513E16008B986F /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		DA5B8CD220513F33008B986F /* CoredataProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataProject.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 				DA2196062055BC2E0020BBAB /* SimulationController.swift */,
 				DA2196292055BD6C0020BBAB /* SimulationControllerGraph.swift */,
 				DA2196272055BC990020BBAB /* SimulationControllerScroll.swift */,
+				DA4DDFF42055C3050047BB9D /* SimulationControllerMenu.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -654,6 +657,7 @@
 				DA0678522046F9D0001519B0 /* Application.swift in Sources */,
 				DA0678452046F7CB001519B0 /* ControllerDelegate.swift in Sources */,
 				DA06784B2046F8F1001519B0 /* AbstractViewModel.swift in Sources */,
+				DA4DDFF52055C3050047BB9D /* SimulationControllerMenu.swift in Sources */,
 				DAAFD2C2205147AE00F1526F /* ExtensionNSManagedObject.swift in Sources */,
 				DA2196192055BC2E0020BBAB /* SimulationViewScroll.swift in Sources */,
 				DA21961E2055BC2E0020BBAB /* SimulationViewModelGraph+Constants.swift in Sources */,
