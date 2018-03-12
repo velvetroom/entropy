@@ -25,6 +25,15 @@ class SimulationControllerMenu:NSObject,
         return CGSize(width:SimulationViewMenu.Constants.cellWidth, height:collectionView.bounds.height)
     }
     
+    func collectionView(_ collectionView:UICollectionView, layout:UICollectionViewLayout,
+                        insetForSectionAt:Int) -> UIEdgeInsets {
+        let totalWidth:CGFloat = collectionView.bounds.width
+        let remainWidth:CGFloat = totalWidth - SimulationViewMenu.Constants.cellWidth
+        let margin:CGFloat = remainWidth / 2.0
+        let insets:UIEdgeInsets = UIEdgeInsets(top:0, left:margin, bottom:0, right:margin)
+        return insets
+    }
+    
     func collectionView(_:UICollectionView, numberOfItemsInSection:Int) -> Int {
         return self.viewModel.items.count
     }
