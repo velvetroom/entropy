@@ -1,10 +1,12 @@
 import Foundation
 
 extension SimulationViewModel {
-    class func factoryMenu() -> [SimulationViewModelMenuProtocol] {
+    class func factoryMenu() -> SimulationViewModelMenu {
         let items:[SimulationViewModelMenuProtocol] = [
             SimulationViewModelMenuProject(),
             SimulationViewModelMenuContributors()]
-        return items
+        var menu:SimulationViewModelMenu = SimulationViewModelMenu()
+        menu.items = items
+        return menu
     }
 }

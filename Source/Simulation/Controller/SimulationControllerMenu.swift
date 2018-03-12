@@ -2,7 +2,7 @@ import UIKit
 
 class SimulationControllerMenu:NSObject,
     UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    var viewModel:[SimulationViewModelMenuProtocol] {
+    var viewModel:SimulationViewModelMenu {
         didSet {
             self.viewMenu?.reloadData()
         }
@@ -12,12 +12,11 @@ class SimulationControllerMenu:NSObject,
         didSet {
             self.viewMenu?.delegate = self
             self.viewMenu?.dataSource = self
-            self.viewMenu?.reloadData()
         }
     }
     
     override init() {
-        self.viewModel = []
+        self.viewModel = SimulationViewModelMenu()
         super.init()
     }
     
@@ -27,7 +26,7 @@ class SimulationControllerMenu:NSObject,
     }
     
     func collectionView(_:UICollectionView, numberOfItemsInSection:Int) -> Int {
-        return self.viewModel.count
+        return self.viewModel.items.count
     }
     
     func collectionView(_ collectionView:UICollectionView, cellForItemAt index:IndexPath) -> UICollectionViewCell {
@@ -44,7 +43,7 @@ class SimulationControllerMenu:NSObject,
     }
     
     private func configure(cell:SimulationViewMenuCell, at index:IndexPath) {
-        let item:SimulationViewModelMenuProtocol = self.viewModel[index.item]
+        let item:SimulationViewModelMenuProtocol = self.viewModel.items[index.item]
         cell.title?.text = item.title
     }
 }
