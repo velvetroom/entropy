@@ -2,12 +2,6 @@ import UIKit
 
 class SimulationControllerMenu:NSObject,
     UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    var viewModel:SimulationViewModelMenu {
-        didSet {
-            self.reloadMenu()
-        }
-    }
-    
     weak var viewMenu:SimulationViewMenu? {
         didSet {
             self.viewMenu?.delegate = self
@@ -15,9 +9,18 @@ class SimulationControllerMenu:NSObject,
         }
     }
     
+    private var viewModel:SimulationViewModelMenu
+    
     override init() {
         self.viewModel = SimulationViewModelMenu()
         super.init()
+    }
+    
+    func reloadMenu(viewModel:SimulationViewModelMenu) {
+        self.viewModel = viewModel
+        self.viewMenu?.reloadData()
+        self.viewMenu?.selectItem(at:self.viewModel.selected, animated:false,
+                                  scrollPosition:UICollectionViewScrollPosition.centeredHorizontally)
     }
     
     func collectionView(_ collectionView:UICollectionView, layout:UICollectionViewLayout,
@@ -42,6 +45,11 @@ class SimulationControllerMenu:NSObject,
         return self.dequeueCell(collectionView:collectionView, index:index)
     }
     
+    func collectionView(_ collectionView:UICollectionView, didSelectItemAt index:IndexPath) {
+        self.viewModel.selected = index
+        collectionView.scrollToItem(at:index, at:UICollectionViewScrollPosition.centeredHorizontally, animated:true)
+    }
+    
     private func dequeueCell(collectionView:UICollectionView, index:IndexPath) -> UICollectionViewCell {
         let cell:UICollectionViewCell = collectionView.dequeueReusableCell(
             withReuseIdentifier:SimulationViewMenu.Constants.cell, for:index)
@@ -54,11 +62,5 @@ class SimulationControllerMenu:NSObject,
     private func configure(cell:SimulationViewMenuCell, at index:IndexPath) {
         let item:SimulationViewModelMenuProtocol = self.viewModel.items[index.item]
         cell.title?.text = item.title
-    }
-    
-    private func reloadMenu() {
-        self.viewMenu?.reloadData()
-        self.viewMenu?.selectItem(at:self.viewModel.selected, animated:false,
-                                  scrollPosition:UICollectionViewScrollPosition.centeredHorizontally)
     }
 }
