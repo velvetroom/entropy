@@ -13,9 +13,9 @@ class SimulationViewMenuCell:UICollectionViewCell {
         title.translatesAutoresizingMaskIntoConstraints = false
         title.isUserInteractionEnabled = false
         title.backgroundColor = UIColor.clear
-        title.font = UIFont.systemFont(ofSize:Constants.fontSize, weight:UIFont.Weight.light)
         title.textAlignment = NSTextAlignment.center
         title.textColor = UIColor.black
+        title.font = UIFont.systemFont(ofSize:Constants.fontSize, weight:UIFont.Weight.light)
         self.title = title
         
         let ribbon:UIView = UIView()
@@ -56,8 +56,10 @@ class SimulationViewMenuCell:UICollectionViewCell {
     private func validateSelected() {
         if self.isSelected || self.isHighlighted {
             self.ribbon?.isHidden = false
+            self.title?.alpha = 1
         } else {
             self.ribbon?.isHidden = true
+            self.title?.alpha = 0.5
         }
     }
 }
