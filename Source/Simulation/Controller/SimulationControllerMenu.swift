@@ -4,7 +4,7 @@ class SimulationControllerMenu:NSObject,
     UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     var viewModel:SimulationViewModelMenu {
         didSet {
-            self.viewMenu?.reloadData()
+            self.reloadMenu()
         }
     }
     
@@ -45,5 +45,11 @@ class SimulationControllerMenu:NSObject,
     private func configure(cell:SimulationViewMenuCell, at index:IndexPath) {
         let item:SimulationViewModelMenuProtocol = self.viewModel.items[index.item]
         cell.title?.text = item.title
+    }
+    
+    private func reloadMenu() {
+        self.viewMenu?.reloadData()
+        self.viewMenu?.selectItem(at:self.viewModel.selected, animated:false,
+                                  scrollPosition:UICollectionViewScrollPosition.centeredHorizontally)
     }
 }

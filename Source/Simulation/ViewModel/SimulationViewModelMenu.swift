@@ -2,10 +2,10 @@ import Foundation
 
 struct SimulationViewModelMenu {
     var items:[SimulationViewModelMenuProtocol]
-    var selected:Int
+    var selected:IndexPath
     
     init() {
         self.items = []
-        self.selected = 0
+        self.selected = IndexPath(item:0, section:0)
     }
 }
