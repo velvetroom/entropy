@@ -10,6 +10,7 @@ class SimulationViewMenu:UICollectionView {
         self.alwaysBounceHorizontal = true
         self.showsVerticalScrollIndicator = false
         self.showsHorizontalScrollIndicator = false
+        self.register(SimulationViewMenuCell.self, forCellWithReuseIdentifier:Constants.cell)
     }
     
     required init?(coder:NSCoder) {
