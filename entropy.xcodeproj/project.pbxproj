@@ -60,6 +60,7 @@
 		DA5B8CD620514032008B986F /* LocalizableCoredata.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA5B8CD420514032008B986F /* LocalizableCoredata.strings */; };
 		DA5B8CD82051407F008B986F /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CD72051407F008B986F /* ExtensionString.swift */; };
 		DA5F52282056D6D00010E7F0 /* SimulationViewModelMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5F52272056D6D00010E7F0 /* SimulationViewModelMenu.swift */; };
+		DA5F522A2056D9C20010E7F0 /* SimulationViewModelMenuLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5F52292056D9C20010E7F0 /* SimulationViewModelMenuLanguages.swift */; };
 		DA64776F204EA54500235718 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA64776E204EA54500235718 /* Model.swift */; };
 		DA7380E220432007005C43A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA73809D20432007005C43A3 /* LaunchScreen.storyboard */; };
 		DA7380E820432007005C43A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A520432007005C43A3 /* InfoPlist.strings */; };
@@ -160,6 +161,7 @@
 		DA5B8CD520514032008B986F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableCoredata.strings; sourceTree = "<group>"; };
 		DA5B8CD72051407F008B986F /* ExtensionString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
 		DA5F52272056D6D00010E7F0 /* SimulationViewModelMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelMenu.swift; sourceTree = "<group>"; };
+		DA5F52292056D9C20010E7F0 /* SimulationViewModelMenuLanguages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelMenuLanguages.swift; sourceTree = "<group>"; };
 		DA64776E204EA54500235718 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DA73808720431E5E005C43A3 /* entropy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = entropy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA73809D20432007005C43A3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -318,6 +320,7 @@
 				DA21960B2055BC2E0020BBAB /* SimulationViewModelMenuProtocol.swift */,
 				DA21960C2055BC2E0020BBAB /* SimulationViewModelMenuProject.swift */,
 				DA21960D2055BC2E0020BBAB /* SimulationViewModelMenuContributors.swift */,
+				DA5F52292056D9C20010E7F0 /* SimulationViewModelMenuLanguages.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -678,6 +681,7 @@
 				DAAFD2C02051465000F1526F /* Entropy.xcdatamodeld in Sources */,
 				DA4B5AAC2052747B00A99126 /* ProfileAccessProtocol.swift in Sources */,
 				DA21961D2055BC2E0020BBAB /* SimulationController.swift in Sources */,
+				DA5F522A2056D9C20010E7F0 /* SimulationViewModelMenuLanguages.swift in Sources */,
 				DA785A5320470E1100E3DFD1 /* ApplicationView.swift in Sources */,
 				DA2196182055BC2E0020BBAB /* SimulationViewMenu.swift in Sources */,
 				DA785A482047080F00E3DFD1 /* Controller.swift in Sources */,
