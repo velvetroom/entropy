@@ -2,11 +2,28 @@ import UIKit
 
 class SimulationControllerMenu:NSObject,
     UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    var viewModel:[SimulationViewModelMenuProtocol]
+    var viewModel:[SimulationViewModelMenuProtocol] {
+        didSet {
+            self.viewMenu?.reloadData()
+        }
+    }
+    
+    weak var viewMenu:SimulationViewMenu? {
+        didSet {
+            self.viewMenu?.delegate = self
+            self.viewMenu?.dataSource = self
+            self.viewMenu?.reloadData()
+        }
+    }
     
     override init() {
         self.viewModel = []
         super.init()
+    }
+    
+    func collectionView(_ collectionView:UICollectionView, layout:UICollectionViewLayout,
+                        sizeForItemAt:IndexPath) -> CGSize {
+        return CGSize(width:SimulationViewMenu.Constants.cellWidth, height:collectionView.bounds.height)
     }
     
     func collectionView(_:UICollectionView, numberOfItemsInSection:Int) -> Int {
