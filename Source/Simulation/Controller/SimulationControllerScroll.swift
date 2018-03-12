@@ -42,4 +42,14 @@ class SimulationControllerScroll:NSObject, UICollectionViewDelegate, UICollectio
         return collectionView.dequeueReusableCell(withReuseIdentifier:SimulationViewScroll.Constants.cellContent,
                                                   for:index)
     }
+    
+    private func dequeueMenuCell(collectionView:UICollectionView, index:IndexPath) -> UICollectionViewCell {
+        let cell:UICollectionViewCell = collectionView.dequeueReusableCell(
+            withReuseIdentifier:SimulationViewScroll.Constants.cellMenu, for:index)
+        if let cellMenu:SimulationViewScrollMenu = cell as? SimulationViewScrollMenu {
+            cellMenu.viewMenu?.delegate = self.menu
+            cellMenu.viewMenu?.dataSource = self.menu
+        }
+        return cell
+    }
 }
