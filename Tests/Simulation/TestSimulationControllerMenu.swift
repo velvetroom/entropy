@@ -9,8 +9,7 @@ class TestSimulationControllerMenu:XCTestCase {
     }
     
     func testDidSelectItem() {
-        let collectionView:UICollectionView = UICollectionView()
         let index:IndexPath = IndexPath(item:1, section:0)
-        self.menu.selectedItem(index:index, in collectionView:collectionView)
+        self.menu?.selectedItem(index:index)
     }
 }

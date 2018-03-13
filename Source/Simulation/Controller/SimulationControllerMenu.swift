@@ -23,6 +23,10 @@ class SimulationControllerMenu:NSObject,
                                   scrollPosition:UICollectionViewScrollPosition.centeredHorizontally)
     }
     
+    func selectedItem(index:IndexPath) {
+    
+    }
+    
     func collectionView(_ collectionView:UICollectionView, layout:UICollectionViewLayout,
                         sizeForItemAt:IndexPath) -> CGSize {
         return CGSize(width:SimulationViewMenu.Constants.cellWidth, height:collectionView.bounds.height)
