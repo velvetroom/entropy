@@ -26,7 +26,7 @@ class TestSimulationControllerMenu:XCTestCase {
     
     private func validateItemIsCurrent(index:Int) {
         guard
-            let selectedItem:Int = self.menu?.viewModel.selected.item
+            let selectedItem:Int = self.menu?.viewModel?.menu.selected.item
         else {
             XCTAssertNotNil(self.menu, "Menu is not loaded")
             return

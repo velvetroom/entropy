@@ -9,22 +9,26 @@ class SimulationControllerMenu:NSObject,
         }
     }
     
-    private(set) var viewModel:SimulationViewModelMenu
+    private(set) weak var viewModel:SimulationViewModel?
     
-    override init() {
-        self.viewModel = SimulationViewModelMenu()
-        super.init()
-    }
-    
-    func reloadMenu(viewModel:SimulationViewModelMenu) {
+    func reloadMenu(viewModel:SimulationViewModel) {
         self.viewModel = viewModel
         self.viewMenu?.reloadData()
-        self.viewMenu?.selectItem(at:self.viewModel.selected, animated:false,
+        self.selectCurrentItem()
+    }
+    
+    private func selectCurrentItem() {
+        guard
+            let selected:IndexPath = self.viewModel?.menu.selected
+        else {
+            return
+        }
+        self.viewMenu?.selectItem(at:selected, animated:false,
                                   scrollPosition:UICollectionViewScrollPosition.centeredHorizontally)
     }
     
     func selectedItem(index:IndexPath) {
-        self.viewModel.selected = index
+        self.viewModel?.menu.selected = index
         if self.isScrollableToIndex(index:index.item) {
             self.viewMenu?.scrollToItem(at:index, at:UICollectionViewScrollPosition.centeredHorizontally, animated:true)
         }
@@ -55,7 +59,12 @@ class SimulationControllerMenu:NSObject,
     }
     
     func collectionView(_:UICollectionView, numberOfItemsInSection:Int) -> Int {
-        return self.viewModel.items.count
+        guard
+            let count:Int = self.viewModel?.menu.items.count
+        else {
+            return 0
+        }
+        return count
     }
     
     func collectionView(_ collectionView:UICollectionView, cellForItemAt index:IndexPath) -> UICollectionViewCell {
@@ -76,7 +85,7 @@ class SimulationControllerMenu:NSObject,
     }
     
     private func configure(cell:SimulationViewMenuCell, at index:IndexPath) {
-        let item:SimulationViewModelMenuProtocol = self.viewModel.items[index.item]
-        cell.title?.text = item.title
+        let item:SimulationViewModelMenuProtocol? = self.viewModel?.menu.items[index.item]
+        cell.title?.text = item?.title
     }
 }

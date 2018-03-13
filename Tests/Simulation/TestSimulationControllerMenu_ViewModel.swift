@@ -17,7 +17,7 @@ class TestSimulationControllerMenu_ViewModel:XCTestCase {
         self.controller?.viewModel = self.viewModel
         
         if let viewModel:SimulationViewModel = self.viewModel {
-            self.menu?.reloadMenu(viewModel:viewModel.menu)
+            self.menu?.reloadMenu(viewModel:viewModel)
         }
     }
     
