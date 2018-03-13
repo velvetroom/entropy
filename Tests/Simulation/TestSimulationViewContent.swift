@@ -1,0 +1,15 @@
+import XCTest
+@testable import entropy
+
+class TestSimulationViewContent:XCTestCase {
+    private var view:SimulationViewContent?
+    
+    override func setUp() {
+        super.setUp()
+        self.view = SimulationViewContent()
+    }
+    
+    func testInitialisation() {
+        XCTAssertNotNil(self.view, "Unable to load view content")
+    }
+}
