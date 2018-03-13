@@ -9,7 +9,7 @@ class SimulationControllerMenu:NSObject,
         }
     }
     
-    private var viewModel:SimulationViewModelMenu
+    private(set) var viewModel:SimulationViewModelMenu
     
     override init() {
         self.viewModel = SimulationViewModelMenu()
