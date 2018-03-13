@@ -1,6 +1,6 @@
 import Foundation
 
-struct SimulationViewModelMenu {
+class SimulationViewModelMenu {
     var items:[SimulationViewModelMenuProtocol]
     var selected:IndexPath
     

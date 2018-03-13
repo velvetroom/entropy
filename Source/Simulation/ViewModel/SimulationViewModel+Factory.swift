@@ -6,7 +6,7 @@ extension SimulationViewModel {
             SimulationViewModelMenuProject(),
             SimulationViewModelMenuContributors(),
             SimulationViewModelMenuLanguages()]
-        var menu:SimulationViewModelMenu = SimulationViewModelMenu()
+        let menu:SimulationViewModelMenu = SimulationViewModelMenu()
         menu.items = items
         return menu
     }
