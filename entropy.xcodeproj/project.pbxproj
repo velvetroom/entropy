@@ -111,6 +111,9 @@
 		DAF18B92205825D9002703D1 /* TestSimulationViewContentCellProjectName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF18B91205825D9002703D1 /* TestSimulationViewContentCellProjectName.swift */; };
 		DAF18B9420582ABB002703D1 /* TestSimulationViewModelContentAddContributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF18B9320582ABB002703D1 /* TestSimulationViewModelContentAddContributor.swift */; };
 		DAF18B9620582B56002703D1 /* TestSimulationViewModelContentProjectName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF18B9520582B56002703D1 /* TestSimulationViewModelContentProjectName.swift */; };
+		DAF18B9820582BC6002703D1 /* SimulationViewModelContentAddContributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF18B9720582BC6002703D1 /* SimulationViewModelContentAddContributor.swift */; };
+		DAF18B9A20582C47002703D1 /* TestSimulationViewContentCellAddContributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF18B9920582C47002703D1 /* TestSimulationViewContentCellAddContributor.swift */; };
+		DAF18B9C20582CB4002703D1 /* SimulationViewContentCellAddContributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF18B9B20582CB4002703D1 /* SimulationViewContentCellAddContributor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,6 +240,9 @@
 		DAF18B91205825D9002703D1 /* TestSimulationViewContentCellProjectName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationViewContentCellProjectName.swift; sourceTree = "<group>"; };
 		DAF18B9320582ABB002703D1 /* TestSimulationViewModelContentAddContributor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationViewModelContentAddContributor.swift; sourceTree = "<group>"; };
 		DAF18B9520582B56002703D1 /* TestSimulationViewModelContentProjectName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationViewModelContentProjectName.swift; sourceTree = "<group>"; };
+		DAF18B9720582BC6002703D1 /* SimulationViewModelContentAddContributor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelContentAddContributor.swift; sourceTree = "<group>"; };
+		DAF18B9920582C47002703D1 /* TestSimulationViewContentCellAddContributor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationViewContentCellAddContributor.swift; sourceTree = "<group>"; };
+		DAF18B9B20582CB4002703D1 /* SimulationViewContentCellAddContributor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewContentCellAddContributor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,6 +337,7 @@
 				DAF18B89205822A8002703D1 /* SimulationViewContent.swift */,
 				DAF18B8D20582446002703D1 /* SimulationViewContentCell.swift */,
 				DAF18B8F205825C2002703D1 /* SimulationViewContentCellProjectName.swift */,
+				DAF18B9B20582CB4002703D1 /* SimulationViewContentCellAddContributor.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -363,6 +370,7 @@
 				DA7F404A2057E771005E0712 /* SimulationViewModelContent.swift */,
 				DA7F404C2057EAE3005E0712 /* SimulationViewModelContentProtocol.swift */,
 				DAF18B8320581E16002703D1 /* SimulationViewModelContentProjectName.swift */,
+				DAF18B9720582BC6002703D1 /* SimulationViewModelContentAddContributor.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -408,6 +416,7 @@
 				DAF18B8720582209002703D1 /* TestSimulationViewContent.swift */,
 				DAF18B8B205823CF002703D1 /* TestSimulationViewContentCell.swift */,
 				DAF18B91205825D9002703D1 /* TestSimulationViewContentCellProjectName.swift */,
+				DAF18B9920582C47002703D1 /* TestSimulationViewContentCellAddContributor.swift */,
 				DAF18B9520582B56002703D1 /* TestSimulationViewModelContentProjectName.swift */,
 				DAF18B9320582ABB002703D1 /* TestSimulationViewModelContentAddContributor.swift */,
 			);
@@ -706,6 +715,7 @@
 				DA7F404F2057F00A005E0712 /* TestSimulationViewModelMenuProject.swift in Sources */,
 				DAF18B8C205823CF002703D1 /* TestSimulationViewContentCell.swift in Sources */,
 				DAF18B8620581F4B002703D1 /* TestSimulationViewModelContent.swift in Sources */,
+				DAF18B9A20582C47002703D1 /* TestSimulationViewContentCellAddContributor.swift in Sources */,
 				DAF18B92205825D9002703D1 /* TestSimulationViewContentCellProjectName.swift in Sources */,
 				DA7F40492057E264005E0712 /* TestSimulationControllerMenu_ViewModel.swift in Sources */,
 				DAF18B9420582ABB002703D1 /* TestSimulationViewModelContentAddContributor.swift in Sources */,
@@ -737,12 +747,14 @@
 				DA2196192055BC2E0020BBAB /* SimulationViewScroll.swift in Sources */,
 				DA21961E2055BC2E0020BBAB /* SimulationViewModelGraph+Constants.swift in Sources */,
 				DAF18B8A205822A8002703D1 /* SimulationViewContent.swift in Sources */,
+				DAF18B9820582BC6002703D1 /* SimulationViewModelContentAddContributor.swift in Sources */,
 				DA7380EC20432007005C43A3 /* ExtensionUIView+LayoutWidth.swift in Sources */,
 				DA4B5ABA20527AEE00A99126 /* CoredataProfileAccessFree.swift in Sources */,
 				DA2196252055BC2E0020BBAB /* SimulationViewModelGraph+Factory.swift in Sources */,
 				DA2196212055BC2E0020BBAB /* SimulationViewModelMenuProtocol.swift in Sources */,
 				DA21961F2055BC2E0020BBAB /* SimulationViewModel+Factory.swift in Sources */,
 				DA2196112055BC2E0020BBAB /* Simulation.swift in Sources */,
+				DAF18B9C20582CB4002703D1 /* SimulationViewContentCellAddContributor.swift in Sources */,
 				DA7380F020432007005C43A3 /* ExtensionUIView+LayoutEquals.swift in Sources */,
 				DA4B5AA820526F0B00A99126 /* CoredataProfile.swift in Sources */,
 				DAAFD2C02051465000F1526F /* Entropy.xcdatamodeld in Sources */,
