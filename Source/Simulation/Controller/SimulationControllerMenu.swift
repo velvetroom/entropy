@@ -25,7 +25,19 @@ class SimulationControllerMenu:NSObject,
     
     func selectedItem(index:IndexPath) {
         self.viewModel.selected = index
-        self.viewMenu?.scrollToItem(at:index, at:UICollectionViewScrollPosition.centeredHorizontally, animated:true)
+        if self.isScrollableToIndex(index:index.item) {
+            self.viewMenu?.scrollToItem(at:index, at:UICollectionViewScrollPosition.centeredHorizontally, animated:true)
+        }
+    }
+    
+    func isScrollableToIndex(index:Int) -> Bool {
+        guard
+            let countItems:Int = self.viewMenu?.numberOfItems(inSection:0),
+            countItems > index
+        else {
+            return false
+        }
+        return true
     }
     
     func collectionView(_ collectionView:UICollectionView, layout:UICollectionViewLayout,

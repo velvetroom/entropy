@@ -17,7 +17,6 @@ class TestSimulationControllerMenu:XCTestCase {
     func testDidSelectItem() {
         self.selectItem(index:Constants.selectedIndex)
         self.validateItemIsCurrent(index:Constants.selectedIndex)
-        self.validateCollectionIsUpdated(index:Constants.selectedIndex)
     }
     
     private func selectItem(index:Int) {
@@ -35,18 +34,14 @@ class TestSimulationControllerMenu:XCTestCase {
         XCTAssertEqual(selectedItem, index, "Selected item is not being updated")
     }
     
-    private func validateCollectionIsUpdated(index:Int) {
-        let viewMenuItem:Int? = self.menu?.viewMenu?.indexPathsForSelectedItems?.first?.item
-        XCTAssertNotNil(viewMenuItem, "Unable to load selected item")
+    func testIsScrollableToItem() {
+        let scrollable:Bool? = self.menu?.isScrollableToIndex(index:Constants.selectedIndex)
+        XCTAssertNotNil(scrollable, "Unable to validate if menu is scrollable")
         guard
-            let selectedItem:Int = viewMenuItem
+            let isScrollable:Bool = scrollable
         else {
             return
         }
-        XCTAssertEqual(selectedItem, index, "View selected item is not being updated")
-    }
-    
-    func testIsScrollableToItem() {
-        self.menu?.isScrollableToIndex(index:Constants.selectedIndex)
+        XCTAssertFalse(isScrollable, "Menu should not be scrollable when there are not items")
     }
 }
