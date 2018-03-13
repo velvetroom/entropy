@@ -100,6 +100,7 @@
 		DAD9BC342047E55300675963 /* AbstractController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC332047E55300675963 /* AbstractController.swift */; };
 		DAD9BC382047F06300675963 /* PresentLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD9BC372047F06300675963 /* PresentLayout.swift */; };
 		DADB842A2047DEFB00EB45C9 /* AbstractModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB84292047DEFB00EB45C9 /* AbstractModel.swift */; };
+		DAF18B8220581893002703D1 /* TestSimulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF18B8120581893002703D1 /* TestSimulationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,6 +216,7 @@
 		DAD9BC332047E55300675963 /* AbstractController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractController.swift; sourceTree = "<group>"; };
 		DAD9BC372047F06300675963 /* PresentLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentLayout.swift; sourceTree = "<group>"; };
 		DADB84292047DEFB00EB45C9 /* AbstractModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractModel.swift; sourceTree = "<group>"; };
+		DAF18B8120581893002703D1 /* TestSimulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,6 +379,7 @@
 				DA7F404E2057F00A005E0712 /* TestSimulationViewModelMenuProject.swift */,
 				DA7F40502057F0ED005E0712 /* TestSimulationViewModelMenuContributors.swift */,
 				DA7F40522057F148005E0712 /* TestSimulationViewModelMenuLanguages.swift */,
+				DAF18B8120581893002703D1 /* TestSimulationViewModel.swift */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -672,6 +675,7 @@
 				DA7F404F2057F00A005E0712 /* TestSimulationViewModelMenuProject.swift in Sources */,
 				DA7F40492057E264005E0712 /* TestSimulationControllerMenu_ViewModel.swift in Sources */,
 				DA4B5AA320526D6C00A99126 /* TestDatabaseProviderCoredata.swift in Sources */,
+				DAF18B8220581893002703D1 /* TestSimulationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
