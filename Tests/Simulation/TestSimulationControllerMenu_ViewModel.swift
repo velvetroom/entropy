@@ -44,4 +44,14 @@ class TestSimulationControllerMenu_ViewModel:XCTestCase {
         let itemViewModel:SimulationViewModelContent = item.factoryViewModel()
         XCTAssertEqual(itemViewModel, viewModelContent, "Content view model not updated")
     }
+    
+    func testViewModelContentIsInitialised() {
+        guard
+            let content:SimulationViewModelContent = self.viewModel?.content
+        else {
+            XCTAssertNotNil(self.viewModel, "Unable to load viewModel")
+            return
+        }
+        XCTAssertGreaterThan(content.items.count, 0, "Error: Content is empty")
+    }
 }
