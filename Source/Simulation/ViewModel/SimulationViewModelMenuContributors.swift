@@ -8,7 +8,10 @@ class SimulationViewModelMenuContributors:SimulationViewModelMenuProtocol {
     }
     
     func factoryViewModel() -> SimulationViewModelContent {
+        let items:[SimulationViewModelContentProtocol] = [
+            SimulationViewModelContentAddContributor()]
         let content:SimulationViewModelContent = SimulationViewModelContent()
+        content.items = items
         return content
     }
 }
