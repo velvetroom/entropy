@@ -35,10 +35,13 @@ class TestSimulationControllerMenu_ViewModel:XCTestCase {
         let menuItem:SimulationViewModelMenuProtocol? = self.viewModel?.menu.items[index]
         XCTAssertNotNil(menuItem, "Unable to load menu item")
         guard
-            let item:SimulationViewModelMenuProtocol = menuItem
+            let item:SimulationViewModelMenuProtocol = menuItem,
+            let viewModelContent:SimulationViewModelContent = self.viewModel?.content
         else {
+            XCTAssertNotNil(self.viewModel, "Unable to load view model")
             return
         }
         let itemViewModel:SimulationViewModelContent = item.factoryViewModel()
+        XCTAssertEquals(itemViewModel, viewModelContent, "Content view model not updated")
     }
 }
