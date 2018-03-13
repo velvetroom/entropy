@@ -16,4 +16,13 @@ class TestSimulationViewModel:XCTestCase {
     func testMenuReturnsSelectedItem() {
         XCTAssertNotNil(self.viewModel?.menu.selectedItem, "Failed to return selected item")
     }
+    
+    func testMenuItemsNotZero() {
+        guard
+            let countItems:Int = self.viewModel?.menu.items.count
+        else {
+            return
+        }
+        XCTAssertGreaterThan(countItems, 0, "Error: Empty menu items")
+    }
 }
