@@ -16,6 +16,6 @@ class TestSimulationViewModelMenuProject:XCTestCase {
         else {
             return
         }
-        XCTAssertGreaterThan(0, viewModelContent.items.count, "Content is empty")
+        XCTAssertGreaterThan(viewModelContent.items.count, 0, "Content is empty")
     }
 }
