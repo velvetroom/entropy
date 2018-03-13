@@ -79,6 +79,7 @@
 		DA785A5120470DEF00E3DFD1 /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A5020470DEF00E3DFD1 /* ApplicationController.swift */; };
 		DA785A5320470E1100E3DFD1 /* ApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A5220470E1100E3DFD1 /* ApplicationView.swift */; };
 		DA7F40472057D643005E0712 /* TestSimulationControllerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F40462057D643005E0712 /* TestSimulationControllerMenu.swift */; };
+		DA7F40492057E264005E0712 /* TestSimulationControllerMenu_ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F40482057E264005E0712 /* TestSimulationControllerMenu_ViewModel.swift */; };
 		DAA15D17204FF87C001804B1 /* ApplicationPresenter+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15D16204FF87C001804B1 /* ApplicationPresenter+Factory.swift */; };
 		DAA15D19204FF941001804B1 /* ApplicationPresenter+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15D18204FF941001804B1 /* ApplicationPresenter+Constants.swift */; };
 		DAAFD2B82051447400F1526F /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFD2B72051447400F1526F /* Database.swift */; };
@@ -188,6 +189,7 @@
 		DA785A5020470DEF00E3DFD1 /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationController.swift; sourceTree = "<group>"; };
 		DA785A5220470E1100E3DFD1 /* ApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationView.swift; sourceTree = "<group>"; };
 		DA7F40462057D643005E0712 /* TestSimulationControllerMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationControllerMenu.swift; sourceTree = "<group>"; };
+		DA7F40482057E264005E0712 /* TestSimulationControllerMenu_ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationControllerMenu_ViewModel.swift; sourceTree = "<group>"; };
 		DAA15D16204FF87C001804B1 /* ApplicationPresenter+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationPresenter+Factory.swift"; sourceTree = "<group>"; };
 		DAA15D18204FF941001804B1 /* ApplicationPresenter+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationPresenter+Constants.swift"; sourceTree = "<group>"; };
 		DAAFD2B72051447400F1526F /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
@@ -359,6 +361,7 @@
 			children = (
 				DA4B5AA020526D6C00A99126 /* TestSimulation.swift */,
 				DA7F40462057D643005E0712 /* TestSimulationControllerMenu.swift */,
+				DA7F40482057E264005E0712 /* TestSimulationControllerMenu_ViewModel.swift */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -649,6 +652,7 @@
 				DA4B5AA420526D6C00A99126 /* TestDatabase.swift in Sources */,
 				DA4B5AA620526D6C00A99126 /* TestApplicationPresenter.swift in Sources */,
 				DA4B5AA520526D6C00A99126 /* TestSimulation.swift in Sources */,
+				DA7F40492057E264005E0712 /* TestSimulationControllerMenu_ViewModel.swift in Sources */,
 				DA4B5AA320526D6C00A99126 /* TestDatabaseProviderCoredata.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
