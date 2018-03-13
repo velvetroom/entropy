@@ -23,7 +23,7 @@ class TestSimulationControllerMenu_ViewModel:XCTestCase {
     
     func testViewModelUpdated() {
         self.selectMenuAtIndex(index:Constants.selectingIndex)
-        
+        self.validateIndexSelectedIsViewModel(index:Constants.selectingIndex)
     }
     
     private func selectMenuAtIndex(index:Int) {
@@ -42,6 +42,6 @@ class TestSimulationControllerMenu_ViewModel:XCTestCase {
             return
         }
         let itemViewModel:SimulationViewModelContent = item.factoryViewModel()
-        XCTAssertEquals(itemViewModel, viewModelContent, "Content view model not updated")
+        XCTAssertEqual(itemViewModel, viewModelContent, "Content view model not updated")
     }
 }
