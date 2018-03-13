@@ -11,6 +11,6 @@ class TestSimulationViewModelContent:XCTestCase {
     }
     
     func testContentProtocolHasCellType() {
-        XCTAssertNotNil(self.content?.items.first.cellType)
+        XCTAssertNotNil(self.content?.items.first?.cellType)
     }
 }
