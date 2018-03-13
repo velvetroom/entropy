@@ -80,6 +80,7 @@
 		DA785A5320470E1100E3DFD1 /* ApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA785A5220470E1100E3DFD1 /* ApplicationView.swift */; };
 		DA7F40472057D643005E0712 /* TestSimulationControllerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F40462057D643005E0712 /* TestSimulationControllerMenu.swift */; };
 		DA7F40492057E264005E0712 /* TestSimulationControllerMenu_ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F40482057E264005E0712 /* TestSimulationControllerMenu_ViewModel.swift */; };
+		DA7F404B2057E771005E0712 /* SimulationViewModelContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F404A2057E771005E0712 /* SimulationViewModelContent.swift */; };
 		DAA15D17204FF87C001804B1 /* ApplicationPresenter+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15D16204FF87C001804B1 /* ApplicationPresenter+Factory.swift */; };
 		DAA15D19204FF941001804B1 /* ApplicationPresenter+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15D18204FF941001804B1 /* ApplicationPresenter+Constants.swift */; };
 		DAAFD2B82051447400F1526F /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFD2B72051447400F1526F /* Database.swift */; };
@@ -190,6 +191,7 @@
 		DA785A5220470E1100E3DFD1 /* ApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationView.swift; sourceTree = "<group>"; };
 		DA7F40462057D643005E0712 /* TestSimulationControllerMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationControllerMenu.swift; sourceTree = "<group>"; };
 		DA7F40482057E264005E0712 /* TestSimulationControllerMenu_ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationControllerMenu_ViewModel.swift; sourceTree = "<group>"; };
+		DA7F404A2057E771005E0712 /* SimulationViewModelContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelContent.swift; sourceTree = "<group>"; };
 		DAA15D16204FF87C001804B1 /* ApplicationPresenter+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationPresenter+Factory.swift"; sourceTree = "<group>"; };
 		DAA15D18204FF941001804B1 /* ApplicationPresenter+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationPresenter+Constants.swift"; sourceTree = "<group>"; };
 		DAAFD2B72051447400F1526F /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 				DA21960C2055BC2E0020BBAB /* SimulationViewModelMenuProject.swift */,
 				DA21960D2055BC2E0020BBAB /* SimulationViewModelMenuContributors.swift */,
 				DA5F52292056D9C20010E7F0 /* SimulationViewModelMenuLanguages.swift */,
+				DA7F404A2057E771005E0712 /* SimulationViewModelContent.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -725,6 +728,7 @@
 				DAAFD2C6205148EF00F1526F /* DatabaseProviderCoredata+Constants.swift in Sources */,
 				DA785A4A2047083E00E3DFD1 /* AbstractView.swift in Sources */,
 				DA21962C2055BE5F0020BBAB /* ViewDelegate.swift in Sources */,
+				DA7F404B2057E771005E0712 /* SimulationViewModelContent.swift in Sources */,
 				DA2ADDED2052A60F0036812C /* Entropy.swift in Sources */,
 				DAAFD2CD20515D7600F1526F /* DatabaseProviderCoredata+Provider.swift in Sources */,
 				DA2ADDE620528BD70036812C /* CoredataProject+Factory.swift in Sources */,
