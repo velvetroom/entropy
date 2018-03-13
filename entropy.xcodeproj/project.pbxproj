@@ -102,6 +102,7 @@
 		DADB842A2047DEFB00EB45C9 /* AbstractModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB84292047DEFB00EB45C9 /* AbstractModel.swift */; };
 		DAF18B8220581893002703D1 /* TestSimulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF18B8120581893002703D1 /* TestSimulationViewModel.swift */; };
 		DAF18B8420581E16002703D1 /* SimulationViewModelContentProjectName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF18B8320581E16002703D1 /* SimulationViewModelContentProjectName.swift */; };
+		DAF18B8620581F4B002703D1 /* TestSimulationViewModelContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF18B8520581F4B002703D1 /* TestSimulationViewModelContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -219,6 +220,7 @@
 		DADB84292047DEFB00EB45C9 /* AbstractModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractModel.swift; sourceTree = "<group>"; };
 		DAF18B8120581893002703D1 /* TestSimulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationViewModel.swift; sourceTree = "<group>"; };
 		DAF18B8320581E16002703D1 /* SimulationViewModelContentProjectName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelContentProjectName.swift; sourceTree = "<group>"; };
+		DAF18B8520581F4B002703D1 /* TestSimulationViewModelContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationViewModelContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -383,6 +385,7 @@
 				DA7F40502057F0ED005E0712 /* TestSimulationViewModelMenuContributors.swift */,
 				DA7F40522057F148005E0712 /* TestSimulationViewModelMenuLanguages.swift */,
 				DAF18B8120581893002703D1 /* TestSimulationViewModel.swift */,
+				DAF18B8520581F4B002703D1 /* TestSimulationViewModelContent.swift */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -676,6 +679,7 @@
 				DA7F40512057F0ED005E0712 /* TestSimulationViewModelMenuContributors.swift in Sources */,
 				DA7F40532057F148005E0712 /* TestSimulationViewModelMenuLanguages.swift in Sources */,
 				DA7F404F2057F00A005E0712 /* TestSimulationViewModelMenuProject.swift in Sources */,
+				DAF18B8620581F4B002703D1 /* TestSimulationViewModelContent.swift in Sources */,
 				DA7F40492057E264005E0712 /* TestSimulationControllerMenu_ViewModel.swift in Sources */,
 				DA4B5AA320526D6C00A99126 /* TestDatabaseProviderCoredata.swift in Sources */,
 				DAF18B8220581893002703D1 /* TestSimulationViewModel.swift in Sources */,
