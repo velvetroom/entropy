@@ -1,5 +1,5 @@
 import UIKit
 
 protocol SimulationViewModelContentProtocol {
-    var cellType:UICollectionViewCell.Type { get }
+    var cellType:SimulationViewContentCell.Type { get }
 }
