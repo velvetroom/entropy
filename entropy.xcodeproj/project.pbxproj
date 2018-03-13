@@ -116,6 +116,8 @@
 		DAF18B9C20582CB4002703D1 /* SimulationViewContentCellAddContributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF18B9B20582CB4002703D1 /* SimulationViewContentCellAddContributor.swift */; };
 		DAF18B9E20582E2F002703D1 /* TestSimulationViewModelContentAddLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF18B9D20582E2F002703D1 /* TestSimulationViewModelContentAddLanguage.swift */; };
 		DAF18BA020582E76002703D1 /* SimulationViewModelContentAddLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF18B9F20582E76002703D1 /* SimulationViewModelContentAddLanguage.swift */; };
+		DAF18BA220582EA6002703D1 /* TestSimulationViewContentCellAddLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF18BA120582EA6002703D1 /* TestSimulationViewContentCellAddLanguage.swift */; };
+		DAF18BA420582EEE002703D1 /* SimulationViewContentCellAddLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF18BA320582EEE002703D1 /* SimulationViewContentCellAddLanguage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -247,6 +249,8 @@
 		DAF18B9B20582CB4002703D1 /* SimulationViewContentCellAddContributor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewContentCellAddContributor.swift; sourceTree = "<group>"; };
 		DAF18B9D20582E2F002703D1 /* TestSimulationViewModelContentAddLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationViewModelContentAddLanguage.swift; sourceTree = "<group>"; };
 		DAF18B9F20582E76002703D1 /* SimulationViewModelContentAddLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelContentAddLanguage.swift; sourceTree = "<group>"; };
+		DAF18BA120582EA6002703D1 /* TestSimulationViewContentCellAddLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationViewContentCellAddLanguage.swift; sourceTree = "<group>"; };
+		DAF18BA320582EEE002703D1 /* SimulationViewContentCellAddLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewContentCellAddLanguage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +346,7 @@
 				DAF18B8D20582446002703D1 /* SimulationViewContentCell.swift */,
 				DAF18B8F205825C2002703D1 /* SimulationViewContentCellProjectName.swift */,
 				DAF18B9B20582CB4002703D1 /* SimulationViewContentCellAddContributor.swift */,
+				DAF18BA320582EEE002703D1 /* SimulationViewContentCellAddLanguage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -422,6 +427,7 @@
 				DAF18B8B205823CF002703D1 /* TestSimulationViewContentCell.swift */,
 				DAF18B91205825D9002703D1 /* TestSimulationViewContentCellProjectName.swift */,
 				DAF18B9920582C47002703D1 /* TestSimulationViewContentCellAddContributor.swift */,
+				DAF18BA120582EA6002703D1 /* TestSimulationViewContentCellAddLanguage.swift */,
 				DAF18B9520582B56002703D1 /* TestSimulationViewModelContentProjectName.swift */,
 				DAF18B9320582ABB002703D1 /* TestSimulationViewModelContentAddContributor.swift */,
 				DAF18B9D20582E2F002703D1 /* TestSimulationViewModelContentAddLanguage.swift */,
@@ -727,6 +733,7 @@
 				DA7F40492057E264005E0712 /* TestSimulationControllerMenu_ViewModel.swift in Sources */,
 				DAF18B9420582ABB002703D1 /* TestSimulationViewModelContentAddContributor.swift in Sources */,
 				DA4B5AA320526D6C00A99126 /* TestDatabaseProviderCoredata.swift in Sources */,
+				DAF18BA220582EA6002703D1 /* TestSimulationViewContentCellAddLanguage.swift in Sources */,
 				DAF18B9620582B56002703D1 /* TestSimulationViewModelContentProjectName.swift in Sources */,
 				DAF18B8220581893002703D1 /* TestSimulationViewModel.swift in Sources */,
 			);
@@ -797,6 +804,7 @@
 				DA785A4C20470C3900E3DFD1 /* ApplicationPresenterProtocol.swift in Sources */,
 				DA4B5AB0205274CB00A99126 /* ProfileAccessPremium.swift in Sources */,
 				DA7380F220432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift in Sources */,
+				DAF18BA420582EEE002703D1 /* SimulationViewContentCellAddLanguage.swift in Sources */,
 				DA2196152055BC2E0020BBAB /* SimulationViewMenu+Constants.swift in Sources */,
 				DA2196172055BC2E0020BBAB /* SimulationViewMenu+Factory.swift in Sources */,
 				DA4B5AAA2052736D00A99126 /* CoredataProfile+Factory.swift in Sources */,
