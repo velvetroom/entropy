@@ -29,6 +29,20 @@ class SimulationControllerMenu:NSObject,
     
     func selectedItem(index:IndexPath) {
         self.viewModel?.menu.selected = index
+        self.updateContent()
+        self.scrollIfNeeded(index:index)
+    }
+    
+    private func updateContent() {
+        guard
+            let currentItem:SimulationViewModelMenuProtocol = self.viewModel?.menu.selectedItem
+        else {
+            return
+        }
+        self.viewModel?.content = currentItem.factoryViewModel()
+    }
+    
+    private func scrollIfNeeded(index:IndexPath) {
         if self.isScrollableToIndex(index:index.item) {
             self.viewMenu?.scrollToItem(at:index, at:UICollectionViewScrollPosition.centeredHorizontally, animated:true)
         }
