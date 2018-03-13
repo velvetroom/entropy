@@ -8,7 +8,10 @@ class SimulationViewModelMenuProject:SimulationViewModelMenuProtocol {
     }
     
     func factoryViewModel() -> SimulationViewModelContent {
+        let items:[SimulationViewModelContentProtocol] = [
+            SimulationViewModelContentProjectName()]
         let content:SimulationViewModelContent = SimulationViewModelContent()
+        content.items = items
         return content
     }
 }

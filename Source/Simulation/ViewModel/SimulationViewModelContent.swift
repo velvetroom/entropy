@@ -1,6 +1,6 @@
 import Foundation
 
-struct SimulationViewModelContent:Equatable {
+class SimulationViewModelContent:Equatable {
     var items:[SimulationViewModelContentProtocol]
     
     init() {
