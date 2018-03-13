@@ -7,9 +7,9 @@ class SimulationViewModel:AbstractViewModel {
     let menu:SimulationViewModelMenu
     
     required init() {
-        self.content = SimulationViewModelContent()
         self.graph = SimulationViewModelGraph()
         self.menu = SimulationViewModel.factoryMenu()
+        self.content = self.menu.selectedItem.factoryViewModel()
     }
     
     func updateGraph(entropy:Entropy) {
