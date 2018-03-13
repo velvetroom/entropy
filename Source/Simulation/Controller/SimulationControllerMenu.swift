@@ -24,7 +24,8 @@ class SimulationControllerMenu:NSObject,
     }
     
     func selectedItem(index:IndexPath) {
-    
+        self.viewModel.selected = index
+        self.viewMenu?.scrollToItem(at:index, at:UICollectionViewScrollPosition.centeredHorizontally, animated:true)
     }
     
     func collectionView(_ collectionView:UICollectionView, layout:UICollectionViewLayout,
@@ -50,8 +51,7 @@ class SimulationControllerMenu:NSObject,
     }
     
     func collectionView(_ collectionView:UICollectionView, didSelectItemAt index:IndexPath) {
-        self.viewModel.selected = index
-        collectionView.scrollToItem(at:index, at:UICollectionViewScrollPosition.centeredHorizontally, animated:true)
+        self.selectedItem(index:index)
     }
     
     private func dequeueCell(collectionView:UICollectionView, index:IndexPath) -> UICollectionViewCell {
