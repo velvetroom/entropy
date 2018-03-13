@@ -110,6 +110,7 @@
 		DAF18B90205825C2002703D1 /* SimulationViewContentCellProjectName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF18B8F205825C2002703D1 /* SimulationViewContentCellProjectName.swift */; };
 		DAF18B92205825D9002703D1 /* TestSimulationViewContentCellProjectName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF18B91205825D9002703D1 /* TestSimulationViewContentCellProjectName.swift */; };
 		DAF18B9420582ABB002703D1 /* TestSimulationViewModelContentAddContributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF18B9320582ABB002703D1 /* TestSimulationViewModelContentAddContributor.swift */; };
+		DAF18B9620582B56002703D1 /* TestSimulationViewModelContentProjectName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF18B9520582B56002703D1 /* TestSimulationViewModelContentProjectName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -235,6 +236,7 @@
 		DAF18B8F205825C2002703D1 /* SimulationViewContentCellProjectName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewContentCellProjectName.swift; sourceTree = "<group>"; };
 		DAF18B91205825D9002703D1 /* TestSimulationViewContentCellProjectName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationViewContentCellProjectName.swift; sourceTree = "<group>"; };
 		DAF18B9320582ABB002703D1 /* TestSimulationViewModelContentAddContributor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationViewModelContentAddContributor.swift; sourceTree = "<group>"; };
+		DAF18B9520582B56002703D1 /* TestSimulationViewModelContentProjectName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationViewModelContentProjectName.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -406,6 +408,7 @@
 				DAF18B8720582209002703D1 /* TestSimulationViewContent.swift */,
 				DAF18B8B205823CF002703D1 /* TestSimulationViewContentCell.swift */,
 				DAF18B91205825D9002703D1 /* TestSimulationViewContentCellProjectName.swift */,
+				DAF18B9520582B56002703D1 /* TestSimulationViewModelContentProjectName.swift */,
 				DAF18B9320582ABB002703D1 /* TestSimulationViewModelContentAddContributor.swift */,
 			);
 			path = Simulation;
@@ -707,6 +710,7 @@
 				DA7F40492057E264005E0712 /* TestSimulationControllerMenu_ViewModel.swift in Sources */,
 				DAF18B9420582ABB002703D1 /* TestSimulationViewModelContentAddContributor.swift in Sources */,
 				DA4B5AA320526D6C00A99126 /* TestDatabaseProviderCoredata.swift in Sources */,
+				DAF18B9620582B56002703D1 /* TestSimulationViewModelContentProjectName.swift in Sources */,
 				DAF18B8220581893002703D1 /* TestSimulationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
