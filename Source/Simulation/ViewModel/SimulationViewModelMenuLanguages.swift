@@ -8,7 +8,10 @@ class SimulationViewModelMenuLanguages:SimulationViewModelMenuProtocol {
     }
     
     func factoryViewModel() -> SimulationViewModelContent {
+        let items:[SimulationViewModelContentProtocol] = [
+            SimulationViewModelContentAddLanguage()]
         let content:SimulationViewModelContent = SimulationViewModelContent()
+        content.items = items
         return content
     }
 }
