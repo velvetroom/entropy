@@ -81,6 +81,7 @@
 		DA7F40472057D643005E0712 /* TestSimulationControllerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F40462057D643005E0712 /* TestSimulationControllerMenu.swift */; };
 		DA7F40492057E264005E0712 /* TestSimulationControllerMenu_ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F40482057E264005E0712 /* TestSimulationControllerMenu_ViewModel.swift */; };
 		DA7F404B2057E771005E0712 /* SimulationViewModelContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F404A2057E771005E0712 /* SimulationViewModelContent.swift */; };
+		DA7F404D2057EAE3005E0712 /* SimulationViewModelContentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7F404C2057EAE3005E0712 /* SimulationViewModelContentProtocol.swift */; };
 		DAA15D17204FF87C001804B1 /* ApplicationPresenter+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15D16204FF87C001804B1 /* ApplicationPresenter+Factory.swift */; };
 		DAA15D19204FF941001804B1 /* ApplicationPresenter+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA15D18204FF941001804B1 /* ApplicationPresenter+Constants.swift */; };
 		DAAFD2B82051447400F1526F /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAFD2B72051447400F1526F /* Database.swift */; };
@@ -192,6 +193,7 @@
 		DA7F40462057D643005E0712 /* TestSimulationControllerMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationControllerMenu.swift; sourceTree = "<group>"; };
 		DA7F40482057E264005E0712 /* TestSimulationControllerMenu_ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationControllerMenu_ViewModel.swift; sourceTree = "<group>"; };
 		DA7F404A2057E771005E0712 /* SimulationViewModelContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelContent.swift; sourceTree = "<group>"; };
+		DA7F404C2057EAE3005E0712 /* SimulationViewModelContentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelContentProtocol.swift; sourceTree = "<group>"; };
 		DAA15D16204FF87C001804B1 /* ApplicationPresenter+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationPresenter+Factory.swift"; sourceTree = "<group>"; };
 		DAA15D18204FF941001804B1 /* ApplicationPresenter+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationPresenter+Constants.swift"; sourceTree = "<group>"; };
 		DAAFD2B72051447400F1526F /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 				DA21960D2055BC2E0020BBAB /* SimulationViewModelMenuContributors.swift */,
 				DA5F52292056D9C20010E7F0 /* SimulationViewModelMenuLanguages.swift */,
 				DA7F404A2057E771005E0712 /* SimulationViewModelContent.swift */,
+				DA7F404C2057EAE3005E0712 /* SimulationViewModelContentProtocol.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -697,6 +700,7 @@
 				DA2196182055BC2E0020BBAB /* SimulationViewMenu.swift in Sources */,
 				DA785A482047080F00E3DFD1 /* Controller.swift in Sources */,
 				DA5B8CD82051407F008B986F /* ExtensionString.swift in Sources */,
+				DA7F404D2057EAE3005E0712 /* SimulationViewModelContentProtocol.swift in Sources */,
 				DA21962A2055BD6C0020BBAB /* SimulationControllerGraph.swift in Sources */,
 				DA4B5ABC20527BA100A99126 /* CoredataProfileAccessPremium.swift in Sources */,
 				DADB842A2047DEFB00EB45C9 /* AbstractModel.swift in Sources */,
