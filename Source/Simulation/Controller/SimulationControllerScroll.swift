@@ -9,6 +9,24 @@ class SimulationControllerScroll:NSObject, UICollectionViewDelegate, UICollectio
         super.init()
     }
     
+    func dequeueMenuCell(collectionView:UICollectionView, index:IndexPath) -> UICollectionViewCell {
+        let cell:UICollectionViewCell = collectionView.dequeueReusableCell(
+            withReuseIdentifier:SimulationViewScroll.Constants.cellMenu, for:index)
+        if let cellMenu:SimulationViewScrollMenu = cell as? SimulationViewScrollMenu {
+            self.menu.viewMenu = cellMenu.viewMenu
+        }
+        return cell
+    }
+    
+    func dequeueContentCell(collectionView:UICollectionView, index:IndexPath) -> UICollectionViewCell {
+        let cell:UICollectionViewCell = collectionView.dequeueReusableCell(
+            withReuseIdentifier:SimulationViewScroll.Constants.cellContent, for:index)
+        if let cellContent:SimulationViewScrollContent = cell as? SimulationViewScrollContent {
+            
+        }
+        return cell
+    }
+    
     func collectionView(_ collectionView:UICollectionView, layout:UICollectionViewLayout,
                         sizeForItemAt index:IndexPath) -> CGSize {
         if index.item == 0 {
@@ -29,23 +47,5 @@ class SimulationControllerScroll:NSObject, UICollectionViewDelegate, UICollectio
         }
         return collectionView.dequeueReusableCell(withReuseIdentifier:SimulationViewScroll.Constants.cellContent,
                                                   for:index)
-    }
-    
-    private func dequeueMenuCell(collectionView:UICollectionView, index:IndexPath) -> UICollectionViewCell {
-        let cell:UICollectionViewCell = collectionView.dequeueReusableCell(
-            withReuseIdentifier:SimulationViewScroll.Constants.cellMenu, for:index)
-        if let cellMenu:SimulationViewScrollMenu = cell as? SimulationViewScrollMenu {
-            self.menu.viewMenu = cellMenu.viewMenu
-        }
-        return cell
-    }
-    
-    func dequeueContentCell(collectionView:UICollectionView, index:IndexPath) -> UICollectionViewCell {
-        let cell:UICollectionViewCell = collectionView.dequeueReusableCell(
-            withReuseIdentifier:SimulationViewScroll.Constants.cellContent, for:index)
-        if let cellContent:SimulationViewScrollContent = cell as? SimulationViewScrollContent {
-            
-        }
-        return cell
     }
 }
