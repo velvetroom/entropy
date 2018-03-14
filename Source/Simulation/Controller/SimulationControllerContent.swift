@@ -25,6 +25,16 @@ class SimulationControllerContent:NSObject, UICollectionViewDelegate, UICollecti
         return collectionView.dequeueReusableCell(withReuseIdentifier:contentItem.cellIdentifier, for:index)
     }
     
+    func collectionView(_ collectionView:UICollectionView, layout:UICollectionViewLayout,
+                        sizeForItemAt index:IndexPath) -> CGSize {
+        guard
+            let contentItem:SimulationViewModelContentProtocol = self.viewModel?.content.items[index.item]
+        else {
+            return CGSize.zero
+        }
+        return CGSize(width:collectionView.bounds.width, height:contentItem.cellHeight)
+    }
+    
     func collectionView(_:UICollectionView, numberOfItemsInSection:Int) -> Int {
         guard
             let count:Int = self.viewModel?.content.items.count
