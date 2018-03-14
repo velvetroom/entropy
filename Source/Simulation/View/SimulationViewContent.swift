@@ -7,8 +7,9 @@ class SimulationViewContent:UICollectionView {
         self.clipsToBounds = true
         self.translatesAutoresizingMaskIntoConstraints = false
         self.backgroundColor = UIColor.clear
-        self.alwaysBounceHorizontal = true
-        self.showsVerticalScrollIndicator = false
+        self.alwaysBounceHorizontal = false
+        self.alwaysBounceVertical = true
+        self.showsVerticalScrollIndicator = true
         self.showsHorizontalScrollIndicator = false
     }
     
