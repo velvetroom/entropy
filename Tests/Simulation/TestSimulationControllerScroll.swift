@@ -91,5 +91,7 @@ class TestSimulationControllerScroll:XCTestCase {
     
     private func validateContentControllerIsUpdated() {
         XCTAssertNotNil(self.controller?.content.viewContent, "View content is not updated on controller")
+        XCTAssertNotNil(self.controller?.content.viewContent?.delegate, "View content delegate is not updated")
+        XCTAssertNotNil(self.controller?.content.viewContent?.dataSource, "View content dataSource is not updated")
     }
 }

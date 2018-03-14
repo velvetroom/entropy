@@ -4,6 +4,8 @@ class SimulationControllerContent:NSObject, UICollectionViewDelegate, UICollecti
     UICollectionViewDelegateFlowLayout{
     weak var viewContent:SimulationViewContent? {
         didSet {
+            self.viewContent?.delegate = self
+            self.viewContent?.dataSource = self
         }
     }
     func collectionView(_:UICollectionView, numberOfItemsInSection:Int) -> Int {
