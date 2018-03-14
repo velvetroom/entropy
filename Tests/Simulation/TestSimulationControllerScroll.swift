@@ -34,6 +34,7 @@ class TestSimulationControllerScroll:XCTestCase {
             return
         }
         self.validateCellIsMenu(cell:dequeuedCell)
+        self.validateMenuControllerIsUpdated()
     }
     
     private func tryDequeueMenuCell() -> UICollectionViewCell? {
@@ -51,6 +52,10 @@ class TestSimulationControllerScroll:XCTestCase {
         let menuCell:SimulationViewScrollMenu? = cell as? SimulationViewScrollMenu
         XCTAssertNotNil(menuCell, "Dequeued cell is not menu cell")
         XCTAssertNotNil(menuCell?.viewMenu, "Menu cell doesn't contain view menu")
+    }
+    
+    private func validateMenuControllerIsUpdated() {
+        XCTAssertNotNil(self.controller?.menu.viewMenu, "View menu is not updated on controller")
     }
     
     func testDequeueContentCell() {
