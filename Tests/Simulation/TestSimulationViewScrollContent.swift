@@ -2,14 +2,22 @@ import XCTest
 @testable import entropy
 
 class TestSimulationViewScrollContent:XCTestCase {
-    private var viewContent:SimulationViewScrollContent?
+    private var content:SimulationViewScrollContent?
     
     override func setUp() {
         super.setUp()
-        self.viewContent = SimulationViewScrollContent()
+        self.content = SimulationViewScrollContent()
     }
     
     func testInitialisation() {
-        XCTAssertNotNil(self.viewContent, "Failed to init view content")
+        XCTAssertNotNil(self.content, "Failed to init view content")
+    }
+    
+    func testViewContent() {
+        XCTAssertNotNil(self.content?.viewContent, "View doesn't contain content")
+    }
+    
+    func testLayoutConstraints() {
+        XCTAssertNotNil(self.content?.layoutContentTop, "Layout for content top not found")
     }
 }
