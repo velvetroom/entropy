@@ -19,7 +19,13 @@ class TestSimulationControllerScroll:XCTestCase {
     
     func testDequeueMenuCell() {
         let cell:UICollectionViewCell? = self.tryDequeueMenuCell()
-        XCTAssertNotNil(cell, "Failed dequeing menu cell")
+        XCTAssertNotNil(cell, "Failed dequeuing menu cell")
+        guard
+            let dequeuedCell:UICollectionViewCell = cell
+        else {
+            return
+        }
+        self.validateCellIsMenu(cell:dequeuedCell)
     }
     
     private func tryDequeueMenuCell() -> UICollectionViewCell? {
@@ -33,9 +39,15 @@ class TestSimulationControllerScroll:XCTestCase {
         return self.controller?.dequeueMenuCell(collectionView:collectionView, index:index)
     }
     
+    private func validateCellIsMenu(cell:UICollectionViewCell) {
+        let menuCell:SimulationViewScrollMenu? = cell as? SimulationViewScrollMenu
+        XCTAssertNotNil(menuCell, "Dequeued cell is not menu cell")
+        XCTAssertNotNil(menuCell?.viewMenu, "Menu cell doesn't contain view menu")
+    }
+    
     func testDequeueContentCell() {
         let cell:UICollectionViewCell? = self.tryDequeueContentCell()
-        XCTAssertNotNil(cell, "Failed dequeing content cell")
+        XCTAssertNotNil(cell, "Failed dequeuing content cell")
     }
     
     private func tryDequeueContentCell() -> UICollectionViewCell? {
