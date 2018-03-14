@@ -48,13 +48,35 @@ class TestSimulationControllerContent:XCTestCase {
     }
     
     func testDequeueCell() {
+        let cell:UICollectionViewCell? = self.dequeueCellAtIndex(index:0)
+        XCTAssertNotNil(cell, "Failed to dequeue collection cell")
+    }
+    
+    func testDequeuedCellType() {
         guard
-            let viewContent:SimulationViewContent = self.viewContent
+            let cell:UICollectionViewCell = self.dequeueCellAtIndex(index:0),
+            let cellType:UICollectionViewCell.Type = self.cellTypeFor(index:0)
         else {
             return
         }
-        let index:IndexPath = IndexPath(item:0, section:0)
+        let dequeuedCellType:UICollectionViewCell.Type = type(of:cell)
+        XCTAssertTrue(cellType == dequeuedCellType, "Dequeued cell type is not the one needed")
+    }
+    
+    private func dequeueCellAtIndex(index:Int) -> UICollectionViewCell? {
+        guard
+            let viewContent:SimulationViewContent = self.viewContent
+        else {
+            return nil
+        }
+        let index:IndexPath = IndexPath(item:index, section:0)
         let cell:UICollectionViewCell? = self.controller?.dequeueCell(collectionView:viewContent, index:index)
-        XCTAssertNotNil(cell, "Failed to dequeue collection cell")
+        return cell
+    }
+    
+    private func cellTypeFor(index:Int) -> UICollectionViewCell.Type? {
+        let cellType:UICollectionViewCell.Type? = self.viewModel?.content.items[index].cellType
+        XCTAssertNotNil(cellType, "Unable to load cell type")
+        return cellType
     }
 }
