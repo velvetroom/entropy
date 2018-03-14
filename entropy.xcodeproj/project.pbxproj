@@ -46,6 +46,7 @@
 		DA439E5220590F3A00FD02E2 /* SimulationViewContent+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA439E5120590F3A00FD02E2 /* SimulationViewContent+Factory.swift */; };
 		DA439E542059119D00FD02E2 /* TestSimulationControllerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA439E532059119D00FD02E2 /* TestSimulationControllerContent.swift */; };
 		DA439E56205911EC00FD02E2 /* SimulationControllerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA439E55205911EC00FD02E2 /* SimulationControllerContent.swift */; };
+		DA439E582059151100FD02E2 /* TestSimulationControllerScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA439E572059151100FD02E2 /* TestSimulationControllerScroll.swift */; };
 		DA4B5AA320526D6C00A99126 /* TestDatabaseProviderCoredata.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5A9D20526D6C00A99126 /* TestDatabaseProviderCoredata.swift */; };
 		DA4B5AA420526D6C00A99126 /* TestDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5A9E20526D6C00A99126 /* TestDatabase.swift */; };
 		DA4B5AA520526D6C00A99126 /* TestSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5AA020526D6C00A99126 /* TestSimulation.swift */; };
@@ -175,6 +176,7 @@
 		DA439E5120590F3A00FD02E2 /* SimulationViewContent+Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimulationViewContent+Factory.swift"; sourceTree = "<group>"; };
 		DA439E532059119D00FD02E2 /* TestSimulationControllerContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationControllerContent.swift; sourceTree = "<group>"; };
 		DA439E55205911EC00FD02E2 /* SimulationControllerContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationControllerContent.swift; sourceTree = "<group>"; };
+		DA439E572059151100FD02E2 /* TestSimulationControllerScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationControllerScroll.swift; sourceTree = "<group>"; };
 		DA48BB1A2046CD2B00271252 /* tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA48BB292046CE1F00271252 /* InfoTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InfoTests.plist; sourceTree = "<group>"; };
 		DA4B5A9D20526D6C00A99126 /* TestDatabaseProviderCoredata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDatabaseProviderCoredata.swift; sourceTree = "<group>"; };
@@ -446,6 +448,7 @@
 				DAF18B9D20582E2F002703D1 /* TestSimulationViewModelContentAddLanguage.swift */,
 				DA439E4D2058FE1A00FD02E2 /* TestSimulationViewScrollContent.swift */,
 				DA439E532059119D00FD02E2 /* TestSimulationControllerContent.swift */,
+				DA439E572059151100FD02E2 /* TestSimulationControllerScroll.swift */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -751,6 +754,7 @@
 				DA4B5AA320526D6C00A99126 /* TestDatabaseProviderCoredata.swift in Sources */,
 				DAF18BA220582EA6002703D1 /* TestSimulationViewContentCellAddLanguage.swift in Sources */,
 				DA439E542059119D00FD02E2 /* TestSimulationControllerContent.swift in Sources */,
+				DA439E582059151100FD02E2 /* TestSimulationControllerScroll.swift in Sources */,
 				DAF18B9620582B56002703D1 /* TestSimulationViewModelContentProjectName.swift in Sources */,
 				DAF18B8220581893002703D1 /* TestSimulationViewModel.swift in Sources */,
 			);

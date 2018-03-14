@@ -17,4 +17,6 @@ class TestSimulationViewContent:XCTestCase {
         let layout:UICollectionViewFlowLayout? = SimulationViewContent.factoryLayout()
         XCTAssertNotNil(layout, "Failed to factory content layout")
     }
+    
+    
 }
