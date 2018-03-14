@@ -19,5 +19,6 @@ class TestSimulationViewScrollContent:XCTestCase {
     
     func testLayoutConstraints() {
         XCTAssertNotNil(self.content?.layoutContentTop, "Layout for content top not found")
+        XCTAssertNotNil(self.content?.layoutContentBottom, "Layout for content bottom not found")
     }
 }
