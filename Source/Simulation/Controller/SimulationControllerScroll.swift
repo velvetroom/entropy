@@ -39,4 +39,13 @@ class SimulationControllerScroll:NSObject, UICollectionViewDelegate, UICollectio
         }
         return cell
     }
+    
+    func dequeueContentCell(collectionView:UICollectionView, index:IndexPath) -> UICollectionViewCell {
+        let cell:UICollectionViewCell = collectionView.dequeueReusableCell(
+            withReuseIdentifier:SimulationViewScroll.Constants.cellContent, for:index)
+        if let cellContent:SimulationViewScrollContent = cell as? SimulationViewScrollContent {
+            
+        }
+        return cell
+    }
 }
