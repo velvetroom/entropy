@@ -3,9 +3,11 @@ import UIKit
 class SimulationControllerScroll:NSObject, UICollectionViewDelegate, UICollectionViewDataSource,
     UICollectionViewDelegateFlowLayout {
     let menu:SimulationControllerMenu
+    let content:SimulationControllerContent
     
     override init() {
         self.menu = SimulationControllerMenu()
+        self.content = SimulationControllerContent()
         super.init()
     }
     

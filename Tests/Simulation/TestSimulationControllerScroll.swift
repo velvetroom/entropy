@@ -17,6 +17,14 @@ class TestSimulationControllerScroll:XCTestCase {
         XCTAssertNotNil(self.controller, "Unable to load controller")
     }
     
+    func testMenuController() {
+        XCTAssertNotNil(self.controller?.menu, "Controller doesn't have a reference to menu")
+    }
+    
+    func testContentController() {
+        XCTAssertNotNil(self.controller?.content, "Controller doesn't have a reference to content")
+    }
+    
     func testDequeueMenuCell() {
         let cell:UICollectionViewCell? = self.tryDequeueMenuCell()
         XCTAssertNotNil(cell, "Failed dequeuing menu cell")
@@ -48,6 +56,12 @@ class TestSimulationControllerScroll:XCTestCase {
     func testDequeueContentCell() {
         let cell:UICollectionViewCell? = self.tryDequeueContentCell()
         XCTAssertNotNil(cell, "Failed dequeuing content cell")
+        guard
+            let dequeueCell:UICollectionViewCell = cell
+        else {
+            return
+        }
+        self.validateCellIsContent(cell:dequeueCell)
     }
     
     private func tryDequeueContentCell() -> UICollectionViewCell? {
@@ -59,5 +73,11 @@ class TestSimulationControllerScroll:XCTestCase {
         }
         let index:IndexPath = IndexPath(item:0, section:0)
         return self.controller?.dequeueContentCell(collectionView:collectionView, index:index)
+    }
+    
+    private func validateCellIsContent(cell:UICollectionViewCell) {
+        let contentCell:SimulationViewScrollContent? = cell as? SimulationViewScrollContent
+        XCTAssertNotNil(contentCell, "Dequeue cell is not content cell")
+        XCTAssertNotNil(contentCell?.viewContent, "Content cell doesn't contain view content")
     }
 }
