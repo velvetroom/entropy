@@ -9,7 +9,7 @@ class SimulationViewScroll:UICollectionView {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.alwaysBounceVertical = true
         self.register(SimulationViewScrollMenu.self, forCellWithReuseIdentifier:Constants.cellMenu)
-        self.register(UICollectionViewCell.self, forCellWithReuseIdentifier:Constants.cellContent)
+        self.register(SimulationViewScrollContent.self, forCellWithReuseIdentifier:Constants.cellContent)
     }
     
     required init?(coder:NSCoder) {

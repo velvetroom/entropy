@@ -8,7 +8,9 @@ class TestSimulationControllerScroll:XCTestCase {
     override func setUp() {
         super.setUp()
         self.controller = SimulationControllerScroll()
-        self.collectionView = SimulationViewContent()
+        self.collectionView = SimulationViewScroll()
+        self.collectionView?.delegate = self.controller
+        self.collectionView?.dataSource = self.controller
     }
     
     func testInitialisation() {
