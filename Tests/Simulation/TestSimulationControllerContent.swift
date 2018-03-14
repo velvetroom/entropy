@@ -46,4 +46,15 @@ class TestSimulationControllerContent:XCTestCase {
         }
         XCTAssertGreaterThan(viewContent.numberOfItems(inSection:0), 0, "No sections found on view model")
     }
+    
+    func testDequeueCell() {
+        guard
+            let viewContent:SimulationViewContent = self.viewContent
+        else {
+            return
+        }
+        let index:IndexPath = IndexPath(item:0, section:0)
+        let cell:UICollectionViewCell? = self.controller?.dequeueCell(collectionView:viewContent, index:index)
+        XCTAssertNotNil(cell, "Failed to dequeue collection cell")
+    }
 }

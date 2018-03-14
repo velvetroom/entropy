@@ -16,6 +16,10 @@ class SimulationControllerContent:NSObject, UICollectionViewDelegate, UICollecti
         self.viewContent?.reloadData()
     }
     
+    func dequeueCell(collectionView:UICollectionView, index:IndexPath) -> UICollectionViewCell {
+        return UICollectionViewCell()
+    }
+    
     func collectionView(_:UICollectionView, numberOfItemsInSection:Int) -> Int {
         guard
             let count:Int = self.viewModel?.content.items.count
@@ -25,7 +29,7 @@ class SimulationControllerContent:NSObject, UICollectionViewDelegate, UICollecti
         return  count
     }
     
-    func collectionView(_:UICollectionView, cellForItemAt index:IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+    func collectionView(_ collectionView:UICollectionView, cellForItemAt index:IndexPath) -> UICollectionViewCell {
+        return self.dequeueCell(collectionView:collectionView, index:index)
     }
 }
