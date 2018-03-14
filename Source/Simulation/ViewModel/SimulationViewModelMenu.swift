@@ -14,4 +14,10 @@ class SimulationViewModelMenu {
         self.items = []
         self.selected = IndexPath(item:0, section:0)
     }
+    
+    func update(project:Project) {
+        for item:SimulationViewModelMenuProtocol in self.items {
+            item.project = project
+        }
+    }
 }

@@ -1,6 +1,6 @@
 import Foundation
 
-protocol SimulationViewModelMenuProtocol {
+protocol SimulationViewModelMenuProtocol:AnyObject {
     var title:String { get }
     weak var project:Project? { get set }
     
