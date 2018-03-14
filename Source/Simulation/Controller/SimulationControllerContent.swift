@@ -8,6 +8,14 @@ class SimulationControllerContent:NSObject, UICollectionViewDelegate, UICollecti
             self.viewContent?.dataSource = self
         }
     }
+    
+    private(set) weak var viewModel:SimulationViewModel?
+    
+    func reloadContent(viewModel:SimulationViewModel) {
+        self.viewModel = viewModel
+        self.viewContent?.reloadData()
+    }
+    
     func collectionView(_:UICollectionView, numberOfItemsInSection:Int) -> Int {
         return  0
     }

@@ -12,5 +12,13 @@ class TestSimulationControllerContent_ViewModel:XCTestCase {
         self.content = SimulationControllerContent()
         self.viewModel = SimulationViewModel()
         self.controller?.viewModel = self.viewModel
+        
+        if let viewModel:SimulationViewModel = self.viewModel {
+            self.content?.reloadContent(viewModel:viewModel)
+        }
+    }
+    
+    func testViewModelUpdated() {
+        XCTAssertNotNil(self.content?.viewModel, "View model doesn't get updated")
     }
 }
