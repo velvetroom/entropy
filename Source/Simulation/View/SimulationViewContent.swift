@@ -2,7 +2,7 @@ import UIKit
 
 class SimulationViewContent:UICollectionView {
     init() {
-        let layout:UICollectionViewFlowLayout = SimulationViewMenu.factoryLayout()
+        let layout:UICollectionViewFlowLayout = SimulationViewContent.factoryLayout()
         super.init(frame:CGRect.zero, collectionViewLayout:layout)
         self.clipsToBounds = true
         self.translatesAutoresizingMaskIntoConstraints = false
