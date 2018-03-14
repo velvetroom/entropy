@@ -8,9 +8,14 @@ class TestSimulationControllerContent:XCTestCase {
     
     override func setUp() {
         super.setUp()
+        self.viewModel = SimulationViewModel()
         self.controller = SimulationControllerContent()
         self.viewContent = SimulationViewContent()
         self.controller?.viewContent = self.viewContent
+        
+        if let viewModel:SimulationViewModel = self.viewModel {
+            self.controller?.reloadContent(viewModel:viewModel)
+        }
     }
     
     func testInitialisation() {

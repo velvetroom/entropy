@@ -17,7 +17,12 @@ class SimulationControllerContent:NSObject, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_:UICollectionView, numberOfItemsInSection:Int) -> Int {
-        return  0
+        guard
+            let count:Int = self.viewModel?.content.items.count
+        else {
+            return 0
+        }
+        return  count
     }
     
     func collectionView(_:UICollectionView, cellForItemAt index:IndexPath) -> UICollectionViewCell {
