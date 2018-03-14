@@ -24,7 +24,7 @@ class SimulationControllerScroll:NSObject, UICollectionViewDelegate, UICollectio
         let cell:UICollectionViewCell = collectionView.dequeueReusableCell(
             withReuseIdentifier:SimulationViewScroll.Constants.cellContent, for:index)
         if let cellContent:SimulationViewScrollContent = cell as? SimulationViewScrollContent {
-            
+            self.content.viewContent = cellContent.viewContent
         }
         return cell
     }

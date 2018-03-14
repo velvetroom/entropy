@@ -67,6 +67,7 @@ class TestSimulationControllerScroll:XCTestCase {
             return
         }
         self.validateCellIsContent(cell:dequeueCell)
+        self.validateContentControllerIsUpdated()
     }
     
     private func tryDequeueContentCell() -> UICollectionViewCell? {
@@ -84,5 +85,9 @@ class TestSimulationControllerScroll:XCTestCase {
         let contentCell:SimulationViewScrollContent? = cell as? SimulationViewScrollContent
         XCTAssertNotNil(contentCell, "Dequeue cell is not content cell")
         XCTAssertNotNil(contentCell?.viewContent, "Content cell doesn't contain view content")
+    }
+    
+    private func validateContentControllerIsUpdated() {
+        XCTAssertNotNil(self.controller?.content.viewContent, "View content is not updated on controller")
     }
 }

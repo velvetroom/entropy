@@ -2,6 +2,10 @@ import UIKit
 
 class SimulationControllerContent:NSObject, UICollectionViewDelegate, UICollectionViewDataSource,
     UICollectionViewDelegateFlowLayout{
+    weak var viewContent:SimulationViewContent? {
+        didSet {
+        }
+    }
     func collectionView(_:UICollectionView, numberOfItemsInSection:Int) -> Int {
         return  0
     }
