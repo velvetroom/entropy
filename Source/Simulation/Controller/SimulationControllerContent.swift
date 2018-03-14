@@ -17,7 +17,12 @@ class SimulationControllerContent:NSObject, UICollectionViewDelegate, UICollecti
     }
     
     func dequeueCell(collectionView:UICollectionView, index:IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        guard
+            let contentItem:SimulationViewModelContentProtocol = self.viewModel?.content.items[index.item]
+        else {
+            return UICollectionViewCell()
+        }
+        return collectionView.dequeueReusableCell(withReuseIdentifier:contentItem.cellIdentifier, for:index)
     }
     
     func collectionView(_:UICollectionView, numberOfItemsInSection:Int) -> Int {
@@ -26,7 +31,7 @@ class SimulationControllerContent:NSObject, UICollectionViewDelegate, UICollecti
         else {
             return 0
         }
-        return  count
+        return count
     }
     
     func collectionView(_ collectionView:UICollectionView, cellForItemAt index:IndexPath) -> UICollectionViewCell {
