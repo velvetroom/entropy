@@ -22,7 +22,7 @@ class TestSimulationControllerScroll:XCTestCase {
     }
     
     func testContentController() {
-        XCTAssertNotNil(self.controller?.content, "Controller doesn't have a reference to content")
+        XCTAssertNotNil(self.controller?.menu.content, "Controller doesn't have a reference to content")
     }
     
     func testDequeueMenuCell() {
@@ -90,8 +90,11 @@ class TestSimulationControllerScroll:XCTestCase {
     }
     
     private func validateContentControllerIsUpdated() {
-        XCTAssertNotNil(self.controller?.content.viewContent, "View content is not updated on controller")
-        XCTAssertNotNil(self.controller?.content.viewContent?.delegate, "View content delegate is not updated")
-        XCTAssertNotNil(self.controller?.content.viewContent?.dataSource, "View content dataSource is not updated")
+        XCTAssertNotNil(self.controller?.menu.content.viewContent,
+                        "View content is not updated on controller")
+        XCTAssertNotNil(self.controller?.menu.content.viewContent?.delegate,
+                        "View content delegate is not updated")
+        XCTAssertNotNil(self.controller?.menu.content.viewContent?.dataSource,
+                        "View content dataSource is not updated")
     }
 }

@@ -46,6 +46,7 @@ class SimulationControllerMenu:NSObject,
             return
         }
         self.viewModel?.content = currentItem.factoryViewModel()
+        self.content.viewContent?.reloadData()
     }
     
     private func scrollIfNeeded(index:IndexPath) {
