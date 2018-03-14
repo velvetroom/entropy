@@ -2,6 +2,7 @@ import Foundation
 
 class SimulationViewModelMenuContributors:SimulationViewModelMenuProtocol {
     let title:String
+    weak var project:Project?
     
     init() {
         self.title = String.localizedSimulation(key:"SimulationViewModelMenuContributors_title")
