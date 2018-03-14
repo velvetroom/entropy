@@ -11,6 +11,12 @@ class SimulationViewContent:UICollectionView {
         self.alwaysBounceVertical = true
         self.showsVerticalScrollIndicator = true
         self.showsHorizontalScrollIndicator = false
+        self.register(SimulationViewContentCellProjectName.self,
+                      forCellWithReuseIdentifier:Constants.cellProjectName)
+        self.register(SimulationViewContentCellAddContributor.self,
+                      forCellWithReuseIdentifier:Constants.cellAddContributor)
+        self.register(SimulationViewContentCellAddLanguage.self,
+                      forCellWithReuseIdentifier:Constants.cellAddLanguage)
     }
     
     required init?(coder:NSCoder) {

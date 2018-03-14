@@ -6,7 +6,7 @@ class SimulationViewScrollContent:UICollectionViewCell {
     override init(frame:CGRect) {
         super.init(frame:frame)
         self.clipsToBounds = true
-        self.backgroundColor = UIColor.clear
+        self.backgroundColor = UIColor.white
         
         let viewContent:SimulationViewContent = SimulationViewContent()
         self.viewContent = viewContent
