@@ -10,4 +10,6 @@ class SimulationViewContentCell:UICollectionViewCell {
     required init?(coder:NSCoder) {
         return nil
     }
+    
+    
 }

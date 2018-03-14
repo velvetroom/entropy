@@ -12,7 +12,7 @@ class SimulationViewModel:AbstractViewModel {
         self.content = self.menu.selectedItem.factoryViewModel()
     }
     
-    func updateGraph(entropy:Entropy) {
-        self.graph = SimulationViewModelGraph.factoryWithEntropy(entropy:entropy)
+    func update(project:Project) {
+        self.graph = SimulationViewModelGraph.factoryWithEntropy(entropy:project.entropy)
     }
 }

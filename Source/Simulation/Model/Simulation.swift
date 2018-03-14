@@ -39,6 +39,6 @@ class Simulation:Model {
         else {
             return
         }
-        viewModel.updateGraph(entropy:project.entropy)
+        viewModel.update(project:project)
     }
 }
