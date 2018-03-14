@@ -3,10 +3,14 @@ import XCTest
 
 class TestSimulationControllerContent:XCTestCase {
     private var controller:SimulationControllerContent?
+    private var viewModel:SimulationViewModel?
+    private var viewContent:SimulationViewContent?
     
     override func setUp() {
         super.setUp()
         self.controller = SimulationControllerContent()
+        self.viewContent = SimulationViewContent()
+        self.controller?.viewContent = self.viewContent
     }
     
     func testInitialisation() {
@@ -26,5 +30,15 @@ class TestSimulationControllerContent:XCTestCase {
     func testControllerIsFlowLayoutDelegate() {
         let flowLayoutDelegate:UICollectionViewDelegateFlowLayout? = self.controller
         XCTAssertNotNil(flowLayoutDelegate, "Controller doesn't conform to flow layout delegate")
+    }
+    
+    func testNumberOfItems() {
+        guard
+            let viewContent:SimulationViewContent = self.controller?.viewContent
+        else {
+            XCTAssertNotNil(self.controller?.viewContent, "Unable to load view content")
+            return
+        }
+        XCTAssertGreaterThan(viewContent.numberOfItems(inSection:0), 0, "No sections found on view model")
     }
 }
