@@ -17,9 +17,25 @@ class TestSimulationControllerScroll:XCTestCase {
         XCTAssertNotNil(self.controller, "Unable to load controller")
     }
     
+    func testDequeueMenuCell() {
+        let cell:UICollectionViewCell? = self.tryDequeueMenuCell()
+        XCTAssertNotNil(cell, "Failed dequeing menu cell")
+    }
+    
+    private func tryDequeueMenuCell() -> UICollectionViewCell? {
+        guard
+            let collectionView:UICollectionView = self.collectionView
+        else {
+            XCTAssertNotNil(self.collectionView, "Unable to load collectionView")
+           return nil
+        }
+        let index:IndexPath = IndexPath(item:0, section:0)
+        return self.controller?.dequeueMenuCell(collectionView:collectionView, index:index)
+    }
+    
     func testDequeueContentCell() {
         let cell:UICollectionViewCell? = self.tryDequeueContentCell()
-        XCTAssertNotNil(cell, "Failed dequeuing content cell")
+        XCTAssertNotNil(cell, "Failed dequeing content cell")
     }
     
     private func tryDequeueContentCell() -> UICollectionViewCell? {
