@@ -22,7 +22,12 @@ class SimulationControllerContent:NSObject, UICollectionViewDelegate, UICollecti
         else {
             return UICollectionViewCell()
         }
-        return collectionView.dequeueReusableCell(withReuseIdentifier:contentItem.cellIdentifier, for:index)
+        let cell:UICollectionViewCell = collectionView.dequeueReusableCell(
+            withReuseIdentifier:contentItem.cellIdentifier, for:index)
+        if let cellContent:SimulationViewContentCell = cell as? SimulationViewContentCell {
+            cellContent.update(viewModel:contentItem)
+        }
+        return cell
     }
     
     func collectionView(_ collectionView:UICollectionView, layout:UICollectionViewLayout,

@@ -47,4 +47,14 @@ class SimulationViewContentCellProjectName:SimulationViewContentCell {
     required init?(coder:NSCoder) {
         return nil
     }
+    
+    override func update(viewModel:SimulationViewModelContentProtocol) {
+        super.update(viewModel:viewModel)
+        guard
+            let viewModel:SimulationViewModelContentProjectName = viewModel as? SimulationViewModelContentProjectName
+        else {
+            return
+        }
+        self.viewField?.text = viewModel.project?.name
+    }
 }

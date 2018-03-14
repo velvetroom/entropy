@@ -2,7 +2,7 @@ import Foundation
 
 class SimulationViewModelMenuProject:SimulationViewModelMenuProtocol {
     let title:String
-    weak var project:Project?
+    private(set) weak var project:Project?
     
     init() {
         self.title = String.localizedSimulation(key:"SimulationViewModelMenuProject_title")
@@ -13,6 +13,10 @@ class SimulationViewModelMenuProject:SimulationViewModelMenuProtocol {
         let content:SimulationViewModelContent = SimulationViewModelContent()
         content.items = items
         return content
+    }
+    
+    func update(project:Project) {
+        self.project = project
     }
     
     private func factoryContentItems() -> [SimulationViewModelContentProtocol] {

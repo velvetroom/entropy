@@ -16,6 +16,7 @@ class TestSimulationViewContentCellProjectName:XCTestCase {
         self.cell = SimulationViewContentCellProjectName()
         self.viewModel = SimulationViewModelContentProjectName()
         self.project = Project(identifier:Constants.identifier, entropy:Constants.entropy)
+        self.project?.name = Constants.projectName
         self.viewModel?.project = self.project
     }
     
