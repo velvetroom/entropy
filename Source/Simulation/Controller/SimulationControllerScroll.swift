@@ -3,11 +3,9 @@ import UIKit
 class SimulationControllerScroll:NSObject, UICollectionViewDelegate, UICollectionViewDataSource,
     UICollectionViewDelegateFlowLayout {
     let menu:SimulationControllerMenu
-    let content:SimulationControllerContent
     
     override init() {
         self.menu = SimulationControllerMenu()
-        self.content = SimulationControllerContent()
         super.init()
     }
     
@@ -24,7 +22,7 @@ class SimulationControllerScroll:NSObject, UICollectionViewDelegate, UICollectio
         let cell:UICollectionViewCell = collectionView.dequeueReusableCell(
             withReuseIdentifier:SimulationViewScroll.Constants.cellContent, for:index)
         if let cellContent:SimulationViewScrollContent = cell as? SimulationViewScrollContent {
-            self.content.viewContent = cellContent.viewContent
+            self.menu.content.viewContent = cellContent.viewContent
         }
         return cell
     }
@@ -47,7 +45,6 @@ class SimulationControllerScroll:NSObject, UICollectionViewDelegate, UICollectio
         if index.item == 0 {
             return self.dequeueMenuCell(collectionView:collectionView, index:index)
         }
-        return collectionView.dequeueReusableCell(withReuseIdentifier:SimulationViewScroll.Constants.cellContent,
-                                                  for:index)
+        return self.dequeueContentCell(collectionView:collectionView, index:index)
     }
 }

@@ -29,6 +29,7 @@ class SimulationController:Controller<SimulationViewModel, SimulationView> {
         }
         self.graph.viewModel = viewModel.graph
         self.scroll.menu.reloadMenu(viewModel:viewModel)
+        self.scroll.menu.content.reloadContent(viewModel:viewModel)
         self.specialisedView?.viewGraph?.setNeedsDisplay()
     }
 }

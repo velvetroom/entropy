@@ -10,6 +10,12 @@ class SimulationControllerMenu:NSObject,
     }
     
     private(set) weak var viewModel:SimulationViewModel?
+    let content:SimulationControllerContent
+    
+    override init() {
+        self.content = SimulationControllerContent()
+        super.init()
+    }
     
     func reloadMenu(viewModel:SimulationViewModel) {
         self.viewModel = viewModel
