@@ -56,6 +56,8 @@ class TestSimulationControllerScroll:XCTestCase {
     
     private func validateMenuControllerIsUpdated() {
         XCTAssertNotNil(self.controller?.menu.viewMenu, "View menu is not updated on controller")
+        XCTAssertNotNil(self.controller?.menu.viewMenu?.delegate, "View menu delegate is not updated")
+        XCTAssertNotNil(self.controller?.menu.viewMenu?.dataSource, "View menu dataSource is not updated")
     }
     
     func testDequeueContentCell() {
