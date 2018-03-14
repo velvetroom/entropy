@@ -26,4 +26,8 @@ class SimulationViewScrollContent:UICollectionViewCell {
     required init?(coder:NSCoder) {
         return nil
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+    }
 }
