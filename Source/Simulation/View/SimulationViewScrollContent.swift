@@ -2,10 +2,6 @@ import UIKit
 
 class SimulationViewScrollContent:UICollectionViewCell {
     private(set) weak var viewContent:SimulationViewContent?
-    private(set) weak var layoutContentTop:NSLayoutConstraint?
-    private(set) weak var layoutContentBottom:NSLayoutConstraint?
-    private(set) weak var layoutContentLeft:NSLayoutConstraint?
-    private(set) weak var layoutContentRight:NSLayoutConstraint?
     
     override init(frame:CGRect) {
         super.init(frame:frame)
@@ -17,17 +13,10 @@ class SimulationViewScrollContent:UICollectionViewCell {
         
         self.addSubview(viewContent)
         
-        self.layoutContentTop = viewContent.layoutTopToTop(view:self)
-        self.layoutContentBottom = viewContent.layoutBottomToBottom(view:self)
-        self.layoutContentLeft = viewContent.layoutLeftToLeft(view:self)
-        self.layoutContentRight = viewContent.layoutRightToRight(view:self)
+        viewContent.layoutEquals(view:self)
     }
     
     required init?(coder:NSCoder) {
         return nil
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
     }
 }
