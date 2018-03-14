@@ -14,12 +14,17 @@ class TestSimulationControllerContent:XCTestCase {
     }
     
     func testControllerIsCollectionViewDelegate() {
-        let delegate:UICollectionViewDelegate? = self.controller as? UICollectionViewDelegate
+        let delegate:UICollectionViewDelegate? = self.controller
         XCTAssertNotNil(delegate, "Controller doesn't conform to collection view delegate")
     }
     
-    func testControllerIsCollectionViewDatasource() {
-        let dataSource:UICollectionViewDataSource? = self.controller as? UICollectionViewDataSource
+    func testControllerIsCollectionViewDataSource() {
+        let dataSource:UICollectionViewDataSource? = self.controller
         XCTAssertNotNil(dataSource, "Controller doesn't conform to collection view dataSource")
+    }
+    
+    func testControllerIsFlowLayoutDelegate() {
+        let flowLayoutDelegate:UICollectionViewDelegateFlowLayout? = self.controller
+        XCTAssertNotNil(flowLayoutDelegate, "Controller doesn't conform to flow layout delegate")
     }
 }

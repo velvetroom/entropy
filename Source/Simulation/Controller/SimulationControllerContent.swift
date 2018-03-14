@@ -1,6 +1,7 @@
 import UIKit
 
-class SimulationControllerContent:NSObject, UICollectionViewDelegate, UICollectionViewDataSource {
+class SimulationControllerContent:NSObject, UICollectionViewDelegate, UICollectionViewDataSource,
+    UICollectionViewDelegateFlowLayout{
     func collectionView(_:UICollectionView, numberOfItemsInSection:Int) -> Int {
         return  0
     }
