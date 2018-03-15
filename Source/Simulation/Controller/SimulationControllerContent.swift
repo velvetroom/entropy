@@ -1,7 +1,7 @@
 import UIKit
 
 class SimulationControllerContent:NSObject, UICollectionViewDelegate, UICollectionViewDataSource,
-    UICollectionViewDelegateFlowLayout, UITextFieldDelegate {
+    UICollectionViewDelegateFlowLayout {
     weak var viewContent:SimulationViewContent? {
         didSet {
             self.viewContent?.delegate = self
@@ -10,6 +10,12 @@ class SimulationControllerContent:NSObject, UICollectionViewDelegate, UICollecti
     }
     
     private(set) weak var viewModel:SimulationViewModel?
+    let projectName:SimulationControllerContentProjectName
+    
+    override init() {
+        self.projectName = SimulationControllerContentProjectName()
+        super.init()
+    }
     
     func reloadContent(viewModel:SimulationViewModel) {
         self.viewModel = viewModel

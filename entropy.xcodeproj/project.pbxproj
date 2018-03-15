@@ -62,13 +62,14 @@
 		DA4B5AB0205274CB00A99126 /* ProfileAccessPremium.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5AAF205274CB00A99126 /* ProfileAccessPremium.swift */; };
 		DA4B5ABA20527AEE00A99126 /* CoredataProfileAccessFree.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5AB920527AEE00A99126 /* CoredataProfileAccessFree.swift */; };
 		DA4B5ABC20527BA100A99126 /* CoredataProfileAccessPremium.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B5ABB20527BA100A99126 /* CoredataProfileAccessPremium.swift */; };
-		DA4B978F205A75EF000205BD /* SimulationControllerContent+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B978E205A75EF000205BD /* SimulationControllerContent+TextFieldDelegate.swift */; };
 		DA4B9791205A77D0000205BD /* TestSimulationViewModelContentProjectStartDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B9790205A77D0000205BD /* TestSimulationViewModelContentProjectStartDate.swift */; };
 		DA4B9793205A8369000205BD /* SimulationViewModelContentProjectStartDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B9792205A8369000205BD /* SimulationViewModelContentProjectStartDate.swift */; };
 		DA4B9795205A8608000205BD /* SimulationViewContentCellProjectStartDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B9794205A8608000205BD /* SimulationViewContentCellProjectStartDate.swift */; };
 		DA4B9797205A864A000205BD /* TestSimulationViewContentCellProjectStartDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B9796205A864A000205BD /* TestSimulationViewContentCellProjectStartDate.swift */; };
 		DA4B9799205A929B000205BD /* TestSimulationViewScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B9798205A929B000205BD /* TestSimulationViewScroll.swift */; };
 		DA4B979B205A96F7000205BD /* TestSimulationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B979A205A96F7000205BD /* TestSimulationController.swift */; };
+		DA4B979F205ACF53000205BD /* SimulationControllerContentProjectName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B979E205ACF53000205BD /* SimulationControllerContentProjectName.swift */; };
+		DA4B97A1205ACF7F000205BD /* TestSimulationControllerContentProjectName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B97A0205ACF7F000205BD /* TestSimulationControllerContentProjectName.swift */; };
 		DA4DDFF52055C3050047BB9D /* SimulationControllerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4DDFF42055C3050047BB9D /* SimulationControllerMenu.swift */; };
 		DA4DDFF720566F960047BB9D /* SimulationViewMenuCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4DDFF620566F960047BB9D /* SimulationViewMenuCell+Constants.swift */; };
 		DA5B8CCD20513CD0008B986F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CCC20513CD0008B986F /* Profile.swift */; };
@@ -205,13 +206,14 @@
 		DA4B5AAF205274CB00A99126 /* ProfileAccessPremium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAccessPremium.swift; sourceTree = "<group>"; };
 		DA4B5AB920527AEE00A99126 /* CoredataProfileAccessFree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataProfileAccessFree.swift; sourceTree = "<group>"; };
 		DA4B5ABB20527BA100A99126 /* CoredataProfileAccessPremium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataProfileAccessPremium.swift; sourceTree = "<group>"; };
-		DA4B978E205A75EF000205BD /* SimulationControllerContent+TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimulationControllerContent+TextFieldDelegate.swift"; sourceTree = "<group>"; };
 		DA4B9790205A77D0000205BD /* TestSimulationViewModelContentProjectStartDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationViewModelContentProjectStartDate.swift; sourceTree = "<group>"; };
 		DA4B9792205A8369000205BD /* SimulationViewModelContentProjectStartDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelContentProjectStartDate.swift; sourceTree = "<group>"; };
 		DA4B9794205A8608000205BD /* SimulationViewContentCellProjectStartDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewContentCellProjectStartDate.swift; sourceTree = "<group>"; };
 		DA4B9796205A864A000205BD /* TestSimulationViewContentCellProjectStartDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationViewContentCellProjectStartDate.swift; sourceTree = "<group>"; };
 		DA4B9798205A929B000205BD /* TestSimulationViewScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationViewScroll.swift; sourceTree = "<group>"; };
 		DA4B979A205A96F7000205BD /* TestSimulationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationController.swift; sourceTree = "<group>"; };
+		DA4B979E205ACF53000205BD /* SimulationControllerContentProjectName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationControllerContentProjectName.swift; sourceTree = "<group>"; };
+		DA4B97A0205ACF7F000205BD /* TestSimulationControllerContentProjectName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationControllerContentProjectName.swift; sourceTree = "<group>"; };
 		DA4DDFF42055C3050047BB9D /* SimulationControllerMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationControllerMenu.swift; sourceTree = "<group>"; };
 		DA4DDFF620566F960047BB9D /* SimulationViewMenuCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimulationViewMenuCell+Constants.swift"; sourceTree = "<group>"; };
 		DA5B8CCC20513CD0008B986F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -398,7 +400,7 @@
 				DA2196272055BC990020BBAB /* SimulationControllerScroll.swift */,
 				DA4DDFF42055C3050047BB9D /* SimulationControllerMenu.swift */,
 				DA439E55205911EC00FD02E2 /* SimulationControllerContent.swift */,
-				DA4B978E205A75EF000205BD /* SimulationControllerContent+TextFieldDelegate.swift */,
+				DA4B979E205ACF53000205BD /* SimulationControllerContentProjectName.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -482,6 +484,7 @@
 				DA4B9796205A864A000205BD /* TestSimulationViewContentCellProjectStartDate.swift */,
 				DA4B9798205A929B000205BD /* TestSimulationViewScroll.swift */,
 				DA4B979A205A96F7000205BD /* TestSimulationController.swift */,
+				DA4B97A0205ACF7F000205BD /* TestSimulationControllerContentProjectName.swift */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -795,6 +798,7 @@
 				DA439E582059151100FD02E2 /* TestSimulationControllerScroll.swift in Sources */,
 				DAF18B9620582B56002703D1 /* TestSimulationViewModelContentProjectName.swift in Sources */,
 				DAF18B8220581893002703D1 /* TestSimulationViewModel.swift in Sources */,
+				DA4B97A1205ACF7F000205BD /* TestSimulationControllerContentProjectName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -812,7 +816,6 @@
 				DA439E5220590F3A00FD02E2 /* SimulationViewContent+Factory.swift in Sources */,
 				DA785A4F20470CF600E3DFD1 /* PresentProtocol.swift in Sources */,
 				DAAFD2BC2051453500F1526F /* DatabaseProviderCoredata.swift in Sources */,
-				DA4B978F205A75EF000205BD /* SimulationControllerContent+TextFieldDelegate.swift in Sources */,
 				DAAFD2C820514CBE00F1526F /* ExtensionFileManager.swift in Sources */,
 				DA785A462047074900E3DFD1 /* ViewModelDelegate.swift in Sources */,
 				DA0678522046F9D0001519B0 /* Application.swift in Sources */,
@@ -883,6 +886,7 @@
 				DA2196232055BC2E0020BBAB /* SimulationViewModelMenuContributors.swift in Sources */,
 				DAAFD2C6205148EF00F1526F /* DatabaseProviderCoredata+Constants.swift in Sources */,
 				DA785A4A2047083E00E3DFD1 /* AbstractView.swift in Sources */,
+				DA4B979F205ACF53000205BD /* SimulationControllerContentProjectName.swift in Sources */,
 				DA21962C2055BE5F0020BBAB /* ViewDelegate.swift in Sources */,
 				DA7F404B2057E771005E0712 /* SimulationViewModelContent.swift in Sources */,
 				DA2ADDED2052A60F0036812C /* Entropy.swift in Sources */,

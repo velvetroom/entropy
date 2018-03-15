@@ -17,6 +17,7 @@ class TestSimulationController:XCTestCase {
         self.loadView()
         XCTAssertNotNil(self.controller?.specialisedView?.viewScroll?.delegate, "Delegate not assigned")
         XCTAssertNotNil(self.controller?.specialisedView?.viewScroll?.dataSource, "DataSource not assigned")
+        XCTAssertNotNil(self.controller?.scroll.menu.viewScroll, "Failed to assign view scroll")
     }
     
     private func loadView() {

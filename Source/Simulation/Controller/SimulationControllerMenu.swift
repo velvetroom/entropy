@@ -2,6 +2,7 @@ import UIKit
 
 class SimulationControllerMenu:NSObject,
     UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    weak var viewScroll:SimulationViewScroll?
     weak var viewMenu:SimulationViewMenu? {
         didSet {
             self.viewMenu?.delegate = self
@@ -21,6 +22,7 @@ class SimulationControllerMenu:NSObject,
         self.viewModel = viewModel
         self.viewMenu?.reloadData()
         self.selectCurrentItem()
+        self.viewScroll?.collectionViewLayout.invalidateLayout()
     }
     
     private func selectCurrentItem() {
@@ -47,6 +49,8 @@ class SimulationControllerMenu:NSObject,
         }
         self.viewModel?.content = currentItem.factoryViewModel()
         self.content.viewContent?.reloadData()
+        self.content.viewContent?.collectionViewLayout.invalidateLayout()
+        self.viewScroll?.collectionViewLayout.invalidateLayout()
     }
     
     private func scrollIfNeeded(index:IndexPath) {

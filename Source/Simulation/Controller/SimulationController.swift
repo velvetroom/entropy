@@ -1,8 +1,8 @@
 import Foundation
 
 class SimulationController:Controller<SimulationViewModel, SimulationView> {
-    private let graph:SimulationControllerGraph
-    private let scroll:SimulationControllerScroll
+    let graph:SimulationControllerGraph
+    let scroll:SimulationControllerScroll
     
     override init() {
         self.graph = SimulationControllerGraph()
@@ -17,8 +17,16 @@ class SimulationController:Controller<SimulationViewModel, SimulationView> {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.specialisedView?.viewGraph?.delegate = self.graph
-        self.specialisedView?.viewScroll?.delegate = self.scroll
-        self.specialisedView?.viewScroll?.dataSource = self.scroll
+        self.updateScroll()
+    }
+    
+    private func updateScroll() {
+        guard
+            let viewScroll:SimulationViewScroll = self.specialisedView?.viewScroll
+        else {
+            return
+        }
+        self.scroll.update(viewScroll:viewScroll)
     }
     
     override func reloadViewModel() {

@@ -9,6 +9,12 @@ class SimulationControllerScroll:NSObject, UICollectionViewDelegate, UICollectio
         super.init()
     }
     
+    func update(viewScroll:SimulationViewScroll) {
+        self.menu.viewScroll = viewScroll
+        viewScroll.delegate = self
+        viewScroll.dataSource = self
+    }
+    
     func dequeueMenuCell(collectionView:UICollectionView, index:IndexPath) -> UICollectionViewCell {
         let cell:UICollectionViewCell = collectionView.dequeueReusableCell(
             withReuseIdentifier:SimulationViewScroll.Constants.cellMenu, for:index)
@@ -32,9 +38,12 @@ class SimulationControllerScroll:NSObject, UICollectionViewDelegate, UICollectio
         if index.item == 0 {
             return CGSize(width:collectionView.bounds.width, height:SimulationView.Constants.menuHeight)
         }
-        let usedHeight:CGFloat = SimulationView.Constants.menuHeight + SimulationView.Constants.graphHeight
-        let remainHeight:CGFloat = collectionView.bounds.height - usedHeight
-        return CGSize(width:collectionView.bounds.width, height:remainHeight)
+        guard
+            let itemsHeight:CGFloat = self.menu.viewModel?.content.itemsHeight
+        else {
+            return CGSize.zero
+        }
+        return CGSize(width:collectionView.bounds.width, height:itemsHeight)
     }
     
     func collectionView(_:UICollectionView, numberOfItemsInSection:Int) -> Int {
