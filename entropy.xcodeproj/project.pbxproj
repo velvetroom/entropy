@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA041F58205A51EC00F5F286 /* SimulationViewModelContentProjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA041F57205A51EC00F5F286 /* SimulationViewModelContentProjectProtocol.swift */; };
 		DA0678452046F7CB001519B0 /* ControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678442046F7CB001519B0 /* ControllerDelegate.swift */; };
 		DA06784B2046F8F1001519B0 /* AbstractViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA06784A2046F8F1001519B0 /* AbstractViewModel.swift */; };
 		DA0678522046F9D0001519B0 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0678512046F9D0001519B0 /* Application.swift */; };
@@ -140,6 +141,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA041F57205A51EC00F5F286 /* SimulationViewModelContentProjectProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelContentProjectProtocol.swift; sourceTree = "<group>"; };
 		DA0678442046F7CB001519B0 /* ControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerDelegate.swift; sourceTree = "<group>"; };
 		DA06784A2046F8F1001519B0 /* AbstractViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewModel.swift; sourceTree = "<group>"; };
 		DA0678512046F9D0001519B0 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
@@ -400,6 +402,7 @@
 				DA21960D2055BC2E0020BBAB /* SimulationViewModelMenuContributors.swift */,
 				DA5F52292056D9C20010E7F0 /* SimulationViewModelMenuLanguages.swift */,
 				DA7F404A2057E771005E0712 /* SimulationViewModelContent.swift */,
+				DA041F57205A51EC00F5F286 /* SimulationViewModelContentProjectProtocol.swift */,
 				DA7F404C2057EAE3005E0712 /* SimulationViewModelContentProtocol.swift */,
 				DAF18B8320581E16002703D1 /* SimulationViewModelContentProjectName.swift */,
 				DAF18B9720582BC6002703D1 /* SimulationViewModelContentAddContributor.swift */,
@@ -809,6 +812,7 @@
 				DA4B5AAC2052747B00A99126 /* ProfileAccessProtocol.swift in Sources */,
 				DA21961D2055BC2E0020BBAB /* SimulationController.swift in Sources */,
 				DA5F522A2056D9C20010E7F0 /* SimulationViewModelMenuLanguages.swift in Sources */,
+				DA041F58205A51EC00F5F286 /* SimulationViewModelContentProjectProtocol.swift in Sources */,
 				DA785A5320470E1100E3DFD1 /* ApplicationView.swift in Sources */,
 				DA2196182055BC2E0020BBAB /* SimulationViewMenu.swift in Sources */,
 				DA785A482047080F00E3DFD1 /* Controller.swift in Sources */,

@@ -17,6 +17,7 @@ class SimulationViewModelMenuProject:SimulationViewModelMenuProtocol {
     
     func update(project:Project) {
         self.project = project
+        
     }
     
     private func factoryContentItems() -> [SimulationViewModelContentProtocol] {

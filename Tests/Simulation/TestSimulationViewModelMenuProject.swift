@@ -32,6 +32,19 @@ class TestSimulationViewModelMenuProject:XCTestCase {
     
     func testUpdateProject() {
         self.updateProject()
+        self.validateProjectNameHasProject()
+    }
+    
+    func testUpdateProjectAfterFactory() {
+        let content:SimulationViewModelContent? = self.item?.factoryViewModel()
+        XCTAssertNotNil(content, "Unable to load content")
+        guard
+            let viewModelContent:SimulationViewModelContent = content
+        else {
+            return
+        }
+        self.updateProject()
+        self.validateContentWithProjectProtocol(content:viewModelContent)
     }
     
     private func updateProject() {
@@ -45,9 +58,24 @@ class TestSimulationViewModelMenuProject:XCTestCase {
     
     private func validateProjectNameHasProject() {
         let content:SimulationViewModelContent? = self.item?.factoryViewModel()
-        let firstItem:SimulationViewModelContentProtocol? = content?.items.first
-        let projectName:SimulationViewModelContentProjectName? = firstItem as? SimulationViewModelContentProjectName
-        XCTAssertNotNil(projectName, "Project name is not the first item")
-        XCTAssertNotNil(projectName?.project, "Project name doesn't contain project")
+        XCTAssertNotNil(content, "Failed to load content")
+        guard
+            let viewModelContent:SimulationViewModelContent = content
+        else {
+            return
+        }
+        self.validateContentWithProjectProtocol(content:viewModelContent)
+    }
+    
+    private func validateContentWithProjectProtocol(content:SimulationViewModelContent) {
+        for item:SimulationViewModelContentProtocol in content.items {
+            guard
+                let itemWithProject:SimulationViewModelContentProjectProtocol = item as?
+            SimulationViewModelContentProjectProtocol
+                else {
+                continue
+            }
+            XCTAssertNotNil(itemWithProject.project, "Item should have a reference to project")
+        }
     }
 }
