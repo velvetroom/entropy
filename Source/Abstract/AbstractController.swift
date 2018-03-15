@@ -23,6 +23,17 @@ class AbstractController:UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate?.controllerDidLoad()
+        self.configureEdgeLayouts()
+    }
+    
+    private func configureEdgeLayouts() {
+        self.edgesForExtendedLayout = UIRectEdge()
+        self.extendedLayoutIncludesOpaqueBars = false
+        if #available(iOS 11.0, *) {
+            self.additionalSafeAreaInsets = UIEdgeInsets.zero
+        } else {
+            self.automaticallyAdjustsScrollViewInsets = false
+        }
     }
     
     override func viewWillAppear(_ animated:Bool) {
