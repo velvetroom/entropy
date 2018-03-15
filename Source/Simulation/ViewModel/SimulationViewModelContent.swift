@@ -1,8 +1,17 @@
-import Foundation
+import UIKit
 
 class SimulationViewModelContent:Equatable {
     weak var project:Project?
     var items:[SimulationViewModelContentProtocol]
+    var itemsHeight:CGFloat {
+        get {
+            var height:CGFloat = 0
+            for item:SimulationViewModelContentProtocol in self.items {
+                height += item.cellHeight
+            }
+            return height
+        }
+    }
     
     init() {
         self.items = []

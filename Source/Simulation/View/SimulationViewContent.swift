@@ -8,11 +8,14 @@ class SimulationViewContent:UICollectionView {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.backgroundColor = UIColor.clear
         self.alwaysBounceHorizontal = false
-        self.alwaysBounceVertical = true
-        self.showsVerticalScrollIndicator = true
+        self.alwaysBounceVertical = false
+        self.isScrollEnabled = false
+        self.showsVerticalScrollIndicator = false
         self.showsHorizontalScrollIndicator = false
         self.register(SimulationViewContentCellProjectName.self,
                       forCellWithReuseIdentifier:Constants.CellIdentifiers.projectName)
+        self.register(SimulationViewContentCellProjectStartDate.self,
+                      forCellWithReuseIdentifier:Constants.CellIdentifiers.projectStartDate)
         self.register(SimulationViewContentCellAddContributor.self,
                       forCellWithReuseIdentifier:Constants.CellIdentifiers.addContributor)
         self.register(SimulationViewContentCellAddLanguage.self,

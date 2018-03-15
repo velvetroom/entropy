@@ -17,9 +17,13 @@ class SimulationViewModelMenuProject:SimulationViewModelMenuProtocol {
     
     private func factoryContentItems() -> [SimulationViewModelContentProtocol] {
         let itemProjectName:SimulationViewModelContentProjectName = SimulationViewModelContentProjectName()
+        let itemProjectStartDate:SimulationViewModelContentProjectStartDate =
+            SimulationViewModelContentProjectStartDate()
         itemProjectName.project = self.project
+        itemProjectStartDate.project = self.project
         let items:[SimulationViewModelContentProtocol] = [
-            itemProjectName]
+            itemProjectName,
+            itemProjectStartDate]
         return items
     }
 }

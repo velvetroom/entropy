@@ -11,7 +11,7 @@ extension SimulationViewContent {
         
         struct CellHeight {
             static let projectName:CGFloat = 100
-            static let projectStartDate:CGFloat = 400
+            static let projectStartDate:CGFloat = 500
             static let addContributor:CGFloat = 80
             static let addLanguage:CGFloat = 80
         }

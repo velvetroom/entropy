@@ -4,6 +4,8 @@ import XCTest
 class TestSimulationViewModelContent:XCTestCase {
     private var content:SimulationViewModelContent?
     private var project:Project?
+    private var contentItemA:SimulationViewModelContentProjectName?
+    private var contentItemB:SimulationViewModelContentProjectStartDate?
     private struct Constants {
         static let projectIdentifier:String = "project"
         static let entropy:Float = 1
@@ -14,11 +16,15 @@ class TestSimulationViewModelContent:XCTestCase {
         let menuItem:SimulationViewModelMenuProject = SimulationViewModelMenuProject()
         self.content = menuItem.factoryViewModel()
         self.project = Project(identifier:Constants.projectIdentifier, entropy:Constants.entropy)
+        self.contentItemA = SimulationViewModelContentProjectName()
+        self.contentItemB = SimulationViewModelContentProjectStartDate()
     }
     
     func testInitialisation() {
         XCTAssertNotNil(self.content, "Failed to load content")
         XCTAssertNotNil(self.project, "Failed to load project")
+        XCTAssertNotNil(self.contentItemA, "Failed to load content item")
+        XCTAssertNotNil(self.contentItemB, "Failed to load content item")
     }
     
     func testContentProtocolHasCellType() {
@@ -65,5 +71,34 @@ class TestSimulationViewModelContent:XCTestCase {
             }
             XCTAssertNotNil(itemWithProject.project, "Failed to assign project to items")
         }
+    }
+    
+    func testItemsHeight() {
+        self.updateContentItems()
+        self.validateItemsHeight()
+    }
+    
+    private func updateContentItems() {
+        guard
+            let contentItemA:SimulationViewModelContentProjectName = self.contentItemA,
+            let contentItemB:SimulationViewModelContentProjectStartDate = self.contentItemB
+        else {
+            return
+        }
+        self.content?.items = [
+            contentItemA,
+            contentItemB]
+    }
+    
+    private func validateItemsHeight() {
+        guard
+            let contentItemA:SimulationViewModelContentProjectName = self.contentItemA,
+            let contentItemB:SimulationViewModelContentProjectStartDate = self.contentItemB,
+            let content:SimulationViewModelContent = self.content
+        else {
+            return
+        }
+        let itemsHeight:CGFloat = contentItemA.cellHeight + contentItemB.cellHeight
+        XCTAssertEqual(content.itemsHeight, itemsHeight, "Items height incorrect")
     }
 }
