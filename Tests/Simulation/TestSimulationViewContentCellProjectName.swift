@@ -5,6 +5,7 @@ class TestSimulationViewContentCellProjectName:XCTestCase {
     private var cell:SimulationViewContentCellProjectName?
     private var viewModel:SimulationViewModelContentProjectName?
     private var project:Project?
+    private var controller:SimulationControllerContent?
     private struct Constants {
         static let identifier:String = "project"
         static let entropy:Float = 1
@@ -16,6 +17,7 @@ class TestSimulationViewContentCellProjectName:XCTestCase {
         self.cell = SimulationViewContentCellProjectName()
         self.viewModel = SimulationViewModelContentProjectName()
         self.project = Project(identifier:Constants.identifier, entropy:Constants.entropy)
+        self.controller = SimulationControllerContent()
         self.project?.name = Constants.projectName
         self.viewModel?.project = self.project
     }
@@ -24,6 +26,7 @@ class TestSimulationViewContentCellProjectName:XCTestCase {
         XCTAssertNotNil(self.cell, "Failed to create project name cell")
         XCTAssertNotNil(self.viewModel, "Failed to create view model")
         XCTAssertNotNil(self.project, "Failed to create project")
+        XCTAssertNotNil(self.controller, "Failed to load controller")
     }
     
     func testUpdateProject() {
@@ -33,11 +36,12 @@ class TestSimulationViewContentCellProjectName:XCTestCase {
     
     private func updateViewModel() {
         guard
-            let viewModel:SimulationViewModelContentProjectName = self.viewModel
+            let viewModel:SimulationViewModelContentProjectName = self.viewModel,
+            let controller:SimulationControllerContent = self.controller
         else {
             return
         }
-        self.cell?.update(viewModel:viewModel)
+        self.cell?.update(viewModel:viewModel, controller:controller)
     }
     
     private func validateProjectNameUpdated() {

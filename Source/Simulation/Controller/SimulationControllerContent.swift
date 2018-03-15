@@ -1,7 +1,7 @@
 import UIKit
 
 class SimulationControllerContent:NSObject, UICollectionViewDelegate, UICollectionViewDataSource,
-    UICollectionViewDelegateFlowLayout{
+    UICollectionViewDelegateFlowLayout, UITextFieldDelegate {
     weak var viewContent:SimulationViewContent? {
         didSet {
             self.viewContent?.delegate = self
@@ -25,7 +25,7 @@ class SimulationControllerContent:NSObject, UICollectionViewDelegate, UICollecti
         let cell:UICollectionViewCell = collectionView.dequeueReusableCell(
             withReuseIdentifier:contentItem.cellIdentifier, for:index)
         if let cellContent:SimulationViewContentCell = cell as? SimulationViewContentCell {
-            cellContent.update(viewModel:contentItem)
+            cellContent.update(viewModel:contentItem, controller:self)
         }
         return cell
     }

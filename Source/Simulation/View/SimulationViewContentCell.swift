@@ -13,7 +13,7 @@ class SimulationViewContentCell:UICollectionViewCell {
         return nil
     }
     
-    func update(viewModel:SimulationViewModelContentProtocol) {
+    func update(viewModel:SimulationViewModelContentProtocol, controller:SimulationControllerContent) {
         self.viewModel = viewModel
     }
 }

@@ -48,8 +48,8 @@ class SimulationViewContentCellProjectName:SimulationViewContentCell {
         return nil
     }
     
-    override func update(viewModel:SimulationViewModelContentProtocol) {
-        super.update(viewModel:viewModel)
+    override func update(viewModel:SimulationViewModelContentProtocol, controller:SimulationControllerContent) {
+        super.update(viewModel:viewModel, controller:controller)
         guard
             let viewModel:SimulationViewModelContentProjectName = viewModel as? SimulationViewModelContentProjectName
         else {
