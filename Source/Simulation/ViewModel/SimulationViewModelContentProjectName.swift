@@ -1,6 +1,7 @@
 import UIKit
 
-class SimulationViewModelContentProjectName:SimulationViewModelContentProtocol {
+class SimulationViewModelContentProjectName:SimulationViewModelContentProtocol,
+    SimulationViewModelContentProjectProtocol {
     weak var project:Project?
     let cellType:SimulationViewContentCell.Type = SimulationViewContentCellProjectName.self
     let cellIdentifier:String = SimulationViewContent.Constants.CellIdentifiers.projectName
