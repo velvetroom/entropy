@@ -65,6 +65,8 @@
 		DA4B978F205A75EF000205BD /* SimulationControllerContent+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B978E205A75EF000205BD /* SimulationControllerContent+TextFieldDelegate.swift */; };
 		DA4B9791205A77D0000205BD /* TestSimulationViewModelContentProjectStartDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B9790205A77D0000205BD /* TestSimulationViewModelContentProjectStartDate.swift */; };
 		DA4B9793205A8369000205BD /* SimulationViewModelContentProjectStartDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B9792205A8369000205BD /* SimulationViewModelContentProjectStartDate.swift */; };
+		DA4B9795205A8608000205BD /* SimulationViewContentCellProjectStartDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B9794205A8608000205BD /* SimulationViewContentCellProjectStartDate.swift */; };
+		DA4B9797205A864A000205BD /* TestSimulationViewContentCellProjectStartDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4B9796205A864A000205BD /* TestSimulationViewContentCellProjectStartDate.swift */; };
 		DA4DDFF52055C3050047BB9D /* SimulationControllerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4DDFF42055C3050047BB9D /* SimulationControllerMenu.swift */; };
 		DA4DDFF720566F960047BB9D /* SimulationViewMenuCell+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4DDFF620566F960047BB9D /* SimulationViewMenuCell+Constants.swift */; };
 		DA5B8CCD20513CD0008B986F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5B8CCC20513CD0008B986F /* Profile.swift */; };
@@ -204,6 +206,8 @@
 		DA4B978E205A75EF000205BD /* SimulationControllerContent+TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimulationControllerContent+TextFieldDelegate.swift"; sourceTree = "<group>"; };
 		DA4B9790205A77D0000205BD /* TestSimulationViewModelContentProjectStartDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationViewModelContentProjectStartDate.swift; sourceTree = "<group>"; };
 		DA4B9792205A8369000205BD /* SimulationViewModelContentProjectStartDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelContentProjectStartDate.swift; sourceTree = "<group>"; };
+		DA4B9794205A8608000205BD /* SimulationViewContentCellProjectStartDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewContentCellProjectStartDate.swift; sourceTree = "<group>"; };
+		DA4B9796205A864A000205BD /* TestSimulationViewContentCellProjectStartDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulationViewContentCellProjectStartDate.swift; sourceTree = "<group>"; };
 		DA4DDFF42055C3050047BB9D /* SimulationControllerMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationControllerMenu.swift; sourceTree = "<group>"; };
 		DA4DDFF620566F960047BB9D /* SimulationViewMenuCell+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimulationViewMenuCell+Constants.swift"; sourceTree = "<group>"; };
 		DA5B8CCC20513CD0008B986F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -377,6 +381,7 @@
 				DA2A270C20595AC600D56B60 /* SimulationViewContentCellProjectName+Constants.swift */,
 				DAF18B9B20582CB4002703D1 /* SimulationViewContentCellAddContributor.swift */,
 				DAF18BA320582EEE002703D1 /* SimulationViewContentCellAddLanguage.swift */,
+				DA4B9794205A8608000205BD /* SimulationViewContentCellProjectStartDate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -470,6 +475,7 @@
 				DA439E532059119D00FD02E2 /* TestSimulationControllerContent.swift */,
 				DA439E572059151100FD02E2 /* TestSimulationControllerScroll.swift */,
 				DA2A270820592CD700D56B60 /* TestSimulationControllerContent_ViewModel.swift */,
+				DA4B9796205A864A000205BD /* TestSimulationViewContentCellProjectStartDate.swift */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -773,6 +779,7 @@
 				DAF18B9E20582E2F002703D1 /* TestSimulationViewModelContentAddLanguage.swift in Sources */,
 				DAF18B92205825D9002703D1 /* TestSimulationViewContentCellProjectName.swift in Sources */,
 				DA7F40492057E264005E0712 /* TestSimulationControllerMenu_ViewModel.swift in Sources */,
+				DA4B9797205A864A000205BD /* TestSimulationViewContentCellProjectStartDate.swift in Sources */,
 				DAF18B9420582ABB002703D1 /* TestSimulationViewModelContentAddContributor.swift in Sources */,
 				DA4B5AA320526D6C00A99126 /* TestDatabaseProviderCoredata.swift in Sources */,
 				DAF18BA220582EA6002703D1 /* TestSimulationViewContentCellAddLanguage.swift in Sources */,
@@ -855,6 +862,7 @@
 				DA439E56205911EC00FD02E2 /* SimulationControllerContent.swift in Sources */,
 				DA4B5AB0205274CB00A99126 /* ProfileAccessPremium.swift in Sources */,
 				DA7380F220432007005C43A3 /* ExtensionUIView+LayoutHorizontal.swift in Sources */,
+				DA4B9795205A8608000205BD /* SimulationViewContentCellProjectStartDate.swift in Sources */,
 				DAF18BA420582EEE002703D1 /* SimulationViewContentCellAddLanguage.swift in Sources */,
 				DA2196152055BC2E0020BBAB /* SimulationViewMenu+Constants.swift in Sources */,
 				DA2196172055BC2E0020BBAB /* SimulationViewMenu+Factory.swift in Sources */,
