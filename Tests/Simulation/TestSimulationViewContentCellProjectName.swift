@@ -34,6 +34,11 @@ class TestSimulationViewContentCellProjectName:XCTestCase {
         self.validateProjectNameUpdated()
     }
     
+    func testFieldHasDelegate() {
+        self.updateViewModel()
+        self.validateTextFieldHasDelegate()
+    }
+    
     private func updateViewModel() {
         guard
             let viewModel:SimulationViewModelContentProjectName = self.viewModel,
@@ -53,5 +58,9 @@ class TestSimulationViewContentCellProjectName:XCTestCase {
             return
         }
         XCTAssertEqual(name, Constants.projectName, "Project name is not being updated")
+    }
+    
+    private func validateTextFieldHasDelegate() {
+        XCTAssertNotNil(self.cell?.viewField?.delegate, "Text field has not a delegate assigned")
     }
 }

@@ -56,5 +56,6 @@ class SimulationViewContentCellProjectName:SimulationViewContentCell {
             return
         }
         self.viewField?.text = viewModel.project?.name
+        self.viewField?.delegate = controller
     }
 }
