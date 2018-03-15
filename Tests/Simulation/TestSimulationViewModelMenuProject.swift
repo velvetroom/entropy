@@ -31,29 +31,8 @@ class TestSimulationViewModelMenuProject:XCTestCase {
     }
     
     func testUpdateProject() {
-        self.updateProject()
+        self.item?.project = self.project
         self.validateProjectNameHasProject()
-    }
-    
-    func testUpdateProjectAfterFactory() {
-        let content:SimulationViewModelContent? = self.item?.factoryViewModel()
-        XCTAssertNotNil(content, "Unable to load content")
-        guard
-            let viewModelContent:SimulationViewModelContent = content
-        else {
-            return
-        }
-        self.updateProject()
-        self.validateContentWithProjectProtocol(content:viewModelContent)
-    }
-    
-    private func updateProject() {
-        guard
-            let project:Project = self.project
-        else {
-            return
-        }
-        self.item?.update(project:project)
     }
     
     private func validateProjectNameHasProject() {

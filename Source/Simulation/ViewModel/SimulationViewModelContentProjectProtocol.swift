@@ -1,5 +1,5 @@
 import Foundation
 
-protocol SimulationViewModelContentProjectProtocol {
-    weak var project:Project? { get }
+protocol SimulationViewModelContentProjectProtocol:AnyObject {
+    weak var project:Project? { get set }
 }

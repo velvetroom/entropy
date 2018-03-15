@@ -17,7 +17,7 @@ class SimulationViewModelMenu {
     
     func update(project:Project) {
         for item:SimulationViewModelMenuProtocol in self.items {
-            item.update(project:project)
+            item.project = project
         }
     }
 }

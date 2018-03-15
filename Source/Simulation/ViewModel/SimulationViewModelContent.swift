@@ -1,10 +1,28 @@
 import Foundation
 
 class SimulationViewModelContent:Equatable {
+    weak var project:Project?
     var items:[SimulationViewModelContentProtocol]
     
     init() {
         self.items = []
+    }
+    
+    func update(project:Project) {
+        self.project = project
+        self.updateItems(project:project)
+    }
+    
+    private func updateItems(project:Project) {
+        for item:SimulationViewModelContentProtocol in self.items {
+            guard
+                let itemWithProject:SimulationViewModelContentProjectProtocol = item as?
+            SimulationViewModelContentProjectProtocol
+            else {
+                continue
+            }
+            itemWithProject.project = project
+        }
     }
     
     static func ==(lhs:SimulationViewModelContent, rhs:SimulationViewModelContent) -> Bool {

@@ -41,6 +41,11 @@ class TestSimulationViewModel:XCTestCase {
         self.validateMenuItemsHaveProject()
     }
     
+    func testUpdateContentProject() {
+        self.updateProject()
+        self.validateContentItemsHaveProject()
+    }
+    
     private func updateProject() {
         guard
             let project:Project = self.project
@@ -58,6 +63,29 @@ class TestSimulationViewModel:XCTestCase {
         }
         for item:SimulationViewModelMenuProtocol in items {
             XCTAssertNotNil(item.project, "Item doesn't have a reference to project")
+        }
+    }
+    
+    private func validateContentItemsHaveProject() {
+        let items:[SimulationViewModelContentProtocol]? = self.viewModel?.content.items
+        XCTAssertNotNil(items, "Failed to load content items")
+        guard
+            let contentItems:[SimulationViewModelContentProtocol] = items
+        else {
+            return
+        }
+        self.compareContentWithProject(items:contentItems)
+    }
+    
+    private func compareContentWithProject(items:[SimulationViewModelContentProtocol]) {
+        for item:SimulationViewModelContentProtocol in items {
+            guard
+                let itemWithProject:SimulationViewModelContentProjectProtocol = item as?
+            SimulationViewModelContentProjectProtocol
+            else {
+                continue
+            }
+            XCTAssertNotNil(itemWithProject.project, "Item is not being updated with project")
         }
     }
 }
