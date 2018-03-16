@@ -82,6 +82,7 @@
 		DA64776F204EA54500235718 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA64776E204EA54500235718 /* Model.swift */; };
 		DA69E17E205BB2B400496403 /* Simulation+Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69E17D205BB2B400496403 /* Simulation+Project.swift */; };
 		DA69E180205BC2CD00496403 /* Simulation+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69E17F205BC2CD00496403 /* Simulation+Shared.swift */; };
+		DA69E182205BC4AC00496403 /* TestSimulation_Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69E181205BC4AC00496403 /* TestSimulation_Project.swift */; };
 		DA7380E220432007005C43A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA73809D20432007005C43A3 /* LaunchScreen.storyboard */; };
 		DA7380E820432007005C43A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A520432007005C43A3 /* InfoPlist.strings */; };
 		DA7380EC20432007005C43A3 /* ExtensionUIView+LayoutWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380AF20432007005C43A3 /* ExtensionUIView+LayoutWidth.swift */; };
@@ -228,6 +229,7 @@
 		DA64776E204EA54500235718 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DA69E17D205BB2B400496403 /* Simulation+Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simulation+Project.swift"; sourceTree = "<group>"; };
 		DA69E17F205BC2CD00496403 /* Simulation+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simulation+Shared.swift"; sourceTree = "<group>"; };
+		DA69E181205BC4AC00496403 /* TestSimulation_Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimulation_Project.swift; sourceTree = "<group>"; };
 		DA73808720431E5E005C43A3 /* entropy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = entropy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA73809D20432007005C43A3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA73809E20432007005C43A3 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -467,6 +469,7 @@
 			isa = PBXGroup;
 			children = (
 				DA4B5AA020526D6C00A99126 /* TestSimulation.swift */,
+				DA69E181205BC4AC00496403 /* TestSimulation_Project.swift */,
 				DA7F40462057D643005E0712 /* TestSimulationControllerMenu.swift */,
 				DA7F40482057E264005E0712 /* TestSimulationControllerMenu_ViewModel.swift */,
 				DA7F404E2057F00A005E0712 /* TestSimulationViewModelMenuProject.swift */,
@@ -800,6 +803,7 @@
 				DAF18B9420582ABB002703D1 /* TestSimulationViewModelContentAddContributor.swift in Sources */,
 				DA4B5AA320526D6C00A99126 /* TestDatabaseProviderCoredata.swift in Sources */,
 				DAF18BA220582EA6002703D1 /* TestSimulationViewContentCellAddLanguage.swift in Sources */,
+				DA69E182205BC4AC00496403 /* TestSimulation_Project.swift in Sources */,
 				DA439E542059119D00FD02E2 /* TestSimulationControllerContent.swift in Sources */,
 				DA439E582059151100FD02E2 /* TestSimulationControllerScroll.swift in Sources */,
 				DAF18B9620582B56002703D1 /* TestSimulationViewModelContentProjectName.swift in Sources */,
