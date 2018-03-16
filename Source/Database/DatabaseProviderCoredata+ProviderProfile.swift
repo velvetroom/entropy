@@ -30,14 +30,10 @@ extension DatabaseProviderCoredata {
         }
     }
     
-    func save(project:Project, completion:@escaping (() -> ())) {
-        
-    }
-    
     private func configureNewProfile(coredataProfile:CoredataProfile, completion:@escaping((Profile) -> ())) {
         self.createFreeAccess { (access:CoredataProfileAccessFree) in
             coredataProfile.access = access
-            self.createProject { (project:CoredataProject) in
+            self.createCoredataProject { (project:CoredataProject) in
                 coredataProfile.project = project
                 self.newProfileReady(coredataProfile:coredataProfile, completion:completion)
             }
@@ -45,10 +41,6 @@ extension DatabaseProviderCoredata {
     }
     
     private func createFreeAccess(completion:@escaping((CoredataProfileAccessFree) -> ())) {
-        self.create(completion:completion)
-    }
-    
-    private func createProject(completion:@escaping((CoredataProject) -> ())) {
         self.create(completion:completion)
     }
     
