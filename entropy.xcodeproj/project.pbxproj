@@ -81,6 +81,7 @@
 		DA5F522A2056D9C20010E7F0 /* SimulationViewModelMenuLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5F52292056D9C20010E7F0 /* SimulationViewModelMenuLanguages.swift */; };
 		DA64776F204EA54500235718 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA64776E204EA54500235718 /* Model.swift */; };
 		DA69E17E205BB2B400496403 /* Simulation+Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69E17D205BB2B400496403 /* Simulation+Project.swift */; };
+		DA69E180205BC2CD00496403 /* Simulation+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69E17F205BC2CD00496403 /* Simulation+Shared.swift */; };
 		DA7380E220432007005C43A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA73809D20432007005C43A3 /* LaunchScreen.storyboard */; };
 		DA7380E820432007005C43A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A520432007005C43A3 /* InfoPlist.strings */; };
 		DA7380EC20432007005C43A3 /* ExtensionUIView+LayoutWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380AF20432007005C43A3 /* ExtensionUIView+LayoutWidth.swift */; };
@@ -226,6 +227,7 @@
 		DA5F52292056D9C20010E7F0 /* SimulationViewModelMenuLanguages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewModelMenuLanguages.swift; sourceTree = "<group>"; };
 		DA64776E204EA54500235718 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DA69E17D205BB2B400496403 /* Simulation+Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simulation+Project.swift"; sourceTree = "<group>"; };
+		DA69E17F205BC2CD00496403 /* Simulation+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simulation+Shared.swift"; sourceTree = "<group>"; };
 		DA73808720431E5E005C43A3 /* entropy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = entropy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA73809D20432007005C43A3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA73809E20432007005C43A3 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -361,6 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				DA2195F82055BC2E0020BBAB /* Simulation.swift */,
+				DA69E17F205BC2CD00496403 /* Simulation+Shared.swift */,
 				DA69E17D205BB2B400496403 /* Simulation+Project.swift */,
 			);
 			path = Model;
@@ -827,6 +830,7 @@
 				DA4DDFF52055C3050047BB9D /* SimulationControllerMenu.swift in Sources */,
 				DAAFD2C2205147AE00F1526F /* ExtensionNSManagedObject.swift in Sources */,
 				DA2196192055BC2E0020BBAB /* SimulationViewScroll.swift in Sources */,
+				DA69E180205BC2CD00496403 /* Simulation+Shared.swift in Sources */,
 				DA21961E2055BC2E0020BBAB /* SimulationViewModelGraph+Constants.swift in Sources */,
 				DA439E502059004100FD02E2 /* SimulationViewScrollContent.swift in Sources */,
 				DAF18B8A205822A8002703D1 /* SimulationViewContent.swift in Sources */,

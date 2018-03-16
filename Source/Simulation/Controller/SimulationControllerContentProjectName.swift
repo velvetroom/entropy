@@ -4,7 +4,7 @@ class SimulationControllerContentProjectName:NSObject, UITextFieldDelegate {
     weak var model:Simulation?
     
     func update(name:String) {
-        
+        self.model?.updateProject(name:name)
     }
     
     func textField(_ textField:UITextField, shouldChangeCharactersIn range:NSRange, replacementString string:String) -> Bool {
