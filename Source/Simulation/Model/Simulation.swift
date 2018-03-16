@@ -18,10 +18,14 @@ class Simulation:Model {
         }
     }
     
+    func update(project:Project) {
+        self.project = project
+    }
+    
     func loadProject(completion:@escaping(() -> ())) {
         let database:Database = Database()
         database.loadProfile { [weak self] (profile:Profile) in
-            self?.project = profile.project
+            self?.update(project:profile.project)
             completion()
         }
     }
