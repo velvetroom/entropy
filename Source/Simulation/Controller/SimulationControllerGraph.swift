@@ -1,6 +1,7 @@
 import UIKit
 
 class SimulationControllerGraph:ViewDelegate {
+    weak var model:Simulation?
     var viewModel:SimulationViewModelGraph
     private weak var context:CGContext?
     

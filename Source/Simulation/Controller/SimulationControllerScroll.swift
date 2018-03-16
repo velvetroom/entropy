@@ -2,6 +2,11 @@ import UIKit
 
 class SimulationControllerScroll:NSObject, UICollectionViewDelegate, UICollectionViewDataSource,
     UICollectionViewDelegateFlowLayout {
+    weak var model:Simulation? {
+        didSet {
+            self.menu.model = self.model
+        }
+    }
     let menu:SimulationControllerMenu
     
     override init() {

@@ -2,6 +2,11 @@ import UIKit
 
 class SimulationControllerContent:NSObject, UICollectionViewDelegate, UICollectionViewDataSource,
     UICollectionViewDelegateFlowLayout {
+    weak var model:Simulation? {
+        didSet {
+            self.projectName.model = self.model
+        }
+    }
     weak var viewContent:SimulationViewContent? {
         didSet {
             self.viewContent?.delegate = self

@@ -26,5 +26,11 @@ class TestSimulation:XCTestCase {
         let controller:SimulationController? = self.simulation?.controller as? SimulationController
         XCTAssertNotNil(controller, "Controller doesn't match the type")
         XCTAssertNotNil(controller?.model, "Controller has not model assigned")
+        XCTAssertNotNil(controller?.graph.model, "Graph controller doesn't have model assigned")
+        XCTAssertNotNil(controller?.scroll.model, "Scroll controller doesn't have model assigned")
+        XCTAssertNotNil(controller?.scroll.menu.model, "Menu controller doesn't have model assigned")
+        XCTAssertNotNil(controller?.scroll.menu.content.model, "Content controller doesn't have model assigned")
+        XCTAssertNotNil(controller?.scroll.menu.content.projectName.model,
+                        "Project name controller doesn't have model assigned")
     }
 }

@@ -1,6 +1,8 @@
 import UIKit
 
 class SimulationControllerContentProjectName:NSObject, UITextFieldDelegate {
+    weak var model:Simulation?
+    
     func textField(_ textField:UITextField, shouldChangeCharactersIn range:NSRange, replacementString string:String) -> Bool {
         guard
             let currentText:String = textField.text,

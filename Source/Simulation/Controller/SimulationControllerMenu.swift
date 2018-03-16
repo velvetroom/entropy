@@ -2,6 +2,11 @@ import UIKit
 
 class SimulationControllerMenu:NSObject,
     UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    weak var model:Simulation? {
+        didSet {
+            self.content.model = self.model
+        }
+    }
     weak var viewScroll:SimulationViewScroll?
     weak var viewMenu:SimulationViewMenu? {
         didSet {
