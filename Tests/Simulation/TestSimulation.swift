@@ -21,4 +21,10 @@ class TestSimulation:XCTestCase {
             XCTAssertNotNil(self?.simulation?.project, "Error: project not loaded")
         }
     }
+    
+    func testModelAssignedToController() {
+        let controller:SimulationController? = self.simulation?.controller as? SimulationController
+        XCTAssertNotNil(controller, "Controller doesn't match the type")
+        XCTAssertNotNil(controller?.model, "Controller has not model assigned")
+    }
 }

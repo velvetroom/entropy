@@ -7,6 +7,7 @@ class Simulation:Model {
         let viewModel:SimulationViewModel = SimulationViewModel()
         let controller:SimulationController = SimulationController()
         super.init(viewModel:viewModel, controller:controller)
+        controller.model = self
     }
     
     override func controllerDidAppear() {

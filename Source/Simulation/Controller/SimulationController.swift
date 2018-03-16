@@ -1,6 +1,7 @@
 import Foundation
 
 class SimulationController:Controller<SimulationViewModel, SimulationView> {
+    weak var model:Simulation?
     let graph:SimulationControllerGraph
     let scroll:SimulationControllerScroll
     
