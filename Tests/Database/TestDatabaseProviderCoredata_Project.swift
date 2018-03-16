@@ -8,8 +8,6 @@ class TestDatabaseProviderCoredata_Project:XCTestCase {
     private var expect:XCTestExpectation?
     private struct Constants {
         static let expectationWait:TimeInterval = 0.5
-        static let projectIdentifier:String = "identifier"
-        static let entropy:Float = 1
     }
     
     override func setUp() {

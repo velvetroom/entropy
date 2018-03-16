@@ -87,6 +87,7 @@
 		DA69E186205C037200496403 /* DatabaseProviderCoredata+ProviderProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69E185205C037200496403 /* DatabaseProviderCoredata+ProviderProfile.swift */; };
 		DA69E188205C037B00496403 /* DatabaseProviderCoredata+ProviderProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69E187205C037B00496403 /* DatabaseProviderCoredata+ProviderProject.swift */; };
 		DA69E18A205C06D000496403 /* TestDatabaseProviderCoredata_Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69E189205C06D000496403 /* TestDatabaseProviderCoredata_Project.swift */; };
+		DA69E18C205C171300496403 /* TestDatabase_Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69E18B205C171300496403 /* TestDatabase_Project.swift */; };
 		DA7380E220432007005C43A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA73809D20432007005C43A3 /* LaunchScreen.storyboard */; };
 		DA7380E820432007005C43A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7380A520432007005C43A3 /* InfoPlist.strings */; };
 		DA7380EC20432007005C43A3 /* ExtensionUIView+LayoutWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7380AF20432007005C43A3 /* ExtensionUIView+LayoutWidth.swift */; };
@@ -237,6 +238,7 @@
 		DA69E185205C037200496403 /* DatabaseProviderCoredata+ProviderProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseProviderCoredata+ProviderProfile.swift"; sourceTree = "<group>"; };
 		DA69E187205C037B00496403 /* DatabaseProviderCoredata+ProviderProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseProviderCoredata+ProviderProject.swift"; sourceTree = "<group>"; };
 		DA69E189205C06D000496403 /* TestDatabaseProviderCoredata_Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDatabaseProviderCoredata_Project.swift; sourceTree = "<group>"; };
+		DA69E18B205C171300496403 /* TestDatabase_Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDatabase_Project.swift; sourceTree = "<group>"; };
 		DA73808720431E5E005C43A3 /* entropy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = entropy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA73809D20432007005C43A3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA73809E20432007005C43A3 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -468,6 +470,7 @@
 				DA4B5A9D20526D6C00A99126 /* TestDatabaseProviderCoredata.swift */,
 				DA69E189205C06D000496403 /* TestDatabaseProviderCoredata_Project.swift */,
 				DA4B5A9E20526D6C00A99126 /* TestDatabase.swift */,
+				DA69E18B205C171300496403 /* TestDatabase_Project.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -789,6 +792,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA69E18C205C171300496403 /* TestDatabase_Project.swift in Sources */,
 				DA7F40472057D643005E0712 /* TestSimulationControllerMenu.swift in Sources */,
 				DA4B979B205A96F7000205BD /* TestSimulationController.swift in Sources */,
 				DAF18B8820582209002703D1 /* TestSimulationViewContent.swift in Sources */,

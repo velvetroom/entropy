@@ -13,7 +13,15 @@ class Database {
         })
     }
     
+    func createProject(completion:@escaping((Project) -> ())) {
+        self.provider.createProject(completion:completion)
+    }
+    
+    func loadProject(identifier:String, found:@escaping((Project) -> ())) {
+        self.provider.loadProject(identifier:identifier, found:found) { }
+    }
+    
     func save(project:Project, completion:@escaping(() -> ())) {
-        
+        self.provider.save(project:project, completion:completion)
     }
 }
