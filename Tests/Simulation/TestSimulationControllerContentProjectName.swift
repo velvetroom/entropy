@@ -32,10 +32,23 @@ class TestSimulationControllerContentProjectName:XCTestCase {
     }
     
     func testUpdatingName() {
-        
+        self.validateProjectNameIs(name:Constants.projectInitialName)
+        self.updateNameInController()
+        self.validateProjectNameIs(name:Constants.projectUpdatedName)
+    }
+    
+    private func validateProjectNameIs(name:String) {
+        let currentName:String? = self.model?.project?.name
+        XCTAssertNotNil(currentName, "Unable to load project name")
+        guard
+            let projectName:String = currentName
+        else {
+            return
+        }
+        XCTAssertEqual(projectName, name, "Current name doesn't match expected name")
     }
     
     private func updateNameInController() {
-        self.controller?.updated(name:Constants.projectUpdatedName)
+        self.controller?.update(name:Constants.projectUpdatedName)
     }
 }
