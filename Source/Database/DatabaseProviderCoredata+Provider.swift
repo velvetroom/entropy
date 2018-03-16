@@ -30,6 +30,10 @@ extension DatabaseProviderCoredata {
         }
     }
     
+    func save(project:Project, completion:@escaping (() -> ())) {
+        
+    }
+    
     private func configureNewProfile(coredataProfile:CoredataProfile, completion:@escaping((Profile) -> ())) {
         self.createFreeAccess { (access:CoredataProfileAccessFree) in
             coredataProfile.access = access

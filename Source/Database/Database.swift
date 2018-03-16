@@ -12,4 +12,8 @@ class Database {
             self.provider.createProfile(completion:completion)
         })
     }
+    
+    func save(project:Project, completion:@escaping(() -> ())) {
+        
+    }
 }

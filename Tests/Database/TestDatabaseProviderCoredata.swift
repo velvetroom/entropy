@@ -5,14 +5,23 @@ import CoreData
 class TestDatabaseProviderCoredata:XCTestCase {
     private var provider:DatabaseProviderCoredata?
     private var profileLoaded:Profile?
+    private var project:Project?
     private struct Constants {
         static let expectationWait:TimeInterval = 0.5
+        static let projectIdentifier:String = "identifier"
+        static let entropy:Float = 1
     }
     
     override func setUp() {
         super.setUp()
         let bundle:Bundle = Bundle(for:TestDatabaseProviderCoredata.self)
         self.provider = DatabaseProviderCoredata(bundle:bundle)
+        self.project = Project(identifier:Constants.projectIdentifier, entropy:Constants.entropy)
+    }
+    
+    func testInitialisation() {
+        XCTAssertNotNil(self.provider, "Provider not loaded")
+        XCTAssertNotNil(self.project, "Project not loaded")
     }
     
     func testFactoryContext() {
@@ -71,6 +80,23 @@ class TestDatabaseProviderCoredata:XCTestCase {
             }, notFound: {
                 expect.fulfill()
             })
+        }
+    }
+    
+    func testSaveProject() {
+        self.saveProjectAndWait()
+        waitForExpectations(timeout:Constants.expectationWait) { (error:Error?) in }
+    }
+    
+    private func saveProjectAndWait() {
+        let expect:XCTestExpectation = expectation(description:"Wait for profile to be saved")
+        guard
+            let project:Project = self.project
+        else {
+            return
+        }
+        self.provider?.save(project:project) {
+            expect.fulfill()
         }
     }
 }

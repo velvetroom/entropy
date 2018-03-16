@@ -21,18 +21,19 @@ class TestSimulation_Shared:XCTestCase {
     func testSaveProject() {
         self.startExpectation()
         self.loadProjectOnBackground { [weak self] (project:Project) in
-            self?.updateProject(project:project)
-            self?.reloadProject()
+            self?.updateProject(project:project) { [weak self] in
+                self?.reloadProject()
+            }
         }
         self.onExpectationDone { [weak self] in
             XCTAssertNotNil(self?.simulation?.project, "Project not found")
         }
     }
     
-    private func updateProject(project:Project) {
+    private func updateProject(project:Project, completion:@escaping(() -> ())) {
         self.validateProjectNameIsDifferent(project:project, name:Constants.updatedName)
         self.changeProject(project:project)
-        self.simulation?.saveProject()
+        self.simulation?.saveProject(completion:completion)
     }
     
     private func reloadProject() {
