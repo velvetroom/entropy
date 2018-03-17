@@ -77,6 +77,7 @@ class TestDatabase_Project:XCTestCase {
     private func loadAndValidatedProjectIsUpdated(identifier:String, completion:@escaping(() -> ())) {
         self.loadProject(identifier:identifier) { (project:Project) in
             XCTAssertEqual(project.name, Constants.updatedProjectName, "Project loaded is not updated")
+            completion()
         }
     }
 }

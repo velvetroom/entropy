@@ -18,16 +18,14 @@ extension DatabaseProviderCoredata {
             else {
                 return
             }
-            completion(project)
+            self.save {
+                completion(project)
+            }
         }
     }
     
     func createCoredataProject(completion:@escaping((CoredataProject) -> ())) {
-        self.create { (coredataProject:CoredataProject) in
-            self.save {
-                completion(coredataProject)
-            }
-        }
+        self.create(completion:completion)
     }
     
     func loadProject(identifier:String, found:@escaping((Project) -> ()), notFound:@escaping(() -> ())) {
@@ -74,6 +72,7 @@ extension DatabaseProviderCoredata {
     }
     
     private func update(coredataProject:CoredataProject, with project:Project, completion:@escaping(() -> ())) {
-        
+        coredataProject.merge(project:project)
+        self.save(completion:completion)
     }
 }

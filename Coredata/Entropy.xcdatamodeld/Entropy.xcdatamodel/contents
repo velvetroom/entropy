@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D102" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="CoredataProfile" representedClassName="CoredataProfile" syncable="YES" codeGenerationType="class">
-        <relationship name="access" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CoredataProfileAccess" inverseName="profile" inverseEntity="CoredataProfileAccess" syncable="YES"/>
-        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CoredataProject" inverseName="profile" inverseEntity="CoredataProject" syncable="YES"/>
+        <relationship name="access" maxCount="1" deletionRule="Cascade" destinationEntity="CoredataProfileAccess" inverseName="profile" inverseEntity="CoredataProfileAccess" syncable="YES"/>
+        <relationship name="project" maxCount="1" deletionRule="Nullify" destinationEntity="CoredataProject" inverseName="profile" inverseEntity="CoredataProject" syncable="YES"/>
     </entity>
     <entity name="CoredataProfileAccess" representedClassName="CoredataProfileAccess" isAbstract="YES" syncable="YES" codeGenerationType="class">
         <attribute name="accessType" optional="YES" transient="YES" attributeType="Transformable" customClassName="AnyObject" syncable="YES"/>

@@ -14,5 +14,10 @@ extension Simulation {
     
     private func save(project:Project, completion:@escaping(() -> ())) {
         let database:Database = Database()
+        database.save(project:project) {
+            DispatchQueue.main.async {
+                completion()
+            }
+        }
     }
 }

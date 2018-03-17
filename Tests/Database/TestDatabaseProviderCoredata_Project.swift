@@ -26,19 +26,16 @@ class TestDatabaseProviderCoredata_Project:XCTestCase {
     }
     
     func testSaveProject() {
-        self.saveProjectAndWait()
+        self.startExpectation()
+        self.createProject { [weak self] (project:Project) in
+            self?.saveProjectAndWait(project:project)
+        }
         self.waitExpectation()
     }
     
-    private func saveProjectAndWait() {
-        let expect:XCTestExpectation = expectation(description:"Wait for profile to be saved")
-        guard
-            let project:Project = self.project
-        else {
-            return
-        }
-        self.provider?.save(project:project) {
-            expect.fulfill()
+    private func saveProjectAndWait(project:Project) {
+        self.provider?.save(project:project) { [weak self] in
+            self?.expect?.fulfill()
         }
     }
     

@@ -5,7 +5,7 @@ extension DatabaseProviderCoredata {
     private var profileRequest:NSFetchRequest<CoredataProfile> {
         get {
             let request:NSFetchRequest<CoredataProfile> = NSFetchRequest(entityName:CoredataProfile.name)
-            request.fetchLimit = 0
+            request.fetchLimit = 1
             request.returnsObjectsAsFaults = false
             return request
         }
@@ -38,8 +38,8 @@ extension DatabaseProviderCoredata {
     
     private func configureNewProfile(coredataProfile:CoredataProfile, completion:@escaping((Profile) -> ())) {
         self.createFreeAccess { (access:CoredataProfileAccessFree) in
-            coredataProfile.access = access
             self.createCoredataProject { (project:CoredataProject) in
+                coredataProfile.access = access
                 coredataProfile.project = project
                 self.newProfileReady(coredataProfile:coredataProfile, completion:completion)
             }
