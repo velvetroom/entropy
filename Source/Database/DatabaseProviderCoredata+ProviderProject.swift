@@ -23,7 +23,11 @@ extension DatabaseProviderCoredata {
     }
     
     func createCoredataProject(completion:@escaping((CoredataProject) -> ())) {
-        self.create(completion:completion)
+        self.create { (coredataProject:CoredataProject) in
+            self.save {
+                completion(coredataProject)
+            }
+        }
     }
     
     func loadProject(identifier:String, found:@escaping((Project) -> ()), notFound:@escaping(() -> ())) {

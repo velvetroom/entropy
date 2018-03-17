@@ -48,9 +48,7 @@ class TestCoredataProject:XCTestCase {
     }
     
     private func createCoredataProject(completion:@escaping((CoredataProject) -> ())) {
-        self.provider?.createCoredataProject { (coredataProject:CoredataProject) in
-            completion(coredataProject)
-        }
+        self.provider?.createCoredataProject(completion:completion)
     }
     
     private func validateAwakeFromInsertWithProject(coredataProject:CoredataProject) {
