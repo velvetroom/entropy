@@ -6,6 +6,11 @@ class TestCoredataProject:XCTestCase {
     private var expect:XCTestExpectation?
     private struct Constants {
         static let expectationWait:TimeInterval = 0.5
+        static let fakeIdentifier:String = "fakeidentifier"
+        static let fakeName:String = "fakeName"
+        static let fakeEntropy:Float = 0.5
+        static let fakeStartDate:Date = Date(timeIntervalSince1970:0)
+        static let fakeCreatedDate:Date = Date(timeIntervalSince1970:0)
     }
     
     override func setUp() {
@@ -20,14 +25,18 @@ class TestCoredataProject:XCTestCase {
     
     func testAwakeFromInsert() {
         self.startExpectation()
-        self.createCoredataProject { (coredataProject:CoredataProject) in
-            self.validateAwakeFromInsertWithProject(coredataProject:coredataProject)
+        self.createCoredataProject { [weak self] (coredataProject:CoredataProject) in
+            self?.validateAwakeFromInsertWithProject(coredataProject:coredataProject)
         }
         self.waitExpectation()
     }
     
     func testFactoryProject() {
-        
+        self.startExpectation()
+        self.createCoredataProject { [weak self] (coredataProject:CoredataProject) in
+            self?.validateProjectFactory(coredataProject:coredataProject)
+        }
+        self.waitExpectation()
     }
     
     private func startExpectation() {
@@ -50,5 +59,34 @@ class TestCoredataProject:XCTestCase {
         XCTAssertNotNil(coredataProject.start, "Failed to assign start date")
         XCTAssertNotNil(coredataProject.name, "Failed to assign project name")
         self.expect?.fulfill()
+    }
+    
+    private func validateProjectFactory(coredataProject:CoredataProject) {
+        self.assignFakeValues(coredataProject:coredataProject)
+        let factorisedProject:Project? = coredataProject.factoryProject()
+        XCTAssertNotNil(factorisedProject, "Failed to factory project")
+        guard
+            let project:Project = factorisedProject
+        else {
+            return
+        }
+        self.validateFakeValues(project:project)
+        self.expect?.fulfill()
+    }
+    
+    private func assignFakeValues(coredataProject:CoredataProject) {
+        coredataProject.identifier = Constants.fakeIdentifier
+        coredataProject.name = Constants.fakeName
+        coredataProject.entropy = Constants.fakeEntropy
+        coredataProject.start = Constants.fakeStartDate
+        coredataProject.created = Constants.fakeCreatedDate
+    }
+    
+    private func validateFakeValues(project:Project) {
+        XCTAssertEqual(project.identifier, Constants.fakeIdentifier)
+        XCTAssertEqual(project.name, Constants.fakeName)
+        XCTAssertEqual(project.entropy.index, Constants.fakeEntropy)
+        XCTAssertEqual(project.start, Constants.fakeStartDate)
+        XCTAssertEqual(project.created, Constants.fakeCreatedDate)
     }
 }
