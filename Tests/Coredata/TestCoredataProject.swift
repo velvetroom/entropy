@@ -39,6 +39,26 @@ class TestCoredataProject:XCTestCase {
         self.waitExpectation()
     }
     
+    func testMergeProfile() {
+        self.startExpectation()
+        self.createCoredataProject { [weak self] (coredataProject:CoredataProject) in
+            self?.mergeWithProject(coredataProject:coredataProject)
+            self?.validateMergeSuccess(coredataProject:coredataProject)
+            self?.expect?.fulfill()
+        }
+        self.waitExpectation()
+    }
+    
+    func testMergeFakeProfile() {
+        self.startExpectation()
+        self.createCoredataProject { [weak self] (coredataProject:CoredataProject) in
+            self?.fakeProjectMergeWithProject(coredataProject:coredataProject)
+            self?.validateMergeFailed(coredataProject:coredataProject)
+            self?.expect?.fulfill()
+        }
+        self.waitExpectation()
+    }
+    
     private func startExpectation() {
         self.expect = expectation(description:"Waiting for expectation")
     }
@@ -86,5 +106,44 @@ class TestCoredataProject:XCTestCase {
         XCTAssertEqual(project.entropy.index, Constants.fakeEntropy)
         XCTAssertEqual(project.start, Constants.fakeStartDate)
         XCTAssertEqual(project.created, Constants.fakeCreatedDate)
+    }
+    
+    private func factoryProjectWithIdentifier(identifier:String) -> Project {
+        let project:Project = Project(identifier:identifier, entropy:Constants.fakeEntropy)
+        project.created = Constants.fakeCreatedDate
+        project.start = Constants.fakeStartDate
+        project.name = Constants.fakeName
+        return project
+    }
+    
+    private func mergeWithProject(coredataProject:CoredataProject) {
+        guard
+            let identifier:String = coredataProject.identifier
+        else {
+            XCTAssertNotNil(coredataProject.identifier, "Project has no identifier")
+            return
+        }
+        let project:Project = self.factoryProjectWithIdentifier(identifier:identifier)
+        coredataProject.merge(project:project)
+    }
+    
+    private func fakeProjectMergeWithProject(coredataProject:CoredataProject) {
+        let project:Project = self.factoryProjectWithIdentifier(identifier:Constants.fakeIdentifier)
+        coredataProject.merge(project:project)
+    }
+    
+    private func validateMergeSuccess(coredataProject:CoredataProject) {
+        XCTAssertEqual(coredataProject.name, Constants.fakeName, "Name not modified")
+        XCTAssertEqual(coredataProject.entropy, Constants.fakeEntropy, "Entropy not modified")
+        XCTAssertEqual(coredataProject.start, Constants.fakeStartDate, "Start date not modified")
+        XCTAssertNotEqual(coredataProject.created, Constants.fakeCreatedDate, "Created should not be modified")
+    }
+    
+    private func validateMergeFailed(coredataProject:CoredataProject) {
+        XCTAssertNotEqual(coredataProject.identifier, Constants.fakeIdentifier, "Identifier should not modified")
+        XCTAssertNotEqual(coredataProject.name, Constants.fakeName, "Name should not modified")
+        XCTAssertNotEqual(coredataProject.entropy, Constants.fakeEntropy, "Entropy should not modified")
+        XCTAssertNotEqual(coredataProject.start, Constants.fakeStartDate, "Start date should not modified")
+        XCTAssertNotEqual(coredataProject.created, Constants.fakeCreatedDate, "Created should not be modified")
     }
 }
