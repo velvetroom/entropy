@@ -17,7 +17,9 @@ class DatabaseProviderCoredata:DatabaseProviderProtocol {
             else {
                 return
             }
-            completion(entity)
+            self.save {
+                completion(entity)
+            }
         }
     }
     
