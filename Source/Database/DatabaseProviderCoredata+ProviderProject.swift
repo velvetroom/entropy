@@ -34,6 +34,7 @@ extension DatabaseProviderCoredata {
                 let project:Project = coredataProject.factoryProject()
             else {
                 notFound()
+                return
             }
             found(project)
         }
@@ -46,7 +47,7 @@ extension DatabaseProviderCoredata {
     }
     
     private func factoryPredicateToLoadProject(identifier:String) -> NSPredicate {
-        return NSPredicate(format:"identifier = \"%@\"", identifier)
+        return NSPredicate(format:"identifier == %@", identifier)
     }
     
     func save(project:Project, completion:@escaping(() -> ())) {
