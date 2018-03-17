@@ -27,16 +27,28 @@ extension DatabaseProviderCoredata {
     }
     
     func loadProject(identifier:String, found:@escaping((Project) -> ()), notFound:@escaping(() -> ())) {
-        let request:NSFetchRequest<CoredataProject> = self.factoryRequestToLoadProject(identifier:identifier)
-        self.load(request:request) { (coredataProjects:[CoredataProject]) in
+        self.loadCoredataProject(identifier:identifier, found: { (coredataProject:CoredataProject) in
             guard
-                let coredataProject:CoredataProject = coredataProjects.first,
                 let project:Project = coredataProject.factoryProject()
             else {
                 notFound()
                 return
             }
             found(project)
+        }, notFound:notFound)
+    }
+    
+    private func loadCoredataProject(identifier:String, found:@escaping((CoredataProject) -> ()),
+                                     notFound:@escaping(() -> ())) {
+        let request:NSFetchRequest<CoredataProject> = self.factoryRequestToLoadProject(identifier:identifier)
+        self.load(request:request) { (coredataProjects:[CoredataProject]) in
+            guard
+                let coredataProject:CoredataProject = coredataProjects.first
+            else {
+                notFound()
+                return
+            }
+            found(coredataProject)
         }
     }
     
@@ -51,6 +63,13 @@ extension DatabaseProviderCoredata {
     }
     
     func save(project:Project, completion:@escaping(() -> ())) {
+        self.loadCoredataProject(identifier:project.identifier,
+                                 found: { [weak self] (coredataProject:CoredataProject) in
+            self?.update(coredataProject:coredataProject, with:project, completion:completion)
+        }) {}
+    }
+    
+    private func update(coredataProject:CoredataProject, with project:Project, completion:@escaping(() -> ())) {
         
     }
 }
